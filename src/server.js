@@ -1,6 +1,6 @@
 import express from 'express';
 import path from 'node:path';
-import config, { ROOT } from './config.js';
+import config, { ROOT, salvarAjustes } from './config.js';
 import { CATALOGO, categorias, buscarProduto } from './catalog/index.js';
 import { listarFontes } from './sources/index.js';
 import { analisarProduto, buscarTermo, tabelaDePrecos, melhoresOportunidades } from './services/mercado.js';
@@ -30,6 +30,11 @@ app.get('/api/config', rota(async (req, res) => {
     categorias: categorias(),
     totalProdutos: CATALOGO.length,
   });
+}));
+
+app.post('/api/config', rota((req, res) => {
+  const atualizado = salvarAjustes(req.body || {});
+  res.json({ salvo: true, regiao: atualizado.regiao, negocio: atualizado.negocio, fontes: atualizado.fontes });
 }));
 
 app.get('/api/catalogo', rota((req, res) => {

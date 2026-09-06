@@ -85,7 +85,73 @@ async function carregarConfig() {
 
   $('#listaFontes').innerHTML = fontes.map((f) =>
     `<span class="etiqueta ${f.ativa ? 'verde' : 'neutra'}">${escapar(f.nome)} · ${f.ativa ? 'ligada' : 'desligada'}</span>`).join('');
+
+  preencherFormulario(estado.config);
 }
+
+/* ---- formulário de configuração ---- */
+
+function preencherFormulario({ regiao, negocio, fontes, coleta }) {
+  $('#cfgUf').value = (regiao.uf || '').toUpperCase();
+  $('#cfgCidade').value = regiao.cidade || '';
+  $('#cfgRegiao').value = regiao.slug || '';
+  $('#cfgDesconto').value = Math.round(negocio.descontoVendaRapida * 100);
+  $('#cfgCusto').value = negocio.custoFixo;
+  $('#cfgTaxa').value = Math.round(negocio.taxaPlataforma * 100);
+  $('#cfgLucro').value = negocio.lucroMinimo;
+  $('#cfgRoi').value = Math.round(negocio.roiMinimo * 100);
+  $('#cfgPaginas').value = coleta.maxPaginas;
+  $('#cfgOlx').checked = !!fontes.find((f) => f.id === 'olx')?.ativa;
+  $('#cfgEnjoei').checked = !!fontes.find((f) => f.id === 'enjoei')?.ativa;
+  $('#cfgFacebook').checked = !!fontes.find((f) => f.id === 'facebook')?.ativa;
+}
+
+const numeroDoCampo = (seletor, divisor = 1) => {
+  const v = Number($(seletor).value);
+  return Number.isFinite(v) ? v / divisor : undefined;
+};
+
+$('#btnSalvarConfig').onclick = async () => {
+  const botao = $('#btnSalvarConfig');
+  botao.disabled = true;
+  $('#statusConfig').textContent = '';
+
+  try {
+    await api('/api/config', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        regiao: {
+          uf: $('#cfgUf').value.trim().toLowerCase(),
+          cidade: $('#cfgCidade').value.trim(),
+          slug: $('#cfgRegiao').value.trim().toLowerCase(),
+        },
+        negocio: {
+          descontoVendaRapida: numeroDoCampo('#cfgDesconto', 100),
+          custoFixo: numeroDoCampo('#cfgCusto'),
+          taxaPlataforma: numeroDoCampo('#cfgTaxa', 100),
+          lucroMinimo: numeroDoCampo('#cfgLucro'),
+          roiMinimo: numeroDoCampo('#cfgRoi', 100),
+        },
+        fontes: {
+          olx: $('#cfgOlx').checked,
+          enjoei: $('#cfgEnjoei').checked,
+          facebook: $('#cfgFacebook').checked,
+        },
+        coleta: { maxPaginas: numeroDoCampo('#cfgPaginas') },
+      }),
+    });
+
+    await carregarConfig();
+    $('#statusConfig').textContent = 'Salvo. Já vale para as próximas buscas.';
+    setTimeout(() => { $('#statusConfig').textContent = ''; }, 4000);
+  } catch (erro) {
+    $('#statusConfig').style.color = 'var(--vermelho)';
+    $('#statusConfig').textContent = erro.message;
+  } finally {
+    botao.disabled = false;
+  }
+};
 
 const cartao = (rotulo, valor, nota, classe = '') =>
   `<div class="cartao ${classe}"><div class="rotulo">${escapar(rotulo)}</div>

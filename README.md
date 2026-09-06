@@ -21,55 +21,56 @@ revender um pouco abaixo da média e girar rápido.
 
 ---
 
-## Instalação
+## Como abrir o app
 
-Você precisa do [Node.js 20 ou superior](https://nodejs.org).
+O app roda **no seu computador**, não num site. É proposital: a OLX bloqueia acesso vindo de
+servidor, então a busca precisa sair da sua internet.
+
+**1. Instale o [Node.js](https://nodejs.org)** (botão LTS, instalação normal, avançar até o fim).
+
+**2. Baixe o projeto.** No GitHub: botão verde **Code → Download ZIP**, e descompacte.
+Ou, se tiver git:
 
 ```bash
-npm install          # instala as dependências
-npm run navegador    # baixa o Chromium (a OLX bloqueia acesso sem navegador real)
-cp .env.example .env # cria sua configuração
+git clone https://github.com/jpedro01rs/pagina-de-vendas.git
+cd pagina-de-vendas
+git checkout claude/reselling-price-comparison-app-1gt8od
 ```
 
-Abra o `.env` e ajuste **a sua região** — é o que faz o app achar oportunidades perto de você:
+**3. Abra o terminal na pasta do projeto e rode:**
 
-```env
-UF=sp
-REGIAO=sao-paulo-e-regiao
-CIDADE=Sao Paulo
+```bash
+npm run comecar
 ```
 
-> Para descobrir o valor de `REGIAO`: entre na OLX, filtre pela sua região e olhe a URL.
-> Em `olx.com.br/estado-sp/sao-paulo-e-regiao`, a região é `sao-paulo-e-regiao`.
-> Se deixar vazio, a busca cobre o estado inteiro.
+Esse comando faz tudo sozinho: instala as dependências, baixa o navegador, cria a configuração,
+sobe o servidor e abre a página. Da segunda vez em diante, só `npm start`.
+
+> **Como abrir o terminal na pasta:**
+> **Windows** — abra a pasta no Explorer, clique na barra de endereço, digite `cmd` e Enter.
+> **Mac** — clique com o botão direito na pasta e escolha *Novo Terminal na Pasta*.
 
 ---
 
-## Primeiro uso
+## Primeiro uso, dentro do app
 
-**1. Teste se as fontes estão respondendo:**
+1. Aba **Configuração** → preencha **estado e cidade** e clique em *Salvar configuração*.
+   É isso que faz o app achar oportunidades perto de você.
+2. Aba **Tabela de preços** → clique em **Atualizar tabela**.
+   Comece por uma categoria só (filtro *Videogames*, depois *Atualizar só esta categoria*) —
+   é bem mais rápido que o catálogo inteiro.
+3. Aba **Oportunidades** → o que comprar agora, com lucro e ROI calculados.
+
+Quer consultar uma coisa só, sem esperar o catálogo? Aba **Buscar item**, digite e busque.
+
+Se alguma fonte não trouxer nada, rode no terminal:
 
 ```bash
 npm run doctor
 ```
 
-Esse comando faz uma busca real e mostra, fonte por fonte, quantos anúncios voltaram, quais foram
-descartados e por quê. **Rode isso antes de qualquer coisa** — é ele que diz se algo está bloqueado.
-
-**2. Monte a tabela de precificação:**
-
-```bash
-npm run atualizar               # catálogo inteiro (demora, veja abaixo)
-npm run atualizar -- Celulares  # só uma categoria, bem mais rápido
-```
-
-**3. Abra a interface:**
-
-```bash
-npm start
-```
-
-Acesse **http://localhost:3000**.
+Ele faz uma busca real e mostra, fonte por fonte, quantos anúncios voltaram, quais foram
+descartados e por quê.
 
 ---
 
@@ -119,7 +120,13 @@ ferramenta mostra, mas marca como **risco alto**.
 
 ---
 
-## Configuração (`.env`)
+## Configuração
+
+O jeito normal é pela **aba Configuração** do app — vale na hora, sem reiniciar. O que você salvar
+ali fica em `data/config.json` e tem prioridade sobre o `.env`.
+
+O `.env` continua servindo para o que não muda no dia a dia (porta, tempo de espera entre
+requisições, cache):
 
 | Variável | O que faz | Padrão |
 |---|---|---|
@@ -134,7 +141,7 @@ ferramenta mostra, mas marca como **risco alto**.
 | `CACHE_MIN` | Por quantos minutos um resultado é reaproveitado. | `180` |
 | `FONTE_OLX` / `FONTE_ENJOEI` / `FONTE_FACEBOOK` | Liga e desliga cada fonte. | `true`/`true`/`false` |
 
-Depois de editar o `.env`, reinicie com `npm start`.
+Ajustes feitos pela tela valem na hora. Se editar o `.env` na mão, reinicie com `npm start`.
 
 ---
 

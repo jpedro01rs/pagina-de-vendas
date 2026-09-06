@@ -25,6 +25,21 @@ carregarEnv(path.join(ROOT, '.env'));
 const num = (v, padrao) => { const n = Number(v); return Number.isFinite(n) ? n : padrao; };
 const bool = (v, padrao) => (v === undefined || v === '' ? padrao : ['1', 'true', 'yes', 'sim', 'on'].includes(String(v).toLowerCase()));
 
+/**
+ * Ajustes salvos pela propria interface (aba Configuracao).
+ * Ficam em data/config.json e tem prioridade sobre o .env, para que voce
+ * nao precise editar arquivo nenhum na mao para comecar a usar.
+ */
+const ARQ_AJUSTES = path.join(DATA_DIR, 'config.json');
+
+function lerAjustesSalvos() {
+  try {
+    return JSON.parse(fs.readFileSync(ARQ_AJUSTES, 'utf8'));
+  } catch {
+    return {};
+  }
+}
+
 export const config = {
   porta: num(process.env.PORT, 3000),
   regiao: {
@@ -60,5 +75,57 @@ export const config = {
     minAmostra: num(process.env.MIN_AMOSTRA, 5),
   },
 };
+
+/** Campos que a interface pode alterar. Nada fora desta lista e aceito. */
+const CAMPOS_EDITAVEIS = {
+  regiao: ['uf', 'slug', 'cidade'],
+  negocio: ['descontoVendaRapida', 'custoFixo', 'taxaPlataforma', 'lucroMinimo', 'roiMinimo'],
+  fontes: ['olx', 'enjoei', 'facebook'],
+  coleta: ['maxPaginas', 'delayMs'],
+};
+
+function aplicar(ajustes) {
+  for (const [grupo, permitidos] of Object.entries(CAMPOS_EDITAVEIS)) {
+    const entrada = ajustes?.[grupo];
+    if (!entrada || typeof entrada !== 'object') continue;
+    for (const chave of permitidos) {
+      if (entrada[chave] === undefined) continue;
+      config[grupo][chave] = entrada[chave];
+    }
+  }
+  if (Number.isFinite(Number(ajustes?.cacheMin))) config.cacheMin = Number(ajustes.cacheMin);
+}
+
+// Aplica o que ja estava salvo, por cima dos valores do .env.
+aplicar(lerAjustesSalvos());
+
+/**
+ * Grava os ajustes e atualiza a configuracao em memoria.
+ * Os modulos leem config.* na hora do uso, entao a mudanca vale na hora,
+ * sem reiniciar o servidor (a unica excecao e a porta).
+ */
+export function salvarAjustes(parcial) {
+  const atuais = lerAjustesSalvos();
+  const novos = { ...atuais };
+
+  for (const [grupo, permitidos] of Object.entries(CAMPOS_EDITAVEIS)) {
+    const entrada = parcial?.[grupo];
+    if (!entrada || typeof entrada !== 'object') continue;
+    novos[grupo] = { ...(atuais[grupo] || {}) };
+    for (const chave of permitidos) {
+      if (entrada[chave] === undefined) continue;
+      novos[grupo][chave] = entrada[chave];
+    }
+  }
+  if (parcial?.cacheMin !== undefined) novos.cacheMin = Number(parcial.cacheMin);
+
+  fs.mkdirSync(DATA_DIR, { recursive: true });
+  const temporario = `${ARQ_AJUSTES}.tmp`;
+  fs.writeFileSync(temporario, JSON.stringify(novos, null, 2));
+  fs.renameSync(temporario, ARQ_AJUSTES);
+
+  aplicar(novos);
+  return config;
+}
 
 export default config;

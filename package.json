@@ -4,8 +4,11 @@
   "private": true,
   "type": "module",
   "description": "Comparador de precos e radar de oportunidades para revenda de usados (OLX, Enjoei, Facebook Marketplace)",
-  "engines": { "node": ">=20.11" },
+  "engines": {
+    "node": ">=20.11"
+  },
   "scripts": {
+    "comecar": "node bin/comecar.js",
     "start": "node src/server.js",
     "dev": "node --watch src/server.js",
     "doctor": "node bin/doctor.js",
