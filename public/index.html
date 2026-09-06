@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Revenda Radar</title>
+<link rel="stylesheet" href="/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+</head>
+<body>
+
+<header>
+  <div class="topo">
+    <div class="marca"><span class="ponto"></span> Revenda Radar <small id="rotuloRegiao"></small></div>
+    <nav>
+      <button data-aba="tabela" class="ativo">Tabela de preços</button>
+      <button data-aba="buscar">Buscar item</button>
+      <button data-aba="oportunidades">Oportunidades</button>
+      <button data-aba="config">Configuração</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= TABELA ================= -->
+  <section class="aba ativa" id="aba-tabela">
+    <div class="painel" id="resumoTabela"></div>
+
+    <div class="ferramentas">
+      <input type="text" id="filtroTabela" placeholder="Filtrar produto..." style="min-width:220px">
+      <select id="filtroCategoria"><option value="">Todas as categorias</option></select>
+      <select id="filtroDados">
+        <option value="todos">Todos os produtos</option>
+        <option value="comDados" selected>Só com preço coletado</option>
+      </select>
+      <button class="botao" id="btnAtualizar">Atualizar tabela</button>
+      <button class="botao secundario" id="btnAtualizarCategoria">Atualizar só esta categoria</button>
+      <span id="statusAtualizacao" style="color:var(--texto-2);font-size:13px"></span>
+    </div>
+    <div id="barraProgresso"></div>
+
+    <div class="moldura-tabela">
+      <table id="tabelaPrecos">
+        <thead><tr>
+          <th data-ordenar="nome">Produto <span class="seta"></span></th>
+          <th data-ordenar="n">Anúncios <span class="seta"></span></th>
+          <th data-ordenar="min">Mínimo <span class="seta"></span></th>
+          <th data-ordenar="p25">P25 <span class="seta"></span></th>
+          <th data-ordenar="mediana">Preço de mercado <span class="seta"></span></th>
+          <th data-ordenar="p75">P75 <span class="seta"></span></th>
+          <th data-ordenar="tetoDeCompra">Pague até <span class="seta"></span></th>
+          <th data-ordenar="precoVendaRapida">Venda por <span class="seta"></span></th>
+          <th data-ordenar="oportunidades">Oport. <span class="seta"></span></th>
+          <th data-ordenar="confianca">Confiança <span class="seta"></span></th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p style="color:var(--texto-3);font-size:12.5px;margin-top:12px">
+      <b>Preço de mercado</b> é a mediana dos anúncios (resistente a preço absurdo), não a média simples.
+      <b>Pague até</b> é o teto de compra para ainda bater seu ROI mínimo. Clique numa linha para ver o detalhe.
+    </p>
+  </section>
+
+  <!-- ================= BUSCAR ================= -->
+  <section class="aba" id="aba-buscar">
+    <div class="ferramentas">
+      <input type="text" id="campoBusca" placeholder="Ex.: iPhone 14 Pro, bicicleta aro 29, Air Fryer..." style="flex:1;min-width:260px">
+      <input type="text" id="campoUf" placeholder="UF" maxlength="2" style="width:80px">
+      <input type="text" id="campoCidade" placeholder="Cidade" style="width:170px">
+      <button class="botao" id="btnBuscar">Buscar agora</button>
+    </div>
+    <div class="aviso-caixa" style="margin-bottom:18px">
+      A busca vai <b>ao vivo</b> nos marketplaces ligados. Leva de 10 a 60 segundos, porque a coleta é
+      feita devagar de propósito para não ser bloqueada.
+    </div>
+    <div id="resultadoBusca"></div>
+  </section>
+
+  <!-- ================= OPORTUNIDADES ================= -->
+  <section class="aba" id="aba-oportunidades">
+    <div class="ferramentas">
+      <select id="filtroRisco">
+        <option value="baixo">Só risco baixo</option>
+        <option value="medio" selected>Risco baixo e médio</option>
+        <option value="alto">Todos, inclusive suspeitos</option>
+      </select>
+      <select id="filtroCategoriaOp"><option value="">Todas as categorias</option></select>
+      <input type="number" id="filtroLucro" placeholder="Lucro mínimo R$" style="width:170px">
+      <button class="botao secundario" id="btnRecarregarOp">Recarregar</button>
+    </div>
+    <div id="listaOportunidades"></div>
+  </section>
+
+  <!-- ================= CONFIG ================= -->
+  <section class="aba" id="aba-config">
+    <div class="painel" id="painelConfig"></div>
+    <h2>Como está configurado</h2>
+    <div class="moldura-tabela" style="padding:6px 18px"><div id="detalheConfig"></div></div>
+    <h2>Fontes de dados</h2>
+    <div class="lista-fontes" id="listaFontes"></div>
+    <div class="aviso-caixa alerta" style="margin-top:18px">
+      Para mudar região, custos, ROI mínimo ou ligar o Facebook Marketplace, edite o arquivo
+      <code>.env</code> na pasta do projeto e reinicie com <code>npm start</code>.
+      Rode <code>npm run doctor</code> para testar se cada fonte está respondendo.
+    </div>
+  </section>
+
+</main>
+
+<div class="cortina" id="cortina"></div>
+<aside class="gaveta" id="gaveta">
+  <div class="gaveta-topo">
+    <div><div id="gavetaTitulo" style="font-size:17px;font-weight:700"></div><div id="gavetaSub" style="font-size:12.5px;color:var(--texto-3)"></div></div>
+    <button class="fechar" id="btnFechar">&times;</button>
+  </div>
+  <div class="gaveta-corpo" id="gavetaCorpo"></div>
+</aside>
+
+<script src="/app.js"></script>
+</body>
+</html>
