@@ -248,6 +248,45 @@ function desenharTabela() {
   corpo.querySelectorAll('tr[data-id]').forEach((tr) => {
     tr.onclick = () => abrirProduto(tr.dataset.id);
   });
+
+  desenharCartoesDePreco(linhas);
+}
+
+/**
+ * No celular a tabela de 10 colunas nao serve. Renderizamos os mesmos dados
+ * como cartoes, destacando os tres numeros que decidem a compra.
+ * O CSS escolhe qual dos dois aparece.
+ */
+function desenharCartoesDePreco(linhas) {
+  const alvo = $('#cartoesPrecos');
+  if (!linhas.length) { alvo.innerHTML = ''; return; }
+
+  alvo.innerHTML = linhas.map((l) => {
+    if (l.semDados) {
+      return `<div class="preco-cartao vazio-cartao" data-id="${l.produtoId}">
+        <div class="pc-nome">${escapar(l.nome)}<span class="sub">${escapar(l.categoria)} · sem dados</span></div>
+      </div>`;
+    }
+    const conf = l.confianca?.nivel;
+    const corConf = conf === 'alta' ? 'verde' : conf === 'media' ? 'ambar' : 'vermelha';
+    return `<div class="preco-cartao" data-id="${l.produtoId}">
+      <div class="pc-topo">
+        <div class="pc-nome">${escapar(l.nome)}
+          <span class="sub">${escapar(l.categoria)} · ${l.n} anúncios · ${tempoRelativo(l.atualizadoEm)}</span>
+        </div>
+        ${l.oportunidades ? `<span class="etiqueta verde">${l.oportunidades} oport.</span>` : `<span class="etiqueta ${corConf}">${escapar(l.confianca.rotulo)}</span>`}
+      </div>
+      <div class="pc-numeros">
+        <div><span class="r">Mercado</span><b>${dinheiro(l.mediana)}</b></div>
+        <div><span class="r">Pague até</span><b class="verde">${dinheiro(l.tetoDeCompra)}</b></div>
+        <div><span class="r">Venda por</span><b class="azul">${dinheiro(l.precoVendaRapida)}</b></div>
+      </div>
+    </div>`;
+  }).join('');
+
+  alvo.querySelectorAll('[data-id]').forEach((el) => {
+    el.onclick = () => abrirProduto(el.dataset.id);
+  });
 }
 
 $$('#tabelaPrecos thead th').forEach((th) => {
@@ -563,9 +602,34 @@ function desenharOportunidades() {
 $('#filtroRisco').addEventListener('change', carregarOportunidades);
 $('#btnRecarregarOp').onclick = carregarOportunidades;
 
+/* ===================== app instalado / offline ===================== */
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => { /* sem HTTPS ou sem suporte */ });
+  });
+}
+
+// Avisa quando os dados na tela vieram do cache, sem rede.
+window.addEventListener('offline', () => mostrarAvisoDeRede(true));
+window.addEventListener('online', () => mostrarAvisoDeRede(false));
+
+function mostrarAvisoDeRede(offline) {
+  let barra = $('#avisoRede');
+  if (!offline) { barra?.remove(); return; }
+  if (barra) return;
+  barra = document.createElement('div');
+  barra.id = 'avisoRede';
+  barra.className = 'aviso-rede';
+  barra.textContent = 'Sem conexão — mostrando os últimos preços salvos';
+  document.body.appendChild(barra);
+}
+
 /* ===================== início ===================== */
 
 (async function iniciar() {
+  // O evento 'offline' so dispara na transicao: no carregamento e preciso perguntar.
+  mostrarAvisoDeRede(!navigator.onLine);
   try {
     await carregarConfig();
     await carregarTabela();

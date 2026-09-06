@@ -49,6 +49,7 @@ nav button {
 }
 nav button:hover { color: var(--texto); background: var(--fundo-2); }
 nav button.ativo { background: var(--fundo-3); color: var(--texto); border-color: var(--borda-forte); }
+nav button .curto { display: none; }
 
 main { max-width: 1400px; margin: 0 auto; padding: 22px 20px 80px; }
 .aba { display: none; }
@@ -210,6 +211,28 @@ h3 { font-size: 13px; text-transform: uppercase; letter-spacing: .6px; color: va
 .linha-config b { text-align: right; }
 code { background: var(--fundo-3); padding: 2px 6px; border-radius: 4px; font-size: 12.5px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
 
+/* ---------- Lista de precos em cartao (celular) ---------- */
+.lista-precos { display: none; flex-direction: column; gap: 8px; }
+.preco-cartao {
+  background: var(--fundo-2); border: 1px solid var(--borda); border-radius: var(--raio);
+  padding: 13px 14px; cursor: pointer; -webkit-tap-highlight-color: transparent;
+}
+.preco-cartao:active { background: var(--fundo-3); }
+.preco-cartao.vazio-cartao { opacity: .55; }
+.pc-topo { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; margin-bottom: 11px; }
+.pc-nome { font-weight: 600; font-size: 14.5px; line-height: 1.3; }
+.pc-numeros { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.pc-numeros div { background: var(--fundo); border-radius: 8px; padding: 8px 9px; }
+.pc-numeros .r { display: block; font-size: 10px; text-transform: uppercase; letter-spacing: .4px; color: var(--texto-3); }
+.pc-numeros b { font-size: 15px; display: block; margin-top: 2px; }
+
+/* ---------- Aviso de rede ---------- */
+.aviso-rede {
+  position: fixed; left: 0; right: 0; z-index: 200; text-align: center;
+  background: var(--ambar); color: #1a1200; font-size: 12.5px; font-weight: 600;
+  padding: 7px 12px; bottom: 0;
+}
+
 /* ---------- Formulario de configuracao ---------- */
 .formulario { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
 .formulario label { display: flex; flex-direction: column; gap: 6px; font-size: 12.5px; color: var(--texto-2); font-weight: 500; }
@@ -225,10 +248,33 @@ code { background: var(--fundo-3); padding: 2px 6px; border-radius: 4px; font-si
 .formulario input[type="checkbox"] { width: 17px; height: 17px; accent-color: var(--azul); cursor: pointer; }
 
 @media (max-width: 720px) {
-  .topo { padding: 12px 14px; }
-  main { padding: 16px 14px 60px; }
-  nav { width: 100%; margin-left: 0; }
-  nav button { flex: 1; padding: 8px 6px; font-size: 12.5px; }
+  /* backdrop-filter cria bloco de contencao e prenderia a nav fixa dentro do
+     header. Sem ele, a nav ancora na janela e fica colada no rodape. */
+  header { backdrop-filter: none; background: var(--fundo); }
+
+  .topo { padding: 11px 14px; }
+  main { padding: 14px 14px calc(84px + env(safe-area-inset-bottom)); }
+
+  /* Navegacao vai para baixo: e onde o polegar alcanca. */
+  nav {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+    margin: 0; width: 100%; gap: 0;
+    background: rgba(11, 15, 20, .97); backdrop-filter: blur(10px);
+    border-top: 1px solid var(--borda);
+    padding: 6px 4px calc(6px + env(safe-area-inset-bottom));
+  }
+  nav button {
+    flex: 1; padding: 9px 4px; font-size: 11.5px; border-radius: 8px;
+    line-height: 1.25; min-height: 46px;
+  }
+  nav button.ativo { background: var(--fundo-3); }
+  nav button .longo { display: none; }
+  nav button .curto { display: inline; }
+  .aviso-rede { bottom: calc(62px + env(safe-area-inset-bottom)); }
+
+  /* Tabela vira lista de cartoes. */
+  #molduraTabela { display: none; }
+  .lista-precos { display: flex; }
   .op-numeros { grid-template-columns: repeat(3, 1fr); gap: 6px; }
   .op-numeros div { padding: 7px 8px; }
   .op-numeros .v { font-size: 13.5px; }

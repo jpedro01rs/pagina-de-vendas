@@ -1,4 +1,5 @@
 import express from 'express';
+import qrcode from 'qrcode-terminal';
 import path from 'node:path';
 import config, { ROOT, salvarAjustes } from './config.js';
 import { CATALOGO, categorias, buscarProduto } from './catalog/index.js';
@@ -7,9 +8,36 @@ import { analisarProduto, buscarTermo, tabelaDePrecos, melhoresOportunidades } f
 import { lerSnapshot, lerHistorico } from './store.js';
 import { atualizarCatalogo, estadoAtual, emAndamento } from './jobs/atualizar.js';
 import { playwrightDisponivel } from './lib/navegador.js';
+import { enderecosDaRede, enderecoLocal } from './lib/rede.js';
+import { estaAutenticado, entrar, senhaConfere, PAGINA_LOGIN } from './lib/acesso.js';
 
 const app = express();
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
+// --- porta de entrada (so age quando SENHA esta definida no .env) ---
+const LIVRES = new Set(['/entrar', '/styles.css', '/manifest.json', '/api/saude']);
+
+app.get('/entrar', (req, res) => {
+  if (estaAutenticado(req)) return res.redirect('/');
+  res.type('html').send(PAGINA_LOGIN());
+});
+
+app.post('/entrar', (req, res) => {
+  if (!senhaConfere(req.body?.senha)) {
+    return res.status(401).type('html').send(PAGINA_LOGIN('Senha incorreta.'));
+  }
+  entrar(res);
+  res.redirect('/');
+});
+
+app.use((req, res, next) => {
+  if (estaAutenticado(req)) return next();
+  if (LIVRES.has(req.path) || req.path.startsWith('/icones/')) return next();
+  if (req.path.startsWith('/api/')) return res.status(401).json({ erro: 'Sessao expirada. Recarregue a pagina.' });
+  return res.redirect('/entrar');
+});
+
 app.use(express.static(path.join(ROOT, 'public')));
 
 /** Envolve rota async devolvendo erro em JSON em vez de derrubar o processo. */
@@ -107,11 +135,35 @@ app.get('/api/atualizar/status', rota((req, res) => res.json(estadoAtual())));
 
 app.get('/api/saude', rota((req, res) => res.json({ ok: true, versao: '1.0.0' })));
 
-const servidor = app.listen(config.porta, () => {
-  console.log(`\n  Revenda Radar rodando em http://localhost:${config.porta}`);
-  console.log(`  Regiao: ${config.regiao.cidade || 'nao definida'} (${(config.regiao.uf || '--').toUpperCase()})`);
-  console.log(`  Fontes ativas: ${listarFontes().filter((f) => f.ativa).map((f) => f.nome).join(', ') || 'nenhuma'}`);
-  console.log(`  Catalogo: ${CATALOGO.length} produtos\n`);
+// 0.0.0.0 de proposito: e isso que permite abrir do celular na mesma rede.
+const servidor = app.listen(config.porta, '0.0.0.0', () => {
+  const local = enderecoLocal(config.porta);
+  const traco = '='.repeat(52);
+
+  console.log(`\n${traco}`);
+  console.log('  REVENDA RADAR');
+  console.log(traco);
+  console.log(`\n  No computador:  http://localhost:${config.porta}`);
+
+  if (local) {
+    console.log(`  No celular:     ${local}`);
+    console.log('\n  Aponte a camera do celular para o codigo abaixo');
+    console.log('  (o celular precisa estar no mesmo Wi-Fi):\n');
+    qrcode.generate(local, { small: true });
+    const outros = enderecosDaRede().slice(1);
+    if (outros.length) {
+      console.log(`  Outros enderecos desta maquina: ${outros.map((e) => `http://${e.ip}:${config.porta}`).join('  ')}`);
+    }
+  } else {
+    console.log('\n  Nao achei o endereco da maquina na rede local.');
+    console.log('  Conecte o computador ao Wi-Fi para abrir pelo celular.');
+  }
+
+  console.log(`\n  Regiao ......... ${config.regiao.cidade || 'nao definida'} (${(config.regiao.uf || '--').toUpperCase()})`);
+  console.log(`  Fontes ativas .. ${listarFontes().filter((f) => f.ativa).map((f) => f.nome).join(', ') || 'nenhuma'}`);
+  console.log(`  Catalogo ....... ${CATALOGO.length} produtos`);
+  if (config.senha) console.log('  Senha .......... ativada');
+  console.log(`\n  Para fechar: Ctrl+C\n${traco}\n`);
 });
 
 process.on('SIGINT', () => { servidor.close(() => process.exit(0)); });

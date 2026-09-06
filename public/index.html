@@ -4,8 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Revenda Radar</title>
+<meta name="description" content="Precos de mercado e oportunidades de revenda">
 <link rel="stylesheet" href="/styles.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+
+<!-- instalavel na tela inicial do celular -->
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#0b0f14">
+<link rel="icon" href="/icones/icone-192.png">
+<link rel="apple-touch-icon" href="/icones/icone-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Revenda">
+<meta name="mobile-web-app-capable" content="yes">
 </head>
 <body>
 
@@ -13,10 +23,10 @@
   <div class="topo">
     <div class="marca"><span class="ponto"></span> Revenda Radar <small id="rotuloRegiao"></small></div>
     <nav>
-      <button data-aba="tabela" class="ativo">Tabela de preços</button>
-      <button data-aba="buscar">Buscar item</button>
-      <button data-aba="oportunidades">Oportunidades</button>
-      <button data-aba="config">Configuração</button>
+      <button data-aba="tabela" class="ativo"><span class="longo">Tabela de preços</span><span class="curto">Preços</span></button>
+      <button data-aba="buscar"><span class="longo">Buscar item</span><span class="curto">Buscar</span></button>
+      <button data-aba="oportunidades"><span class="longo">Oportunidades</span><span class="curto">Achados</span></button>
+      <button data-aba="config"><span class="longo">Configuração</span><span class="curto">Ajustes</span></button>
     </nav>
   </div>
 </header>
@@ -40,7 +50,9 @@
     </div>
     <div id="barraProgresso"></div>
 
-    <div class="moldura-tabela">
+    <div id="cartoesPrecos" class="lista-precos"></div>
+
+    <div class="moldura-tabela" id="molduraTabela">
       <table id="tabelaPrecos">
         <thead><tr>
           <th data-ordenar="nome">Produto <span class="seta"></span></th>

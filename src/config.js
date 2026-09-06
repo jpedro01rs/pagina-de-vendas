@@ -42,6 +42,8 @@ function lerAjustesSalvos() {
 
 export const config = {
   porta: num(process.env.PORT, 3000),
+  // Protege o acesso quando o app fica exposto fora da sua rede.
+  senha: (process.env.SENHA || '').trim(),
   regiao: {
     uf: (process.env.UF || '').toLowerCase().trim(),
     slug: (process.env.REGIAO || '').toLowerCase().trim(),

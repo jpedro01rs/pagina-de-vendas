@@ -52,6 +52,67 @@ sobe o servidor e abre a página. Da segunda vez em diante, só `npm start`.
 
 ---
 
+## Usar no celular
+
+O app vira um ícone na tela inicial do celular e abre em tela cheia, como
+qualquer aplicativo. Mas vale entender a divisão de trabalho:
+
+> **O computador busca, o celular mostra.**
+> A OLX bloqueia acesso vindo de servidor e exige um navegador de verdade por
+> trás — isso o telefone não faz. Então o computador fica ligado fazendo a
+> coleta, e o celular é a tela. É o que permite consultar preço na hora de
+> fechar negócio.
+
+**1. No computador**, rode:
+
+```bash
+npm run celular
+```
+
+Ele mostra um **QR code** e o endereço, algo como `http://192.168.0.15:3000`.
+
+**2. No celular**, aponte a câmera para o QR (precisa estar no **mesmo Wi-Fi**).
+
+**3. Vire um app de verdade** — adicione à tela inicial:
+
+- **iPhone:** Safari → botão Compartilhar → *Adicionar à Tela de Início*
+- **Android:** Chrome → menu ⋮ → *Adicionar à tela inicial*
+
+Pronto: ícone próprio, abre em tela cheia, navegação embaixo ao alcance do
+polegar, e a tabela vira cartões com os três números que decidem a compra —
+**mercado**, **pague até** e **venda por**.
+
+### Se não abrir no celular
+
+| Sintoma | Causa provável |
+|---|---|
+| Página não carrega | Celular em outro Wi-Fi, ou nos dados móveis. Precisa ser a mesma rede. |
+| Some quando fecho o notebook | Normal: o servidor é o computador. Ele precisa estar ligado. |
+| Endereço mudou sozinho | O roteador trocou o IP. Rode `npm run celular` de novo e leia o novo QR. |
+| Windows não deixa conectar | O Firewall pede permissão na primeira vez — escolha *Permitir acesso*. |
+
+### Usar longe de casa (opcional)
+
+Na rua, o celular não alcança a rede do seu computador. Para isso é preciso um
+**túnel**, que dá um endereço público temporário:
+
+```bash
+# 1) coloque uma senha no .env primeiro:  SENHA=algumacoisaboa
+# 2) deixe o app rodando com  npm start
+# 3) em outro terminal:
+npx localtunnel --port 3000
+```
+
+Ele devolve um endereço `https://...` que funciona de qualquer lugar, inclusive
+no 4G. **Defina a senha antes** — sem ela, quem tiver o endereço usa a sua coleta.
+
+Como o túnel serve por HTTPS, é aí que o modo offline funciona por completo: as
+últimas tabelas carregadas continuam visíveis mesmo sem sinal. No Wi-Fi de casa
+(endereço `http://`), o navegador não libera esse cache — o app funciona, só não
+guarda os dados para consulta sem internet.
+
+---
+
 ## Primeiro uso, dentro do app
 
 1. Aba **Configuração** → preencha **estado e cidade** e clique em *Salvar configuração*.
@@ -140,6 +201,7 @@ requisições, cache):
 | `DELAY_MS` | Intervalo entre requisições. **Não abaixe muito** ou você é bloqueado. | `1500` |
 | `CACHE_MIN` | Por quantos minutos um resultado é reaproveitado. | `180` |
 | `FONTE_OLX` / `FONTE_ENJOEI` / `FONTE_FACEBOOK` | Liga e desliga cada fonte. | `true`/`true`/`false` |
+| `SENHA` | Protege o acesso. Vazio = sem senha. Defina antes de usar túnel. | vazio |
 
 Ajustes feitos pela tela valem na hora. Se editar o `.env` na mão, reinicie com `npm start`.
 
@@ -227,7 +289,7 @@ src/
   services/    orquestração da análise
   jobs/        atualização do catálogo
   server.js    API + interface
-public/        interface web
-bin/           doctor · buscar · atualizar · selftest
+public/        interface web (PWA: manifest, service worker, ícones)
+bin/           comecar · celular · doctor · buscar · atualizar · selftest
 data/          snapshots e histórico (criado no primeiro uso)
 ```
