@@ -12,7 +12,9 @@ async function coletarDaFonte(fonte, produto, opcoes) {
   const diagnosticos = [];
 
   for (const termo of produto.consultas) {
-    const resultado = await fonte.coletar(termo, opcoes);
+    // O produto vai junto: a OLX usa isso para montar o caminho de categoria
+    // em vez de buscar por texto.
+    const resultado = await fonte.coletar(termo, { ...opcoes, produto });
     anuncios.push(...resultado.anuncios);
     diagnosticos.push(resultado.diagnostico);
   }
@@ -45,6 +47,7 @@ export async function analisar(produto, opcoes = {}) {
         encontrados: resultado.value.anuncios.length,
         via: resultado.value.diagnostico?.via ?? null,
         metodo: resultado.value.diagnostico?.metodo ?? null,
+        estrategia: resultado.value.diagnostico?.estrategia ?? null,
       });
     } else {
       statusFontes.push({
@@ -54,7 +57,7 @@ export async function analisar(produto, opcoes = {}) {
     }
   });
 
-  const { aprovados, rejeitados } = filtrar(brutos, produto);
+  const { aprovados, rejeitados } = filtrar(brutos, produto, opcoes);
   const estatisticas = calcular(aprovados);
   const oportunidades = detectar(aprovados, estatisticas, opcoes);
 
@@ -69,6 +72,8 @@ export async function analisar(produto, opcoes = {}) {
     fontes: statusFontes,
     coletados: brutos.length,
     analisados: aprovados.length,
+    somentePessoaFisica: opcoes.somentePessoaFisica ?? config.somentePessoaFisica,
+    estrategiaOlx: statusFontes.find((f) => f.id === 'olx')?.estrategia ?? null,
     descartados: rejeitados.length,
     motivosDescarte: resumirMotivos(rejeitados),
     estatisticas,

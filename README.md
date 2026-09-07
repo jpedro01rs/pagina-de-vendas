@@ -158,8 +158,25 @@ npm run buscar -- "iphone 13 pro"
 uma média; na mediana ele não muda quase nada. Antes disso, preços fora da curva são removidos pelo
 critério de Tukey (cercas do IQR).
 
-**Filtro de relevância.** Buscar "iPhone 12" na OLX traz capinha, película, tela, aparelho com
-defeito e gente que quer *comprar*. Nada disso pode entrar na conta. O filtro derruba:
+**A coleta usa a categoria, não a busca por texto.** Procurar "iPhone 12" na OLX devolve capinha,
+tela e iPhone 12 Pro no meio. A própria OLX já separa isso em caminhos de categoria:
+
+```
+/celulares/apple/iphone-12/estado-sp/sao-paulo-e-regiao
+/games/consoles-de-video-game/playstation-5/estado-rj/rio-de-janeiro-e-regiao
+```
+
+O app usa esses caminhos, então o filtro de modelo passa a ser feito pela OLX, na origem. Se um
+slug mudar, a coleta cai sozinha para busca dentro da categoria e, por último, para busca global —
+em vez de simplesmente voltar vazia.
+
+**Só pessoas físicas.** Loja embute garantia, nota fiscal e parcelamento no preço, o que puxa a
+mediana para cima e faz parecer que existe margem onde não existe. Quem revende usado concorre com
+pessoa física, então é esse o mercado que conta. O app usa a marcação da própria plataforma
+(`professionalAd`) e, quando ela não vem, a linguagem do anúncio — "nossa loja", "distribuidora",
+"garantia de 1 ano". Dá para desligar na aba Configuração, ou com `SOMENTE_PESSOA_FISICA=false`.
+
+**Filtro de relevância.** Ainda assim entra ruído. O filtro derruba:
 
 - acessórios e peças, quando aparecem **antes** do modelo no título
   (`Capa para iPhone 12` sai; `iPhone 12 com capa` fica — o núcleo do anúncio é o que vem primeiro);
@@ -202,6 +219,7 @@ requisições, cache):
 | `CACHE_MIN` | Por quantos minutos um resultado é reaproveitado. | `180` |
 | `FONTE_OLX` / `FONTE_ENJOEI` / `FONTE_FACEBOOK` | Liga e desliga cada fonte. | `true`/`true`/`false` |
 | `SENHA` | Protege o acesso. Vazio = sem senha. Defina antes de usar túnel. | vazio |
+| `SOMENTE_PESSOA_FISICA` | Esconde anúncio de loja. | `true` |
 
 Ajustes feitos pela tela valem na hora. Se editar o `.env` na mão, reinicie com `npm start`.
 
@@ -283,7 +301,7 @@ plataforma.
 ```
 src/
   catalog/     produtos monitorados e regras de identificação
-  sources/     coletores: olx.js, enjoei.js, facebook.js
+  sources/     coletores: olx.js (+ olx-taxonomia.js), enjoei.js, facebook.js
   pipeline/    filtro.js (relevância) · estatistica.js (mediana, IQR) · oportunidades.js (lucro, score)
   lib/         http, navegador, extrator de JSON, texto/preços
   services/    orquestração da análise

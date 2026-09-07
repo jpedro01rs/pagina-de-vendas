@@ -7,7 +7,9 @@
 import { percentil, calcular, removerOutliers, arbitragem } from '../src/pipeline/estatistica.js';
 import { detectar, simularLucro, tetoDeCompra } from '../src/pipeline/oportunidades.js';
 import { filtrar } from '../src/pipeline/filtro.js';
-import { buscarProduto } from '../src/catalog/index.js';
+import { buscarProduto, produtoAvulso } from '../src/catalog/index.js';
+import { montarUrl as olxUrl, planoDeBusca } from '../src/sources/olx.js';
+import { caminhoDeCategoria } from '../src/sources/olx-taxonomia.js';
 import { precoParaNumero } from '../src/lib/texto.js';
 
 let falhas = 0;
@@ -106,6 +108,33 @@ const { aprovados, rejeitados } = filtrar(brutos, p12);
 verificar('sobra apenas 1 anuncio valido', aprovados.length === 1, `aprovados=${aprovados.length}`);
 verificar('duplicata removida', aprovados.filter((a) => a.idExterno === '1').length === 1);
 verificar('rejeitados trazem o motivo', rejeitados.every((r) => !!r.motivo));
+
+console.log('\n== Pessoa fisica x loja ==');
+const brutosVendedor = [
+  { titulo: 'iPhone 12 128GB', preco: 2100, fonte: 'olx', idExterno: 'a', profissional: false },
+  { titulo: 'iPhone 12 128GB', preco: 2600, fonte: 'olx', idExterno: 'b', profissional: true },
+  { titulo: 'iPhone 12 128GB da nossa loja', preco: 2700, fonte: 'olx', idExterno: 'c' },
+  { titulo: 'iPhone 12 128GB', preco: 2650, fonte: 'olx', idExterno: 'd', vendedor: 'Cell Distribuidora' },
+  { titulo: 'iPhone 12 256GB', preco: 2200, fonte: 'olx', idExterno: 'e' },
+];
+const soPessoa = filtrar(brutosVendedor, p12, { somentePessoaFisica: true });
+const comLoja = filtrar(brutosVendedor, p12, { somentePessoaFisica: false });
+verificar('loja marcada pela plataforma sai', soPessoa.aprovados.length === 2, `sobraram ${soPessoa.aprovados.length}`);
+verificar('desligando o filtro, lojas voltam', comLoja.aprovados.length === 5, `sobraram ${comLoja.aprovados.length}`);
+const medPessoa = calcular(soPessoa.aprovados).mediana;
+const medTudo = calcular(comLoja.aprovados).mediana;
+verificar('loja puxa a mediana para cima', medTudo > medPessoa, `pessoa=${medPessoa} tudo=${medTudo}`);
+
+console.log('\n== Caminho de categoria da OLX ==');
+verificar('iPhone 12 usa categoria, nao busca',
+  olxUrl({ caminho: caminhoDeCategoria(p12), uf: 'sp', regiao: 'sao-paulo-e-regiao' })
+    === 'https://www.olx.com.br/celulares/apple/iphone-12/estado-sp/sao-paulo-e-regiao');
+verificar('PlayStation 5 cai em consoles-de-video-game',
+  caminhoDeCategoria(buscarProduto('playstation-5')) === '/games/consoles-de-video-game/playstation-5');
+verificar('busca livre nao tem categoria', caminhoDeCategoria(produtoAvulso('cadeira gamer')) === null);
+const plano = planoDeBusca(p12, 'iphone 12', { uf: 'sp' });
+verificar('cascata comeca na categoria e termina na busca',
+  plano[0].rotulo === 'categoria' && plano[plano.length - 1].rotulo === 'busca', JSON.stringify(plano.map((t) => t.rotulo)));
 
 console.log(`\n${'-'.repeat(50)}`);
 console.log(falhas === 0 ? `TUDO CERTO - ${total} verificacoes passaram` : `${falhas} de ${total} verificacoes FALHARAM`);

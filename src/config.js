@@ -72,6 +72,9 @@ export const config = {
     lucroMinimo: num(process.env.LUCRO_MINIMO, 100),
     roiMinimo: num(process.env.ROI_MINIMO, 0.12),
   },
+  // Anuncio de loja distorce a media para cima e nao e o mercado que voce
+  // disputa: quem revende usado concorre com pessoa fisica.
+  somentePessoaFisica: bool(process.env.SOMENTE_PESSOA_FISICA, true),
   estatistica: {
     iqrK: num(process.env.IQR_K, 1.5),
     minAmostra: num(process.env.MIN_AMOSTRA, 5),
@@ -86,6 +89,8 @@ const CAMPOS_EDITAVEIS = {
   coleta: ['maxPaginas', 'delayMs'],
 };
 
+const CAMPOS_SOLTOS = ['cacheMin', 'somentePessoaFisica'];
+
 function aplicar(ajustes) {
   for (const [grupo, permitidos] of Object.entries(CAMPOS_EDITAVEIS)) {
     const entrada = ajustes?.[grupo];
@@ -96,6 +101,7 @@ function aplicar(ajustes) {
     }
   }
   if (Number.isFinite(Number(ajustes?.cacheMin))) config.cacheMin = Number(ajustes.cacheMin);
+  if (typeof ajustes?.somentePessoaFisica === 'boolean') config.somentePessoaFisica = ajustes.somentePessoaFisica;
 }
 
 // Aplica o que ja estava salvo, por cima dos valores do .env.
@@ -119,7 +125,11 @@ export function salvarAjustes(parcial) {
       novos[grupo][chave] = entrada[chave];
     }
   }
-  if (parcial?.cacheMin !== undefined) novos.cacheMin = Number(parcial.cacheMin);
+  for (const campo of CAMPOS_SOLTOS) {
+    if (parcial?.[campo] !== undefined) {
+      novos[campo] = campo === 'cacheMin' ? Number(parcial[campo]) : parcial[campo];
+    }
+  }
 
   fs.mkdirSync(DATA_DIR, { recursive: true });
   const temporario = `${ARQ_AJUSTES}.tmp`;

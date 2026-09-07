@@ -81,6 +81,7 @@ async function carregarConfig() {
     ['ROI mínimo', porcento(negocio.roiMinimo)],
     ['Páginas coletadas por busca', coleta.maxPaginas],
     ['Validade do cache', `${coleta.cacheMin} minutos`],
+    ['Anúncios considerados', estado.config.somentePessoaFisica !== false ? 'só pessoas físicas' : 'pessoas físicas e lojas'],
   ].map(([r, v]) => `<div class="linha-config"><span>${escapar(r)}</span><b>${escapar(v)}</b></div>`).join('');
 
   $('#listaFontes').innerHTML = fontes.map((f) =>
@@ -91,7 +92,7 @@ async function carregarConfig() {
 
 /* ---- formulário de configuração ---- */
 
-function preencherFormulario({ regiao, negocio, fontes, coleta }) {
+function preencherFormulario({ regiao, negocio, fontes, coleta, somentePessoaFisica }) {
   $('#cfgUf').value = (regiao.uf || '').toUpperCase();
   $('#cfgCidade').value = regiao.cidade || '';
   $('#cfgRegiao').value = regiao.slug || '';
@@ -104,6 +105,7 @@ function preencherFormulario({ regiao, negocio, fontes, coleta }) {
   $('#cfgOlx').checked = !!fontes.find((f) => f.id === 'olx')?.ativa;
   $('#cfgEnjoei').checked = !!fontes.find((f) => f.id === 'enjoei')?.ativa;
   $('#cfgFacebook').checked = !!fontes.find((f) => f.id === 'facebook')?.ativa;
+  $('#cfgPessoaFisica').checked = somentePessoaFisica !== false;
 }
 
 const numeroDoCampo = (seletor, divisor = 1) => {
@@ -139,6 +141,7 @@ $('#btnSalvarConfig').onclick = async () => {
           facebook: $('#cfgFacebook').checked,
         },
         coleta: { maxPaginas: numeroDoCampo('#cfgPaginas') },
+        somentePessoaFisica: $('#cfgPessoaFisica').checked,
       }),
     });
 
@@ -467,7 +470,7 @@ function montarRelatorio(r) {
   </tbody></table></div>
 
   <p style="color:var(--texto-3);font-size:12px;margin-top:14px">
-    Coletados ${r.coletados} anúncios, ${r.analisados} válidos, ${r.descartados} descartados pelo filtro
+    ${r.somentePessoaFisica === false ? 'Incluindo lojas. ' : 'Só pessoas físicas. '}Coletados ${r.coletados} anúncios, ${r.analisados} válidos, ${r.descartados} descartados pelo filtro
     (${escapar(Object.entries(r.motivosDescarte || {}).slice(0, 4).map(([m, q]) => `${m}: ${q}`).join(' · ') || '—')}).
     Consulta feita ${tempoRelativo(r.atualizadoEm)}${r.doCache ? ' (do cache)' : ''}.
   </p>`;

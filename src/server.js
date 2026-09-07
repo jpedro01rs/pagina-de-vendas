@@ -53,6 +53,7 @@ app.get('/api/config', rota(async (req, res) => {
     regiao: config.regiao,
     negocio: config.negocio,
     coleta: { maxPaginas: config.coleta.maxPaginas, cacheMin: config.cacheMin },
+    somentePessoaFisica: config.somentePessoaFisica,
     fontes: listarFontes(),
     navegador: await playwrightDisponivel(),
     categorias: categorias(),
@@ -105,6 +106,7 @@ app.get('/api/buscar', rota(async (req, res) => {
     regiaoSlug: req.query.regiao ?? config.regiao.slug,
     cidade,
     regiao: { uf, cidade },
+    somentePessoaFisica: req.query.empresas === 'true' ? false : config.somentePessoaFisica,
     fontes: req.query.fontes ? String(req.query.fontes).split(',') : null,
   }));
 }));

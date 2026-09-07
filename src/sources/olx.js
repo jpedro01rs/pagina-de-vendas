@@ -3,25 +3,55 @@ import { buscar, pareceDesafio, ErroDeColeta } from '../lib/http.js';
 import { renderizar, playwrightDisponivel } from '../lib/navegador.js';
 import { extrairJsonEmbutido, garimparAnuncios } from '../lib/extrator.js';
 import { precoParaNumero, extrairArmazenamento, extrairCondicao } from '../lib/texto.js';
+import { caminhoDeCategoria, caminhoDaCategoriaPai, sufixoDeRegiao } from './olx-taxonomia.js';
 
 export const ID = 'olx';
 export const NOME = 'OLX';
 const BASE = 'https://www.olx.com.br';
 
 /**
- * Monta a URL de busca da OLX.
- * Estrutura: /brasil?q=  |  /estado-sp?q=  |  /estado-sp/sao-paulo-e-regiao?q=
+ * Monta uma URL da OLX.
+ *
+ * Preferimos o caminho de CATEGORIA a busca por texto. Em
+ * /celulares/apple/iphone-12 quem separa o modelo e a propria OLX, entao nao
+ * chega capinha, tela nem iPhone 12 Pro. A busca por texto fica como reserva.
  */
-export function montarUrl(termo, { uf, regiao, pagina = 1, precoMin, precoMax } = {}) {
-  let caminho = '/brasil';
-  if (uf) caminho = regiao ? `/estado-${uf}/${regiao}` : `/estado-${uf}`;
+export function montarUrl({ caminho = null, termo = null, uf, regiao, pagina = 1, precoMin, precoMax } = {}) {
+  const base = caminho || '/brasil';
+  const url = new URL(base + (caminho ? sufixoDeRegiao({ uf, regiao }) : ''), BASE);
 
-  const url = new URL(caminho, BASE);
-  url.searchParams.set('q', termo);
+  // Sem caminho de categoria, a regiao vai no proprio caminho da busca livre.
+  if (!caminho && uf) {
+    url.pathname = regiao ? `/estado-${uf}/${regiao}` : `/estado-${uf}`;
+  }
+
+  if (termo) url.searchParams.set('q', termo);
   if (pagina > 1) url.searchParams.set('o', String(pagina));
   if (precoMin) url.searchParams.set('ps', String(precoMin));
   if (precoMax) url.searchParams.set('pe', String(precoMax));
   return url.toString();
+}
+
+/**
+ * Cascata de tentativas, da mais precisa para a mais ampla.
+ * Se a OLX renomear um slug de modelo, a coleta ainda funciona pelos degraus
+ * seguintes em vez de simplesmente devolver zero anuncio.
+ */
+export function planoDeBusca(produto, termo, opcoes) {
+  const comum = {
+    uf: opcoes.uf, regiao: opcoes.regiaoSlug,
+    precoMin: opcoes.precoMin, precoMax: opcoes.precoMax,
+  };
+  const tentativas = [];
+
+  const categoria = caminhoDeCategoria(produto);
+  if (categoria) tentativas.push({ rotulo: 'categoria', ...comum, caminho: categoria });
+
+  const pai = caminhoDaCategoriaPai(produto);
+  if (pai && pai !== categoria) tentativas.push({ rotulo: 'categoria+busca', ...comum, caminho: pai, termo });
+
+  tentativas.push({ rotulo: 'busca', ...comum, termo });
+  return tentativas;
 }
 
 /**
@@ -95,30 +125,45 @@ async function carregarPagina(url) {
   );
 }
 
-/** Coleta anuncios da OLX para um termo. */
+/** Coleta anuncios da OLX. Usa categoria quando o produto tem uma. */
 export async function coletar(termo, opcoes = {}) {
   const maxPaginas = opcoes.maxPaginas ?? config.coleta.maxPaginas;
-  const todos = [];
-  const diagnostico = { metodo: null, via: null, paginas: 0 };
+  const alvo = {
+    uf: opcoes.uf ?? config.regiao.uf,
+    regiaoSlug: opcoes.regiaoSlug ?? config.regiao.slug,
+    precoMin: opcoes.precoMin,
+    precoMax: opcoes.precoMax,
+  };
 
-  for (let pagina = 1; pagina <= maxPaginas; pagina++) {
-    const url = montarUrl(termo, {
-      uf: opcoes.uf ?? config.regiao.uf,
-      regiao: opcoes.regiaoSlug ?? config.regiao.slug,
-      pagina,
-      precoMin: opcoes.precoMin,
-      precoMax: opcoes.precoMax,
-    });
+  const tentativas = opcoes.produto
+    ? planoDeBusca(opcoes.produto, termo, alvo)
+    : [{ rotulo: 'busca', termo, uf: alvo.uf, regiao: alvo.regiaoSlug, precoMin: alvo.precoMin, precoMax: alvo.precoMax }];
 
-    const { anuncios, via, metodo } = await carregarPagina(url);
-    diagnostico.metodo = metodo;
-    diagnostico.via = via;
-    diagnostico.paginas = pagina;
+  const diagnostico = { metodo: null, via: null, paginas: 0, estrategia: null, tentadas: [] };
 
-    if (!anuncios.length) break;
-    todos.push(...anuncios);
-    if (anuncios.length < 20) break; // ultima pagina
+  for (const tentativa of tentativas) {
+    const todos = [];
+
+    for (let pagina = 1; pagina <= maxPaginas; pagina++) {
+      const url = montarUrl({ ...tentativa, pagina });
+      const { anuncios, via, metodo } = await carregarPagina(url);
+
+      diagnostico.metodo = metodo;
+      diagnostico.via = via;
+      diagnostico.paginas = pagina;
+
+      if (!anuncios.length) break;
+      todos.push(...anuncios);
+      if (anuncios.length < 20) break; // ultima pagina
+    }
+
+    diagnostico.tentadas.push({ estrategia: tentativa.rotulo, encontrados: todos.length });
+
+    if (todos.length) {
+      diagnostico.estrategia = tentativa.rotulo;
+      return { anuncios: todos, diagnostico };
+    }
   }
 
-  return { anuncios: todos, diagnostico };
+  return { anuncios: [], diagnostico };
 }

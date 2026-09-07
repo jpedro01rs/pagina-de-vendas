@@ -1,3 +1,4 @@
+import config from '../config.js';
 import { normalizar, cabecaDoTitulo } from '../lib/texto.js';
 
 /**
@@ -31,6 +32,23 @@ const DESQUALIFICA = [
 
 /** Termos de anuncio de loja/lote que atrapalham a mediana de varejo pessoal. */
 const LOTE = ['lote', 'atacado', 'revenda', 'kit com', 'varias unidades', 'diversos modelos'];
+
+/**
+ * Linguagem que so aparece em anuncio de loja. Usada quando a OLX nao marcou
+ * o anuncio como profissional.
+ *
+ * A lista e curta de proposito: pessoa fisica tambem diz "nota fiscal" e
+ * "aceito cartao", entao so entram sinais que praticamente nao saem da boca
+ * de um vendedor individual.
+ */
+const LOJA = [
+  'loja', 'lojas', 'nossa loja', 'somos loja',
+  'assistencia tecnica', 'cnpj', 'razao social',
+  'distribuidora', 'importadora', 'revendedor autorizado', 'credenciada',
+  'todos os modelos', 'varios modelos', 'consulte outros modelos',
+  'orcamento sem compromisso', 'atendemos', 'nossa equipe',
+  'garantia de 6 meses', 'garantia de 1 ano', 'garantia de 12 meses',
+];
 
 function contemTermo(texto, termos) {
   return acharTermo(texto, termos)?.termo ?? null;
@@ -72,7 +90,7 @@ function posicaoDoModelo(texto, produto) {
  * Decide se um anuncio representa mesmo o produto procurado.
  * Retorna { ok: true } ou { ok: false, motivo: '...' }.
  */
-export function avaliarRelevancia(anuncio, produto) {
+export function avaliarRelevancia(anuncio, produto, opcoes = {}) {
   const tituloNorm = normalizar(anuncio.titulo);
   if (!tituloNorm) return { ok: false, motivo: 'titulo vazio' };
 
@@ -94,6 +112,18 @@ export function avaliarRelevancia(anuncio, produto) {
 
   const lote = contemTermo(tituloNorm, LOTE);
   if (lote) return { ok: false, motivo: `lote/atacado: ${lote}` };
+
+  // Pessoa fisica x empresa: o mercado que voce disputa e o de gente comum.
+  // Loja precifica com garantia, nota e parcelamento embutidos, o que puxa a
+  // mediana para cima e faz voce achar que ha margem onde nao ha.
+  if (opcoes.somentePessoaFisica ?? config.somentePessoaFisica) {
+    if (anuncio.profissional === true) {
+      return { ok: false, motivo: 'anuncio de loja (marcado pela plataforma)' };
+    }
+    const marcaDeLoja = contemTermo(tituloNorm, LOJA)
+      || (anuncio.vendedor ? contemTermo(normalizar(anuncio.vendedor), LOJA) : null);
+    if (marcaDeLoja) return { ok: false, motivo: `anuncio de loja: ${marcaDeLoja}` };
+  }
 
   // Modelo precisa aparecer na cabeca do titulo.
   if (produto.padrao) {
@@ -146,16 +176,16 @@ export function deduplicar(anuncios) {
 }
 
 /** Aplica relevancia + dedup e devolve aprovados e um resumo das rejeicoes. */
-export function filtrar(anuncios, produto) {
+export function filtrar(anuncios, produto, opcoes = {}) {
   const aprovados = [];
   const rejeitados = [];
   for (const anuncio of anuncios) {
     if (anuncio.preco == null) { rejeitados.push({ ...anuncio, motivo: 'sem preco' }); continue; }
-    const veredito = avaliarRelevancia(anuncio, produto);
+    const veredito = avaliarRelevancia(anuncio, produto, opcoes);
     if (veredito.ok) aprovados.push(anuncio);
     else rejeitados.push({ ...anuncio, motivo: veredito.motivo });
   }
   return { aprovados: deduplicar(aprovados), rejeitados };
 }
 
-export const _internos = { ACESSORIO, DESQUALIFICA, LOTE, contemTermo, acharTermo, posicaoDoModelo };
+export const _internos = { ACESSORIO, DESQUALIFICA, LOTE, LOJA, contemTermo, acharTermo, posicaoDoModelo };

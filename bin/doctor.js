@@ -40,6 +40,7 @@ async function principal() {
   console.log(`  Navegador ........... ${navegador.pronto ? 'pronto' : `INDISPONIVEL -> ${navegador.mensagem}`}`);
   console.log(`  Regiao .............. ${config.regiao.cidade || '(nao definida)'} / ${(config.regiao.uf || '--').toUpperCase()} ${config.regiao.slug ? `[${config.regiao.slug}]` : ''}`);
   console.log(`  Paginas por busca ... ${config.coleta.maxPaginas}`);
+  console.log(`  Anuncios ............ ${config.somentePessoaFisica ? 'so pessoa fisica (lojas fora)' : 'pessoa fisica e lojas'}`);
   console.log(`  Intervalo entre reqs. ${config.coleta.delayMs}ms`);
 
   console.log(`\nFontes configuradas`);
@@ -62,7 +63,7 @@ async function principal() {
     process.stdout.write(`\n  ${fonte.NOME}... `);
     const inicio = Date.now();
     try {
-      const { anuncios, diagnostico } = await fonte.coletar(termo, { maxPaginas: 1 });
+      const { anuncios, diagnostico } = await fonte.coletar(termo, { maxPaginas: 1, produto });
       const segundos = ((Date.now() - inicio) / 1000).toFixed(1);
 
       if (!anuncios.length) {
@@ -76,7 +77,9 @@ async function principal() {
       todos.push(...anuncios);
       const precos = anuncios.map((a) => a.preco).filter(Boolean).sort((a, b) => a - b);
       console.log(`OK - ${anuncios.length} anuncios em ${segundos}s`);
-      console.log(`     via=${diagnostico?.via ?? '?'}  metodo=${diagnostico?.metodo ?? 'http'}`);
+      console.log(`     via=${diagnostico?.via ?? '?'}  metodo=${diagnostico?.metodo ?? 'http'}${diagnostico?.estrategia ? `  estrategia=${diagnostico.estrategia}` : ''}`);
+      const lojas = anuncios.filter((a) => a.profissional === true).length;
+      if (lojas) console.log(`     ${lojas} de ${anuncios.length} sao anuncio de loja`);
       console.log(`     faixa bruta: ${dinheiro(precos[0])} .. ${dinheiro(precos[precos.length - 1])}`);
       for (const a of anuncios.slice(0, 3)) {
         console.log(`       - ${dinheiro(a.preco).padStart(11)}  ${a.titulo.slice(0, 52)}`);

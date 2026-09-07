@@ -18,6 +18,10 @@ const CHAVES_IMAGEM = ['thumbnail', 'thumb', 'image', 'images', 'photo', 'photos
 const CHAVES_DATA = ['date', 'published_at', 'created_at', 'publishedat', 'createdat', 'listtime'];
 const CHAVES_CIDADE = ['municipality', 'city', 'cidade', 'locality', 'town'];
 const CHAVES_UF = ['uf', 'state', 'estado', 'region', 'stateacronym'];
+const CHAVES_PROFISSIONAL = ['professionalad', 'isprofessional', 'professional', 'isstore',
+  'isshop', 'isbusiness', 'iscompany', 'profissional', 'lojista'];
+const CHAVES_VENDEDOR = ['seller', 'user', 'advertiser', 'owner', 'vendedor', 'anunciante', 'store', 'shop'];
+
 const CHAVES_LOCAL = ['location', 'locationdetails', 'location_details', 'place', 'address', 'localizacao'];
 
 const chaveNormal = (k) => String(k).toLowerCase().replace(/[^a-z_]/g, '');
@@ -116,6 +120,36 @@ function extrairLocal(objeto) {
   return { cidade: texto(cidade), uf: texto(uf) };
 }
 
+/**
+ * Descobre se o anuncio e de loja/empresa em vez de pessoa fisica.
+ * A OLX marca isso no proprio anuncio (professionalAd); quando o campo nao
+ * vem, devolvemos null e quem decide e o filtro, pelo texto.
+ */
+function ehProfissional(objeto) {
+  const direto = pegar(objeto, CHAVES_PROFISSIONAL);
+  if (typeof direto === 'boolean') return direto;
+  if (typeof direto === 'string') return ['true', '1', 'sim', 'yes'].includes(direto.toLowerCase());
+
+  const vendedor = pegar(objeto, CHAVES_VENDEDOR);
+  if (vendedor && typeof vendedor === 'object') {
+    const aninhado = pegar(vendedor, CHAVES_PROFISSIONAL);
+    if (typeof aninhado === 'boolean') return aninhado;
+    const tipo = String(vendedor.type || vendedor.tipo || vendedor.kind || '').toLowerCase();
+    if (tipo) return /(profession|store|shop|business|company|loja|empresa|pj)/.test(tipo);
+  }
+  return null;
+}
+
+function nomeDoVendedor(objeto) {
+  const vendedor = pegar(objeto, CHAVES_VENDEDOR);
+  if (typeof vendedor === 'string') return vendedor;
+  if (vendedor && typeof vendedor === 'object') {
+    const nome = vendedor.name || vendedor.nome || vendedor.nickname || vendedor.displayName;
+    if (typeof nome === 'string') return nome;
+  }
+  return null;
+}
+
 function resolverUrl(objeto, baseUrl) {
   const bruto = pegar(objeto, CHAVES_URL);
   const valor = typeof bruto === 'string' ? bruto : (bruto?.url || bruto?.href || null);
@@ -148,6 +182,8 @@ export function normalizarAnuncio(objeto, { fonte, baseUrl }) {
     publicadoEm: pegar(objeto, CHAVES_DATA) ?? null,
     armazenamento: extrairArmazenamento(titulo),
     condicao: extrairCondicao(titulo),
+    profissional: ehProfissional(objeto),
+    vendedor: nomeDoVendedor(objeto),
   };
 }
 
