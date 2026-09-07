@@ -1,0 +1,8 @@
+
+Gerando site estatico...
+  produtos com dados .. 0/70
+  paginas de detalhe .. 70
+  oportunidades ....... 0
+
+  Site em: site
+

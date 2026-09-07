@@ -1,0 +1,94 @@
+{
+  "produtoId": "iphone-xr",
+  "nome": "iPhone XR",
+  "categoria": "Celulares",
+  "marca": "Apple",
+  "avulso": false,
+  "atualizadoEm": "2026-09-07T09:39:46.711Z",
+  "duracaoMs": 34677,
+  "fontes": [
+    {
+      "id": "olx",
+      "nome": "OLX",
+      "ok": true,
+      "encontrados": 2,
+      "via": "html",
+      "metodo": "navegador",
+      "estrategia": "categoria"
+    },
+    {
+      "id": "enjoei",
+      "nome": "Enjoei",
+      "ok": false,
+      "encontrados": 0,
+      "erro": "Enjoei nao respondeu: enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | api.enjoei.com.br: HTTP 501 em api.enjoei.com.br"
+    }
+  ],
+  "coletados": 2,
+  "analisados": 1,
+  "somentePessoaFisica": true,
+  "estrategiaOlx": "categoria",
+  "descartados": 1,
+  "motivosDescarte": {
+    "acessorio/peca": 1
+  },
+  "estatisticas": {
+    "n": 1,
+    "min": 850,
+    "p10": 850,
+    "p25": 850,
+    "mediana": 850,
+    "p75": 850,
+    "p90": 850,
+    "max": 850,
+    "media": 850,
+    "desvio": 0,
+    "nBruto": 1,
+    "outliersRemovidos": 0,
+    "limites": null,
+    "amplitudeRelativa": 0,
+    "confianca": {
+      "nivel": "insuficiente",
+      "rotulo": "Amostra insuficiente"
+    },
+    "suficiente": false,
+    "porFonte": {
+      "olx": {
+        "n": 1,
+        "mediana": 850
+      }
+    },
+    "porArmazenamento": {
+      "64GB": {
+        "n": 1,
+        "mediana": 850
+      }
+    },
+    "porCondicao": {
+      "seminovo": {
+        "n": 1,
+        "mediana": 850
+      }
+    }
+  },
+  "arbitragem": null,
+  "tetoDeCompra": 668.2142857142857,
+  "precoVendaRapida": 782,
+  "oportunidades": [],
+  "anuncios": [
+    {
+      "fonte": "olx",
+      "idExterno": "1532827388",
+      "titulo": "iPhone XR 64GB Original, Impecável, Nunca Aberto, 76% Bateria,",
+      "preco": 850,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/iphone-xr-64gb-original-impecavel-nunca-aberto-76-bateria-r-850-1532827388",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 64,
+      "condicao": "seminovo"
+    }
+  ],
+  "tendencia": null
+}

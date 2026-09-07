@@ -1,0 +1,92 @@
+{
+  "produtoId": "iphone-14-pro-max",
+  "nome": "iPhone 14 Pro Max",
+  "categoria": "Celulares",
+  "marca": "Apple",
+  "avulso": false,
+  "atualizadoEm": "2026-09-07T09:49:45.946Z",
+  "duracaoMs": 37199,
+  "fontes": [
+    {
+      "id": "olx",
+      "nome": "OLX",
+      "ok": true,
+      "encontrados": 1,
+      "via": "html",
+      "metodo": "navegador",
+      "estrategia": "categoria+busca"
+    },
+    {
+      "id": "enjoei",
+      "nome": "Enjoei",
+      "ok": false,
+      "encontrados": 0,
+      "erro": "Enjoei nao respondeu: enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | api.enjoei.com.br: HTTP 501 em api.enjoei.com.br"
+    }
+  ],
+  "coletados": 1,
+  "analisados": 1,
+  "somentePessoaFisica": true,
+  "estrategiaOlx": "categoria+busca",
+  "descartados": 0,
+  "motivosDescarte": {},
+  "estatisticas": {
+    "n": 1,
+    "min": 3500,
+    "p10": 3500,
+    "p25": 3500,
+    "mediana": 3500,
+    "p75": 3500,
+    "p90": 3500,
+    "max": 3500,
+    "media": 3500,
+    "desvio": 0,
+    "nBruto": 1,
+    "outliersRemovidos": 0,
+    "limites": null,
+    "amplitudeRelativa": 0,
+    "confianca": {
+      "nivel": "insuficiente",
+      "rotulo": "Amostra insuficiente"
+    },
+    "suficiente": false,
+    "porFonte": {
+      "olx": {
+        "n": 1,
+        "mediana": 3500
+      }
+    },
+    "porArmazenamento": {
+      "128GB": {
+        "n": 1,
+        "mediana": 3500
+      }
+    },
+    "porCondicao": {
+      "usado": {
+        "n": 1,
+        "mediana": 3500
+      }
+    }
+  },
+  "arbitragem": null,
+  "tetoDeCompra": 2844.9999999999995,
+  "precoVendaRapida": 3220,
+  "oportunidades": [],
+  "anuncios": [
+    {
+      "fonte": "olx",
+      "idExterno": "1532429317",
+      "titulo": "iPhone 14 Pro Max 128GB Roxo | 84% Bateria |",
+      "preco": 3500,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/iphone-14-pro-max-128gb-roxo-84-bateria-r-3-500-1532429317",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 128,
+      "condicao": "usado"
+    }
+  ],
+  "tendencia": null
+}

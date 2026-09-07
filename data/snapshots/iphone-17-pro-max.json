@@ -1,0 +1,87 @@
+{
+  "produtoId": "iphone-17-pro-max",
+  "nome": "iPhone 17 Pro Max",
+  "categoria": "Celulares",
+  "marca": "Apple",
+  "avulso": false,
+  "atualizadoEm": "2026-09-07T09:56:48.258Z",
+  "duracaoMs": 34546,
+  "fontes": [
+    {
+      "id": "olx",
+      "nome": "OLX",
+      "ok": true,
+      "encontrados": 1,
+      "via": "html",
+      "metodo": "navegador",
+      "estrategia": "categoria"
+    },
+    {
+      "id": "enjoei",
+      "nome": "Enjoei",
+      "ok": false,
+      "encontrados": 0,
+      "erro": "Enjoei nao respondeu: enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | api.enjoei.com.br: HTTP 501 em api.enjoei.com.br"
+    }
+  ],
+  "coletados": 1,
+  "analisados": 1,
+  "somentePessoaFisica": true,
+  "estrategiaOlx": "categoria",
+  "descartados": 0,
+  "motivosDescarte": {},
+  "estatisticas": {
+    "n": 1,
+    "min": 8100,
+    "p10": 8100,
+    "p25": 8100,
+    "mediana": 8100,
+    "p75": 8100,
+    "p90": 8100,
+    "max": 8100,
+    "media": 8100,
+    "desvio": 0,
+    "nBruto": 1,
+    "outliersRemovidos": 0,
+    "limites": null,
+    "amplitudeRelativa": 0,
+    "confianca": {
+      "nivel": "insuficiente",
+      "rotulo": "Amostra insuficiente"
+    },
+    "suficiente": false,
+    "porFonte": {
+      "olx": {
+        "n": 1,
+        "mediana": 8100
+      }
+    },
+    "porArmazenamento": {},
+    "porCondicao": {
+      "usado": {
+        "n": 1,
+        "mediana": 8100
+      }
+    }
+  },
+  "arbitragem": null,
+  "tetoDeCompra": 6623.5714285714275,
+  "precoVendaRapida": 7452,
+  "oportunidades": [],
+  "anuncios": [
+    {
+      "fonte": "olx",
+      "idExterno": "1524651740",
+      "titulo": "iPhone 17 Pro Max | Várias Cores |",
+      "preco": 8100,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/iphone-17-pro-max-varias-cores-r-8-100-1524651740",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado"
+    }
+  ],
+  "tendencia": null
+}

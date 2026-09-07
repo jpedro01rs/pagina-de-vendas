@@ -1,0 +1,87 @@
+{
+  "produtoId": "playstation-2",
+  "nome": "PlayStation 2",
+  "categoria": "Videogames",
+  "marca": "Diversos",
+  "avulso": false,
+  "atualizadoEm": "2026-09-07T09:58:42.485Z",
+  "duracaoMs": 40219,
+  "fontes": [
+    {
+      "id": "olx",
+      "nome": "OLX",
+      "ok": true,
+      "encontrados": 1,
+      "via": "html",
+      "metodo": "navegador",
+      "estrategia": "categoria+busca"
+    },
+    {
+      "id": "enjoei",
+      "nome": "Enjoei",
+      "ok": false,
+      "encontrados": 0,
+      "erro": "Enjoei nao respondeu: enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | api.enjoei.com.br: HTTP 501 em api.enjoei.com.br"
+    }
+  ],
+  "coletados": 1,
+  "analisados": 1,
+  "somentePessoaFisica": true,
+  "estrategiaOlx": "categoria+busca",
+  "descartados": 0,
+  "motivosDescarte": {},
+  "estatisticas": {
+    "n": 1,
+    "min": 320,
+    "p10": 320,
+    "p25": 320,
+    "mediana": 320,
+    "p75": 320,
+    "p90": 320,
+    "max": 320,
+    "media": 320,
+    "desvio": 0,
+    "nBruto": 1,
+    "outliersRemovidos": 0,
+    "limites": null,
+    "amplitudeRelativa": 0,
+    "confianca": {
+      "nivel": "insuficiente",
+      "rotulo": "Amostra insuficiente"
+    },
+    "suficiente": false,
+    "porFonte": {
+      "olx": {
+        "n": 1,
+        "mediana": 320
+      }
+    },
+    "porArmazenamento": {},
+    "porCondicao": {
+      "usado": {
+        "n": 1,
+        "mediana": 320
+      }
+    }
+  },
+  "arbitragem": null,
+  "tetoDeCompra": 232.8571428571429,
+  "precoVendaRapida": 294.40000000000003,
+  "oportunidades": [],
+  "anuncios": [
+    {
+      "fonte": "olx",
+      "idExterno": "1444377995",
+      "titulo": "PlayStation 2 completos com vários jogos a partir de",
+      "preco": 320,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/playstation-2-completos-com-varios-jogos-a-partir-de-r-320-00-1444377995",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado"
+    }
+  ],
+  "tendencia": null
+}

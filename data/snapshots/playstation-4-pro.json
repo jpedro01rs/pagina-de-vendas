@@ -1,0 +1,92 @@
+{
+  "produtoId": "playstation-4-pro",
+  "nome": "PlayStation 4 Pro",
+  "categoria": "Videogames",
+  "marca": "Diversos",
+  "avulso": false,
+  "atualizadoEm": "2026-09-07T10:01:01.496Z",
+  "duracaoMs": 41355,
+  "fontes": [
+    {
+      "id": "olx",
+      "nome": "OLX",
+      "ok": true,
+      "encontrados": 1,
+      "via": "nenhum",
+      "metodo": "navegador",
+      "estrategia": null
+    },
+    {
+      "id": "enjoei",
+      "nome": "Enjoei",
+      "ok": false,
+      "encontrados": 0,
+      "erro": "Enjoei nao respondeu: enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | api.enjoei.com.br: HTTP 501 em api.enjoei.com.br"
+    }
+  ],
+  "coletados": 1,
+  "analisados": 1,
+  "somentePessoaFisica": true,
+  "estrategiaOlx": null,
+  "descartados": 0,
+  "motivosDescarte": {},
+  "estatisticas": {
+    "n": 1,
+    "min": 2099,
+    "p10": 2099,
+    "p25": 2099,
+    "mediana": 2099,
+    "p75": 2099,
+    "p90": 2099,
+    "max": 2099,
+    "media": 2099,
+    "desvio": 0,
+    "nBruto": 1,
+    "outliersRemovidos": 0,
+    "limites": null,
+    "amplitudeRelativa": 0,
+    "confianca": {
+      "nivel": "insuficiente",
+      "rotulo": "Amostra insuficiente"
+    },
+    "suficiente": false,
+    "porFonte": {
+      "olx": {
+        "n": 1,
+        "mediana": 2099
+      }
+    },
+    "porArmazenamento": {
+      "1TB": {
+        "n": 1,
+        "mediana": 2099
+      }
+    },
+    "porCondicao": {
+      "usado": {
+        "n": 1,
+        "mediana": 2099
+      }
+    }
+  },
+  "arbitragem": null,
+  "tetoDeCompra": 1694.1785714285713,
+  "precoVendaRapida": 1931.0800000000002,
+  "oportunidades": [],
+  "anuncios": [
+    {
+      "fonte": "olx",
+      "idExterno": "1345651371",
+      "titulo": "PS4 Pro Branco 1TB 4K c/ 6 jogos - 3 controles",
+      "preco": 2099,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/ps4-pro-branco-1tb-4k-c-6-jogos-3-controles-r-2099-00-1345651371",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 1024,
+      "condicao": "usado"
+    }
+  ],
+  "tendencia": null
+}

@@ -1,0 +1,48 @@
+{
+  "produtoId": "xiaomi-redmi-note-13",
+  "nome": "Xiaomi Redmi Note 13",
+  "categoria": "Celulares",
+  "marca": "Xiaomi",
+  "avulso": false,
+  "atualizadoEm": "2026-09-07T10:17:57.136Z",
+  "duracaoMs": 34216,
+  "fontes": [
+    {
+      "id": "olx",
+      "nome": "OLX",
+      "ok": true,
+      "encontrados": 0,
+      "via": "nenhum",
+      "metodo": "navegador",
+      "estrategia": null
+    },
+    {
+      "id": "enjoei",
+      "nome": "Enjoei",
+      "ok": false,
+      "encontrados": 0,
+      "erro": "Enjoei nao respondeu: enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | api.enjoei.com.br: HTTP 501 em api.enjoei.com.br"
+    }
+  ],
+  "coletados": 0,
+  "analisados": 0,
+  "somentePessoaFisica": true,
+  "estrategiaOlx": null,
+  "descartados": 0,
+  "motivosDescarte": {},
+  "estatisticas": {
+    "n": 0,
+    "nBruto": 0,
+    "confianca": {
+      "nivel": "insuficiente",
+      "rotulo": "Amostra insuficiente"
+    },
+    "suficiente": false
+  },
+  "arbitragem": null,
+  "tetoDeCompra": null,
+  "precoVendaRapida": null,
+  "oportunidades": [],
+  "anuncios": [],
+  "tendencia": null
+}
