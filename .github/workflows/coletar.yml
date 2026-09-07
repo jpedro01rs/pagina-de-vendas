@@ -1,0 +1,117 @@
+# Coleta os precos nos marketplaces e publica o site.
+#
+# Roda nos servidores do GitHub, que tem internet liberada. E o que permite
+# abrir a tabela por um endereco normal, sem instalar nada no computador.
+#
+# Para rodar na hora: aba Actions -> "Coletar precos e publicar" -> Run workflow.
+
+name: Coletar precos e publicar
+
+on:
+  workflow_dispatch:
+    inputs:
+      uf:
+        description: 'Estado (sigla minuscula, ex: sp)'
+        required: false
+        default: 'sp'
+      regiao:
+        description: 'Regiao na OLX (ex: sao-paulo-e-regiao). Vazio = estado inteiro'
+        required: false
+        default: 'sao-paulo-e-regiao'
+      cidade:
+        description: 'Sua cidade'
+        required: false
+        default: 'Sao Paulo'
+      categoria:
+        description: 'Coletar so uma categoria (vazio = catalogo inteiro)'
+        required: false
+        default: ''
+  schedule:
+    # 09:00 UTC = 06:00 no horario de Brasilia.
+    - cron: '0 9 * * *'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: coleta
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    env:
+      UF: ${{ github.event.inputs.uf || vars.UF || 'sp' }}
+      REGIAO: ${{ github.event.inputs.regiao || vars.REGIAO || 'sao-paulo-e-regiao' }}
+      CIDADE: ${{ github.event.inputs.cidade || vars.CIDADE || 'Sao Paulo' }}
+      FONTE_OLX: 'true'
+      FONTE_ENJOEI: 'true'
+      # O Marketplace exige login: nao da para rodar aqui.
+      FONTE_FACEBOOK: 'false'
+      SOMENTE_PESSOA_FISICA: 'true'
+      MAX_PAGINAS: '2'
+      DELAY_MS: '2500'
+      USAR_NAVEGADOR: 'true'
+      HEADLESS: 'true'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Instalar o navegador
+        run: npx playwright install --with-deps chromium
+
+      - name: Conferir a matematica
+        run: npm run selftest
+
+      - name: Diagnostico das fontes
+        continue-on-error: true
+        run: npm run doctor -- "iphone 13"
+
+      - name: Coletar precos
+        # Uma fonte fora do ar nao pode derrubar a publicacao: o site sai
+        # com o que deu certo e avisa na tela o que falhou.
+        continue-on-error: true
+        run: |
+          if [ -n "${{ github.event.inputs.categoria }}" ]; then
+            npm run atualizar -- "${{ github.event.inputs.categoria }}"
+          else
+            npm run atualizar
+          fi
+
+      - name: Gerar o site
+        run: node bin/gerar-site.js
+
+      - name: Guardar os dados coletados
+        uses: actions/upload-artifact@v4
+        with:
+          name: dados-coletados
+          path: data/
+          retention-days: 30
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  publicar:
+    needs: coletar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

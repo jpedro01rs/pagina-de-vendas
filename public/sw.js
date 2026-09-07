@@ -9,8 +9,10 @@
  * sinal ruim, ainda ve a ultima tabela de precos que carregou.
  */
 const VERSAO = 'radar-v1';
-const CASCA = ['/', '/index.html', '/styles.css', '/app.js', '/manifest.json',
-  '/icones/icone-192.png', '/icones/icone-512.png'];
+// Relativos de proposito: o app roda tanto na raiz (servidor local) quanto
+// em subpasta (GitHub Pages, /pagina-de-vendas/).
+const CASCA = ['./', 'index.html', 'styles.css', 'app.js', 'manifest.json',
+  'icones/icone-192.png', 'icones/icone-512.png'];
 
 self.addEventListener('install', (evento) => {
   evento.waitUntil(
@@ -34,9 +36,9 @@ self.addEventListener('fetch', (evento) => {
   if (url.origin !== self.location.origin) return;
 
   // Login e diagnostico nunca vem do cache.
-  if (url.pathname === '/entrar' || url.pathname === '/api/saude') return;
+  if (url.pathname.endsWith('/entrar') || url.pathname.endsWith('/api/saude')) return;
 
-  if (url.pathname.startsWith('/api/')) {
+  if (url.pathname.includes('/api/')) {
     evento.respondWith(
       fetch(request)
         .then((resposta) => {

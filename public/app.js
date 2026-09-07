@@ -24,14 +24,49 @@ function tempoRelativo(iso) {
   return `há ${Math.floor(horas / 24)}d`;
 }
 
-async function api(caminho, opcoes) {
-  const resposta = await fetch(caminho, opcoes);
-  const corpo = await resposta.json().catch(() => ({}));
-  if (!resposta.ok) throw new Error(corpo.erro || `Erro ${resposta.status}`);
-  return corpo;
+/**
+ * O app roda de duas formas:
+ *   - com servidor (npm start): fala com a API e pode coletar ao vivo;
+ *   - estatico (GitHub Pages): le os JSON gerados pela coleta que rodou
+ *     nos servidores do GitHub.
+ * A troca e automatica: se a API nao responder, caimos nos arquivos.
+ */
+function caminhoEstatico(caminho) {
+  const semQuery = caminho.split('?')[0];
+  if (semQuery === '/api/config') return 'dados/config.json';
+  if (semQuery === '/api/tabela') return 'dados/tabela.json';
+  if (semQuery === '/api/oportunidades') return 'dados/oportunidades.json';
+  if (semQuery === '/api/catalogo') return 'dados/catalogo.json';
+  if (semQuery.startsWith('/api/historico')) return 'dados/historico.json';
+  if (semQuery.startsWith('/api/produto/')) {
+    return 'dados/produto/' + semQuery.slice('/api/produto/'.length) + '.json';
+  }
+  return null;
 }
 
-const estado = { config: null, tabela: [], ordem: { campo: 'oportunidades', desc: true }, oportunidades: [] };
+async function api(caminho, opcoes) {
+  if (!estado.estatico) {
+    try {
+      const resposta = await fetch(caminho, opcoes);
+      const corpo = await resposta.json().catch(() => ({}));
+      if (resposta.ok) return corpo;
+      // 404 em rota de API significa que nao ha servidor: e site estatico.
+      if (resposta.status !== 404) throw new Error(corpo.erro || `Erro ${resposta.status}`);
+    } catch (erro) {
+      if (erro instanceof Error && erro.message && !/fetch|network|Failed/i.test(erro.message)) throw erro;
+    }
+  }
+
+  const alvo = caminhoEstatico(caminho);
+  if (!alvo) throw new Error('Esta ação precisa do app rodando no computador.');
+
+  const resposta = await fetch(alvo, { cache: 'no-cache' });
+  if (!resposta.ok) throw new Error('Ainda não há dados coletados para esta tela.');
+  estado.estatico = true;
+  return resposta.json();
+}
+
+const estado = { config: null, tabela: [], ordem: { campo: 'oportunidades', desc: true }, oportunidades: [], estatico: false };
 
 /* ===================== abas ===================== */
 
@@ -88,6 +123,46 @@ async function carregarConfig() {
     `<span class="etiqueta ${f.ativa ? 'verde' : 'neutra'}">${escapar(f.nome)} · ${f.ativa ? 'ligada' : 'desligada'}</span>`).join('');
 
   preencherFormulario(estado.config);
+  if (estado.config.estatico) aplicarModoEstatico(estado.config);
+}
+
+/**
+ * No site publicado nao ha servidor: a coleta ja rodou nos servidores do
+ * GitHub. Escondemos o que exige servidor e dizemos quando foi a coleta.
+ */
+function aplicarModoEstatico(cfg) {
+  estado.estatico = true;
+  document.body.classList.add('estatico');
+
+  const quando = cfg.geradoEm ? new Date(cfg.geradoEm) : null;
+  const problemas = (cfg.diagnostico || []).filter((f) => f.falhou > 0 && f.ok === 0);
+
+  const aviso = document.createElement('div');
+  aviso.className = 'aviso-caixa' + (problemas.length ? ' alerta' : '');
+  aviso.style.marginBottom = '18px';
+  aviso.innerHTML = '<b>Preços coletados ' + (quando ? tempoRelativo(cfg.geradoEm) : 'automaticamente') + '</b>'
+    + (quando ? ' — ' + quando.toLocaleString('pt-BR') : '')
+    + '. A coleta roda sozinha todo dia nos servidores do GitHub.'
+    + (cfg.diagnostico?.length
+      ? '<br>' + cfg.diagnostico.map((f) =>
+        escapar(f.nome) + ': ' + (f.ok ? f.ok + ' produtos, ' + f.anuncios + ' anúncios'
+          : 'não respondeu' + (f.erro ? ' (' + escapar(String(f.erro).slice(0, 70)) + ')' : ''))).join(' · ')
+      : '');
+  $('#aba-tabela').prepend(aviso);
+
+  for (const seletor of ['#btnAtualizar', '#btnAtualizarCategoria', '#btnSalvarConfig', '#salvar']) {
+    const el = $(seletor);
+    if (el) el.hidden = true;
+  }
+  $('#statusAtualizacao').textContent = '';
+
+  $('#resultadoBusca').innerHTML = '<div class="aviso-caixa alerta">'
+    + '<b>A busca ao vivo precisa do app rodando no seu computador.</b><br>'
+    + 'Aqui você vê a tabela já coletada. Para consultar um item que não está no catálogo, '
+    + 'rode o projeto no computador (<code>npm run comecar</code>) — aí a busca vai aos '
+    + 'marketplaces na hora.</div>';
+  const ferramentasBusca = $('#aba-buscar').querySelector('.ferramentas');
+  if (ferramentasBusca) ferramentasBusca.hidden = true;
 }
 
 /* ---- formulário de configuração ---- */
@@ -351,6 +426,7 @@ function vigiarProgresso() {
 }
 
 function acompanharAtualizacao(job) {
+  if (estado.estatico) return;
   if (!job || job.nunca) { $('#statusAtualizacao').textContent = ''; $('#barraProgresso').innerHTML = ''; return; }
 
   if (job.emAndamento) {
@@ -609,7 +685,7 @@ $('#btnRecarregarOp').onclick = carregarOportunidades;
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js').catch(() => { /* sem HTTPS ou sem suporte */ });
+    navigator.serviceWorker.register('sw.js').catch(() => { /* sem HTTPS ou sem suporte */ });
   });
 }
 

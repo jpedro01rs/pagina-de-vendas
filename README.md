@@ -21,7 +21,31 @@ revender um pouco abaixo da média e girar rápido.
 
 ---
 
-## Como abrir o app
+## Abrir sem instalar nada
+
+O site publicado fica em:
+
+**https://jpedro01rs.github.io/pagina-de-vendas/**
+
+Abre no celular, mostra a tabela de precificação já coletada. Pode adicionar à tela inicial que
+vira um ícone de app.
+
+A coleta roda sozinha **todo dia às 6h** nos servidores do GitHub, que têm internet liberada.
+Para coletar na hora, sem esperar o horário:
+
+1. Abra a aba **Actions** do repositório
+2. Clique em **Coletar preços e publicar**
+3. Botão **Run workflow** — dá para escolher estado, cidade e categoria ali mesmo
+
+Em uns 10 a 20 minutos o site sai atualizado. A página mostra quando foi a última coleta e quais
+fontes responderam.
+
+O que o site publicado **não** faz: busca ao vivo de um item fora do catálogo, e Facebook
+Marketplace (que exige login). Para essas duas coisas, rode no computador — instruções abaixo.
+
+---
+
+## Rodar no seu computador
 
 O app roda **no seu computador**, não num site. É proposital: a OLX bloqueia acesso vindo de
 servidor, então a busca precisa sair da sua internet.
