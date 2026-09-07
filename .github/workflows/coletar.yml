@@ -42,7 +42,7 @@ on:
       - 'public/**'
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -88,7 +88,15 @@ jobs:
 
       - name: Diagnostico das fontes
         continue-on-error: true
-        run: npm run doctor -- "iphone 13"
+        run: |
+          npm run doctor -- "iphone 13" 2>&1 | tee diagnostico.txt
+          {
+            echo '## Diagnostico das fontes'
+            echo ''
+            echo '```'
+            cat diagnostico.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Coletar precos
         # Uma fonte fora do ar nao pode derrubar a publicacao: o site sai
@@ -102,7 +110,35 @@ jobs:
           fi
 
       - name: Gerar o site
-        run: node bin/gerar-site.js
+        run: node bin/gerar-site.js | tee resumo-coleta.txt
+
+      - name: Resumo visivel na aba Actions
+        if: always()
+        run: |
+          {
+            echo '## Resultado da coleta'
+            echo ''
+            echo '```'
+            cat resumo-coleta.txt 2>/dev/null || echo 'sem resumo'
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Guardar os precos no repositorio
+        # Os snapshots ficam versionados: assim o site pode ser regerado sem
+        # coletar de novo, e da para acompanhar o preco mudando com o tempo.
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -f data/snapshots data/historico.json resumo-coleta.txt 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo 'Nada mudou nos precos.'
+          else
+            git commit -m "Precos coletados em $(date -u '+%Y-%m-%d %H:%M UTC')
+
+          Gerado automaticamente pela coleta que roda nos servidores do GitHub."
+            git push origin HEAD:${{ github.ref_name }}
+          fi
 
       - name: Guardar os dados coletados
         uses: actions/upload-artifact@v4
