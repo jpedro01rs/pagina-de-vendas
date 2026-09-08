@@ -24,7 +24,7 @@ Fontes configuradas
   TESTE AO VIVO - termo: "iphone 13"
 ------------------------------------------------------------------
 
-  OLX... respondeu, mas NAO trouxe anuncios (38.1s)
+  OLX... respondeu, mas NAO trouxe anuncios (38.0s)
      via=nenhum metodo=navegador
      Provavel mudanca de layout, bloqueio silencioso ou termo sem resultado.
 

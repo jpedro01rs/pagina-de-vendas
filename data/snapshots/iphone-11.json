@@ -4,15 +4,15 @@
   "categoria": "Celulares",
   "marca": "Apple",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T03:28:21.576Z",
-  "duracaoMs": 29876,
+  "atualizadoEm": "2026-09-08T05:17:57.482Z",
+  "duracaoMs": 29558,
   "fontes": [
     {
       "id": "olx",
       "nome": "OLX",
       "ok": true,
-      "encontrados": 2,
-      "via": "html",
+      "encontrados": 1,
+      "via": "dom",
       "metodo": "navegador",
       "estrategia": "categoria"
     },
@@ -24,8 +24,8 @@
       "erro": "Enjoei nao devolveu anuncios: enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | api.enjoei.com.br: HTTP 501 em api.enjoei.com.br"
     }
   ],
-  "coletados": 2,
-  "analisados": 1,
+  "coletados": 1,
+  "analisados": 0,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
   "descartados": 1,
@@ -33,62 +33,23 @@
     "preco abaixo da faixa (< R$ 900)": 1
   },
   "estatisticas": {
-    "n": 1,
-    "min": 950,
-    "p10": 950,
-    "p25": 950,
-    "mediana": 950,
-    "p75": 950,
-    "p90": 950,
-    "max": 950,
-    "media": 950,
-    "desvio": 0,
-    "nBruto": 1,
-    "outliersRemovidos": 0,
-    "limites": null,
-    "amplitudeRelativa": 0,
+    "n": 0,
+    "nBruto": 0,
     "confianca": {
       "nivel": "insuficiente",
       "rotulo": "Amostra insuficiente"
     },
-    "suficiente": false,
-    "porFonte": {
-      "olx": {
-        "n": 1,
-        "mediana": 950
-      }
-    },
-    "porArmazenamento": {
-      "64GB": {
-        "n": 1,
-        "mediana": 950
-      }
-    },
-    "porCondicao": {
-      "usado": {
-        "n": 1,
-        "mediana": 950
-      }
-    }
+    "suficiente": false
   },
   "arbitragem": null,
-  "tetoDeCompra": 750.3571428571428,
-  "precoVendaRapida": 874,
+  "tetoDeCompra": null,
+  "precoVendaRapida": null,
   "oportunidades": [],
-  "anuncios": [
-    {
-      "fonte": "olx",
-      "idExterno": "1533284350",
-      "titulo": "iPhone 11 64GB -",
-      "preco": 950,
-      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/iphone-11-64gb-r-950-1533284350",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 64,
-      "condicao": "usado"
-    }
-  ],
-  "tendencia": null
+  "anuncios": [],
+  "tendencia": {
+    "de": 1100,
+    "para": 950,
+    "variacao": -0.13636363636363635,
+    "dias": 14
+  }
 }

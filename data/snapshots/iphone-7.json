@@ -4,15 +4,15 @@
   "categoria": "Celulares",
   "marca": "Apple",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T03:23:53.579Z",
-  "duracaoMs": 29832,
+  "atualizadoEm": "2026-09-08T05:13:30.269Z",
+  "duracaoMs": 30206,
   "fontes": [
     {
       "id": "olx",
       "nome": "OLX",
       "ok": true,
       "encontrados": 1,
-      "via": "html",
+      "via": "dom",
       "metodo": "navegador",
       "estrategia": "categoria"
     },
@@ -72,7 +72,7 @@
     {
       "fonte": "olx",
       "idExterno": "1533198479",
-      "titulo": "Vendo iPhone 7 só hoje",
+      "titulo": "Vendo iPhone 7 só hoje R$ 250",
       "preco": 250,
       "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/vendo-iphone-7-so-hoje-r-250-1533198479",
       "imagem": null,
@@ -80,7 +80,10 @@
       "uf": null,
       "publicadoEm": null,
       "armazenamento": null,
-      "condicao": "usado"
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "Vendo iPhone 7 só hoje R$ 250"
     }
   ],
   "tendencia": null
