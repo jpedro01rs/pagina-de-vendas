@@ -85,8 +85,14 @@ export async function obterContextoPersistente() {
   return contextoPersistente;
 }
 
-/** Renderiza a URL e devolve o HTML final. */
-export async function renderizar(url, { esperarSeletor = null, persistente = false, esperaExtraMs = 1200 } = {}) {
+/**
+ * Renderiza a URL e devolve o HTML final.
+ *
+ * `rolar` existe porque marketplace carrega a lista conforme voce desce a
+ * pagina: sem rolar, so os primeiros anuncios entram no HTML - foi o que
+ * fez a coleta trazer 1 a 3 itens em vez de dezenas.
+ */
+export async function renderizar(url, { esperarSeletor = null, persistente = false, esperaExtraMs = 1200, rolar = false } = {}) {
   const contexto = persistente
     ? await obterContextoPersistente()
     : await (await obterNavegador()).newContext(OPCOES_CONTEXTO);
@@ -102,9 +108,26 @@ export async function renderizar(url, { esperarSeletor = null, persistente = fal
 
     await pagina.goto(url, { waitUntil: 'domcontentloaded', timeout: config.coleta.timeoutMs });
     if (esperarSeletor) {
-      await pagina.waitForSelector(esperarSeletor, { timeout: 8000 }).catch(() => {});
+      await pagina.waitForSelector(esperarSeletor, { timeout: 12000 }).catch(() => {});
     }
     await pagina.waitForTimeout(esperaExtraMs);
+
+    if (rolar) {
+      // Desce em etapas e para quando a pagina nao cresce mais.
+      let alturaAnterior = 0;
+      for (let passo = 0; passo < 12; passo++) {
+        const altura = await pagina.evaluate(() => {
+          window.scrollBy(0, window.innerHeight * 1.2);
+          return document.body.scrollHeight;
+        });
+        await pagina.waitForTimeout(600);
+        if (altura === alturaAnterior && passo > 2) break;
+        alturaAnterior = altura;
+      }
+      await pagina.evaluate(() => window.scrollTo(0, 0));
+      await pagina.waitForTimeout(700);
+    }
+
     return await pagina.content();
   } finally {
     await pagina.close().catch(() => {});

@@ -58,7 +58,7 @@ async function tentarSite(termo, pagina) {
   } catch { /* segue para o navegador */ }
 
   if (config.coleta.usarNavegador && await playwrightDisponivel()) {
-    const renderizado = await renderizar(url, { esperarSeletor: 'a[href*="/p/"]', esperaExtraMs: 2000 });
+    const renderizado = await renderizar(url, { esperarSeletor: 'a[href*="/p/"]', esperaExtraMs: 2500, rolar: true });
     const anuncios = garimparEm(renderizado);
     if (anuncios.length) return { anuncios, via: 'site-navegador' };
   }

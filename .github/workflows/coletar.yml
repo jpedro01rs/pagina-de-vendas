@@ -98,6 +98,18 @@ jobs:
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
 
+      - name: O que a OLX devolve para esta maquina
+        continue-on-error: true
+        run: |
+          node bin/inspecionar-olx.js 2>&1 | tee inspecao.txt
+          {
+            echo '## O que a OLX devolve para o servidor'
+            echo ''
+            echo '```'
+            cat inspecao.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Coletar precos
         # Uma fonte fora do ar nao pode derrubar a publicacao: o site sai
         # com o que deu certo e avisa na tela o que falhou.
@@ -130,7 +142,7 @@ jobs:
         run: |
           git config user.name  'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add -f data/snapshots data/historico.json resumo-coleta.txt 2>/dev/null || true
+          git add -f data/snapshots data/historico.json resumo-coleta.txt inspecao.txt diagnostico.txt 2>/dev/null || true
           if git diff --staged --quiet; then
             echo 'Nada mudou nos precos.'
           else

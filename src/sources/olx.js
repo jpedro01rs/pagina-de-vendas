@@ -113,7 +113,11 @@ async function carregarPagina(url) {
 
   // HTTP barrado ou sem dados: tenta navegador real.
   if (config.coleta.usarNavegador && await playwrightDisponivel()) {
-    const htmlRenderizado = await renderizar(url, { esperarSeletor: '[data-ds-component], a[href*="olx.com.br"]' });
+    const htmlRenderizado = await renderizar(url, {
+      esperarSeletor: '[data-ds-component], a[href*="olx.com.br"]',
+      esperaExtraMs: 2500,
+      rolar: true,
+    });
     const resultado = extrairDaPagina(htmlRenderizado);
     return { ...resultado, metodo: 'navegador' };
   }
