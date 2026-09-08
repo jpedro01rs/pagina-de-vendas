@@ -4,14 +4,14 @@
   "categoria": "Celulares",
   "marca": "Apple",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T19:59:13.342Z",
-  "duracaoMs": 36601,
+  "atualizadoEm": "2026-09-08T20:58:52.943Z",
+  "duracaoMs": 36444,
   "fontes": [
     {
       "id": "olx",
       "nome": "OLX",
       "ok": true,
-      "encontrados": 60,
+      "encontrados": 61,
       "via": "dom",
       "metodo": "navegador",
       "estrategia": "categoria"
@@ -26,38 +26,39 @@
       "estrategia": null
     }
   ],
-  "coletados": 120,
-  "analisados": 28,
+  "coletados": 121,
+  "analisados": 29,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 88,
+  "descartados": 87,
   "motivosDescarte": {
-    "acessorio/peca": 50,
-    "preco abaixo da faixa (< R$ 600)": 20,
-    "modelo nao identificado no titulo": 12,
-    "desqualificado": 6
+    "acessorio/peca": 48,
+    "preco abaixo da faixa (< R$ 600)": 19,
+    "modelo nao identificado no titulo": 13,
+    "desqualificado": 6,
+    "outra variante": 1
   },
   "estatisticas": {
-    "n": 28,
+    "n": 29,
     "min": 600,
     "p10": 650,
     "p25": 700,
     "mediana": 800,
-    "p75": 899.25,
-    "p90": 989.2,
+    "p75": 900,
+    "p90": 999,
     "max": 1000,
-    "media": 796.9642857142857,
-    "desvio": 116.37638510541596,
-    "nBruto": 28,
+    "media": 803.9655172413793,
+    "desvio": 120.20370146306692,
+    "nBruto": 29,
     "outliersRemovidos": 0,
     "limites": {
-      "inferior": 401.125,
-      "superior": 1198.125,
+      "inferior": 400,
+      "superior": 1200,
       "q1": 700,
-      "q3": 899.25,
-      "iqr": 199.25
+      "q3": 900,
+      "iqr": 200
     },
-    "amplitudeRelativa": 0.2490625,
+    "amplitudeRelativa": 0.25,
     "confianca": {
       "nivel": "alta",
       "rotulo": "Alta"
@@ -65,7 +66,7 @@
     "suficiente": true,
     "porFonte": {
       "olx": {
-        "n": 27,
+        "n": 28,
         "mediana": 800
       },
       "enjoei": {
@@ -74,18 +75,18 @@
       }
     },
     "porArmazenamento": {
+      "256GB": {
+        "n": 9,
+        "mediana": 899
+      },
       "64GB": {
         "n": 5,
         "mediana": 800
-      },
-      "256GB": {
-        "n": 8,
-        "mediana": 874.5
       }
     },
     "porCondicao": {
       "usado": {
-        "n": 27,
+        "n": 28,
         "mediana": 800
       },
       "seminovo": {
@@ -129,7 +130,7 @@
       "roi": 0.16825396825396827,
       "margem": 0.14402173913043478,
       "tetoDeCompra": 627.1428571428571,
-      "score": 69
+      "score": 70
     },
     {
       "fonte": "olx",
@@ -162,7 +163,7 @@
       "roi": 0.16825396825396827,
       "margem": 0.14402173913043478,
       "tetoDeCompra": 627.1428571428571,
-      "score": 69
+      "score": 70
     }
   ],
   "anuncios": [
@@ -299,7 +300,7 @@
       "idExterno": "146755772",
       "titulo": "iphone x 64gb branco bateria 69%",
       "preco": 739,
-      "url": "https://www.enjoei.com.br/p/iphone-x-64gb-branco-bateria-69-146755772?ssqi=a89fdde44955b12046e391a1070fc591&rsid=0c0aa148-e96d-49b0-afe8-62c784ad5ba5-1788897517467&rsp=1&rspix=2",
+      "url": "https://www.enjoei.com.br/p/iphone-x-64gb-branco-bateria-69-146755772?ssqi=4cfcabc7f6213c7996c14c86b5536fcd&rsid=19ed2cdb-50cf-42ea-b49d-871b4ea48ac4-1788901097418&rsp=1&rspix=2",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -598,6 +599,22 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1533620175",
+      "titulo": "iphone x preto 256gb",
+      "preco": 1000,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/iphone-x-preto-256gb-1533620175",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 256,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "iphone x preto 256gb Entrega Fácil Parcele sem juros leticia 5.0 R$ 1.000 em até 3x de R$ 333,33 sem juros São Paulo, Paraíso Hoje, 17:07"
     },
     {
       "fonte": "olx",

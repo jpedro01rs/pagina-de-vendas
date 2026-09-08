@@ -4,8 +4,8 @@
   "categoria": "Celulares",
   "marca": "Apple",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T20:10:54.429Z",
-  "duracaoMs": 36644,
+  "atualizadoEm": "2026-09-08T21:10:26.504Z",
+  "duracaoMs": 36283,
   "fontes": [
     {
       "id": "olx",
@@ -27,39 +27,39 @@
     }
   ],
   "coletados": 170,
-  "analisados": 63,
+  "analisados": 60,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 96,
+  "descartados": 100,
   "motivosDescarte": {
-    "outra variante": 34,
-    "preco abaixo da faixa (< R$ 2800)": 29,
-    "acessorio/peca": 23,
-    "modelo nao identificado no titulo": 6,
-    "anuncio de loja": 3,
+    "preco abaixo da faixa (< R$ 2800)": 41,
+    "outra variante": 29,
+    "acessorio/peca": 22,
+    "modelo nao identificado no titulo": 5,
+    "anuncio de loja": 2,
     "desqualificado": 1
   },
   "estatisticas": {
-    "n": 60,
+    "n": 57,
     "min": 2800,
     "p10": 2890,
-    "p25": 2973.25,
-    "mediana": 3100,
-    "p75": 3422.5,
-    "p90": 3615,
+    "p25": 3000,
+    "mediana": 3200,
+    "p75": 3500,
+    "p90": 3720,
     "max": 4000,
-    "media": 3199.766666666667,
-    "desvio": 304.5222688445333,
-    "nBruto": 63,
+    "media": 3244.5263157894738,
+    "desvio": 325.1992698284437,
+    "nBruto": 60,
     "outliersRemovidos": 3,
     "limites": {
-      "inferior": 2215.75,
-      "superior": 4269.75,
-      "q1": 2986,
-      "q3": 3499.5,
-      "iqr": 513.5
+      "inferior": 2242.875,
+      "superior": 4261.875,
+      "q1": 3000,
+      "q3": 3504.75,
+      "iqr": 504.75
     },
-    "amplitudeRelativa": 0.14491935483870969,
+    "amplitudeRelativa": 0.15625,
     "confianca": {
       "nivel": "alta",
       "rotulo": "Alta"
@@ -67,18 +67,18 @@
     "suficiente": true,
     "porFonte": {
       "olx": {
-        "n": 52,
-        "mediana": 3100
+        "n": 54,
+        "mediana": 3200
       },
       "enjoei": {
-        "n": 11,
-        "mediana": 3047.5
+        "n": 6,
+        "mediana": 3400
       }
     },
     "porArmazenamento": {
       "128GB": {
-        "n": 33,
-        "mediana": 3045
+        "n": 29,
+        "mediana": 3150
       },
       "256GB": {
         "n": 12,
@@ -91,12 +91,12 @@
     },
     "porCondicao": {
       "usado": {
-        "n": 59,
-        "mediana": 3099
+        "n": 57,
+        "mediana": 3200
       },
       "seminovo": {
-        "n": 2,
-        "mediana": 3491.5
+        "n": 1,
+        "mediana": 3200
       },
       "novo": {
         "n": 2,
@@ -105,15 +105,15 @@
     }
   },
   "arbitragem": {
-    "comprarEm": "enjoei",
-    "medianaCompra": 3047.5,
-    "venderEm": "olx",
-    "medianaVenda": 3100,
-    "diferenca": 52.5,
-    "percentual": 0.017227235438884332
+    "comprarEm": "olx",
+    "medianaCompra": 3200,
+    "venderEm": "enjoei",
+    "medianaVenda": 3400,
+    "diferenca": 200,
+    "percentual": 0.0625
   },
-  "tetoDeCompra": 2516.428571428571,
-  "precoVendaRapida": 2852,
+  "tetoDeCompra": 2598.5714285714284,
+  "precoVendaRapida": 2944,
   "oportunidades": [],
   "anuncios": [
     {
@@ -277,23 +277,6 @@
       "textoCartao": ""
     },
     {
-      "fonte": "enjoei",
-      "idExterno": "149042593",
-      "titulo": "iphone 15 preto 128gb",
-      "preco": 2936,
-      "url": "https://www.enjoei.com.br/p/iphone-15-preto-128gb-149042593?rsid=e3029e0b-bc15-41e6-8f34-3b6b9394d90f-1788898236933&rsp=1&rspix=20",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "7 16% R$ 2.936 R$ 3.500 iphone 15 preto 128gb apple henrique",
-      "nacional": true
-    },
-    {
       "fonte": "olx",
       "idExterno": "1533456598",
       "titulo": "iPhone 15 256gb em perfeito estado",
@@ -342,23 +325,6 @@
       "textoCartao": ""
     },
     {
-      "fonte": "enjoei",
-      "idExterno": "148762135",
-      "titulo": "iphone 15 128gb black desconto imperdível!!",
-      "preco": 2962,
-      "url": "https://www.enjoei.com.br/p/iphone-15-128gb-black-desconto-imperdivel-148762135?rsid=02bbe0a3-6cad-440f-b6fd-d161bbaab0c7-1788898218627&rsp=1&rspix=23",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "1 32% R$ 2.962 R$ 4.380 iphone 15 128gb black desconto imperdível!! apple raelza",
-      "nacional": true
-    },
-    {
       "fonte": "olx",
       "idExterno": "1533014051",
       "titulo": "iPhone 15",
@@ -373,23 +339,6 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": "iPhone 15 Parcele sem juros R$ 2.977 em até 3x de R$ 992,33 sem juros Itapevi, Jardim Itaguassu 6 de set, 13:19"
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "149614284",
-      "titulo": "iphone 15 128gb preto",
-      "preco": 2995,
-      "url": "https://www.enjoei.com.br/p/iphone-15-128gb-preto-149614284?rsid=02bbe0a3-6cad-440f-b6fd-d161bbaab0c7-1788898218627&rsp=1&rspix=10",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "1 2 11% R$ 2.995 R$ 3.350 iphone 15 128gb preto apple fábio",
-      "nacional": true
     },
     {
       "fonte": "olx",
@@ -421,7 +370,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "iPhone 15 128GB Frete grátis Até 10x sem juros Natan Souza 5.0 R$ 3.000 em até 10x de R$ 300,00 sem juros Online São Paulo, Socorro 6 de set, 12:40"
+      "textoCartao": "iPhone 15 128GB Frete grátis Até 10x sem juros Natan Souza 5.0 R$ 3.000 em até 10x de R$ 300,00 sem juros São Paulo, Socorro 6 de set, 12:40"
     },
     {
       "fonte": "olx",
@@ -505,27 +454,10 @@
     },
     {
       "fonte": "enjoei",
-      "idExterno": "148936867",
-      "titulo": "iphone 15 128gb branco",
-      "preco": 3000,
-      "url": "https://www.enjoei.com.br/p/iphone-15-128gb-branco-148936867?rsid=02bbe0a3-6cad-440f-b6fd-d161bbaab0c7-1788898218627&rsp=1&rspix=18",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "1 R$ 3.000 iphone 15 128gb branco apple carlos",
-      "nacional": true
-    },
-    {
-      "fonte": "enjoei",
       "idExterno": "147071315",
       "titulo": "iphone 15 128gb preto",
       "preco": 3045,
-      "url": "https://www.enjoei.com.br/p/iphone-15-128gb-preto-147071315?rsid=02bbe0a3-6cad-440f-b6fd-d161bbaab0c7-1788898218627&rsp=1&rspix=9",
+      "url": "https://www.enjoei.com.br/p/iphone-15-128gb-preto-147071315?rsid=d1ab371b-b839-4e76-a751-d410c4141333-1788901790870&rsp=1&rspix=9",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -535,40 +467,6 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": "2 3 14% R$ 3.045 R$ 3.550 iphone 15 128gb preto apple cristiano",
-      "nacional": true
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "147411736",
-      "titulo": "iphone 15 128gb rosa",
-      "preco": 3050,
-      "url": "https://www.enjoei.com.br/p/iphone-15-128gb-rosa-147411736?rsid=e3029e0b-bc15-41e6-8f34-3b6b9394d90f-1788898236933&rsp=1&rspix=3",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "29 8 13% R$ 3.050 R$ 3.500 iphone 15 128gb rosa apple bella",
-      "nacional": true
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "149068189",
-      "titulo": "iphone 15 128gb preto",
-      "preco": 3058,
-      "url": "https://www.enjoei.com.br/p/iphone-15-128gb-preto-149068189?rsid=02bbe0a3-6cad-440f-b6fd-d161bbaab0c7-1788898218627&rsp=1&rspix=3",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "3 13% R$ 3.058 R$ 3.500 iphone 15 128gb preto apple andre",
       "nacional": true
     },
     {
@@ -733,10 +631,10 @@
     },
     {
       "fonte": "enjoei",
-      "idExterno": "150380149",
-      "titulo": "iphone 15 128gb preto",
+      "idExterno": "150364251",
+      "titulo": "iphone 15 128gb",
       "preco": 3200,
-      "url": "https://www.enjoei.com.br/p/iphone-15-128gb-preto-150380149?rsid=02bbe0a3-6cad-440f-b6fd-d161bbaab0c7-1788898218627&rsp=1&rspix=7",
+      "url": "https://www.enjoei.com.br/p/iphone-15-128gb-150364251?rsid=d1ab371b-b839-4e76-a751-d410c4141333-1788901790870&rsp=1&rspix=21",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -745,8 +643,24 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "R$ 3.200 iphone 15 128gb preto apple tiago",
+      "textoCartao": "R$ 3.200 iphone 15 128gb apple juberto",
       "nacional": true
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1533415347",
+      "titulo": "iPhone 15 128GB Preto - 99% bateria + NF + Caixa + Carregador Original",
+      "preco": 3290,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/iphone-15-128gb-preto-99-bateria-nf-caixa-carregador-original-1533415347",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 128,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": ""
     },
     {
       "fonte": "olx",
@@ -801,7 +715,7 @@
       "idExterno": "147745805",
       "titulo": "iphone 15 256gb azul",
       "preco": 3300,
-      "url": "https://www.enjoei.com.br/p/iphone-15-256gb-azul-147745805?rsid=02bbe0a3-6cad-440f-b6fd-d161bbaab0c7-1788898218627&rsp=1&rspix=8",
+      "url": "https://www.enjoei.com.br/p/iphone-15-256gb-azul-147745805?rsid=d1ab371b-b839-4e76-a751-d410c4141333-1788901790870&rsp=1&rspix=11",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -827,7 +741,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "iPhone 15 128GB Verde (Anatel) - Bateria 90% - Excelente Estado Frete grátis Até 10x sem juros Lucas S. 4.8 R$ 3.390 R$ 3.190 em até 10x de R$ 319,00 sem juros São Paulo, Limão Hoje, 13:39"
+      "textoCartao": ""
     },
     {
       "fonte": "olx",
@@ -835,22 +749,6 @@
       "titulo": "VENDO OU TROCO ? iPHONE 15<br><br>? iPhone 15 ? 128 GB",
       "preco": 3400,
       "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/vendo-ou-troco-iphone-15-br-br-iphone-15-128-gb-1532562231",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": ""
-    },
-    {
-      "fonte": "olx",
-      "idExterno": "1533415347",
-      "titulo": "iPhone 15 128GB Preto - 99% bateria + NF + Caixa + Carregador Original",
-      "preco": 3490,
-      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/iphone-15-128gb-preto-99-bateria-nf-caixa-carregador-original-1533415347",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -875,7 +773,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "iPhone 15 128GB Frete grátis Até 10x sem juros R$ 3.499 R$ 3.299 em até 10x de R$ 329,90 sem juros Online São Paulo, Jardim das Laranjeiras Hoje, 14:41"
+      "textoCartao": ""
     },
     {
       "fonte": "olx",
@@ -927,19 +825,19 @@
     },
     {
       "fonte": "enjoei",
-      "idExterno": "149847770",
-      "titulo": "iphone 15 em perfeito estado",
-      "preco": 3514,
-      "url": "https://www.enjoei.com.br/p/iphone-15-em-perfeito-estado-149847770?rsid=02bbe0a3-6cad-440f-b6fd-d161bbaab0c7-1788898218627&rsp=1&rspix=24",
+      "idExterno": "150363928",
+      "titulo": "iphone 15 128gb preto",
+      "preco": 3500,
+      "url": "https://www.enjoei.com.br/p/iphone-15-128gb-preto-150363928?rsid=d1ab371b-b839-4e76-a751-d410c4141333-1788901790870&rsp=1&rspix=27",
       "imagem": null,
       "cidade": null,
       "uf": null,
       "publicadoEm": null,
-      "armazenamento": null,
+      "armazenamento": 128,
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "1 R$ 3.514 iphone 15 em perfeito estado apple rita",
+      "textoCartao": "R$ 3.500 iphone 15 128gb preto apple pedróvisky",
       "nacional": true
     },
     {
@@ -991,6 +889,56 @@
       "textoCartao": ""
     },
     {
+      "fonte": "enjoei",
+      "idExterno": "150094332",
+      "titulo": "iphone 15 128gb preto",
+      "preco": 3600,
+      "url": "https://www.enjoei.com.br/p/iphone-15-128gb-preto-150094332?rsid=d1ab371b-b839-4e76-a751-d410c4141333-1788901790870&rsp=1&rspix=23",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 128,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "R$ 3.600 iphone 15 128gb preto apple matheus",
+      "nacional": true
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1533624028",
+      "titulo": "iPhone 15",
+      "preco": 3650,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/iphone-15-1533624028",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "iPhone 15 Frete grátis Até 10x sem juros R$ 3.650 em até 10x de R$ 365,00 sem juros São Paulo, Cerqueira César Hoje, 17:21"
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "149427905",
+      "titulo": "iphone 15 256gb rosa",
+      "preco": 3700,
+      "url": "https://www.enjoei.com.br/p/iphone-15-256gb-rosa-149427905?rsid=d1ab371b-b839-4e76-a751-d410c4141333-1788901790870&rsp=1&rspix=30",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 256,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "1 0 R$ 3.700 iphone 15 256gb rosa apple manuela",
+      "nacional": true
+    },
+    {
       "fonte": "olx",
       "idExterno": "1532824028",
       "titulo": "iPhone 15 256GB Preto | Muito bem conservado | Bateria 88%",
@@ -1005,23 +953,6 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "150110668",
-      "titulo": "smartphone apple iphone 15 256gb usado em estado de novo",
-      "preco": 3783,
-      "url": "https://www.enjoei.com.br/p/smartphone-apple-iphone-15-256gb-usado-em-estado-de-novo-150110668?rsid=e3029e0b-bc15-41e6-8f34-3b6b9394d90f-1788898236933&rsp=1&rspix=23",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 256,
-      "condicao": "seminovo",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "2 8% R$ 3.783 R$ 4.100 smartphone apple iphone 15 256gb usado em estado de novo apple julia",
-      "nacional": true
     },
     {
       "fonte": "olx",
@@ -1070,6 +1001,22 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1533632133",
+      "titulo": "iPhone 15",
+      "preco": 4000,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/iphone-15-1533632133",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "iPhone 15 Frete grátis Até 10x sem juros R$ 4.000 em até 10x de R$ 400,00 sem juros São Paulo, Vila Clementino Hoje, 17:56"
     },
     {
       "fonte": "olx",

@@ -4,8 +4,8 @@
   "categoria": "Videogames",
   "marca": "Diversos",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T20:33:35.936Z",
-  "duracaoMs": 36824,
+  "atualizadoEm": "2026-09-08T21:32:54.622Z",
+  "duracaoMs": 36495,
   "fontes": [
     {
       "id": "olx",
@@ -27,39 +27,39 @@
     }
   ],
   "coletados": 160,
-  "analisados": 22,
+  "analisados": 23,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 133,
+  "descartados": 132,
   "motivosDescarte": {
-    "modelo nao identificado no titulo": 83,
-    "acessorio/peca": 38,
+    "modelo nao identificado no titulo": 85,
+    "acessorio/peca": 35,
     "preco abaixo da faixa (< R$ 2200)": 6,
     "anuncio de loja": 3,
     "desqualificado": 2,
     "preco acima da faixa (> R$ 5500)": 1
   },
   "estatisticas": {
-    "n": 22,
+    "n": 23,
     "min": 3150,
-    "p10": 3499.1,
-    "p25": 3525,
-    "mediana": 3799.5,
-    "p75": 4142.5,
-    "p90": 4470.000000000001,
+    "p10": 3499.2,
+    "p25": 3550,
+    "mediana": 3800,
+    "p75": 4194.5,
+    "p90": 4450,
     "max": 5000,
-    "media": 3869.318181818182,
-    "desvio": 419.4203127655247,
-    "nBruto": 22,
+    "media": 3885.8695652173915,
+    "desvio": 417.4827571912221,
+    "nBruto": 23,
     "outliersRemovidos": 0,
     "limites": {
-      "inferior": 2598.75,
-      "superior": 5068.75,
-      "q1": 3525,
-      "q3": 4142.5,
-      "iqr": 617.5
+      "inferior": 2583.25,
+      "superior": 5161.25,
+      "q1": 3550,
+      "q3": 4194.5,
+      "iqr": 644.5
     },
-    "amplitudeRelativa": 0.16252138439268324,
+    "amplitudeRelativa": 0.16960526315789473,
     "confianca": {
       "nivel": "media",
       "rotulo": "Media"
@@ -67,8 +67,8 @@
     "suficiente": true,
     "porFonte": {
       "olx": {
-        "n": 17,
-        "mediana": 3799
+        "n": 18,
+        "mediana": 3799.5
       },
       "enjoei": {
         "n": 5,
@@ -83,8 +83,8 @@
     },
     "porCondicao": {
       "usado": {
-        "n": 17,
-        "mediana": 3800
+        "n": 18,
+        "mediana": 3850
       },
       "seminovo": {
         "n": 1,
@@ -98,14 +98,14 @@
   },
   "arbitragem": {
     "comprarEm": "olx",
-    "medianaCompra": 3799,
+    "medianaCompra": 3799.5,
     "venderEm": "enjoei",
     "medianaVenda": 3900,
-    "diferenca": 101,
-    "percentual": 0.026585943669386682
+    "diferenca": 100.5,
+    "percentual": 0.026450848795894197
   },
-  "tetoDeCompra": 3091.017857142857,
-  "precoVendaRapida": 3495.54,
+  "tetoDeCompra": 3091.428571428571,
+  "precoVendaRapida": 3496,
   "oportunidades": [],
   "anuncios": [
     {
@@ -113,7 +113,7 @@
       "idExterno": "150093079",
       "titulo": "nintendo switch 2 com mariokart world",
       "preco": 3150,
-      "url": "https://www.enjoei.com.br/p/nintendo-switch-2-com-mariokart-world-150093079?ssqi=e42586b1533f96b83af2279cf1855f97&rsid=8d1e24b1-4fd1-47ed-aea0-e0bcd2de9a26-1788899579807&rsp=1&rspix=8",
+      "url": "https://www.enjoei.com.br/p/nintendo-switch-2-com-mariokart-world-150093079?ssqi=ebd43aa71dded606582be4b4322edcc0&rsid=56f2c477-7a37-43fd-ab48-a31faa844992-1788903139092&rsp=1&rspix=9",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -194,7 +194,7 @@
       "idExterno": "149359923",
       "titulo": "nintendo switch 2 com case original pelicula e protetores de analógico",
       "preco": 3500,
-      "url": "https://www.enjoei.com.br/p/nintendo-switch-2-com-case-original-pelicula-e-protetores-de-analogico-149359923?ssqi=e42586b1533f96b83af2279cf1855f97&rsid=8d1e24b1-4fd1-47ed-aea0-e0bcd2de9a26-1788899579807&rsp=1&rspix=3",
+      "url": "https://www.enjoei.com.br/p/nintendo-switch-2-com-case-original-pelicula-e-protetores-de-analogico-149359923?ssqi=ebd43aa71dded606582be4b4322edcc0&rsid=56f2c477-7a37-43fd-ab48-a31faa844992-1788903139092&rsp=1&rspix=7",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -323,7 +323,7 @@
       "idExterno": "148943674",
       "titulo": "nintendo switch 2 novo",
       "preco": 3900,
-      "url": "https://www.enjoei.com.br/p/nintendo-switch-2-novo-148943674?ssqi=e42586b1533f96b83af2279cf1855f97&rsid=8d1e24b1-4fd1-47ed-aea0-e0bcd2de9a26-1788899579807&rsp=1&rspix=28",
+      "url": "https://www.enjoei.com.br/p/nintendo-switch-2-novo-148943674?ssqi=ebd43aa71dded606582be4b4322edcc0&rsid=56f2c477-7a37-43fd-ab48-a31faa844992-1788903139092&rsp=1&rspix=28",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -332,7 +332,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "1 5 R$ 3.900 nintendo switch 2 novo nintendo lyncon",
+      "textoCartao": "1 6 R$ 3.900 nintendo switch 2 novo nintendo lyncon",
       "nacional": true
     },
     {
@@ -356,7 +356,7 @@
       "idExterno": "149930765",
       "titulo": "nintendo switch 2 novo",
       "preco": 4000,
-      "url": "https://www.enjoei.com.br/p/nintendo-switch-2-novo-149930765?ssqi=e42586b1533f96b83af2279cf1855f97&rsid=8d1e24b1-4fd1-47ed-aea0-e0bcd2de9a26-1788899579807&rsp=1&rspix=4",
+      "url": "https://www.enjoei.com.br/p/nintendo-switch-2-novo-149930765?ssqi=ebd43aa71dded606582be4b4322edcc0&rsid=56f2c477-7a37-43fd-ab48-a31faa844992-1788903139092&rsp=1&rspix=8",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -365,7 +365,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "5 R$ 4.000 nintendo switch 2 novo nintendo ryan",
+      "textoCartao": "6 R$ 4.000 nintendo switch 2 novo nintendo ryan",
       "nacional": true
     },
     {
@@ -418,6 +418,22 @@
     },
     {
       "fonte": "olx",
+      "idExterno": "1533630339",
+      "titulo": "Nintendo Switch 2",
+      "preco": 4250,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/nintendo-switch-2-1533630339",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "Nintendo Switch 2 R$ 4.250 São Paulo, Vila Dalila Hoje, 17:48"
+    },
+    {
+      "fonte": "olx",
       "idExterno": "1533301895",
       "titulo": "Nintendo switch 2",
       "preco": 4500,
@@ -430,14 +446,14 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "Nintendo switch 2 Entrega Fácil Parcele sem juros R$ 4.500 em até 3x de R$ 1.500,00 sem juros São Bernardo do Campo, Rudge Ramos Ontem, 15:57"
+      "textoCartao": ""
     },
     {
       "fonte": "enjoei",
       "idExterno": "150264995",
       "titulo": "nintendo switch 2 versão japonesa",
       "preco": 4500,
-      "url": "https://www.enjoei.com.br/p/nintendo-switch-2-versao-japonesa-150264995?ssqi=e42586b1533f96b83af2279cf1855f97&rsid=8d1e24b1-4fd1-47ed-aea0-e0bcd2de9a26-1788899579807&rsp=1&rspix=9",
+      "url": "https://www.enjoei.com.br/p/nintendo-switch-2-versao-japonesa-150264995?ssqi=ebd43aa71dded606582be4b4322edcc0&rsid=56f2c477-7a37-43fd-ab48-a31faa844992-1788903139092&rsp=1&rspix=10",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -446,7 +462,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "1 R$ 4.500 nintendo switch 2 versão japonesa nintendo aline",
+      "textoCartao": "2 R$ 4.500 nintendo switch 2 versão japonesa nintendo aline",
       "nacional": true
     },
     {

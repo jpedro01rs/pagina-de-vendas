@@ -4,8 +4,8 @@
   "categoria": "Celulares",
   "marca": "Apple",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T20:01:05.078Z",
-  "duracaoMs": 37756,
+  "atualizadoEm": "2026-09-08T21:00:43.429Z",
+  "duracaoMs": 36616,
   "fontes": [
     {
       "id": "olx",
@@ -30,10 +30,10 @@
   "analisados": 17,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 98,
+  "descartados": 96,
   "motivosDescarte": {
     "modelo nao identificado no titulo": 31,
-    "acessorio/peca": 29,
+    "acessorio/peca": 27,
     "preco abaixo da faixa (< R$ 700)": 20,
     "falta variante": 8,
     "preco acima da faixa (> R$ 2600)": 6,
@@ -46,11 +46,11 @@
     "p10": 800,
     "p25": 898.25,
     "mediana": 924,
-    "p75": 1101.75,
-    "p90": 1200,
+    "p75": 1200,
+    "p90": 1250,
     "max": 1500,
-    "media": 991.25,
-    "desvio": 194.29954323157838,
+    "media": 1005.6875,
+    "desvio": 207.6631041946306,
     "nBruto": 17,
     "outliersRemovidos": 1,
     "limites": {
@@ -60,7 +60,7 @@
       "q3": 1200,
       "iqr": 300
     },
-    "amplitudeRelativa": 0.22023809523809523,
+    "amplitudeRelativa": 0.32656926406926406,
     "confianca": {
       "nivel": "media",
       "rotulo": "Media"
@@ -82,8 +82,12 @@
         "mediana": 925
       },
       "256GB": {
-        "n": 5,
-        "mediana": 1069
+        "n": 4,
+        "mediana": 1100
+      },
+      "512GB": {
+        "n": 1,
+        "mediana": 1300
       }
     },
     "porCondicao": {
@@ -192,7 +196,7 @@
       "idExterno": "149508684",
       "titulo": "iphone xs max 256gb preto",
       "preco": 893,
-      "url": "https://www.enjoei.com.br/p/iphone-xs-max-256gb-preto-149508684?ssqi=1af1384252ba5bf93c59ed5444340be9&rsid=616bb6b2-ee75-469f-b5cc-24f32427d02e-1788897628934&rsp=1&rspix=30",
+      "url": "https://www.enjoei.com.br/p/iphone-xs-max-256gb-preto-149508684?ssqi=36f78a337980651339794ec67ecfa8e5&rsid=d506e909-2b05-472c-9f51-8d5adfabe86a-1788901207558&rsp=1&rspix=29",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -257,7 +261,7 @@
       "idExterno": "150297365",
       "titulo": "iphone xs max 79% bateria",
       "preco": 924,
-      "url": "https://www.enjoei.com.br/p/iphone-xs-max-79-bateria-150297365?action_source=seller_highlighted&ssqi=b448470cfc2b1ba58affe18549264498&rsid=30b24a84-6272-485c-a8bf-def0870cd2bb-1788897647496&rsp=1&rspix=1",
+      "url": "https://www.enjoei.com.br/p/iphone-xs-max-79-bateria-150297365?action_source=seller_highlighted&ssqi=36f78a337980651339794ec67ecfa8e5&rsid=d506e909-2b05-472c-9f51-8d5adfabe86a-1788901207558&rsp=1&rspix=1",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -274,7 +278,7 @@
       "idExterno": "150297460",
       "titulo": "iphone xs max original",
       "preco": 924,
-      "url": "https://www.enjoei.com.br/p/iphone-xs-max-original-150297460?action_source=seller_highlighted&ssqi=b448470cfc2b1ba58affe18549264498&rsid=30b24a84-6272-485c-a8bf-def0870cd2bb-1788897647496&rsp=1&rspix=2",
+      "url": "https://www.enjoei.com.br/p/iphone-xs-max-original-150297460?action_source=seller_highlighted&ssqi=36f78a337980651339794ec67ecfa8e5&rsid=d506e909-2b05-472c-9f51-8d5adfabe86a-1788901207558&rsp=1&rspix=2",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -317,23 +321,6 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "148877647",
-      "titulo": "iphone xs max 256gb branco",
-      "preco": 1069,
-      "url": "https://www.enjoei.com.br/p/iphone-xs-max-256gb-branco-148877647?ssqi=1af1384252ba5bf93c59ed5444340be9&rsid=616bb6b2-ee75-469f-b5cc-24f32427d02e-1788897628934&rsp=1&rspix=29",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 256,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "7 9% R$ 1.069 R$ 1.174 iphone xs max 256gb branco apple",
-      "nacional": true
     },
     {
       "fonte": "olx",
@@ -384,6 +371,23 @@
       "textoCartao": "iPhone xs Max gold 64gb Entrega Fácil Parcele sem juros R$ 1.200 em até 3x de R$ 400,00 sem juros São Paulo, Capão do Embira 9 de ago, 11:12"
     },
     {
+      "fonte": "enjoei",
+      "idExterno": "147776902",
+      "titulo": "iphone xs max 512gb dourado",
+      "preco": 1300,
+      "url": "https://www.enjoei.com.br/p/iphone-xs-max-512gb-dourado-147776902?ssqi=36f78a337980651339794ec67ecfa8e5&rsid=d506e909-2b05-472c-9f51-8d5adfabe86a-1788901207558&rsp=1&rspix=30",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 512,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "8 R$ 1.300 iphone xs max 512gb dourado apple roterdan",
+      "nacional": true
+    },
+    {
       "fonte": "olx",
       "idExterno": "1525590161",
       "titulo": "iPhone XS Max 256GB - Rose Gold",
@@ -404,7 +408,7 @@
       "idExterno": "96509347",
       "titulo": "iphone xs max 64 gb dourado",
       "preco": 1800,
-      "url": "https://www.enjoei.com.br/p/iphone-xs-max-64-gb-dourado-96509347?ssqi=1af1384252ba5bf93c59ed5444340be9&rsid=616bb6b2-ee75-469f-b5cc-24f32427d02e-1788897628934&rsp=1&rspix=20",
+      "url": "https://www.enjoei.com.br/p/iphone-xs-max-64-gb-dourado-96509347?ssqi=36f78a337980651339794ec67ecfa8e5&rsid=d506e909-2b05-472c-9f51-8d5adfabe86a-1788901207558&rsp=1&rspix=20",
       "imagem": null,
       "cidade": null,
       "uf": null,

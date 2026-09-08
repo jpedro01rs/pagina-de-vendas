@@ -4,14 +4,14 @@
   "categoria": "Celulares",
   "marca": "Apple",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T19:58:00.243Z",
-  "duracaoMs": 36798,
+  "atualizadoEm": "2026-09-08T20:57:39.791Z",
+  "duracaoMs": 36306,
   "fontes": [
     {
       "id": "olx",
       "nome": "OLX",
       "ok": true,
-      "encontrados": 72,
+      "encontrados": 74,
       "via": "dom",
       "metodo": "navegador",
       "estrategia": "categoria"
@@ -20,45 +20,45 @@
       "id": "enjoei",
       "nome": "Enjoei",
       "ok": true,
-      "encontrados": 69,
+      "encontrados": 70,
       "via": "dom",
       "metodo": null,
       "estrategia": null
     }
   ],
-  "coletados": 141,
-  "analisados": 60,
+  "coletados": 144,
+  "analisados": 62,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 69,
+  "descartados": 74,
   "motivosDescarte": {
-    "acessorio/peca": 26,
-    "preco abaixo da faixa (< R$ 350)": 20,
+    "acessorio/peca": 32,
+    "preco abaixo da faixa (< R$ 350)": 19,
     "outra variante": 12,
-    "modelo nao identificado no titulo": 7,
-    "desqualificado": 4
+    "modelo nao identificado no titulo": 6,
+    "desqualificado": 5
   },
   "estatisticas": {
-    "n": 57,
+    "n": 59,
     "min": 350,
-    "p10": 373.6,
-    "p25": 400,
-    "mediana": 470,
+    "p10": 376.8,
+    "p25": 410,
+    "mediana": 480,
     "p75": 550,
-    "p90": 621.8,
+    "p90": 612.4000000000001,
     "max": 750,
-    "media": 490.4035087719298,
-    "desvio": 101.64020817330652,
-    "nBruto": 60,
+    "media": 492.8474576271187,
+    "desvio": 100.77728651133243,
+    "nBruto": 62,
     "outliersRemovidos": 3,
     "limites": {
-      "inferior": 208.75,
-      "superior": 758.75,
-      "q1": 415,
-      "q3": 552.5,
+      "inferior": 213.75,
+      "superior": 763.75,
+      "q1": 420,
+      "q3": 557.5,
       "iqr": 137.5
     },
-    "amplitudeRelativa": 0.3191489361702128,
+    "amplitudeRelativa": 0.2916666666666667,
     "confianca": {
       "nivel": "alta",
       "rotulo": "Alta"
@@ -66,8 +66,8 @@
     "suficiente": true,
     "porFonte": {
       "olx": {
-        "n": 51,
-        "mediana": 470
+        "n": 53,
+        "mediana": 480
       },
       "enjoei": {
         "n": 9,
@@ -85,26 +85,19 @@
       }
     },
     "porCondicao": {
+      "seminovo": {
+        "n": 5,
+        "mediana": 550
+      },
       "usado": {
         "n": 57,
         "mediana": 470
-      },
-      "seminovo": {
-        "n": 3,
-        "mediana": 550
       }
     }
   },
-  "arbitragem": {
-    "comprarEm": "olx",
-    "medianaCompra": 470,
-    "venderEm": "enjoei",
-    "medianaVenda": 480,
-    "diferenca": 10,
-    "percentual": 0.02127659574468085
-  },
-  "tetoDeCompra": 356.07142857142856,
-  "precoVendaRapida": 432.40000000000003,
+  "arbitragem": null,
+  "tetoDeCompra": 364.2857142857143,
+  "precoVendaRapida": 441.6,
   "oportunidades": [],
   "anuncios": [
     {
@@ -192,7 +185,7 @@
       "idExterno": "147082638",
       "titulo": "iphone 8 64gb",
       "preco": 364,
-      "url": "https://www.enjoei.com.br/p/iphone-8-64gb-147082638?ssqi=861880e5be06f35a044271740e99e785&rsid=6a0f3d9a-88ca-4d8e-a811-416f6a27d0b3-1788897444378&rsp=1&rspix=4",
+      "url": "https://www.enjoei.com.br/p/iphone-8-64gb-147082638?ssqi=157b9c5128a47f5ee58e1efa4febc491&rsid=2ad9345c-5227-4567-87e5-310c0104cc32-1788901024122&rsp=1&rspix=3",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -241,7 +234,7 @@
       "idExterno": "147124991",
       "titulo": "vendo iphone 8 64gb",
       "preco": 397,
-      "url": "https://www.enjoei.com.br/p/vendo-iphone-8-64gb-147124991?ssqi=861880e5be06f35a044271740e99e785&rsid=6a0f3d9a-88ca-4d8e-a811-416f6a27d0b3-1788897444378&rsp=1&rspix=10",
+      "url": "https://www.enjoei.com.br/p/vendo-iphone-8-64gb-147124991?ssqi=157b9c5128a47f5ee58e1efa4febc491&rsid=2ad9345c-5227-4567-87e5-310c0104cc32-1788901024122&rsp=1&rspix=10",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -370,7 +363,7 @@
       "idExterno": "150265578",
       "titulo": "iphone 8 64gb dourado",
       "preco": 420,
-      "url": "https://www.enjoei.com.br/p/iphone-8-64gb-dourado-150265578?action_source=seller_highlighted&ssqi=861880e5be06f35a044271740e99e785&rsid=6a0f3d9a-88ca-4d8e-a811-416f6a27d0b3-1788897444378&rsp=1&rspix=1",
+      "url": "https://www.enjoei.com.br/p/iphone-8-64gb-dourado-150265578?action_source=seller_highlighted&ssqi=157b9c5128a47f5ee58e1efa4febc491&rsid=2ad9345c-5227-4567-87e5-310c0104cc32-1788901024122&rsp=1&rspix=2",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -387,7 +380,7 @@
       "idExterno": "148293632",
       "titulo": "iphone 8 todo original",
       "preco": 422,
-      "url": "https://www.enjoei.com.br/p/iphone-8-todo-original-148293632?ssqi=861880e5be06f35a044271740e99e785&rsid=6a0f3d9a-88ca-4d8e-a811-416f6a27d0b3-1788897444378&rsp=1&rspix=5",
+      "url": "https://www.enjoei.com.br/p/iphone-8-todo-original-148293632?ssqi=157b9c5128a47f5ee58e1efa4febc491&rsid=2ad9345c-5227-4567-87e5-310c0104cc32-1788901024122&rsp=1&rspix=5",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -445,7 +438,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "? iPhone 8 - 64GB - Bateria 100% Entrega Fácil Parcele sem juros R$ 450 em até 3x de R$ 150,00 sem juros Guarulhos, Vila Rio de Janeiro Ontem, 12:13"
+      "textoCartao": ""
     },
     {
       "fonte": "olx",
@@ -596,7 +589,7 @@
       "idExterno": "146978789",
       "titulo": "vendo iphone 8 64gb",
       "preco": 480,
-      "url": "https://www.enjoei.com.br/p/vendo-iphone-8-64gb-146978789?ssqi=861880e5be06f35a044271740e99e785&rsid=6a0f3d9a-88ca-4d8e-a811-416f6a27d0b3-1788897444378&rsp=1&rspix=23",
+      "url": "https://www.enjoei.com.br/p/vendo-iphone-8-64gb-146978789?ssqi=157b9c5128a47f5ee58e1efa4febc491&rsid=2ad9345c-5227-4567-87e5-310c0104cc32-1788901024122&rsp=1&rspix=23",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -670,7 +663,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "Apple iPhone 8 128Gb Parcele sem juros R$ 500 em até 3x de R$ 166,67 sem juros Franco da Rocha, Vila Rosa 18 de ago, 21:11"
+      "textoCartao": ""
     },
     {
       "fonte": "olx",
@@ -719,6 +712,22 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1533604837",
+      "titulo": "IPHONE 8 BRANCO IMPECÁVEL - ÚNICO DONO - NA CAIXA E NOTA FISCAL",
+      "preco": 550,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/iphone-8-branco-impecavel-unico-dono-na-caixa-e-nota-fiscal-1533604837",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "seminovo",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "IPHONE 8 BRANCO IMPECÁVEL - ÚNICO DONO - NA CAIXA E NOTA FISCAL R$ 550 Online São Paulo, Jardim Três Marias Hoje, 17:04"
     },
     {
       "fonte": "olx",
@@ -805,7 +814,7 @@
       "idExterno": "150379077",
       "titulo": "combo iphone 8 dourado 64gb bateria 100%+ fone h'maston digital",
       "preco": 550,
-      "url": "https://www.enjoei.com.br/p/combo-iphone-8-dourado-64gb-bateria-100-fone-h-maston-digital-150379077?action_source=seller_highlighted&ssqi=861880e5be06f35a044271740e99e785&rsid=6a0f3d9a-88ca-4d8e-a811-416f6a27d0b3-1788897444378&rsp=1&rspix=2",
+      "url": "https://www.enjoei.com.br/p/combo-iphone-8-dourado-64gb-bateria-100-fone-h-maston-digital-150379077?action_source=seller_highlighted&ssqi=157b9c5128a47f5ee58e1efa4febc491&rsid=2ad9345c-5227-4567-87e5-310c0104cc32-1788901024122&rsp=1&rspix=1",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -822,7 +831,7 @@
       "idExterno": "150266586",
       "titulo": "iphone 8 64gb dourado",
       "preco": 550,
-      "url": "https://www.enjoei.com.br/p/iphone-8-64gb-dourado-150266586?action_source=seller_highlighted&ssqi=861880e5be06f35a044271740e99e785&rsid=6a0f3d9a-88ca-4d8e-a811-416f6a27d0b3-1788897444378&rsp=1&rspix=4",
+      "url": "https://www.enjoei.com.br/p/iphone-8-64gb-dourado-150266586?action_source=seller_highlighted&ssqi=157b9c5128a47f5ee58e1efa4febc491&rsid=2ad9345c-5227-4567-87e5-310c0104cc32-1788901024122&rsp=1&rspix=4",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -848,7 +857,23 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "COMBO: iPhone 8 Dourado (Bateria 100% + Caixa) + Fone Sem Fio Lehmox Frete grátis Parcele sem juros R$ 560 em até 3x de R$ 186,67 sem juros São Paulo, Vila Amália (Zona Norte) Ontem, 20:45"
+      "textoCartao": "COMBO: iPhone 8 Dourado (Bateria 100% + Caixa) + Fone Sem Fio Lehmox Frete grátis Parcele sem juros R$ 560 em até 3x de R$ 186,67 sem juros Online São Paulo, Vila Amália (Zona Norte) Ontem, 20:45"
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1533600148",
+      "titulo": "IPHONE 8 RED IMPECÁVEL - ÚNICA DONA - NA CAIXA E NOTA FISCAL",
+      "preco": 575,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/iphone-8-red-impecavel-unica-dona-na-caixa-e-nota-fiscal-1533600148",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "seminovo",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "IPHONE 8 RED IMPECÁVEL - ÚNICA DONA - NA CAIXA E NOTA FISCAL R$ 575 Online São Paulo, Jardim Três Marias Hoje, 16:50"
     },
     {
       "fonte": "olx",
@@ -880,7 +905,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "COMBO IMPERDÍVEL: iPhone 8 Dourado bateria 100%+ Fone Bluetooth H'maston SN39 Entrega Fácil Parcele sem juros R$ 600 em até 3x de R$ 200,00 sem juros São Paulo, Vila Amália (Zona Norte) Ontem, 20:37"
+      "textoCartao": "COMBO IMPERDÍVEL: iPhone 8 Dourado bateria 100%+ Fone Bluetooth H'maston SN39 Entrega Fácil Parcele sem juros R$ 600 em até 3x de R$ 200,00 sem juros Online São Paulo, Vila Amália (Zona Norte) Ontem, 20:37"
     },
     {
       "fonte": "olx",
@@ -903,7 +928,7 @@
       "idExterno": "149145503",
       "titulo": "iphone 8 red special edition 64gb",
       "preco": 600,
-      "url": "https://www.enjoei.com.br/p/iphone-8-red-special-edition-64gb-149145503?ssqi=861880e5be06f35a044271740e99e785&rsid=6a0f3d9a-88ca-4d8e-a811-416f6a27d0b3-1788897444378&rsp=1&rspix=22",
+      "url": "https://www.enjoei.com.br/p/iphone-8-red-special-edition-64gb-149145503?ssqi=157b9c5128a47f5ee58e1efa4febc491&rsid=2ad9345c-5227-4567-87e5-310c0104cc32-1788901024122&rsp=1&rspix=22",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -984,7 +1009,7 @@
       "idExterno": "150378940",
       "titulo": "iphone 8 dourado 64gb bateria 100% na caixa + fone sem fio lehmox",
       "preco": 700,
-      "url": "https://www.enjoei.com.br/p/iphone-8-dourado-64gb-bateria-100-na-caixa-fone-sem-fio-lehmox-150378940?action_source=seller_highlighted&ssqi=861880e5be06f35a044271740e99e785&rsid=6a0f3d9a-88ca-4d8e-a811-416f6a27d0b3-1788897444378&rsp=1&rspix=3",
+      "url": "https://www.enjoei.com.br/p/iphone-8-dourado-64gb-bateria-100-na-caixa-fone-sem-fio-lehmox-150378940?action_source=seller_highlighted&ssqi=157b9c5128a47f5ee58e1efa4febc491&rsid=2ad9345c-5227-4567-87e5-310c0104cc32-1788901024122&rsp=1&rspix=3",
       "imagem": null,
       "cidade": null,
       "uf": null,

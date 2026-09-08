@@ -4,8 +4,8 @@
   "categoria": "Celulares",
   "marca": "Xiaomi",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T20:43:30.102Z",
-  "duracaoMs": 36971,
+  "atualizadoEm": "2026-09-08T21:42:42.174Z",
+  "duracaoMs": 36257,
   "fontes": [
     {
       "id": "olx",
@@ -27,41 +27,40 @@
     }
   ],
   "coletados": 159,
-  "analisados": 26,
+  "analisados": 25,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
   "descartados": 112,
   "motivosDescarte": {
-    "modelo nao identificado no titulo": 93,
+    "modelo nao identificado no titulo": 94,
     "outra variante": 13,
     "preco abaixo da faixa (< R$ 700)": 4,
-    "acessorio/peca": 1,
-    "desqualificado": 1
+    "acessorio/peca": 1
   },
   "estatisticas": {
-    "n": 25,
+    "n": 24,
     "min": 700,
-    "p10": 785.2,
-    "p25": 873,
+    "p10": 782.9,
+    "p25": 868.5,
     "mediana": 950,
-    "p75": 1100,
-    "p90": 1259.4,
-    "max": 1500,
-    "media": 1003.64,
-    "desvio": 198.43908485981282,
-    "nBruto": 26,
+    "p75": 1085.75,
+    "p90": 1200,
+    "max": 1350,
+    "media": 982.9583333333334,
+    "desvio": 174.14229793635877,
+    "nBruto": 25,
     "outliersRemovidos": 1,
     "limites": {
-      "inferior": 436.875,
-      "superior": 1617.875,
-      "q1": 879.75,
-      "q3": 1175,
-      "iqr": 295.25
+      "inferior": 532.5,
+      "superior": 1440.5,
+      "q1": 873,
+      "q3": 1100,
+      "iqr": 227
     },
-    "amplitudeRelativa": 0.23894736842105263,
+    "amplitudeRelativa": 0.2286842105263158,
     "confianca": {
-      "nivel": "alta",
-      "rotulo": "Alta"
+      "nivel": "media",
+      "rotulo": "Media"
     },
     "suficiente": true,
     "porFonte": {
@@ -70,7 +69,7 @@
         "mediana": 900
       },
       "enjoei": {
-        "n": 23,
+        "n": 22,
         "mediana": 975
       }
     },
@@ -92,10 +91,6 @@
       "seminovo": {
         "n": 1,
         "mediana": 700
-      },
-      "novo": {
-        "n": 1,
-        "mediana": 2036
       }
     }
   },
@@ -115,7 +110,7 @@
       "idExterno": "147307205",
       "titulo": "redmi note 14 semi novo",
       "preco": 700,
-      "url": "https://www.enjoei.com.br/p/redmi-note-14-semi-novo-147307205?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=23",
+      "url": "https://www.enjoei.com.br/p/redmi-note-14-semi-novo-147307205?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=23",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -142,14 +137,14 @@
       "roi": 0.19726027397260273,
       "margem": 0.16475972540045766,
       "tetoDeCompra": 750.3571428571428,
-      "score": 70
+      "score": 69
     },
     {
       "fonte": "enjoei",
       "idExterno": "147105938",
       "titulo": "celular xiaomi redmi note 14 azul",
       "preco": 727,
-      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-azul-147105938?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=9",
+      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-azul-147105938?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=4",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -176,7 +171,7 @@
       "roi": 0.154557463672391,
       "margem": 0.13386727688787187,
       "tetoDeCompra": 750.3571428571428,
-      "score": 66
+      "score": 65
     }
   ],
   "anuncios": [
@@ -185,7 +180,7 @@
       "idExterno": "147307205",
       "titulo": "redmi note 14 semi novo",
       "preco": 700,
-      "url": "https://www.enjoei.com.br/p/redmi-note-14-semi-novo-147307205?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=23",
+      "url": "https://www.enjoei.com.br/p/redmi-note-14-semi-novo-147307205?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=23",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -202,7 +197,7 @@
       "idExterno": "147105938",
       "titulo": "celular xiaomi redmi note 14 azul",
       "preco": 727,
-      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-azul-147105938?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=9",
+      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-azul-147105938?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=4",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -219,7 +214,7 @@
       "idExterno": "147282838",
       "titulo": "redmi note 14 256gb preto",
       "preco": 776,
-      "url": "https://www.enjoei.com.br/p/redmi-note-14-256gb-preto-147282838?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=3",
+      "url": "https://www.enjoei.com.br/p/redmi-note-14-256gb-preto-147282838?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=3",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -228,7 +223,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "1 4 3% R$ 776 R$ 800 redmi note 14 256gb preto redmi thamyres",
+      "textoCartao": "1 5 3% R$ 776 R$ 800 redmi note 14 256gb preto redmi thamyres",
       "nacional": true
     },
     {
@@ -236,7 +231,7 @@
       "idExterno": "149609210",
       "titulo": "celular redmi note 14 256gb preto",
       "preco": 799,
-      "url": "https://www.enjoei.com.br/p/celular-redmi-note-14-256gb-preto-149609210?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=5",
+      "url": "https://www.enjoei.com.br/p/celular-redmi-note-14-256gb-preto-149609210?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=1",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -253,7 +248,7 @@
       "idExterno": "149504181",
       "titulo": "celular xiaomi redmi note 14 128gb",
       "preco": 800,
-      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-128gb-149504181?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=2",
+      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-128gb-149504181?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=6",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -270,7 +265,7 @@
       "idExterno": "148283818",
       "titulo": "celular redmi note 14 4g 256gb verde",
       "preco": 855,
-      "url": "https://www.enjoei.com.br/p/celular-redmi-note-14-4g-256gb-verde-148283818?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=7",
+      "url": "https://www.enjoei.com.br/p/celular-redmi-note-14-4g-256gb-verde-148283818?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=8",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -287,7 +282,7 @@
       "idExterno": "148116746",
       "titulo": "celular redmi note 14 256gb",
       "preco": 873,
-      "url": "https://www.enjoei.com.br/p/celular-redmi-note-14-256gb-148116746?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=6",
+      "url": "https://www.enjoei.com.br/p/celular-redmi-note-14-256gb-148116746?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=2",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -329,14 +324,14 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "Celular xiaomi redmi note 14 Entrega Fácil Parcele sem juros R$ 900 em até 3x de R$ 300,00 sem juros Jundiaí, Jardim Carolina Hoje, 16:23"
+      "textoCartao": ""
     },
     {
       "fonte": "enjoei",
       "idExterno": "149966130",
       "titulo": "celular redmi note 14 108mp",
       "preco": 900,
-      "url": "https://www.enjoei.com.br/p/celular-redmi-note-14-108mp-149966130?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=20",
+      "url": "https://www.enjoei.com.br/p/celular-redmi-note-14-108mp-149966130?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=20",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -353,7 +348,7 @@
       "idExterno": "147742727",
       "titulo": "celular xiaomi redmi note 14 256gb",
       "preco": 900,
-      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-256gb-147742727?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=29",
+      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-256gb-147742727?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=29",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -370,7 +365,7 @@
       "idExterno": "145592892",
       "titulo": "celular xiaomi redmi note 14 5g preto",
       "preco": 950,
-      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-5g-preto-145592892?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=1",
+      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-5g-preto-145592892?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=5",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -387,7 +382,7 @@
       "idExterno": "147744534",
       "titulo": "celular xiaomi redmi note 14 128gb preto",
       "preco": 950,
-      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-128gb-preto-147744534?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=28",
+      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-128gb-preto-147744534?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=28",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -404,7 +399,7 @@
       "idExterno": "150302035",
       "titulo": "celular xiaomi redmi note 14 preto",
       "preco": 1000,
-      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-preto-150302035?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=4",
+      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-preto-150302035?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=7",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -421,7 +416,7 @@
       "idExterno": "147302946",
       "titulo": "celular xiaomi redmi note 14 256gb azul",
       "preco": 1000,
-      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-256gb-azul-147302946?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=19",
+      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-256gb-azul-147302946?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=19",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -454,7 +449,7 @@
       "idExterno": "147664236",
       "titulo": "celular xiaomi redmi note 14 4g azul 256g novo",
       "preco": 1081,
-      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-4g-azul-256g-novo-147664236?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=11",
+      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-4g-azul-256g-novo-147664236?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=11",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -471,7 +466,7 @@
       "idExterno": "147556510",
       "titulo": "celular xiaomi redmi note 14 preto",
       "preco": 1081,
-      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-preto-147556510?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=22",
+      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-preto-147556510?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=22",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -488,7 +483,7 @@
       "idExterno": "145541490",
       "titulo": "celular xiaomi redmi note 14 5g",
       "preco": 1100,
-      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-5g-145541490?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=17",
+      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-5g-145541490?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=17",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -505,7 +500,7 @@
       "idExterno": "148079038",
       "titulo": "celular xiaomi redmi note 14 108mp",
       "preco": 1200,
-      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-108mp-148079038?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=16",
+      "url": "https://www.enjoei.com.br/p/celular-xiaomi-redmi-note-14-108mp-148079038?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=16",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -522,7 +517,7 @@
       "idExterno": "146911647",
       "titulo": "xiaomi redmi note 14",
       "preco": 1200,
-      "url": "https://www.enjoei.com.br/p/xiaomi-redmi-note-14-146911647?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=21",
+      "url": "https://www.enjoei.com.br/p/xiaomi-redmi-note-14-146911647?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=21",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -539,7 +534,7 @@
       "idExterno": "147024870",
       "titulo": "celular redmi note 14 256gb azul",
       "preco": 1200,
-      "url": "https://www.enjoei.com.br/p/celular-redmi-note-14-256gb-azul-147024870?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=25",
+      "url": "https://www.enjoei.com.br/p/celular-redmi-note-14-256gb-azul-147024870?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=25",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -556,7 +551,7 @@
       "idExterno": "146911182",
       "titulo": "redmi note 14 preto 128gb",
       "preco": 1299,
-      "url": "https://www.enjoei.com.br/p/redmi-note-14-preto-128gb-146911182?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=27",
+      "url": "https://www.enjoei.com.br/p/redmi-note-14-preto-128gb-146911182?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=27",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -573,7 +568,7 @@
       "idExterno": "146643644",
       "titulo": "vende-se xaomi redmi note 14 5g - 256gb",
       "preco": 1350,
-      "url": "https://www.enjoei.com.br/p/vende-se-xaomi-redmi-note-14-5g-256gb-146643644?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=30",
+      "url": "https://www.enjoei.com.br/p/vende-se-xaomi-redmi-note-14-5g-256gb-146643644?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=30",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -590,7 +585,7 @@
       "idExterno": "149116574",
       "titulo": "redmi note 14 256gb",
       "preco": 1500,
-      "url": "https://www.enjoei.com.br/p/redmi-note-14-256gb-149116574?ssqi=d33f27ad6fedb55cf0ae6446a929218c&rsid=3c485e38-d79f-4e80-b77a-96a09def2ff9-1788900174293&rsp=1&rspix=24",
+      "url": "https://www.enjoei.com.br/p/redmi-note-14-256gb-149116574?ssqi=afa9efcc4df70128ea81918200b635bb&rsid=6d14f048-0a87-4cda-a3ce-9e09fe5cd4b2-1788903726446&rsp=1&rspix=24",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -601,24 +596,12 @@
       "vendedor": null,
       "textoCartao": "1 R$ 1.500 redmi note 14 256gb redmi",
       "nacional": true
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "147313015",
-      "titulo": "celular redmi note 14 5g lacrado",
-      "preco": 2036,
-      "url": "https://www.enjoei.com.br/p/celular-redmi-note-14-5g-lacrado-147313015?ssqi=41b12f4e5be1c1069966423e5875340b&rsid=f5eb6db5-fc10-4afc-ba55-3278b23eaac5-1788900192584&rsp=1&rspix=11",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": null,
-      "condicao": "novo",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "22% R$ 2.036 R$ 2.600 celular redmi note 14 5g lacrado redmi lorenço",
-      "nacional": true
     }
   ],
-  "tendencia": null
+  "tendencia": {
+    "de": 1200,
+    "para": 950,
+    "variacao": -0.20833333333333334,
+    "dias": 14
+  }
 }

@@ -4,8 +4,8 @@
   "categoria": "Celulares",
   "marca": "Samsung",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T20:42:16.363Z",
-  "duracaoMs": 36447,
+  "atualizadoEm": "2026-09-08T21:41:29.267Z",
+  "duracaoMs": 36247,
   "fontes": [
     {
       "id": "olx",
@@ -30,10 +30,10 @@
   "analisados": 62,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 66,
+  "descartados": 67,
   "motivosDescarte": {
     "acessorio/peca": 33,
-    "modelo nao identificado no titulo": 27,
+    "modelo nao identificado no titulo": 28,
     "preco abaixo da faixa (< R$ 3000)": 3,
     "desqualificado": 2,
     "falta variante": 1
@@ -42,23 +42,23 @@
     "n": 56,
     "min": 3100,
     "p10": 3388,
-    "p25": 3500,
+    "p25": 3537.5,
     "mediana": 3874.5,
     "p75": 4000,
     "p90": 4200,
     "max": 4500,
-    "media": 3807.5714285714284,
-    "desvio": 325.909269645428,
+    "media": 3812.9285714285716,
+    "desvio": 323.26442389335404,
     "nBruto": 62,
     "outliersRemovidos": 6,
     "limites": {
-      "inferior": 2875,
-      "superior": 4675,
-      "q1": 3550,
+      "inferior": 2906.25,
+      "superior": 4656.25,
+      "q1": 3562.5,
       "q3": 4000,
-      "iqr": 450
+      "iqr": 437.5
     },
-    "amplitudeRelativa": 0.1290489095367144,
+    "amplitudeRelativa": 0.11937024132146083,
     "confianca": {
       "nivel": "alta",
       "rotulo": "Alta"
@@ -90,12 +90,12 @@
     },
     "porCondicao": {
       "usado": {
-        "n": 56,
+        "n": 57,
         "mediana": 3900
       },
       "seminovo": {
-        "n": 6,
-        "mediana": 3750
+        "n": 5,
+        "mediana": 3950
       }
     }
   },
@@ -166,7 +166,7 @@
       "idExterno": "148720113",
       "titulo": "samsung galaxy s24 ultra 256gb titânio cinza",
       "preco": 3199,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-256gb-titanio-cinza-148720113?ssqi=d301e6f3937186e88ddbaa9bec3a8109&rsid=47d4d455-13d2-474f-a441-4b9512f8fb07-1788900100603&rsp=1&rspix=16",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-256gb-titanio-cinza-148720113?ssqi=c1debc96ec3f6878452ac7a24e0591a4&rsid=c1b16eab-788d-41c8-8c68-3bac53676c4a-1788903653555&rsp=1&rspix=16",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -288,22 +288,6 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "S24 ultra muito zero R$ 3.480 São Paulo, Jabaquara Ontem, 15:52"
-    },
-    {
-      "fonte": "olx",
-      "idExterno": "1532629386",
-      "titulo": "Samsung S24 Ultra 256 grafite IMPECAVEL e completo",
-      "preco": 3500,
-      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/samsung-s24-ultra-256-grafite-impecavel-e-completo-1532629386",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": null,
-      "condicao": "seminovo",
-      "profissional": null,
-      "vendedor": null,
       "textoCartao": ""
     },
     {
@@ -375,7 +359,7 @@
       "idExterno": "149218947",
       "titulo": "samsung galaxy s24 ultra 256gb preto 12 ram",
       "preco": 3500,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-256gb-preto-12-ram-149218947?ssqi=d301e6f3937186e88ddbaa9bec3a8109&rsid=47d4d455-13d2-474f-a441-4b9512f8fb07-1788900100603&rsp=1&rspix=2",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-256gb-preto-12-ram-149218947?ssqi=c1debc96ec3f6878452ac7a24e0591a4&rsid=c1b16eab-788d-41c8-8c68-3bac53676c4a-1788903653555&rsp=1&rspix=2",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -408,7 +392,7 @@
       "idExterno": "149465951",
       "titulo": "samsung galaxy s24 ultra 512gb cinza",
       "preco": 3550,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-512gb-cinza-149465951?ssqi=d301e6f3937186e88ddbaa9bec3a8109&rsid=47d4d455-13d2-474f-a441-4b9512f8fb07-1788900100603&rsp=1&rspix=4",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-512gb-cinza-149465951?ssqi=c1debc96ec3f6878452ac7a24e0591a4&rsid=c1b16eab-788d-41c8-8c68-3bac53676c4a-1788903653555&rsp=1&rspix=4",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -434,7 +418,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "GALAXY S24 ULTRA Parcele sem juros R$ 3.600 em até 3x de R$ 1.200,00 sem juros São Paulo, Artur Alvim Ontem, 21:40"
+      "textoCartao": ""
     },
     {
       "fonte": "olx",
@@ -499,6 +483,22 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1530015884",
+      "titulo": "Samsung S24 Ultra 512, 10 Meses de Uso",
+      "preco": 3800,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/samsung-s24-ultra-512-10-meses-de-uso-1530015884",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "Samsung S24 Ultra 512, 10 Meses de Uso Frete grátis Até 10x sem juros R$ 3.800 em até 10x de R$ 380,00 sem juros Guarulhos, Vila Paraíso Hoje, 17:38"
     },
     {
       "fonte": "olx",
@@ -626,7 +626,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": ""
+      "textoCartao": "galaxy s24 ultra 256gb Parcele sem juros R$ 3.900 R$ 3.000 em até 3x de R$ 1.000,00 sem juros São Paulo, Jardim Antártica 23 de ago, 14:49"
     },
     {
       "fonte": "olx",
@@ -665,7 +665,7 @@
       "idExterno": "150290766",
       "titulo": "samsung galaxy s24 ultra 512gb preto",
       "preco": 3950,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-512gb-preto-150290766?ssqi=d301e6f3937186e88ddbaa9bec3a8109&rsid=47d4d455-13d2-474f-a441-4b9512f8fb07-1788900100603&rsp=1&rspix=29",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-512gb-preto-150290766?ssqi=c1debc96ec3f6878452ac7a24e0591a4&rsid=c1b16eab-788d-41c8-8c68-3bac53676c4a-1788903653555&rsp=1&rspix=29",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -746,7 +746,7 @@
       "idExterno": "147036115",
       "titulo": "samsung galaxy s24 ultra 512gb titânio cinza",
       "preco": 3999,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-512gb-titanio-cinza-147036115?ssqi=d301e6f3937186e88ddbaa9bec3a8109&rsid=47d4d455-13d2-474f-a441-4b9512f8fb07-1788900100603&rsp=1&rspix=1",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-512gb-titanio-cinza-147036115?ssqi=c1debc96ec3f6878452ac7a24e0591a4&rsid=c1b16eab-788d-41c8-8c68-3bac53676c4a-1788903653555&rsp=1&rspix=1",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -859,7 +859,7 @@
       "idExterno": "149645899",
       "titulo": "samsung galaxy s24 ultra preto",
       "preco": 4000,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-preto-149645899?ssqi=d301e6f3937186e88ddbaa9bec3a8109&rsid=47d4d455-13d2-474f-a441-4b9512f8fb07-1788900100603&rsp=1&rspix=10",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-preto-149645899?ssqi=c1debc96ec3f6878452ac7a24e0591a4&rsid=c1b16eab-788d-41c8-8c68-3bac53676c4a-1788903653555&rsp=1&rspix=10",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -876,7 +876,7 @@
       "idExterno": "149645728",
       "titulo": "samsung galaxy s24 ultra 512gb",
       "preco": 4000,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-512gb-149645728?ssqi=d301e6f3937186e88ddbaa9bec3a8109&rsid=47d4d455-13d2-474f-a441-4b9512f8fb07-1788900100603&rsp=1&rspix=11",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-512gb-149645728?ssqi=c1debc96ec3f6878452ac7a24e0591a4&rsid=c1b16eab-788d-41c8-8c68-3bac53676c4a-1788903653555&rsp=1&rspix=11",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -893,7 +893,7 @@
       "idExterno": "147737856",
       "titulo": "celular samsung galaxy s24 ultra",
       "preco": 4000,
-      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s24-ultra-147737856?ssqi=d301e6f3937186e88ddbaa9bec3a8109&rsid=47d4d455-13d2-474f-a441-4b9512f8fb07-1788900100603&rsp=1&rspix=18",
+      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s24-ultra-147737856?ssqi=c1debc96ec3f6878452ac7a24e0591a4&rsid=c1b16eab-788d-41c8-8c68-3bac53676c4a-1788903653555&rsp=1&rspix=18",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -926,7 +926,7 @@
       "idExterno": "148931360",
       "titulo": "samsung galaxy s24 ultra 512gb",
       "preco": 4171,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-512gb-148931360?ssqi=d301e6f3937186e88ddbaa9bec3a8109&rsid=47d4d455-13d2-474f-a441-4b9512f8fb07-1788900100603&rsp=1&rspix=7",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-512gb-148931360?ssqi=c1debc96ec3f6878452ac7a24e0591a4&rsid=c1b16eab-788d-41c8-8c68-3bac53676c4a-1788903653555&rsp=1&rspix=7",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -959,7 +959,7 @@
       "idExterno": "150289397",
       "titulo": "samsung galaxy s24 ultra 256gb titanium preto",
       "preco": 4200,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-256gb-titanium-preto-150289397?ssqi=d301e6f3937186e88ddbaa9bec3a8109&rsid=47d4d455-13d2-474f-a441-4b9512f8fb07-1788900100603&rsp=1&rspix=30",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-256gb-titanium-preto-150289397?ssqi=c1debc96ec3f6878452ac7a24e0591a4&rsid=c1b16eab-788d-41c8-8c68-3bac53676c4a-1788903653555&rsp=1&rspix=30",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -992,7 +992,7 @@
       "idExterno": "148584971",
       "titulo": "celular samsung galaxy s24 ultra preto",
       "preco": 4300,
-      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s24-ultra-preto-148584971?ssqi=d301e6f3937186e88ddbaa9bec3a8109&rsid=47d4d455-13d2-474f-a441-4b9512f8fb07-1788900100603&rsp=1&rspix=17",
+      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s24-ultra-preto-148584971?ssqi=c1debc96ec3f6878452ac7a24e0591a4&rsid=c1b16eab-788d-41c8-8c68-3bac53676c4a-1788903653555&rsp=1&rspix=17",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -1025,7 +1025,7 @@
       "idExterno": "148590533",
       "titulo": "smartphone samsung galaxy s24 ultra 5g 256gb",
       "preco": 4385,
-      "url": "https://www.enjoei.com.br/p/smartphone-samsung-galaxy-s24-ultra-5g-256gb-148590533?ssqi=d301e6f3937186e88ddbaa9bec3a8109&rsid=47d4d455-13d2-474f-a441-4b9512f8fb07-1788900100603&rsp=1&rspix=8",
+      "url": "https://www.enjoei.com.br/p/smartphone-samsung-galaxy-s24-ultra-5g-256gb-148590533?ssqi=c1debc96ec3f6878452ac7a24e0591a4&rsid=c1b16eab-788d-41c8-8c68-3bac53676c4a-1788903653555&rsp=1&rspix=8",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -1042,7 +1042,7 @@
       "idExterno": "142824318",
       "titulo": "samsung galaxy s24 ultra",
       "preco": 4500,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-142824318?ssqi=d301e6f3937186e88ddbaa9bec3a8109&rsid=47d4d455-13d2-474f-a441-4b9512f8fb07-1788900100603&rsp=1&rspix=15",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-142824318?ssqi=c1debc96ec3f6878452ac7a24e0591a4&rsid=c1b16eab-788d-41c8-8c68-3bac53676c4a-1788903653555&rsp=1&rspix=15",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -1075,7 +1075,7 @@
       "idExterno": "150261585",
       "titulo": "samsung galaxy s24 ultra 512gb",
       "preco": 4699,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-512gb-150261585?ssqi=d301e6f3937186e88ddbaa9bec3a8109&rsid=47d4d455-13d2-474f-a441-4b9512f8fb07-1788900100603&rsp=1&rspix=5",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-ultra-512gb-150261585?ssqi=c1debc96ec3f6878452ac7a24e0591a4&rsid=c1b16eab-788d-41c8-8c68-3bac53676c4a-1788903653555&rsp=1&rspix=5",
       "imagem": null,
       "cidade": null,
       "uf": null,

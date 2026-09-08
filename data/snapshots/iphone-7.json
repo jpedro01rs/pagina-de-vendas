@@ -4,8 +4,8 @@
   "categoria": "Celulares",
   "marca": "Apple",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T19:56:46.670Z",
-  "duracaoMs": 37380,
+  "atualizadoEm": "2026-09-08T20:56:27.309Z",
+  "duracaoMs": 37940,
   "fontes": [
     {
       "id": "olx",
@@ -27,40 +27,40 @@
     }
   ],
   "coletados": 170,
-  "analisados": 58,
+  "analisados": 59,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 98,
+  "descartados": 96,
   "motivosDescarte": {
-    "acessorio/peca": 35,
-    "preco abaixo da faixa (< R$ 250)": 21,
-    "modelo nao identificado no titulo": 18,
+    "acessorio/peca": 34,
+    "preco abaixo da faixa (< R$ 250)": 20,
+    "modelo nao identificado no titulo": 19,
     "outra variante": 12,
-    "desqualificado": 7,
-    "lote/atacado": 3,
-    "preco acima da faixa (> R$ 1100)": 2
+    "desqualificado": 6,
+    "lote/atacado": 4,
+    "preco acima da faixa (> R$ 1100)": 1
   },
   "estatisticas": {
-    "n": 58,
+    "n": 59,
     "min": 250,
     "p10": 250,
-    "p25": 297.5,
-    "mediana": 362.5,
+    "p25": 297,
+    "mediana": 350,
     "p75": 500,
-    "p90": 599.3,
+    "p90": 599.2,
     "max": 800,
-    "media": 405.2931034482759,
-    "desvio": 135.6769754843301,
-    "nBruto": 58,
+    "media": 403.20338983050846,
+    "desvio": 135.46039256775666,
+    "nBruto": 59,
     "outliersRemovidos": 0,
     "limites": {
-      "inferior": -6.25,
-      "superior": 803.75,
-      "q1": 297.5,
+      "inferior": -7.5,
+      "superior": 804.5,
+      "q1": 297,
       "q3": 500,
-      "iqr": 202.5
+      "iqr": 203
     },
-    "amplitudeRelativa": 0.5586206896551724,
+    "amplitudeRelativa": 0.58,
     "confianca": {
       "nivel": "alta",
       "rotulo": "Alta"
@@ -72,8 +72,8 @@
         "mediana": 400
       },
       "enjoei": {
-        "n": 3,
-        "mediana": 291
+        "n": 4,
+        "mediana": 282
       }
     },
     "porArmazenamento": {
@@ -82,8 +82,8 @@
         "mediana": 350
       },
       "128GB": {
-        "n": 10,
-        "mediana": 475
+        "n": 11,
+        "mediana": 450
       },
       "256GB": {
         "n": 4,
@@ -96,8 +96,8 @@
     },
     "porCondicao": {
       "usado": {
-        "n": 57,
-        "mediana": 375
+        "n": 58,
+        "mediana": 362.5
       },
       "seminovo": {
         "n": 1,
@@ -107,14 +107,14 @@
   },
   "arbitragem": {
     "comprarEm": "enjoei",
-    "medianaCompra": 291,
+    "medianaCompra": 282,
     "venderEm": "olx",
     "medianaVenda": 400,
-    "diferenca": 109,
-    "percentual": 0.3745704467353952
+    "diferenca": 118,
+    "percentual": 0.41843971631205673
   },
-  "tetoDeCompra": 267.7678571428571,
-  "precoVendaRapida": 333.5,
+  "tetoDeCompra": 257.5,
+  "precoVendaRapida": 322,
   "oportunidades": [],
   "anuncios": [
     {
@@ -250,7 +250,7 @@
       "idExterno": "149716033",
       "titulo": "iphone 7 32gb branco",
       "preco": 262,
-      "url": "https://www.enjoei.com.br/p/iphone-7-32gb-branco-149716033?ssqi=de7b7915250afdf1ad48232acc06ab33&rsid=ccc0d37d-8cae-463b-b2a0-9766e4adb379-1788897370643&rsp=1&rspix=1",
+      "url": "https://www.enjoei.com.br/p/iphone-7-32gb-branco-149716033?ssqi=e0e792b969235dbb0cab08b7bcf8b3e3&rsid=e1685d36-12a6-4010-b6c2-887d9731fdb6-1788900951340&rsp=1&rspix=3",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -279,6 +279,23 @@
       "textoCartao": ""
     },
     {
+      "fonte": "enjoei",
+      "idExterno": "148387945",
+      "titulo": "iphone 7 128gb",
+      "preco": 282,
+      "url": "https://www.enjoei.com.br/p/iphone-7-128gb-148387945?ssqi=e0e792b969235dbb0cab08b7bcf8b3e3&rsid=e1685d36-12a6-4010-b6c2-887d9731fdb6-1788900951340&rsp=1&rspix=2",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 128,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "9% R$ 282 R$ 310 iphone 7 128gb iphone josivan",
+      "nacional": true
+    },
+    {
       "fonte": "olx",
       "idExterno": "1526815613",
       "titulo": "iPhone 7 32GB Ouro Rosa Impecável, Com Caixa",
@@ -299,7 +316,7 @@
       "idExterno": "76803461",
       "titulo": "iphone 7 rosa com 32gb",
       "preco": 291,
-      "url": "https://www.enjoei.com.br/p/iphone-7-rosa-com-32gb-76803461?ssqi=de7b7915250afdf1ad48232acc06ab33&rsid=ccc0d37d-8cae-463b-b2a0-9766e4adb379-1788897370643&rsp=1&rspix=3",
+      "url": "https://www.enjoei.com.br/p/iphone-7-rosa-com-32gb-76803461?ssqi=e0e792b969235dbb0cab08b7bcf8b3e3&rsid=e1685d36-12a6-4010-b6c2-887d9731fdb6-1788900951340&rsp=1&rspix=4",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -588,7 +605,7 @@
       "idExterno": "145203473",
       "titulo": "iphone 7 para venda",
       "preco": 375,
-      "url": "https://www.enjoei.com.br/p/iphone-7-para-venda-145203473?ssqi=de7b7915250afdf1ad48232acc06ab33&rsid=ccc0d37d-8cae-463b-b2a0-9766e4adb379-1788897370643&rsp=1&rspix=2",
+      "url": "https://www.enjoei.com.br/p/iphone-7-para-venda-145203473?ssqi=e0e792b969235dbb0cab08b7bcf8b3e3&rsid=e1685d36-12a6-4010-b6c2-887d9731fdb6-1788900951340&rsp=1&rspix=1",
       "imagem": null,
       "cidade": null,
       "uf": null,

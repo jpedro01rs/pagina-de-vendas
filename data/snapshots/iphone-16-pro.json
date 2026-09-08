@@ -4,8 +4,8 @@
   "categoria": "Celulares",
   "marca": "Apple",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T20:14:35.948Z",
-  "duracaoMs": 36750,
+  "atualizadoEm": "2026-09-08T21:14:05.215Z",
+  "duracaoMs": 36499,
   "fontes": [
     {
       "id": "olx",
@@ -30,10 +30,10 @@
   "analisados": 34,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 130,
+  "descartados": 129,
   "motivosDescarte": {
-    "preco abaixo da faixa (< R$ 4900)": 60,
-    "outra variante": 51,
+    "outra variante": 58,
+    "preco abaixo da faixa (< R$ 4900)": 52,
     "acessorio/peca": 10,
     "modelo nao identificado no titulo": 5,
     "anuncio de loja": 2,
@@ -41,26 +41,26 @@
     "desqualificado": 1
   },
   "estatisticas": {
-    "n": 33,
+    "n": 34,
     "min": 4900,
-    "p10": 4989.6,
-    "p25": 5199,
-    "mediana": 5300,
-    "p75": 5700,
-    "p90": 6089.8,
+    "p10": 5000,
+    "p25": 5199.25,
+    "mediana": 5303.5,
+    "p75": 5685.5,
+    "p90": 6084.7,
     "max": 6400,
-    "media": 5455.666666666667,
-    "desvio": 443.5352923449898,
+    "media": 5473.470588235294,
+    "desvio": 434.5923874765815,
     "nBruto": 34,
-    "outliersRemovidos": 1,
+    "outliersRemovidos": 0,
     "limites": {
-      "inferior": 4391.875,
-      "superior": 6544.875,
+      "inferior": 4469.875,
+      "superior": 6414.875,
       "q1": 5199.25,
-      "q3": 5737.5,
-      "iqr": 538.25
+      "q3": 5685.5,
+      "iqr": 486.25
     },
-    "amplitudeRelativa": 0.09452830188679245,
+    "amplitudeRelativa": 0.0916847364947676,
     "confianca": {
       "nivel": "alta",
       "rotulo": "Alta"
@@ -73,20 +73,20 @@
       },
       "enjoei": {
         "n": 7,
-        "mediana": 5474.5
+        "mediana": 5642
       }
     },
     "porArmazenamento": {
       "128GB": {
-        "n": 11,
+        "n": 9,
         "mediana": 5300
       },
       "1TB": {
-        "n": 2,
-        "mediana": 6524.5
+        "n": 1,
+        "mediana": 5549
       },
       "256GB": {
-        "n": 10,
+        "n": 12,
         "mediana": 5250
       },
       "512GB": {
@@ -97,7 +97,7 @@
     "porCondicao": {
       "usado": {
         "n": 27,
-        "mediana": 5303.5
+        "mediana": 5300
       },
       "seminovo": {
         "n": 5,
@@ -113,12 +113,12 @@
     "comprarEm": "olx",
     "medianaCompra": 5300,
     "venderEm": "enjoei",
-    "medianaVenda": 5474.5,
-    "diferenca": 174.5,
-    "percentual": 0.032924528301886795
+    "medianaVenda": 5642,
+    "diferenca": 342,
+    "percentual": 0.06452830188679246
   },
-  "tetoDeCompra": 4323.571428571428,
-  "precoVendaRapida": 4876,
+  "tetoDeCompra": 4326.446428571428,
+  "precoVendaRapida": 4879.22,
   "oportunidades": [],
   "anuncios": [
     {
@@ -152,23 +152,6 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "148484632",
-      "titulo": "iphone 16 pro 128gb rose",
-      "preco": 4900,
-      "url": "https://www.enjoei.com.br/p/iphone-16-pro-128gb-rose-148484632?ssqi=f8e9440e8479f0daf7b47f4f542dff31&rsid=b5549e76-6bfc-4e97-a02a-8f548e4bbb63-1788898440236&rsp=1&rspix=28",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "3 0 R$ 4.900 iphone 16 pro 128gb rose apple paulo",
-      "nacional": true
     },
     {
       "fonte": "olx",
@@ -233,6 +216,23 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "150436637",
+      "titulo": "iphone 16 pro 256gb branco",
+      "preco": 5000,
+      "url": "https://www.enjoei.com.br/p/iphone-16-pro-256gb-branco-150436637?ssqi=36b9fadb3ce1f25ec890e9882330c29a&rsid=3ee71079-bffe-4e3c-ab0e-449e2cca5c81-1788902009186&rsp=1&rspix=15",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 256,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "R$ 5.000 iphone 16 pro 256gb branco apple felipe",
+      "nacional": true
     },
     {
       "fonte": "olx",
@@ -396,27 +396,10 @@
     },
     {
       "fonte": "enjoei",
-      "idExterno": "149702745",
-      "titulo": "iphone 16 pro 256gb cinza",
-      "preco": 5307,
-      "url": "https://www.enjoei.com.br/p/iphone-16-pro-256gb-cinza-149702745?ssqi=f8e9440e8479f0daf7b47f4f542dff31&rsid=b5549e76-6bfc-4e97-a02a-8f548e4bbb63-1788898440236&rsp=1&rspix=12",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 256,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "9 6% R$ 5.307 R$ 5.642 iphone 16 pro 256gb cinza apple graziela",
-      "nacional": true
-    },
-    {
-      "fonte": "enjoei",
       "idExterno": "149018217",
       "titulo": "iphone 16 pro 256gb desert titanium",
       "preco": 5307,
-      "url": "https://www.enjoei.com.br/p/iphone-16-pro-256gb-desert-titanium-149018217?ssqi=f8e9440e8479f0daf7b47f4f542dff31&rsid=b5549e76-6bfc-4e97-a02a-8f548e4bbb63-1788898440236&rsp=1&rspix=18",
+      "url": "https://www.enjoei.com.br/p/iphone-16-pro-256gb-desert-titanium-149018217?ssqi=36b9fadb3ce1f25ec890e9882330c29a&rsid=3ee71079-bffe-4e3c-ab0e-449e2cca5c81-1788902009186&rsp=1&rspix=29",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -494,19 +477,53 @@
     },
     {
       "fonte": "enjoei",
-      "idExterno": "150398050",
-      "titulo": "iphone 16 pro 128gb preto",
-      "preco": 5642,
-      "url": "https://www.enjoei.com.br/p/iphone-16-pro-128gb-preto-150398050?ssqi=f8e9440e8479f0daf7b47f4f542dff31&rsid=b5549e76-6bfc-4e97-a02a-8f548e4bbb63-1788898440236&rsp=1&rspix=4",
+      "idExterno": "148583977",
+      "titulo": "iphone 16 pro 256gb",
+      "preco": 5626,
+      "url": "https://www.enjoei.com.br/p/iphone-16-pro-256gb-148583977?ssqi=36b9fadb3ce1f25ec890e9882330c29a&rsid=3ee71079-bffe-4e3c-ab0e-449e2cca5c81-1788902009186&rsp=1&rspix=10",
       "imagem": null,
       "cidade": null,
       "uf": null,
       "publicadoEm": null,
-      "armazenamento": 128,
+      "armazenamento": 256,
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "R$ 5.642 iphone 16 pro 128gb preto apple eduardo",
+      "textoCartao": "8 3% R$ 5.626 R$ 5.800 iphone 16 pro 256gb apple fred",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "150141613",
+      "titulo": "iphone 16 pro 256gb natural titanium",
+      "preco": 5642,
+      "url": "https://www.enjoei.com.br/p/iphone-16-pro-256gb-natural-titanium-150141613?ssqi=36b9fadb3ce1f25ec890e9882330c29a&rsid=3ee71079-bffe-4e3c-ab0e-449e2cca5c81-1788902009186&rsp=1&rspix=12",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 256,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "1 R$ 5.642 iphone 16 pro 256gb natural titanium apple vivian",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "150165062",
+      "titulo": "iphone 16 pro desert titanium",
+      "preco": 5642,
+      "url": "https://www.enjoei.com.br/p/iphone-16-pro-desert-titanium-150165062?ssqi=36b9fadb3ce1f25ec890e9882330c29a&rsid=3ee71079-bffe-4e3c-ab0e-449e2cca5c81-1788902009186&rsp=1&rspix=22",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "1 R$ 5.642 iphone 16 pro desert titanium apple joão",
       "nacional": true
     },
     {
@@ -530,7 +547,7 @@
       "idExterno": "147795975",
       "titulo": "iphone 16 pro 128gb",
       "preco": 5750,
-      "url": "https://www.enjoei.com.br/p/iphone-16-pro-128gb-147795975?ssqi=f8e9440e8479f0daf7b47f4f542dff31&rsid=b5549e76-6bfc-4e97-a02a-8f548e4bbb63-1788898440236&rsp=1&rspix=1",
+      "url": "https://www.enjoei.com.br/p/iphone-16-pro-128gb-147795975?ssqi=36b9fadb3ce1f25ec890e9882330c29a&rsid=3ee71079-bffe-4e3c-ab0e-449e2cca5c81-1788902009186&rsp=1&rspix=1",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -547,7 +564,7 @@
       "idExterno": "135626004",
       "titulo": "iphone 16 pro",
       "preco": 6000,
-      "url": "https://www.enjoei.com.br/p/iphone-16-pro-135626004?ssqi=f8e9440e8479f0daf7b47f4f542dff31&rsid=b5549e76-6bfc-4e97-a02a-8f548e4bbb63-1788898440236&rsp=1&rspix=3",
+      "url": "https://www.enjoei.com.br/p/iphone-16-pro-135626004?ssqi=36b9fadb3ce1f25ec890e9882330c29a&rsid=3ee71079-bffe-4e3c-ab0e-449e2cca5c81-1788902009186&rsp=1&rspix=3",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -654,23 +671,6 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "150359738",
-      "titulo": "iphone 16 pro 1tb + capa original e película!",
-      "preco": 7500,
-      "url": "https://www.enjoei.com.br/p/iphone-16-pro-1tb-capa-original-e-pelicula-150359738?ssqi=f8e9440e8479f0daf7b47f4f542dff31&rsid=b5549e76-6bfc-4e97-a02a-8f548e4bbb63-1788898440236&rsp=1&rspix=5",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 1024,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "R$ 7.500 iphone 16 pro 1tb + capa original e película! apple carlos",
-      "nacional": true
     }
   ],
   "tendencia": null

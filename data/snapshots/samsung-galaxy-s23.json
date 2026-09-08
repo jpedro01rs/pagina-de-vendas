@@ -4,14 +4,14 @@
   "categoria": "Celulares",
   "marca": "Samsung",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T20:41:03.421Z",
-  "duracaoMs": 36508,
+  "atualizadoEm": "2026-09-08T21:40:16.626Z",
+  "duracaoMs": 36843,
   "fontes": [
     {
       "id": "olx",
       "nome": "OLX",
       "ok": true,
-      "encontrados": 78,
+      "encontrados": 79,
       "via": "dom",
       "metodo": "navegador",
       "estrategia": "categoria"
@@ -20,37 +20,37 @@
       "id": "enjoei",
       "nome": "Enjoei",
       "ok": true,
-      "encontrados": 68,
+      "encontrados": 66,
       "via": "dom",
       "metodo": null,
       "estrategia": null
     }
   ],
-  "coletados": 146,
-  "analisados": 74,
+  "coletados": 145,
+  "analisados": 75,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 57,
+  "descartados": 53,
   "motivosDescarte": {
-    "preco abaixo da faixa (< R$ 1300)": 20,
-    "acessorio/peca": 18,
-    "modelo nao identificado no titulo": 10,
-    "outra variante": 6,
+    "preco abaixo da faixa (< R$ 1300)": 18,
+    "acessorio/peca": 13,
+    "modelo nao identificado no titulo": 11,
+    "outra variante": 8,
     "outro modelo": 2,
     "desqualificado": 1
   },
   "estatisticas": {
-    "n": 72,
+    "n": 73,
     "min": 1300,
     "p10": 1400,
-    "p25": 1499.75,
-    "mediana": 1562.5,
+    "p25": 1500,
+    "mediana": 1550,
     "p75": 1800,
     "p90": 2000,
     "max": 2200,
-    "media": 1636.3194444444443,
-    "desvio": 231.61515172976593,
-    "nBruto": 74,
+    "media": 1640.6712328767123,
+    "desvio": 234.90097329437438,
+    "nBruto": 75,
     "outliersRemovidos": 2,
     "limites": {
       "inferior": 1050,
@@ -59,7 +59,7 @@
       "q3": 1800,
       "iqr": 300
     },
-    "amplitudeRelativa": 0.19216,
+    "amplitudeRelativa": 0.1935483870967742,
     "confianca": {
       "nivel": "alta",
       "rotulo": "Alta"
@@ -71,8 +71,8 @@
         "mediana": 1599
       },
       "enjoei": {
-        "n": 19,
-        "mediana": 1525
+        "n": 20,
+        "mediana": 1500
       }
     },
     "porArmazenamento": {
@@ -81,7 +81,7 @@
         "mediana": 1700
       },
       "128GB": {
-        "n": 21,
+        "n": 20,
         "mediana": 1500
       },
       "512GB": {
@@ -95,8 +95,8 @@
     },
     "porCondicao": {
       "usado": {
-        "n": 67,
-        "mediana": 1525
+        "n": 68,
+        "mediana": 1500
       },
       "seminovo": {
         "n": 6,
@@ -110,14 +110,14 @@
   },
   "arbitragem": {
     "comprarEm": "enjoei",
-    "medianaCompra": 1525,
+    "medianaCompra": 1500,
     "venderEm": "olx",
     "medianaVenda": 1599,
-    "diferenca": 74,
-    "percentual": 0.04852459016393443
+    "diferenca": 99,
+    "percentual": 0.066
   },
-  "tetoDeCompra": 1253.4821428571427,
-  "precoVendaRapida": 1437.5,
+  "tetoDeCompra": 1243.2142857142856,
+  "precoVendaRapida": 1426,
   "oportunidades": [],
   "anuncios": [
     {
@@ -173,7 +173,7 @@
       "idExterno": "148079381",
       "titulo": "samsung galaxy s23 fe 128gb cor: creme",
       "preco": 1300,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-fe-128gb-cor-creme-148079381?ssqi=935d759caa4eb3b956e881cdd8f54660&rsid=8c5fdc31-03f2-49e9-bc8c-127fd0dc1f6a-1788900027638&rsp=1&rspix=17",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-fe-128gb-cor-creme-148079381?ssqi=0cea0853503ae07bcda3869e5bcaa9cd&rsid=df8c10e3-60b9-48d2-902f-ff87463ce039-1788903580537&rsp=1&rspix=4",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -183,23 +183,6 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": "1 5 R$ 1.300 samsung galaxy s23 fe 128gb cor: creme samsung luana",
-      "nacional": true
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "146728903",
-      "titulo": "samsung galaxy s23 fe 128gb preto",
-      "preco": 1326,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-fe-128gb-preto-146728903?ssqi=935d759caa4eb3b956e881cdd8f54660&rsid=8c5fdc31-03f2-49e9-bc8c-127fd0dc1f6a-1788900027638&rsp=1&rspix=28",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "12% R$ 1.326 R$ 1.500 samsung galaxy s23 fe 128gb preto samsung matheus",
       "nacional": true
     },
     {
@@ -299,6 +282,23 @@
       "textoCartao": ""
     },
     {
+      "fonte": "enjoei",
+      "idExterno": "149371934",
+      "titulo": "celular samsung galaxy s23 fe verde",
+      "preco": 1430,
+      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s23-fe-verde-149371934?ssqi=0cea0853503ae07bcda3869e5bcaa9cd&rsid=df8c10e3-60b9-48d2-902f-ff87463ce039-1788903580537&rsp=1&rspix=5",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "3 barateou R$ 1.430 R$ 1.690 celular samsung galaxy s23 fe verde samsung vivian",
+      "nacional": true
+    },
+    {
       "fonte": "olx",
       "idExterno": "1531042319",
       "titulo": "SAMSUNG GALAXY S23 5G",
@@ -351,7 +351,7 @@
       "idExterno": "150351520",
       "titulo": "celular samsung galaxy s23 branco",
       "preco": 1450,
-      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s23-branco-150351520?ssqi=935d759caa4eb3b956e881cdd8f54660&rsid=8c5fdc31-03f2-49e9-bc8c-127fd0dc1f6a-1788900027638&rsp=1&rspix=9",
+      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s23-branco-150351520?ssqi=0cea0853503ae07bcda3869e5bcaa9cd&rsid=df8c10e3-60b9-48d2-902f-ff87463ce039-1788903580537&rsp=1&rspix=29",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -368,7 +368,7 @@
       "idExterno": "149713706",
       "titulo": "samsung galaxy s23 fe 256gb",
       "preco": 1455,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-fe-256gb-149713706?ssqi=935d759caa4eb3b956e881cdd8f54660&rsid=8c5fdc31-03f2-49e9-bc8c-127fd0dc1f6a-1788900027638&rsp=1&rspix=27",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-fe-256gb-149713706?ssqi=0cea0853503ae07bcda3869e5bcaa9cd&rsid=df8c10e3-60b9-48d2-902f-ff87463ce039-1788903580537&rsp=1&rspix=21",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -458,7 +458,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "s23 128GB 5g ( Mogi das cruzes) Parcele sem juros R$ 1.500 em até 3x de R$ 500,00 sem juros Mogi das Cruzes, Jardim Armênia Ontem, 11:17"
+      "textoCartao": ""
     },
     {
       "fonte": "olx",
@@ -586,48 +586,14 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": ""
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "150240837",
-      "titulo": "smartphone samsung galaxy s23 fe 256gb preto",
-      "preco": 1500,
-      "url": "https://www.enjoei.com.br/p/smartphone-samsung-galaxy-s23-fe-256gb-preto-150240837?ssqi=935d759caa4eb3b956e881cdd8f54660&rsid=8c5fdc31-03f2-49e9-bc8c-127fd0dc1f6a-1788900027638&rsp=1&rspix=8",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 256,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "1 R$ 1.500 smartphone samsung galaxy s23 fe 256gb preto samsung ana",
-      "nacional": true
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "149040002",
-      "titulo": "celular samsung galaxy s23 branco",
-      "preco": 1500,
-      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s23-branco-149040002?ssqi=935d759caa4eb3b956e881cdd8f54660&rsid=8c5fdc31-03f2-49e9-bc8c-127fd0dc1f6a-1788900027638&rsp=1&rspix=11",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": null,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "6 R$ 1.500 celular samsung galaxy s23 branco samsung matheus",
-      "nacional": true
+      "textoCartao": "Samsung Galaxy S23 FE 256GB 8GB RAM Grafite Entrega Fácil Parcele sem juros R$ 1.500 em até 3x de R$ 500,00 sem juros São Paulo, Jardim Maria Virginia 22 de ago, 22:55"
     },
     {
       "fonte": "enjoei",
       "idExterno": "149979323",
       "titulo": "samsung galaxy s23 fe 128gb + brindes",
       "preco": 1500,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-fe-128gb-brindes-149979323?ssqi=935d759caa4eb3b956e881cdd8f54660&rsid=8c5fdc31-03f2-49e9-bc8c-127fd0dc1f6a-1788900027638&rsp=1&rspix=19",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-fe-128gb-brindes-149979323?ssqi=0cea0853503ae07bcda3869e5bcaa9cd&rsid=df8c10e3-60b9-48d2-902f-ff87463ce039-1788903580537&rsp=1&rspix=6",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -641,10 +607,44 @@
     },
     {
       "fonte": "enjoei",
+      "idExterno": "150240837",
+      "titulo": "smartphone samsung galaxy s23 fe 256gb preto",
+      "preco": 1500,
+      "url": "https://www.enjoei.com.br/p/smartphone-samsung-galaxy-s23-fe-256gb-preto-150240837?ssqi=0cea0853503ae07bcda3869e5bcaa9cd&rsid=df8c10e3-60b9-48d2-902f-ff87463ce039-1788903580537&rsp=1&rspix=8",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 256,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "1 R$ 1.500 smartphone samsung galaxy s23 fe 256gb preto samsung ana",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "146814635",
+      "titulo": "celular samsung galaxy s23 branco 128g",
+      "preco": 1500,
+      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s23-branco-128g-146814635?ssqi=0cea0853503ae07bcda3869e5bcaa9cd&rsid=df8c10e3-60b9-48d2-902f-ff87463ce039-1788903580537&rsp=1&rspix=9",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "1 7 25% R$ 1.500 R$ 2.000 celular samsung galaxy s23 branco 128g samsung francielle",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
       "idExterno": "149560802",
       "titulo": "samsung galaxy s23 fe 256mb",
       "preco": 1500,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-fe-256mb-149560802?ssqi=935d759caa4eb3b956e881cdd8f54660&rsid=8c5fdc31-03f2-49e9-bc8c-127fd0dc1f6a-1788900027638&rsp=1&rspix=21",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-fe-256mb-149560802?ssqi=0cea0853503ae07bcda3869e5bcaa9cd&rsid=df8c10e3-60b9-48d2-902f-ff87463ce039-1788903580537&rsp=1&rspix=11",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -658,10 +658,27 @@
     },
     {
       "fonte": "enjoei",
+      "idExterno": "149040002",
+      "titulo": "celular samsung galaxy s23 branco",
+      "preco": 1500,
+      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s23-branco-149040002?ssqi=0cea0853503ae07bcda3869e5bcaa9cd&rsid=df8c10e3-60b9-48d2-902f-ff87463ce039-1788903580537&rsp=1&rspix=18",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "6 R$ 1.500 celular samsung galaxy s23 branco samsung matheus",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
       "idExterno": "148543541",
       "titulo": "samsung galaxy s23 fe 128gb grafite",
       "preco": 1500,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-fe-128gb-grafite-148543541?ssqi=935d759caa4eb3b956e881cdd8f54660&rsid=8c5fdc31-03f2-49e9-bc8c-127fd0dc1f6a-1788900027638&rsp=1&rspix=25",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-fe-128gb-grafite-148543541?ssqi=0cea0853503ae07bcda3869e5bcaa9cd&rsid=df8c10e3-60b9-48d2-902f-ff87463ce039-1788903580537&rsp=1&rspix=20",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -694,7 +711,7 @@
       "idExterno": "149773284",
       "titulo": "samsung galaxy s23 fe 256gb preto",
       "preco": 1550,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-fe-256gb-preto-149773284?ssqi=935d759caa4eb3b956e881cdd8f54660&rsid=8c5fdc31-03f2-49e9-bc8c-127fd0dc1f6a-1788900027638&rsp=1&rspix=15",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-fe-256gb-preto-149773284?ssqi=04c7929044b95fc0b753801d3d21394c&rsid=ac93c5c9-2fb5-4d7a-923c-cd65bd48bb12-1788903599187&rsp=1&rspix=30",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -711,7 +728,7 @@
       "idExterno": "148076468",
       "titulo": "samsung galaxy s23 256gb preto",
       "preco": 1575,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-256gb-preto-148076468?ssqi=6559a3de96faeb459532b779a14905cc&rsid=d46c0b81-90af-4676-9485-e4b2f168eb53-1788900045909&rsp=1&rspix=3",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-256gb-preto-148076468?ssqi=0cea0853503ae07bcda3869e5bcaa9cd&rsid=df8c10e3-60b9-48d2-902f-ff87463ce039-1788903580537&rsp=1&rspix=19",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -817,7 +834,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "Celular Samsung S23 com 256 gigas na cor preta excelente estado Entrega Fácil Parcele sem juros Solon A 5.0 R$ 1.600 em até 3x de R$ 533,33 sem juros São Paulo, Vila Olímpia 21 de ago, 10:07"
+      "textoCartao": "Celular Samsung S23 com 256 gigas na cor preta excelente estado Entrega Fácil Parcele sem juros Solon A 5.0 R$ 1.600 em até 3x de R$ 533,33 sem juros Online São Paulo, Vila Olímpia 21 de ago, 10:07"
     },
     {
       "fonte": "olx",
@@ -933,27 +950,10 @@
     },
     {
       "fonte": "enjoei",
-      "idExterno": "146890457",
-      "titulo": "celular samsung galaxy s23 fe 256gb",
-      "preco": 1750,
-      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s23-fe-256gb-146890457?ssqi=935d759caa4eb3b956e881cdd8f54660&rsid=8c5fdc31-03f2-49e9-bc8c-127fd0dc1f6a-1788900027638&rsp=1&rspix=30",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 256,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "3 2 13% R$ 1.750 R$ 2.000 celular samsung galaxy s23 fe 256gb samsung giovanna",
-      "nacional": true
-    },
-    {
-      "fonte": "enjoei",
       "idExterno": "150027081",
       "titulo": "samsung galaxy s23 128gb",
       "preco": 1799,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-128gb-150027081?ssqi=6559a3de96faeb459532b779a14905cc&rsid=d46c0b81-90af-4676-9485-e4b2f168eb53-1788900045909&rsp=1&rspix=7",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-128gb-150027081?ssqi=0cea0853503ae07bcda3869e5bcaa9cd&rsid=df8c10e3-60b9-48d2-902f-ff87463ce039-1788903580537&rsp=1&rspix=23",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -1130,7 +1130,7 @@
       "idExterno": "148220102",
       "titulo": "samsung galaxy s23 5g 256gb verde",
       "preco": 1999,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-5g-256gb-verde-148220102?ssqi=935d759caa4eb3b956e881cdd8f54660&rsid=8c5fdc31-03f2-49e9-bc8c-127fd0dc1f6a-1788900027638&rsp=1&rspix=24",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-5g-256gb-verde-148220102?ssqi=0cea0853503ae07bcda3869e5bcaa9cd&rsid=df8c10e3-60b9-48d2-902f-ff87463ce039-1788903580537&rsp=1&rspix=17",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -1179,7 +1179,7 @@
       "idExterno": "148465409",
       "titulo": "samsung galaxy s23 fe verde",
       "preco": 2000,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-fe-verde-148465409?ssqi=935d759caa4eb3b956e881cdd8f54660&rsid=8c5fdc31-03f2-49e9-bc8c-127fd0dc1f6a-1788900027638&rsp=1&rspix=20",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-fe-verde-148465409?ssqi=0cea0853503ae07bcda3869e5bcaa9cd&rsid=df8c10e3-60b9-48d2-902f-ff87463ce039-1788903580537&rsp=1&rspix=7",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -1196,7 +1196,7 @@
       "idExterno": "147072198",
       "titulo": "samsung galaxy s23 128gb impecável + capa tática premium!",
       "preco": 2075,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-128gb-impecavel-capa-tatica-premium-147072198?ssqi=935d759caa4eb3b956e881cdd8f54660&rsid=8c5fdc31-03f2-49e9-bc8c-127fd0dc1f6a-1788900027638&rsp=1&rspix=2",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-128gb-impecavel-capa-tatica-premium-147072198?ssqi=0cea0853503ae07bcda3869e5bcaa9cd&rsid=df8c10e3-60b9-48d2-902f-ff87463ce039-1788903580537&rsp=1&rspix=2",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -1213,7 +1213,7 @@
       "idExterno": "147906672",
       "titulo": "smartphone samsung galaxy s23 256gb preto",
       "preco": 2099,
-      "url": "https://www.enjoei.com.br/p/smartphone-samsung-galaxy-s23-256gb-preto-147906672?ssqi=935d759caa4eb3b956e881cdd8f54660&rsid=8c5fdc31-03f2-49e9-bc8c-127fd0dc1f6a-1788900027638&rsp=1&rspix=23",
+      "url": "https://www.enjoei.com.br/p/smartphone-samsung-galaxy-s23-256gb-preto-147906672?ssqi=0cea0853503ae07bcda3869e5bcaa9cd&rsid=df8c10e3-60b9-48d2-902f-ff87463ce039-1788903580537&rsp=1&rspix=15",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -1258,6 +1258,23 @@
       "textoCartao": ""
     },
     {
+      "fonte": "enjoei",
+      "idExterno": "150436185",
+      "titulo": "samsung galaxy s23 256gb branco",
+      "preco": 2100,
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s23-256gb-branco-150436185?ssqi=0cea0853503ae07bcda3869e5bcaa9cd&rsid=df8c10e3-60b9-48d2-902f-ff87463ce039-1788903580537&rsp=1&rspix=12",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 256,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "barateou R$ 2.100 R$ 2.400 samsung galaxy s23 256gb branco samsung maria",
+      "nacional": true
+    },
+    {
       "fonte": "olx",
       "idExterno": "1533457085",
       "titulo": "S23 SANSUNG",
@@ -1294,7 +1311,7 @@
       "idExterno": "147417461",
       "titulo": "smartphone samsung galaxy s23",
       "preco": 2500,
-      "url": "https://www.enjoei.com.br/p/smartphone-samsung-galaxy-s23-147417461?ssqi=935d759caa4eb3b956e881cdd8f54660&rsid=8c5fdc31-03f2-49e9-bc8c-127fd0dc1f6a-1788900027638&rsp=1&rspix=22",
+      "url": "https://www.enjoei.com.br/p/smartphone-samsung-galaxy-s23-147417461?ssqi=0cea0853503ae07bcda3869e5bcaa9cd&rsid=df8c10e3-60b9-48d2-902f-ff87463ce039-1788903580537&rsp=1&rspix=13",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -1311,7 +1328,7 @@
       "idExterno": "91018010",
       "titulo": "samsung s23 256gb novo na caixa com nf",
       "preco": 3900,
-      "url": "https://www.enjoei.com.br/p/samsung-s23-256gb-novo-na-caixa-com-nf-91018010?ssqi=935d759caa4eb3b956e881cdd8f54660&rsid=8c5fdc31-03f2-49e9-bc8c-127fd0dc1f6a-1788900027638&rsp=1&rspix=1",
+      "url": "https://www.enjoei.com.br/p/samsung-s23-256gb-novo-na-caixa-com-nf-91018010?ssqi=0cea0853503ae07bcda3869e5bcaa9cd&rsid=df8c10e3-60b9-48d2-902f-ff87463ce039-1788903580537&rsp=1&rspix=1",
       "imagem": null,
       "cidade": null,
       "uf": null,

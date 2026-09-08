@@ -4,8 +4,8 @@
   "categoria": "Celulares",
   "marca": "Apple",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T20:03:32.519Z",
-  "duracaoMs": 36600,
+  "atualizadoEm": "2026-09-08T21:03:08.716Z",
+  "duracaoMs": 36224,
   "fontes": [
     {
       "id": "olx",
@@ -27,39 +27,40 @@
     }
   ],
   "coletados": 170,
-  "analisados": 57,
+  "analisados": 54,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 99,
+  "descartados": 107,
   "motivosDescarte": {
-    "preco abaixo da faixa (< R$ 1200)": 50,
-    "outra variante": 21,
-    "acessorio/peca": 19,
-    "modelo nao identificado no titulo": 7,
+    "preco abaixo da faixa (< R$ 1200)": 46,
+    "acessorio/peca": 34,
+    "outra variante": 17,
+    "desqualificado": 6,
+    "modelo nao identificado no titulo": 2,
     "anuncio de loja": 1,
     "preco acima da faixa (> R$ 4000)": 1
   },
   "estatisticas": {
-    "n": 54,
+    "n": 51,
     "min": 1200,
-    "p10": 1220.2,
+    "p10": 1200,
     "p25": 1300,
     "mediana": 1400,
-    "p75": 1529.25,
-    "p90": 1635.0000000000002,
+    "p75": 1500,
+    "p90": 1600,
     "max": 1800,
-    "media": 1423.388888888889,
-    "desvio": 155.3907162328497,
-    "nBruto": 57,
+    "media": 1412.2745098039215,
+    "desvio": 149.54716987264112,
+    "nBruto": 54,
     "outliersRemovidos": 3,
     "limites": {
-      "inferior": 925,
-      "superior": 1925,
+      "inferior": 929.125,
+      "superior": 1918.125,
       "q1": 1300,
-      "q3": 1550,
-      "iqr": 250
+      "q3": 1547.25,
+      "iqr": 247.25
     },
-    "amplitudeRelativa": 0.16375,
+    "amplitudeRelativa": 0.14285714285714285,
     "confianca": {
       "nivel": "alta",
       "rotulo": "Alta"
@@ -71,31 +72,31 @@
         "mediana": 1399.5
       },
       "enjoei": {
-        "n": 8,
-        "mediana": 1477.5
+        "n": 5,
+        "mediana": 1411
       }
     },
     "porArmazenamento": {
       "128GB": {
-        "n": 22,
-        "mediana": 1500
+        "n": 21,
+        "mediana": 1411
       },
       "256GB": {
         "n": 3,
         "mediana": 1539
       },
       "64GB": {
-        "n": 11,
+        "n": 10,
         "mediana": 1300
       }
     },
     "porCondicao": {
       "usado": {
-        "n": 51,
+        "n": 49,
         "mediana": 1400
       },
       "seminovo": {
-        "n": 6,
+        "n": 5,
         "mediana": 1390
       }
     }
@@ -104,9 +105,9 @@
     "comprarEm": "olx",
     "medianaCompra": 1399.5,
     "venderEm": "enjoei",
-    "medianaVenda": 1477.5,
-    "diferenca": 78,
-    "percentual": 0.055734190782422297
+    "medianaVenda": 1411,
+    "diferenca": 11.5,
+    "percentual": 0.008217220435869954
   },
   "tetoDeCompra": 1120,
   "precoVendaRapida": 1288,
@@ -194,27 +195,27 @@
     },
     {
       "fonte": "enjoei",
-      "idExterno": "150083946",
-      "titulo": "iphone 12 pacote completo",
-      "preco": 1219,
-      "url": "https://www.enjoei.com.br/p/iphone-12-pacote-completo-150083946?rsid=7a6b4dd4-fc5f-4b5a-beba-b61d0ed45659-1788897776774&rsp=1&rspix=22",
+      "idExterno": "150027079",
+      "titulo": "iphone 12 azul 128gb",
+      "preco": 1200,
+      "url": "https://www.enjoei.com.br/p/iphone-12-azul-128gb-150027079?rsid=f7060b74-1011-4d1b-904d-b87ff12bf6e1-1788901353016&rsp=1&rspix=26",
       "imagem": null,
       "cidade": null,
       "uf": null,
       "publicadoEm": null,
-      "armazenamento": null,
+      "armazenamento": 128,
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "1 R$ 1.219 iphone 12 pacote completo apple manoela",
+      "textoCartao": "7 R$ 1.200 iphone 12 azul 128gb apple vitor",
       "nacional": true
     },
     {
       "fonte": "enjoei",
-      "idExterno": "149733691",
-      "titulo": "iphone 12 64gb preto",
-      "preco": 1223,
-      "url": "https://www.enjoei.com.br/p/iphone-12-64gb-preto-149733691?rsid=7a6b4dd4-fc5f-4b5a-beba-b61d0ed45659-1788897776774&rsp=1&rspix=15",
+      "idExterno": "150383517",
+      "titulo": "iphone 12 64gb roxo",
+      "preco": 1239,
+      "url": "https://www.enjoei.com.br/p/iphone-12-64gb-roxo-150383517?rsid=f7060b74-1011-4d1b-904d-b87ff12bf6e1-1788901353016&rsp=1&rspix=12",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -223,7 +224,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "3 6% R$ 1.223 R$ 1.300 iphone 12 64gb preto apple júlia",
+      "textoCartao": "1 R$ 1.239 iphone 12 64gb roxo apple taina",
       "nacional": true
     },
     {
@@ -467,23 +468,6 @@
       "textoCartao": ""
     },
     {
-      "fonte": "enjoei",
-      "idExterno": "149960392",
-      "titulo": "iphone 12 64gb azul",
-      "preco": 1350,
-      "url": "https://www.enjoei.com.br/p/iphone-12-64gb-azul-149960392?rsid=7a6b4dd4-fc5f-4b5a-beba-b61d0ed45659-1788897776774&rsp=1&rspix=8",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 64,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "4 R$ 1.350 iphone 12 64gb azul apple breno",
-      "nacional": true
-    },
-    {
       "fonte": "olx",
       "idExterno": "1533028847",
       "titulo": "IPHONE 12 64GB IMPECÁVEL Aparelho muito bem conservado, em excelente estado de uso.",
@@ -612,6 +596,23 @@
       "textoCartao": ""
     },
     {
+      "fonte": "enjoei",
+      "idExterno": "148268496",
+      "titulo": "iphone 12 128gb vermelho",
+      "preco": 1411,
+      "url": "https://www.enjoei.com.br/p/iphone-12-128gb-vermelho-148268496?rsid=f7060b74-1011-4d1b-904d-b87ff12bf6e1-1788901353016&rsp=1&rspix=5",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 128,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "7 6% R$ 1.411 R$ 1.500 iphone 12 128gb vermelho apple victor",
+      "nacional": true
+    },
+    {
       "fonte": "olx",
       "idExterno": "1533382579",
       "titulo": "IPhone 12 256gb",
@@ -629,19 +630,19 @@
     },
     {
       "fonte": "enjoei",
-      "idExterno": "149994466",
-      "titulo": "iphone 12 128gb verde claro seminovo",
-      "preco": 1455,
-      "url": "https://www.enjoei.com.br/p/iphone-12-128gb-verde-claro-seminovo-149994466?rsid=7a6b4dd4-fc5f-4b5a-beba-b61d0ed45659-1788897776774&rsp=1&rspix=13",
+      "idExterno": "150052141",
+      "titulo": "iphone 12 128gb azul",
+      "preco": 1450,
+      "url": "https://www.enjoei.com.br/p/iphone-12-128gb-azul-150052141?rsid=f7060b74-1011-4d1b-904d-b87ff12bf6e1-1788901353016&rsp=1&rspix=4",
       "imagem": null,
       "cidade": null,
       "uf": null,
       "publicadoEm": null,
       "armazenamento": 128,
-      "condicao": "seminovo",
+      "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "3% R$ 1.455 R$ 1.500 iphone 12 128gb verde claro seminovo apple ana",
+      "textoCartao": "R$ 1.450 iphone 12 128gb azul apple nathalia",
       "nacional": true
     },
     {
@@ -742,27 +743,10 @@
     },
     {
       "fonte": "enjoei",
-      "idExterno": "148733007",
-      "titulo": "iphone 12 128gb preto",
-      "preco": 1500,
-      "url": "https://www.enjoei.com.br/p/iphone-12-128gb-preto-148733007?rsid=7a6b4dd4-fc5f-4b5a-beba-b61d0ed45659-1788897776774&rsp=1&rspix=26",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "1 3 R$ 1.500 iphone 12 128gb preto apple gabriel",
-      "nacional": true
-    },
-    {
-      "fonte": "enjoei",
       "idExterno": "144393232",
       "titulo": "iphone 12 preto 256gb único dono",
       "preco": 1539,
-      "url": "https://www.enjoei.com.br/p/iphone-12-preto-256gb-unico-dono-144393232?rsid=7a6b4dd4-fc5f-4b5a-beba-b61d0ed45659-1788897776774&rsp=1&rspix=10",
+      "url": "https://www.enjoei.com.br/p/iphone-12-preto-256gb-unico-dono-144393232?rsid=f7060b74-1011-4d1b-904d-b87ff12bf6e1-1788901353016&rsp=1&rspix=6",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -919,40 +903,6 @@
       "textoCartao": "iPhone 12 128GB Preto - Muito bem conservado Frete grátis Até 10x sem juros R$ 1.650 em até 10x de R$ 165,00 sem juros São Paulo, Vila da Paz 6 de set, 11:59"
     },
     {
-      "fonte": "enjoei",
-      "idExterno": "146114195",
-      "titulo": "iphone 12 128gb preto",
-      "preco": 1690,
-      "url": "https://www.enjoei.com.br/p/iphone-12-128gb-preto-146114195?rsid=7a6b4dd4-fc5f-4b5a-beba-b61d0ed45659-1788897776774&rsp=1&rspix=23",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "3 1 barateou R$ 1.690 R$ 1.800 iphone 12 128gb preto apple gabriela",
-      "nacional": true
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "149191178",
-      "titulo": "iphone 12 128gb preto",
-      "preco": 1700,
-      "url": "https://www.enjoei.com.br/p/iphone-12-128gb-preto-149191178?rsid=7a6b4dd4-fc5f-4b5a-beba-b61d0ed45659-1788897776774&rsp=1&rspix=27",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "4 R$ 1.700 iphone 12 128gb preto apple ana",
-      "nacional": true
-    },
-    {
       "fonte": "olx",
       "idExterno": "1533438364",
       "titulo": "Iphone 12 seminovo Com nota fiscal",
@@ -1030,7 +980,7 @@
       "condicao": "seminovo",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "IPhone 12 Branco 256 GB - Estado de Novo - Entrega Fácil Parcele sem juros R$ 2.290 em até 3x de R$ 763,33 sem juros São Paulo, Santa Cecília Hoje, 15:43"
+      "textoCartao": "IPhone 12 Branco 256 GB - Estado de Novo - Entrega Fácil Parcele sem juros R$ 2.290 em até 3x de R$ 763,33 sem juros Online São Paulo, Santa Cecília Hoje, 15:43"
     }
   ],
   "tendencia": null

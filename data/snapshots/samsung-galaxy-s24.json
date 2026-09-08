@@ -4,8 +4,8 @@
   "categoria": "Celulares",
   "marca": "Samsung",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T20:41:39.915Z",
-  "duracaoMs": 36493,
+  "atualizadoEm": "2026-09-08T21:40:53.018Z",
+  "duracaoMs": 36391,
   "fontes": [
     {
       "id": "olx",
@@ -27,29 +27,29 @@
     }
   ],
   "coletados": 161,
-  "analisados": 43,
+  "analisados": 45,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 110,
+  "descartados": 106,
   "motivosDescarte": {
+    "outra variante": 35,
     "modelo nao identificado no titulo": 33,
-    "outra variante": 33,
     "preco abaixo da faixa (< R$ 1800)": 17,
-    "outro modelo": 15,
-    "acessorio/peca": 12
+    "outro modelo": 11,
+    "acessorio/peca": 10
   },
   "estatisticas": {
-    "n": 42,
+    "n": 44,
     "min": 1800,
     "p10": 2000,
     "p25": 2000,
     "mediana": 2204.5,
-    "p75": 2575,
-    "p90": 2979.9999999999995,
+    "p75": 2525,
+    "p90": 2940.0000000000005,
     "max": 3500,
-    "media": 2331.1428571428573,
-    "desvio": 389.1238982165774,
-    "nBruto": 43,
+    "media": 2326.9545454545455,
+    "desvio": 380.75230283703144,
+    "nBruto": 45,
     "outliersRemovidos": 1,
     "limites": {
       "inferior": 1100,
@@ -58,7 +58,7 @@
       "q3": 2600,
       "iqr": 600
     },
-    "amplitudeRelativa": 0.2608301202086641,
+    "amplitudeRelativa": 0.2381492401905194,
     "confianca": {
       "nivel": "alta",
       "rotulo": "Alta"
@@ -70,14 +70,14 @@
         "mediana": 2200
       },
       "enjoei": {
-        "n": 6,
+        "n": 8,
         "mediana": 2209
       }
     },
     "porArmazenamento": {
       "256GB": {
-        "n": 19,
-        "mediana": 2100
+        "n": 21,
+        "mediana": 2164
       },
       "128GB": {
         "n": 10,
@@ -94,7 +94,7 @@
         "mediana": 2024.5
       },
       "usado": {
-        "n": 39,
+        "n": 41,
         "mediana": 2204.5
       },
       "novo": {
@@ -392,7 +392,7 @@
       "idExterno": "146949117",
       "titulo": "samsung galaxy s24 fe 256gb",
       "preco": 2164,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-fe-256gb-146949117?ssqi=be81c156844f4b8d80892fb3409c9123&rsid=ac6ccba6-8164-426b-a4d9-e74380a70ad2-1788900064195&rsp=1&rspix=15",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-fe-256gb-146949117?ssqi=2ea15e9c233169517aae56967212b260&rsid=0dce5cca-e409-4b38-a47e-3549e2084f2b-1788903617487&rsp=1&rspix=7",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -441,7 +441,7 @@
       "idExterno": "149681072",
       "titulo": "samsung galaxy s24 128gb preto",
       "preco": 2200,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-128gb-preto-149681072?ssqi=be81c156844f4b8d80892fb3409c9123&rsid=ac6ccba6-8164-426b-a4d9-e74380a70ad2-1788900064195&rsp=1&rspix=23",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-128gb-preto-149681072?ssqi=2ea15e9c233169517aae56967212b260&rsid=0dce5cca-e409-4b38-a47e-3549e2084f2b-1788903617487&rsp=1&rspix=21",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -455,10 +455,27 @@
     },
     {
       "fonte": "enjoei",
+      "idExterno": "149161811",
+      "titulo": "celular samsung galaxy s24 256gb azul r$2200",
+      "preco": 2200,
+      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s24-256gb-azul-r-2200-149161811?ssqi=2ea15e9c233169517aae56967212b260&rsid=0dce5cca-e409-4b38-a47e-3549e2084f2b-1788903617487&rsp=1&rspix=30",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 256,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "1 0 R$ 2.200 celular samsung galaxy s24 256gb azul r$2200 samsung jaqueline",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
       "idExterno": "146610958",
       "titulo": "samsung galaxy s24 256gb",
       "preco": 2209,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-256gb-146610958?ssqi=be81c156844f4b8d80892fb3409c9123&rsid=ac6ccba6-8164-426b-a4d9-e74380a70ad2-1788900064195&rsp=1&rspix=9",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-256gb-146610958?ssqi=2ea15e9c233169517aae56967212b260&rsid=0dce5cca-e409-4b38-a47e-3549e2084f2b-1788903617487&rsp=1&rspix=14",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -503,6 +520,23 @@
       "textoCartao": ""
     },
     {
+      "fonte": "enjoei",
+      "idExterno": "148566857",
+      "titulo": "samsung galaxy s24 256gb",
+      "preco": 2278,
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-256gb-148566857?ssqi=2ea15e9c233169517aae56967212b260&rsid=0dce5cca-e409-4b38-a47e-3549e2084f2b-1788903617487&rsp=1&rspix=6",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 256,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "1 1 R$ 2.278 samsung galaxy s24 256gb samsung rafael",
+      "nacional": true
+    },
+    {
       "fonte": "olx",
       "idExterno": "1525586446",
       "titulo": "Samsung S24 Preto onix 256GB",
@@ -539,7 +573,7 @@
       "idExterno": "147289203",
       "titulo": "celular samsung galaxy s24 256gb",
       "preco": 2328,
-      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s24-256gb-147289203?ssqi=be81c156844f4b8d80892fb3409c9123&rsid=ac6ccba6-8164-426b-a4d9-e74380a70ad2-1788900064195&rsp=1&rspix=8",
+      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s24-256gb-147289203?ssqi=2ea15e9c233169517aae56967212b260&rsid=0dce5cca-e409-4b38-a47e-3549e2084f2b-1788903617487&rsp=1&rspix=13",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -668,7 +702,7 @@
       "idExterno": "150248617",
       "titulo": "samsung galaxy s24 lacrado 512gb",
       "preco": 2600,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-lacrado-512gb-150248617?ssqi=be81c156844f4b8d80892fb3409c9123&rsid=ac6ccba6-8164-426b-a4d9-e74380a70ad2-1788900064195&rsp=1&rspix=2",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-lacrado-512gb-150248617?ssqi=2ea15e9c233169517aae56967212b260&rsid=0dce5cca-e409-4b38-a47e-3549e2084f2b-1788903617487&rsp=1&rspix=9",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -677,7 +711,7 @@
       "condicao": "novo",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "3 barateou R$ 2.600 R$ 3.000 samsung galaxy s24 lacrado 512gb samsung giovanni",
+      "textoCartao": "4 barateou R$ 2.600 R$ 3.000 samsung galaxy s24 lacrado 512gb samsung giovanni",
       "nacional": true
     },
     {
@@ -790,14 +824,14 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "Samsung Galaxy S24 FE 128-GB (Sem Slot p/ Micro SD Card) Frete grátis Até 10x sem juros R$ 3.500 em até 10x de R$ 350,00 sem juros São Paulo, Vila Independência 24 de ago, 15:06"
+      "textoCartao": "Samsung Galaxy S24 FE 128-GB (Sem Slot p/ Micro SD Card) Frete grátis Até 10x sem juros R$ 3.500 em até 10x de R$ 350,00 sem juros Online São Paulo, Vila Independência 24 de ago, 15:06"
     },
     {
       "fonte": "enjoei",
       "idExterno": "147458626",
       "titulo": "samsung galaxy s24 fe 256gb grafite",
       "preco": 3900,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-fe-256gb-grafite-147458626?ssqi=be81c156844f4b8d80892fb3409c9123&rsid=ac6ccba6-8164-426b-a4d9-e74380a70ad2-1788900064195&rsp=1&rspix=22",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s24-fe-256gb-grafite-147458626?ssqi=2ea15e9c233169517aae56967212b260&rsid=0dce5cca-e409-4b38-a47e-3549e2084f2b-1788903617487&rsp=1&rspix=20",
       "imagem": null,
       "cidade": null,
       "uf": null,

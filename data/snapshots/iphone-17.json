@@ -4,8 +4,8 @@
   "categoria": "Celulares",
   "marca": "Apple",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T20:15:49.290Z",
-  "duracaoMs": 36602,
+  "atualizadoEm": "2026-09-08T21:15:17.970Z",
+  "duracaoMs": 36470,
   "fontes": [
     {
       "id": "olx",
@@ -20,20 +20,20 @@
       "id": "enjoei",
       "nome": "Enjoei",
       "ok": true,
-      "encontrados": 70,
+      "encontrados": 69,
       "via": "dom",
       "metodo": null,
       "estrategia": null
     }
   ],
-  "coletados": 165,
+  "coletados": 164,
   "analisados": 78,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 84,
+  "descartados": 83,
   "motivosDescarte": {
-    "acessorio/peca": 40,
-    "outra variante": 18,
+    "acessorio/peca": 41,
+    "outra variante": 16,
     "preco abaixo da faixa (< R$ 4500)": 14,
     "modelo nao identificado no titulo": 10,
     "desqualificado": 1,
@@ -247,7 +247,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "iPhone 17 Parcele sem juros Felipe 5.0 R$ 4.750 em até 3x de R$ 1.583,33 sem juros São Paulo, Jardim São Paulo(Zona Norte) Hoje, 12:25"
+      "textoCartao": "iPhone 17 Parcele sem juros Felipe 5.0 R$ 4.750 em até 3x de R$ 1.583,33 sem juros Online São Paulo, Jardim São Paulo(Zona Norte) Hoje, 12:25"
     },
     {
       "fonte": "olx",
@@ -942,7 +942,7 @@
       "idExterno": "148679524",
       "titulo": "iphone 17 branco, novo, bateria 100%, 256gb",
       "preco": 5286,
-      "url": "https://www.enjoei.com.br/p/iphone-17-branco-novo-bateria-100-256gb-148679524?ssqi=541b4b4066526b8f8b036158a8b3c7b6&rsid=c822f07e-141f-4df3-86ed-4fe53ee03a63-1788898513445&rsp=1&rspix=10",
+      "url": "https://www.enjoei.com.br/p/iphone-17-branco-novo-bateria-100-256gb-148679524?ssqi=e187c0a4d2c853667cbe4a88fd163783&rsid=da83903e-f3c2-4691-98e0-757f365ae078-1788902082110&rsp=1&rspix=9",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -1071,7 +1071,7 @@
       "idExterno": "148679130",
       "titulo": "iphone 17 novo",
       "preco": 5400,
-      "url": "https://www.enjoei.com.br/p/iphone-17-novo-148679130?ssqi=541b4b4066526b8f8b036158a8b3c7b6&rsid=c822f07e-141f-4df3-86ed-4fe53ee03a63-1788898513445&rsp=1&rspix=12",
+      "url": "https://www.enjoei.com.br/p/iphone-17-novo-148679130?ssqi=e187c0a4d2c853667cbe4a88fd163783&rsid=da83903e-f3c2-4691-98e0-757f365ae078-1788902082110&rsp=1&rspix=11",
       "imagem": null,
       "cidade": null,
       "uf": null,

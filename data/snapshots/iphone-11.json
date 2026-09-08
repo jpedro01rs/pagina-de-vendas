@@ -4,8 +4,8 @@
   "categoria": "Celulares",
   "marca": "Apple",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T20:01:41.684Z",
-  "duracaoMs": 36605,
+  "atualizadoEm": "2026-09-08T21:01:19.657Z",
+  "duracaoMs": 36227,
   "fontes": [
     {
       "id": "olx",
@@ -27,38 +27,37 @@
     }
   ],
   "coletados": 170,
-  "analisados": 65,
+  "analisados": 61,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 87,
+  "descartados": 88,
   "motivosDescarte": {
-    "preco abaixo da faixa (< R$ 900)": 51,
-    "acessorio/peca": 23,
-    "outra variante": 7,
-    "modelo nao identificado no titulo": 5,
-    "desqualificado": 1
+    "preco abaixo da faixa (< R$ 900)": 42,
+    "acessorio/peca": 39,
+    "outra variante": 4,
+    "modelo nao identificado no titulo": 3
   },
   "estatisticas": {
-    "n": 62,
+    "n": 60,
     "min": 900,
     "p10": 900,
     "p25": 950,
     "mediana": 1000,
-    "p75": 1150,
-    "p90": 1200,
+    "p75": 1112.5,
+    "p90": 1205,
     "max": 1400,
-    "media": 1055.5967741935483,
-    "desvio": 134.58304303836027,
-    "nBruto": 65,
-    "outliersRemovidos": 3,
+    "media": 1052.2666666666667,
+    "desvio": 137.39940158368793,
+    "nBruto": 61,
+    "outliersRemovidos": 1,
     "limites": {
-      "inferior": 590,
-      "superior": 1550,
+      "inferior": 650,
+      "superior": 1450,
       "q1": 950,
-      "q3": 1190,
-      "iqr": 240
+      "q3": 1150,
+      "iqr": 200
     },
-    "amplitudeRelativa": 0.2,
+    "amplitudeRelativa": 0.1625,
     "confianca": {
       "nivel": "alta",
       "rotulo": "Alta"
@@ -66,31 +65,27 @@
     "suficiente": true,
     "porFonte": {
       "olx": {
-        "n": 52,
+        "n": 51,
         "mediana": 1000
       },
       "enjoei": {
-        "n": 13,
+        "n": 10,
         "mediana": 1000
       }
     },
     "porArmazenamento": {
       "64GB": {
         "n": 20,
-        "mediana": 994.5
+        "mediana": 1000
       },
       "128GB": {
-        "n": 26,
-        "mediana": 1100
-      },
-      "256GB": {
-        "n": 1,
-        "mediana": 1200
+        "n": 25,
+        "mediana": 1000
       }
     },
     "porCondicao": {
       "usado": {
-        "n": 63,
+        "n": 59,
         "mediana": 1000
       },
       "seminovo": {
@@ -249,40 +244,6 @@
       "textoCartao": ""
     },
     {
-      "fonte": "enjoei",
-      "idExterno": "150304238",
-      "titulo": "iphone 11 64gb vermelho",
-      "preco": 900,
-      "url": "https://www.enjoei.com.br/p/iphone-11-64gb-vermelho-150304238?rsid=7808ea70-bcba-406a-a78f-a14aa6104cb7-1788897665865&rsp=1&rspix=9",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 64,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "1 R$ 900 iphone 11 64gb vermelho apple sara",
-      "nacional": true
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "149133853",
-      "titulo": "iphone 11 128gb branco",
-      "preco": 900,
-      "url": "https://www.enjoei.com.br/p/iphone-11-128gb-branco-149133853?rsid=57e61392-79c9-4559-8451-2e468daf161f-1788897684158&rsp=1&rspix=30",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "7 R$ 900 iphone 11 128gb branco apple daffiny",
-      "nacional": true
-    },
-    {
       "fonte": "olx",
       "idExterno": "1533262526",
       "titulo": "iPhone 11",
@@ -297,6 +258,23 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "148883307",
+      "titulo": "iphone 11 64gb preto",
+      "preco": 939,
+      "url": "https://www.enjoei.com.br/p/iphone-11-64gb-preto-148883307?rsid=c6fb6c18-0404-4c2a-b71a-f88051bcf4f3-1788901244124&rsp=1&rspix=2",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 64,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "1 0 5% R$ 939 R$ 989 iphone 11 64gb preto apple gloria",
+      "nacional": true
     },
     {
       "fonte": "olx",
@@ -328,7 +306,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "IPHONE 11 64gb - Preto | Conservadíssimo Entrega Fácil Parcele sem juros Tatiana 5.0 R$ 950 R$ 890 em até 3x de R$ 296,67 sem juros Online São Paulo, Vila Gumercindo Hoje, 15:53"
+      "textoCartao": ""
     },
     {
       "fonte": "olx",
@@ -392,7 +370,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": ""
+      "textoCartao": "iPhone 11 - 128GB Entrega Fácil Parcele sem juros R$ 950 em até 3x de R$ 316,67 sem juros Osasco, Bussocaba Ontem, 19:47"
     },
     {
       "fonte": "olx",
@@ -408,7 +386,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "iPhone 11 64gb zero com caixa Parcele sem juros R$ 950 em até 3x de R$ 316,67 sem juros Itaquaquecetuba, Jardim Nossa Senhora D'Ajuda Ontem, 17:20"
+      "textoCartao": ""
     },
     {
       "fonte": "olx",
@@ -444,19 +422,19 @@
     },
     {
       "fonte": "enjoei",
-      "idExterno": "150020253",
-      "titulo": "iphone 11 64gb branco",
-      "preco": 959,
-      "url": "https://www.enjoei.com.br/p/iphone-11-64gb-branco-150020253?rsid=7808ea70-bcba-406a-a78f-a14aa6104cb7-1788897665865&rsp=1&rspix=12",
+      "idExterno": "149937145",
+      "titulo": "iphone 11 128gb preto",
+      "preco": 970,
+      "url": "https://www.enjoei.com.br/p/iphone-11-128gb-preto-149937145?rsid=c6fb6c18-0404-4c2a-b71a-f88051bcf4f3-1788901244124&rsp=1&rspix=17",
       "imagem": null,
       "cidade": null,
       "uf": null,
       "publicadoEm": null,
-      "armazenamento": 64,
+      "armazenamento": 128,
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "2 3% R$ 959 R$ 989 iphone 11 64gb branco apple julia",
+      "textoCartao": "2 12% R$ 970 R$ 1.100 iphone 11 128gb preto apple cynthia",
       "nacional": true
     },
     {
@@ -477,10 +455,10 @@
     },
     {
       "fonte": "enjoei",
-      "idExterno": "150032971",
-      "titulo": "iphone 11 64gb roxo",
-      "preco": 989,
-      "url": "https://www.enjoei.com.br/p/iphone-11-64gb-roxo-150032971?rsid=7808ea70-bcba-406a-a78f-a14aa6104cb7-1788897665865&rsp=1&rspix=3",
+      "idExterno": "150380951",
+      "titulo": "iphone 11 64gb preto",
+      "preco": 980,
+      "url": "https://www.enjoei.com.br/p/iphone-11-64gb-preto-150380951?rsid=c6fb6c18-0404-4c2a-b71a-f88051bcf4f3-1788901244124&rsp=1&rspix=6",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -489,15 +467,15 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "3 R$ 989 iphone 11 64gb roxo apple rute",
+      "textoCartao": "R$ 980 iphone 11 64gb preto apple camila",
       "nacional": true
     },
     {
       "fonte": "enjoei",
-      "idExterno": "148780670",
+      "idExterno": "150416303",
       "titulo": "iphone 11 64gb branco",
       "preco": 989,
-      "url": "https://www.enjoei.com.br/p/iphone-11-64gb-branco-148780670?rsid=57e61392-79c9-4559-8451-2e468daf161f-1788897684158&rsp=1&rspix=9",
+      "url": "https://www.enjoei.com.br/p/iphone-11-64gb-branco-150416303?rsid=c6fb6c18-0404-4c2a-b71a-f88051bcf4f3-1788901244124&rsp=1&rspix=10",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -506,7 +484,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "7 R$ 989 iphone 11 64gb branco apple gabrielly",
+      "textoCartao": "R$ 989 iphone 11 64gb branco apple mayla",
       "nacional": true
     },
     {
@@ -623,10 +601,10 @@
     },
     {
       "fonte": "enjoei",
-      "idExterno": "149543499",
-      "titulo": "iphone 11 64gb lilás acinzentado",
+      "idExterno": "150056320",
+      "titulo": "iphone 11 preto 64gb",
       "preco": 1000,
-      "url": "https://www.enjoei.com.br/p/iphone-11-64gb-lilas-acinzentado-149543499?rsid=7808ea70-bcba-406a-a78f-a14aa6104cb7-1788897665865&rsp=1&rspix=18",
+      "url": "https://www.enjoei.com.br/p/iphone-11-preto-64gb-150056320?rsid=c6fb6c18-0404-4c2a-b71a-f88051bcf4f3-1788901244124&rsp=1&rspix=5",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -635,7 +613,41 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "9% R$ 1.000 R$ 1.100 iphone 11 64gb lilás acinzentado apple agata",
+      "textoCartao": "R$ 1.000 iphone 11 preto 64gb apple igor",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "147617170",
+      "titulo": "iphone 11 red 128gb",
+      "preco": 1000,
+      "url": "https://www.enjoei.com.br/p/iphone-11-red-128gb-147617170?rsid=c6fb6c18-0404-4c2a-b71a-f88051bcf4f3-1788901244124&rsp=1&rspix=7",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 128,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "7 44% R$ 1.000 R$ 1.800 iphone 11 red 128gb apple gabriel",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "150103003",
+      "titulo": "iphone 11 64gb vermelho",
+      "preco": 1000,
+      "url": "https://www.enjoei.com.br/p/iphone-11-64gb-vermelho-150103003?rsid=c6fb6c18-0404-4c2a-b71a-f88051bcf4f3-1788901244124&rsp=1&rspix=27",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 64,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "R$ 1.000 iphone 11 64gb vermelho apple vinicius",
       "nacional": true
     },
     {
@@ -653,6 +665,40 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "150416117",
+      "titulo": "iphone 11 64gb verde",
+      "preco": 1050,
+      "url": "https://www.enjoei.com.br/p/iphone-11-64gb-verde-150416117?rsid=c6fb6c18-0404-4c2a-b71a-f88051bcf4f3-1788901244124&rsp=1&rspix=23",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 64,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "R$ 1.050 iphone 11 64gb verde apple ester",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "150196134",
+      "titulo": "iphone 11 128gb lilás",
+      "preco": 1059,
+      "url": "https://www.enjoei.com.br/p/iphone-11-128gb-lilas-150196134?rsid=c6fb6c18-0404-4c2a-b71a-f88051bcf4f3-1788901244124&rsp=1&rspix=15",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 128,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "6 4% R$ 1.059 R$ 1.100 iphone 11 128gb lilás apple rafaela",
+      "nacional": true
     },
     {
       "fonte": "olx",
@@ -748,7 +794,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": ""
+      "textoCartao": "iPhone 11 - 100% da bateria R$ 1.100 R$ 1.050 Guarulhos, Cidade Jardim Cumbica Ontem, 19:40"
     },
     {
       "fonte": "olx",
@@ -781,40 +827,6 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "150287627",
-      "titulo": "iphone 11 64gb preto",
-      "preco": 1100,
-      "url": "https://www.enjoei.com.br/p/iphone-11-64gb-preto-150287627?rsid=7808ea70-bcba-406a-a78f-a14aa6104cb7-1788897665865&rsp=1&rspix=15",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 64,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "R$ 1.100 iphone 11 64gb preto apple rafaela",
-      "nacional": true
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "149071292",
-      "titulo": "iphone 11 128gb preto",
-      "preco": 1100,
-      "url": "https://www.enjoei.com.br/p/iphone-11-128gb-preto-149071292?rsid=57e61392-79c9-4559-8451-2e468daf161f-1788897684158&rsp=1&rspix=20",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "R$ 1.100 iphone 11 128gb preto apple mateus",
-      "nacional": true
     },
     {
       "fonte": "olx",
@@ -866,19 +878,19 @@
     },
     {
       "fonte": "olx",
-      "idExterno": "1533016000",
-      "titulo": "iPhone 11 128gb COMPLETO",
-      "preco": 1150,
-      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/iphone-11-128gb-completo-1533016000",
+      "idExterno": "1533618473",
+      "titulo": "iPhone 11",
+      "preco": 1190,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/iphone-11-1533618473",
       "imagem": null,
       "cidade": null,
       "uf": null,
       "publicadoEm": null,
-      "armazenamento": 128,
+      "armazenamento": null,
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": ""
+      "textoCartao": "iPhone 11 R$ 1.190 Online Guarulhos, Vila São João Hoje, 17:02"
     },
     {
       "fonte": "olx",
@@ -962,73 +974,6 @@
     },
     {
       "fonte": "olx",
-      "idExterno": "1533015113",
-      "titulo": "iPhone 11 RED + Kit Completo de Acessórios (Fone, Carregador, Cases e Smartwatch)",
-      "preco": 1200,
-      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/iphone-11-red-kit-completo-de-acessorios-fone-carregador-cases-e-smartwatch-1533015113",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": null,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": ""
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "146618930",
-      "titulo": "iphone 11 256gb preto",
-      "preco": 1200,
-      "url": "https://www.enjoei.com.br/p/iphone-11-256gb-preto-146618930?rsid=7808ea70-bcba-406a-a78f-a14aa6104cb7-1788897665865&rsp=1&rspix=4",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 256,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "1 0 33% R$ 1.200 R$ 1.800 iphone 11 256gb preto apple natanael",
-      "nacional": true
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "149601427",
-      "titulo": "iphone 11 64g",
-      "preco": 1200,
-      "url": "https://www.enjoei.com.br/p/iphone-11-64g-149601427?rsid=7808ea70-bcba-406a-a78f-a14aa6104cb7-1788897665865&rsp=1&rspix=8",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": null,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "1 R$ 1.200 iphone 11 64g apple nathalia",
-      "nacional": true
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "150375563",
-      "titulo": "iphone 11 128gb preto",
-      "preco": 1200,
-      "url": "https://www.enjoei.com.br/p/iphone-11-128gb-preto-150375563?rsid=7808ea70-bcba-406a-a78f-a14aa6104cb7-1788897665865&rsp=1&rspix=22",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "R$ 1.200 iphone 11 128gb preto apple julia",
-      "nacional": true
-    },
-    {
-      "fonte": "olx",
       "idExterno": "1533082749",
       "titulo": "Iphone 11, 128 GB, lilás",
       "preco": 1250,
@@ -1058,6 +1003,23 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "149140079",
+      "titulo": "iphone 11 128gb roxo excelente estado",
+      "preco": 1399,
+      "url": "https://www.enjoei.com.br/p/iphone-11-128gb-roxo-excelente-estado-149140079?rsid=c6fb6c18-0404-4c2a-b71a-f88051bcf4f3-1788901244124&rsp=1&rspix=12",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 128,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "4 R$ 1.399 iphone 11 128gb roxo excelente estado apple leonardo",
+      "nacional": true
     },
     {
       "fonte": "olx",
@@ -1108,23 +1070,6 @@
       "textoCartao": ""
     },
     {
-      "fonte": "enjoei",
-      "idExterno": "149181400",
-      "titulo": "iphone 11 preto 128gb",
-      "preco": 1700,
-      "url": "https://www.enjoei.com.br/p/iphone-11-preto-128gb-149181400?rsid=7808ea70-bcba-406a-a78f-a14aa6104cb7-1788897665865&rsp=1&rspix=10",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "R$ 1.700 iphone 11 preto 128gb apple brenda",
-      "nacional": true
-    },
-    {
       "fonte": "olx",
       "idExterno": "1533483817",
       "titulo": "iPhone 11. 64GB",
@@ -1139,29 +1084,12 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "150431656",
-      "titulo": "iphone 11 preto com earpods",
-      "preco": 1800,
-      "url": "https://www.enjoei.com.br/p/iphone-11-preto-com-earpods-150431656?rsid=7808ea70-bcba-406a-a78f-a14aa6104cb7-1788897665865&rsp=1&rspix=19",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": null,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "R$ 1.800 iphone 11 preto com earpods apple ianca",
-      "nacional": true
     }
   ],
   "tendencia": {
     "de": 1100,
-    "para": 950,
-    "variacao": -0.13636363636363635,
+    "para": 1000,
+    "variacao": -0.09090909090909091,
     "dias": 14
   }
 }

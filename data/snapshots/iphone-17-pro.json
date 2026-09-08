@@ -4,8 +4,8 @@
   "categoria": "Celulares",
   "marca": "Apple",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T20:17:03.132Z",
-  "duracaoMs": 36932,
+  "atualizadoEm": "2026-09-08T21:16:31.820Z",
+  "duracaoMs": 37224,
   "fontes": [
     {
       "id": "olx",
@@ -30,11 +30,11 @@
   "analisados": 68,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 96,
+  "descartados": 95,
   "motivosDescarte": {
-    "acessorio/peca": 42,
-    "outra variante": 29,
-    "preco abaixo da faixa (< R$ 6300)": 17,
+    "acessorio/peca": 48,
+    "outra variante": 24,
+    "preco abaixo da faixa (< R$ 6300)": 15,
     "modelo nao identificado no titulo": 6,
     "falta variante": 2
   },
@@ -47,8 +47,8 @@
     "p75": 7199,
     "p90": 7590,
     "max": 7999,
-    "media": 6981.262295081967,
-    "desvio": 404.4542123526648,
+    "media": 6977.983606557377,
+    "desvio": 405.10725120288413,
     "nBruto": 68,
     "outliersRemovidos": 7,
     "limites": {
@@ -71,7 +71,7 @@
       },
       "enjoei": {
         "n": 4,
-        "mediana": 6999
+        "mediana": 7144.5
       }
     },
     "porArmazenamento": {
@@ -91,7 +91,7 @@
     "porCondicao": {
       "usado": {
         "n": 56,
-        "mediana": 6999
+        "mediana": 6994.5
       },
       "novo": {
         "n": 8,
@@ -104,12 +104,12 @@
     }
   },
   "arbitragem": {
-    "comprarEm": "enjoei",
-    "medianaCompra": 6999,
-    "venderEm": "olx",
-    "medianaVenda": 7000,
-    "diferenca": 1,
-    "percentual": 0.00014287755393627662
+    "comprarEm": "olx",
+    "medianaCompra": 7000,
+    "venderEm": "enjoei",
+    "medianaVenda": 7144.5,
+    "diferenca": 144.5,
+    "percentual": 0.020642857142857143
   },
   "tetoDeCompra": 5719.178571428571,
   "precoVendaRapida": 6439.08,
@@ -369,7 +369,7 @@
       "condicao": "novo",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "Iphone 17 Pro 256GB Azul/NUNCA USADO/ 1 ANO DE GARANTIA/ PARCELO 12x/ TROCO Entrega Fácil Parcele sem juros Bruno Dos Santos Cruz 5.0 R$ 6.680 R$ 6.399 em até 3x de R$ 2.133,00 sem juros São Paulo, Vila Regente Feijó 31 de ago, 22:23"
+      "textoCartao": ""
     },
     {
       "fonte": "olx",
@@ -434,6 +434,23 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "148108385",
+      "titulo": "iphone 17 pro azul 256gb 96% de bateria garantia até setembro",
+      "preco": 6799,
+      "url": "https://www.enjoei.com.br/p/iphone-17-pro-azul-256gb-96-de-bateria-garantia-ate-setembro-148108385?ssqi=325474f1d8431c9d2509f1f2a2a710de&rsid=8b760ec0-c9e5-4e0d-9d6e-4d3ac75975d3-1788902155646&rsp=1&rspix=21",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 256,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "7 7 barateou R$ 6.799 R$ 6.999 iphone 17 pro azul 256gb 96% de bateria garantia até setembro apple joão",
+      "nacional": true
     },
     {
       "fonte": "olx",
@@ -513,7 +530,7 @@
       "condicao": "novo",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": ""
+      "textoCartao": "iPhone 17 Pro 256gb TODAS AS CORES LACRADO COM NF R$ 6.900 Online São Paulo, Vila Parque Jabaquara 1 de set, 14:56"
     },
     {
       "fonte": "olx",
@@ -584,7 +601,7 @@
       "idExterno": "149392845",
       "titulo": "iphone 17 pro max256gb",
       "preco": 6999,
-      "url": "https://www.enjoei.com.br/p/iphone-17-pro-max256gb-149392845?ssqi=50d60f829954ca7e531b30c37ccb9f1f&rsid=37850f8c-741e-4ebb-b093-fea7ee814122-1788898587316&rsp=1&rspix=8",
+      "url": "https://www.enjoei.com.br/p/iphone-17-pro-max256gb-149392845?ssqi=325474f1d8431c9d2509f1f2a2a710de&rsid=8b760ec0-c9e5-4e0d-9d6e-4d3ac75975d3-1788902155646&rsp=1&rspix=8",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -594,23 +611,6 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": "2 6 R$ 6.999 iphone 17 pro max256gb iphone tiago",
-      "nacional": true
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "149463703",
-      "titulo": "iphone 17 pro 256gb azul profundo",
-      "preco": 6999,
-      "url": "https://www.enjoei.com.br/p/iphone-17-pro-256gb-azul-profundo-149463703?ssqi=50d60f829954ca7e531b30c37ccb9f1f&rsid=37850f8c-741e-4ebb-b093-fea7ee814122-1788898587316&rsp=1&rspix=17",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 256,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "1 0 barateou R$ 6.999 R$ 7.499 iphone 17 pro 256gb azul profundo apple fatima",
       "nacional": true
     },
     {
@@ -627,7 +627,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "iPhone 17 pro R$ 7.000 Online São Paulo, Vila Progresso (Zona Leste) Hoje, 13:57"
+      "textoCartao": "iPhone 17 pro R$ 7.000 São Paulo, Vila Progresso (Zona Leste) Hoje, 13:57"
     },
     {
       "fonte": "olx",
@@ -906,7 +906,7 @@
       "idExterno": "149333575",
       "titulo": "iphone 17 pro 256gb novo",
       "preco": 7290,
-      "url": "https://www.enjoei.com.br/p/iphone-17-pro-256gb-novo-149333575?ssqi=faeb01206f22c284dd006fa3ababcd59&rsid=9509ace0-db86-49d6-a3f8-a1da3b0ca46e-1788898605661&rsp=1&rspix=17",
+      "url": "https://www.enjoei.com.br/p/iphone-17-pro-256gb-novo-149333575?ssqi=325474f1d8431c9d2509f1f2a2a710de&rsid=8b760ec0-c9e5-4e0d-9d6e-4d3ac75975d3-1788902155646&rsp=1&rspix=18",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -996,7 +996,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "iPhone 17 PRO 256GB Azul NOVO Flavio 5.0 R$ 7.590 R$ 7.390 São Paulo, Ipiranga Hoje, 09:57 Enviar mensagem"
+      "textoCartao": ""
     },
     {
       "fonte": "olx",
@@ -1163,7 +1163,7 @@
       "idExterno": "150432845",
       "titulo": "iphone 17 pro",
       "preco": 8500,
-      "url": "https://www.enjoei.com.br/p/iphone-17-pro-150432845?ssqi=50d60f829954ca7e531b30c37ccb9f1f&rsid=37850f8c-741e-4ebb-b093-fea7ee814122-1788898587316&rsp=1&rspix=1",
+      "url": "https://www.enjoei.com.br/p/iphone-17-pro-150432845?ssqi=325474f1d8431c9d2509f1f2a2a710de&rsid=8b760ec0-c9e5-4e0d-9d6e-4d3ac75975d3-1788902155646&rsp=1&rspix=3",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -1172,7 +1172,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "R$ 8.500 iphone 17 pro iphone anna",
+      "textoCartao": "1 R$ 8.500 iphone 17 pro iphone anna",
       "nacional": true
     },
     {

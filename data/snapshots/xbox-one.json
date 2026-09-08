@@ -4,8 +4,8 @@
   "categoria": "Videogames",
   "marca": "Diversos",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T20:28:42.230Z",
-  "duracaoMs": 36724,
+  "atualizadoEm": "2026-09-08T21:28:02.937Z",
+  "duracaoMs": 36462,
   "fontes": [
     {
       "id": "olx",
@@ -27,40 +27,40 @@
     }
   ],
   "coletados": 170,
-  "analisados": 65,
+  "analisados": 61,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 96,
+  "descartados": 100,
   "motivosDescarte": {
-    "acessorio/peca": 31,
-    "modelo nao identificado no titulo": 28,
-    "outro modelo": 22,
-    "preco abaixo da faixa (< R$ 500)": 7,
-    "preco acima da faixa (> R$ 1800)": 5,
+    "acessorio/peca": 33,
+    "modelo nao identificado no titulo": 30,
+    "outro modelo": 28,
+    "preco abaixo da faixa (< R$ 500)": 3,
+    "preco acima da faixa (> R$ 1800)": 3,
     "anuncio de loja": 2,
     "desqualificado": 1
   },
   "estatisticas": {
-    "n": 62,
+    "n": 59,
     "min": 500,
     "p10": 650,
-    "p25": 765,
+    "p25": 755,
     "mediana": 850,
-    "p75": 1087.5,
-    "p90": 1200,
-    "max": 1500,
-    "media": 913.758064516129,
-    "desvio": 223.872204723737,
-    "nBruto": 65,
-    "outliersRemovidos": 3,
+    "p75": 1100,
+    "p90": 1214.0000000000002,
+    "max": 1600,
+    "media": 918.9152542372881,
+    "desvio": 240.1427744909049,
+    "nBruto": 61,
+    "outliersRemovidos": 2,
     "limites": {
-      "inferior": 300,
-      "superior": 1580,
-      "q1": 780,
+      "inferior": 250,
+      "superior": 1610,
+      "q1": 760,
       "q3": 1100,
-      "iqr": 320
+      "iqr": 340
     },
-    "amplitudeRelativa": 0.37941176470588234,
+    "amplitudeRelativa": 0.40588235294117647,
     "confianca": {
       "nivel": "alta",
       "rotulo": "Alta"
@@ -68,12 +68,12 @@
     "suficiente": true,
     "porFonte": {
       "olx": {
-        "n": 60,
+        "n": 57,
         "mediana": 850
       },
       "enjoei": {
-        "n": 5,
-        "mediana": 1000
+        "n": 4,
+        "mediana": 952
       }
     },
     "porArmazenamento": {
@@ -82,13 +82,13 @@
         "mediana": 650
       },
       "1TB": {
-        "n": 6,
+        "n": 7,
         "mediana": 1100
       }
     },
     "porCondicao": {
       "usado": {
-        "n": 63,
+        "n": 59,
         "mediana": 850
       },
       "seminovo": {
@@ -101,9 +101,9 @@
     "comprarEm": "olx",
     "medianaCompra": 850,
     "venderEm": "enjoei",
-    "medianaVenda": 1000,
-    "diferenca": 150,
-    "percentual": 0.17647058823529413
+    "medianaVenda": 952,
+    "diferenca": 102,
+    "percentual": 0.12
   },
   "tetoDeCompra": 668.2142857142857,
   "precoVendaRapida": 782,
@@ -175,6 +175,40 @@
       "score": 80
     },
     {
+      "fonte": "enjoei",
+      "idExterno": "147901654",
+      "titulo": "xbox one 500gb com 1 controle original",
+      "preco": 645,
+      "url": "https://www.enjoei.com.br/p/xbox-one-500gb-com-1-controle-original-147901654?ssqi=b45932bec6931f3e469ecdea107c5285&rsid=4e4f2b2b-59a0-4fbd-b2ed-2c35f27432b3-1788902847351&rsp=1&rspix=10",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "3 9 36% R$ 645 R$ 1.000 xbox one 500gb com 1 controle original xbox one miguel",
+      "nacional": true,
+      "desconto": 0.2411764705882353,
+      "abaixoDaMediana": 205,
+      "risco": "baixo",
+      "aviso": null,
+      "proximidade": 0.2,
+      "perto": false,
+      "precoCompra": 645,
+      "precoVendaRapida": 782,
+      "receitaLiquida": 782,
+      "custoFixo": 30,
+      "taxaPlataforma": 0,
+      "investimento": 675,
+      "lucro": 107,
+      "roi": 0.15851851851851853,
+      "margem": 0.13682864450127877,
+      "tetoDeCompra": 668.2142857142857,
+      "score": 72
+    },
+    {
       "fonte": "olx",
       "idExterno": "1533579284",
       "titulo": "XBOX ONE FAT USADO 1.5TB",
@@ -188,7 +222,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "XBOX ONE FAT USADO 1.5TB R$ 650 Online Itapevi, Jardim Bela Vista Hoje, 16:25",
+      "textoCartao": "",
       "desconto": 0.23529411764705882,
       "abaixoDaMediana": 200,
       "risco": "baixo",
@@ -423,6 +457,23 @@
       "textoCartao": ""
     },
     {
+      "fonte": "enjoei",
+      "idExterno": "147901654",
+      "titulo": "xbox one 500gb com 1 controle original",
+      "preco": 645,
+      "url": "https://www.enjoei.com.br/p/xbox-one-500gb-com-1-controle-original-147901654?ssqi=b45932bec6931f3e469ecdea107c5285&rsid=4e4f2b2b-59a0-4fbd-b2ed-2c35f27432b3-1788902847351&rsp=1&rspix=10",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "3 9 36% R$ 645 R$ 1.000 xbox one 500gb com 1 controle original xbox one miguel",
+      "nacional": true
+    },
+    {
       "fonte": "olx",
       "idExterno": "1533579284",
       "titulo": "XBOX ONE FAT USADO 1.5TB",
@@ -436,7 +487,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "XBOX ONE FAT USADO 1.5TB R$ 650 Online Itapevi, Jardim Bela Vista Hoje, 16:25"
+      "textoCartao": ""
     },
     {
       "fonte": "olx",
@@ -503,11 +554,11 @@
       "textoCartao": ""
     },
     {
-      "fonte": "olx",
-      "idExterno": "1533497183",
-      "titulo": "Xbox One, com um controle e um jogo",
-      "preco": 700,
-      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-one-com-um-controle-e-um-jogo-1533497183",
+      "fonte": "enjoei",
+      "idExterno": "148187528",
+      "titulo": "console xbox one fat",
+      "preco": 699,
+      "url": "https://www.enjoei.com.br/p/console-xbox-one-fat-148187528?ssqi=b45932bec6931f3e469ecdea107c5285&rsid=4e4f2b2b-59a0-4fbd-b2ed-2c35f27432b3-1788902847351&rsp=1&rspix=27",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -516,7 +567,8 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": ""
+      "textoCartao": "2 6 R$ 699 console xbox one fat xbox one tom",
+      "nacional": true
     },
     {
       "fonte": "olx",
@@ -564,7 +616,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "Xbox one flat Parcele sem juros R$ 720 em até 3x de R$ 240,00 sem juros Diadema, Casa Grande Ontem, 14:04"
+      "textoCartao": ""
     },
     {
       "fonte": "olx",
@@ -597,23 +649,6 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "150155010",
-      "titulo": "xbox one 500gb",
-      "preco": 750,
-      "url": "https://www.enjoei.com.br/p/xbox-one-500gb-150155010?ssqi=8b9e895bc72eae5ad64e7af356e89dd8&rsid=adbb88d0-3511-4ea3-a24a-5ae97179c3a4-1788899286353&rsp=1&rspix=11",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": null,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "7 12% R$ 750 R$ 850 xbox one 500gb xbox one isadora",
-      "nacional": true
     },
     {
       "fonte": "olx",
@@ -661,7 +696,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": ""
+      "textoCartao": "xbox one fat com 2 jogo aceita trocas Parcele sem juros R$ 799 em até 3x de R$ 266,33 sem juros São Paulo, Vila Gomes Cardim Ontem, 16:38"
     },
     {
       "fonte": "olx",
@@ -677,7 +712,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "Xbox one + 2 controles (usados) Frete grátis Parcele sem juros R$ 800 em até 3x de R$ 266,67 sem juros São Paulo, Perdizes Hoje, 15:53"
+      "textoCartao": ""
     },
     {
       "fonte": "olx",
@@ -725,7 +760,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "Xbox one fat 500gb Entrega Fácil Parcele sem juros R$ 800 em até 3x de R$ 266,67 sem juros Online São Paulo, Sacomã Ontem, 13:33"
+      "textoCartao": ""
     },
     {
       "fonte": "olx",
@@ -776,23 +811,6 @@
       "textoCartao": ""
     },
     {
-      "fonte": "enjoei",
-      "idExterno": "149788961",
-      "titulo": "xbox one fat 500gb com jogo e controle",
-      "preco": 800,
-      "url": "https://www.enjoei.com.br/p/xbox-one-fat-500gb-com-jogo-e-controle-149788961?ssqi=8b9e895bc72eae5ad64e7af356e89dd8&rsid=adbb88d0-3511-4ea3-a24a-5ae97179c3a4-1788899286353&rsp=1&rspix=14",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": null,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "5 11% R$ 800 R$ 900 xbox one fat 500gb com jogo e controle xbox one isaque",
-      "nacional": true
-    },
-    {
       "fonte": "olx",
       "idExterno": "1533508655",
       "titulo": "Xbox one fat",
@@ -838,7 +856,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "Xbox One 500 GB - Perfeito estado Frete grátis Parcele sem juros R$ 850 em até 3x de R$ 283,33 sem juros Osasco, Jardim Elvira Ontem, 14:07"
+      "textoCartao": ""
     },
     {
       "fonte": "olx",
@@ -862,22 +880,6 @@
       "titulo": "Xbox one fat 500 gb",
       "preco": 850,
       "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-one-fat-500-gb-1532905112",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": null,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": ""
-    },
-    {
-      "fonte": "olx",
-      "idExterno": "1532827842",
-      "titulo": "Xbox One - 2 controles - Kinect - Jogos",
-      "preco": 850,
-      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-one-2-controles-kinect-jogos-1532827842",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -934,7 +936,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "Xbox one FAT 500gb com dois controles do série x fonte e cabos original e jogos no hd Parcele sem juros R$ 900 em até 3x de R$ 300,00 sem juros Salto, Salto de São José Hoje, 16:03"
+      "textoCartao": ""
     },
     {
       "fonte": "olx",
@@ -1081,23 +1083,6 @@
       "textoCartao": ""
     },
     {
-      "fonte": "enjoei",
-      "idExterno": "149445760",
-      "titulo": "xbox one kinect sensor",
-      "preco": 1000,
-      "url": "https://www.enjoei.com.br/p/xbox-one-kinect-sensor-149445760?ssqi=8b9e895bc72eae5ad64e7af356e89dd8&rsid=adbb88d0-3511-4ea3-a24a-5ae97179c3a4-1788899286353&rsp=1&rspix=2",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": null,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "4 39% R$ 1.000 R$ 1.630 xbox one kinect sensor xbox one algis",
-      "nacional": true
-    },
-    {
       "fonte": "olx",
       "idExterno": "1515771400",
       "titulo": "XBOX ONE FAT + CONTROLE RARO E DIVERSOS JOGOS",
@@ -1127,7 +1112,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "Xbox One Fat + 2 Controles + Dragon Ball Z Kakarot, Red Dead Redemption 2 e Metal Gear V Frete grátis Parcele sem juros Gustavo Farra 4.8 R$ 1.100 em até 3x de R$ 366,67 sem juros São Paulo, Jardim Oriental Ontem, 13:51"
+      "textoCartao": ""
     },
     {
       "fonte": "olx",
@@ -1156,22 +1141,6 @@
       "uf": null,
       "publicadoEm": null,
       "armazenamento": 1024,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": ""
-    },
-    {
-      "fonte": "olx",
-      "idExterno": "1532862822",
-      "titulo": "XBOX ONE - EDIÇÃO FORZA",
-      "preco": 1100,
-      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-one-edicao-forza-1532862822",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": null,
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
@@ -1274,6 +1243,23 @@
       "textoCartao": ""
     },
     {
+      "fonte": "enjoei",
+      "idExterno": "147769298",
+      "titulo": "xbox one fat 500gb + controle series s/x",
+      "preco": 1205,
+      "url": "https://www.enjoei.com.br/p/xbox-one-fat-500gb-controle-series-s-x-147769298?ssqi=b45932bec6931f3e469ecdea107c5285&rsid=4e4f2b2b-59a0-4fbd-b2ed-2c35f27432b3-1788902847351&rsp=1&rspix=20",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "1 1 17% R$ 1.205 R$ 1.450 xbox one fat 500gb + controle series s/x xbox one michelle",
+      "nacional": true
+    },
+    {
       "fonte": "olx",
       "idExterno": "1533466925",
       "titulo": "?Console Xbox One 500GB Linha mini craft (100% original)",
@@ -1288,23 +1274,6 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "147796464",
-      "titulo": "xbox one fat 865gb com 2 controles e 1 jogos",
-      "preco": 1286,
-      "url": "https://www.enjoei.com.br/p/xbox-one-fat-865gb-com-2-controles-e-1-jogos-147796464?ssqi=8b9e895bc72eae5ad64e7af356e89dd8&rsid=adbb88d0-3511-4ea3-a24a-5ae97179c3a4-1788899286353&rsp=1&rspix=7",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": null,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "7 14% R$ 1.286 R$ 1.500 xbox one fat 865gb com 2 controles e 1 jogos xbox one",
-      "nacional": true
     },
     {
       "fonte": "olx",
@@ -1336,7 +1305,23 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": ""
+      "textoCartao": "XBOX ONE 500GB BRANCO USADO + CONTROLE + 12 JOGOS Frete grátis Até 10x sem juros R$ 1.350 em até 10x de R$ 135,00 sem juros São Paulo, Planalto Paulista Ontem, 17:28"
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1524838015",
+      "titulo": "Xbox one -kinect-",
+      "preco": 1400,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-one-kinect-1524838015",
+      "imagem": null,
+      "cidade": "Portal do Paraíso",
+      "uf": "II",
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "Xbox one -kinect- Frete grátis Até 10x sem juros R$ 1.400 R$ 1.300 em até 10x de R$ 130,00 sem juros Online Jundiaí, Portal do Paraíso II Hoje, 17:36"
     },
     {
       "fonte": "olx",
@@ -1355,11 +1340,28 @@
       "textoCartao": ""
     },
     {
+      "fonte": "enjoei",
+      "idExterno": "149900997",
+      "titulo": "xbox one fat 1tb halo 5 limited edition",
+      "preco": 1600,
+      "url": "https://www.enjoei.com.br/p/xbox-one-fat-1tb-halo-5-limited-edition-149900997?ssqi=b45932bec6931f3e469ecdea107c5285&rsid=4e4f2b2b-59a0-4fbd-b2ed-2c35f27432b3-1788902847351&rsp=1&rspix=7",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 1024,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "2 4 R$ 1.600 xbox one fat 1tb halo 5 limited edition xbox one thalita",
+      "nacional": true
+    },
+    {
       "fonte": "olx",
-      "idExterno": "1388866585",
-      "titulo": "Xbox One 500gb",
-      "preco": 1500,
-      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-one-500gb-1388866585",
+      "idExterno": "1533625362",
+      "titulo": "Xbox one",
+      "preco": 1700,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-one-1533625362",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -1368,7 +1370,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": ""
+      "textoCartao": "Xbox one Entrega Fácil Parcele sem juros Junior 4.9 R$ 1.700 em até 3x de R$ 566,67 sem juros Online São Paulo, Vila Mara Hoje, 17:26"
     },
     {
       "fonte": "olx",
@@ -1385,39 +1387,6 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
-    },
-    {
-      "fonte": "olx",
-      "idExterno": "1533020232",
-      "titulo": "Xbox one",
-      "preco": 1700,
-      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-one-1533020232",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": null,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": ""
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "149719811",
-      "titulo": "console xbox one fat 500gb com kinect",
-      "preco": 1740,
-      "url": "https://www.enjoei.com.br/p/console-xbox-one-fat-500gb-com-kinect-149719811?ssqi=8b9e895bc72eae5ad64e7af356e89dd8&rsid=adbb88d0-3511-4ea3-a24a-5ae97179c3a4-1788899286353&rsp=1&rspix=22",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": null,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "2 6% R$ 1.740 R$ 1.850 console xbox one fat 500gb com kinect xbox one vinicius",
-      "nacional": true
     }
   ],
   "tendencia": null

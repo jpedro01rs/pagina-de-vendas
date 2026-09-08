@@ -4,8 +4,8 @@
   "categoria": "Videogames",
   "marca": "Diversos",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T20:21:19.923Z",
-  "duracaoMs": 73570,
+  "atualizadoEm": "2026-09-08T21:20:46.444Z",
+  "duracaoMs": 72733,
   "fontes": [
     {
       "id": "olx",
@@ -27,14 +27,14 @@
     }
   ],
   "coletados": 334,
-  "analisados": 73,
+  "analisados": 72,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 188,
+  "descartados": 190,
   "motivosDescarte": {
-    "acessorio/peca": 123,
-    "preco abaixo da faixa (< R$ 300)": 25,
-    "modelo nao identificado no titulo": 16,
+    "acessorio/peca": 130,
+    "preco abaixo da faixa (< R$ 300)": 19,
+    "modelo nao identificado no titulo": 17,
     "preco acima da faixa (> R$ 1500)": 10,
     "desqualificado": 6,
     "anuncio de loja": 4,
@@ -51,8 +51,8 @@
     "max": 1300,
     "media": 812.8714285714286,
     "desvio": 190.86808619182676,
-    "nBruto": 73,
-    "outliersRemovidos": 3,
+    "nBruto": 72,
+    "outliersRemovidos": 2,
     "limites": {
       "inferior": 300,
       "superior": 1340,
@@ -72,14 +72,14 @@
         "mediana": 800
       },
       "enjoei": {
-        "n": 2,
-        "mediana": 1162
+        "n": 1,
+        "mediana": 824
       }
     },
     "porArmazenamento": {},
     "porCondicao": {
       "usado": {
-        "n": 70,
+        "n": 69,
         "mediana": 800
       },
       "seminovo": {
@@ -304,7 +304,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "Playstation 3 Desbloqueado Entrega Fácil Parcele sem juros R$ 600 em até 3x de R$ 200,00 sem juros Online São Paulo, Vila Amália (Zona Norte) Hoje, 16:07",
+      "textoCartao": "Playstation 3 Desbloqueado Entrega Fácil Parcele sem juros R$ 600 em até 3x de R$ 200,00 sem juros São Paulo, Vila Amália (Zona Norte) Hoje, 16:07",
       "desconto": 0.25,
       "abaixoDaMediana": 200,
       "risco": "baixo",
@@ -665,7 +665,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "Playstation 3 Desbloqueado Entrega Fácil Parcele sem juros R$ 600 em até 3x de R$ 200,00 sem juros Online São Paulo, Vila Amália (Zona Norte) Hoje, 16:07"
+      "textoCartao": "Playstation 3 Desbloqueado Entrega Fácil Parcele sem juros R$ 600 em até 3x de R$ 200,00 sem juros São Paulo, Vila Amália (Zona Norte) Hoje, 16:07"
     },
     {
       "fonte": "olx",
@@ -745,7 +745,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "Vendo PlayStation 3 funcionando, desbloqueado. Frete grátis Parcele sem juros R$ 630 em até 3x de R$ 210,00 sem juros Online Franco da Rocha, Chácaras Bom Tempo Hoje, 16:27"
+      "textoCartao": "Vendo PlayStation 3 funcionando, desbloqueado. Frete grátis Parcele sem juros R$ 630 em até 3x de R$ 210,00 sem juros Franco da Rocha, Chácaras Bom Tempo Hoje, 16:27"
     },
     {
       "fonte": "olx",
@@ -777,7 +777,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "PS3 Super Slim 250GB Entrega Fácil Parcele sem juros marcoss1977 4.9 R$ 650 em até 3x de R$ 216,67 sem juros São Paulo, Casa Verde Média 6 de set, 09:07"
+      "textoCartao": "PS3 Super Slim 250GB Entrega Fácil Parcele sem juros marcoss1977 4.9 R$ 650 em até 3x de R$ 216,67 sem juros Online São Paulo, Casa Verde Média 6 de set, 09:07"
     },
     {
       "fonte": "olx",
@@ -1136,7 +1136,7 @@
       "idExterno": "146782153",
       "titulo": "playstation 3",
       "preco": 824,
-      "url": "https://www.enjoei.com.br/p/playstation-3-146782153?ssqi=667765620f19c044ace687e5849a2774&rsid=5ef2b789-2c01-4c7a-9f03-04fa36d26329-1788898807080&rsp=1&rspix=9",
+      "url": "https://www.enjoei.com.br/p/playstation-3-146782153?ssqi=d160fe3554a7577803ce34616b4b1b79&rsid=d6e46427-91d6-4e74-afc0-e687847fee19-1788902374178&rsp=1&rspix=12",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -1675,23 +1675,6 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "150398133",
-      "titulo": "ps3 com 3 controles e jogos",
-      "preco": 1500,
-      "url": "https://www.enjoei.com.br/p/ps3-com-3-controles-e-jogos-150398133?rsid=e9f8ea39-dd3d-479d-bf49-c5433a44ffce-1788898844118&rsp=1&rspix=23",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": null,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "1 R$ 1.500 ps3 com 3 controles e jogos sony richardy",
-      "nacional": true
     }
   ],
   "tendencia": null

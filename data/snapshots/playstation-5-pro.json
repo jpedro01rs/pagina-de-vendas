@@ -4,8 +4,8 @@
   "categoria": "Videogames",
   "marca": "Diversos",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T20:27:28.569Z",
-  "duracaoMs": 74075,
+  "atualizadoEm": "2026-09-08T21:26:50.150Z",
+  "duracaoMs": 72749,
   "fontes": [
     {
       "id": "olx",
@@ -32,9 +32,9 @@
   "estrategiaOlx": "categoria",
   "descartados": 324,
   "motivosDescarte": {
-    "falta variante": 168,
-    "acessorio/peca": 91,
-    "modelo nao identificado no titulo": 37,
+    "falta variante": 170,
+    "acessorio/peca": 88,
+    "modelo nao identificado no titulo": 38,
     "anuncio de loja": 20,
     "preco abaixo da faixa (< R$ 3000)": 6,
     "lote/atacado": 2
@@ -92,7 +92,7 @@
       "idExterno": "148063489",
       "titulo": "ps5 pro 2tb completo",
       "preco": 4935,
-      "url": "https://www.enjoei.com.br/p/ps5-pro-2tb-completo-148063489?ssqi=d7d4706840dac69a0b65163fc4536de9&rsid=ab7a1b09-814b-4626-9feb-7d372663e66d-1788899213191&rsp=1&rspix=3",
+      "url": "https://www.enjoei.com.br/p/ps5-pro-2tb-completo-148063489?ssqi=a636072906db8e0bdfa822f9b8382b50&rsid=2e3b7f12-5c71-4dc2-baee-ad6957dbbbf1-1788902774567&rsp=1&rspix=3",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -109,7 +109,7 @@
       "idExterno": "148626516",
       "titulo": "console playstation 5 pro",
       "preco": 6000,
-      "url": "https://www.enjoei.com.br/p/console-playstation-5-pro-148626516?ssqi=39faeb7caccf391a7aae3de4e40f03d3&rsid=11e8ca80-1b09-4ced-9614-3ce0d1000e94-1788899175454&rsp=1&rspix=1",
+      "url": "https://www.enjoei.com.br/p/console-playstation-5-pro-148626516?ssqi=58b702f1f982a5f4677fef3105900bd3&rsid=88d19e8a-ce53-4df2-aa8d-7d544927e8ae-1788902737915&rsp=1&rspix=1",
       "imagem": null,
       "cidade": null,
       "uf": null,

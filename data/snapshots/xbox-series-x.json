@@ -4,14 +4,14 @@
   "categoria": "Videogames",
   "marca": "Diversos",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T20:31:08.657Z",
-  "duracaoMs": 36599,
+  "atualizadoEm": "2026-09-08T21:30:28.615Z",
+  "duracaoMs": 36511,
   "fontes": [
     {
       "id": "olx",
       "nome": "OLX",
       "ok": true,
-      "encontrados": 54,
+      "encontrados": 53,
       "via": "dom",
       "metodo": "navegador",
       "estrategia": "categoria"
@@ -26,39 +26,39 @@
       "estrategia": null
     }
   ],
-  "coletados": 124,
-  "analisados": 12,
+  "coletados": 123,
+  "analisados": 10,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 111,
+  "descartados": 113,
   "motivosDescarte": {
     "acessorio/peca": 65,
     "preco acima da faixa (> R$ 4800)": 21,
-    "modelo nao identificado no titulo": 19,
+    "modelo nao identificado no titulo": 21,
     "preco abaixo da faixa (< R$ 1800)": 5,
     "anuncio de loja": 1
   },
   "estatisticas": {
-    "n": 10,
-    "min": 4374,
-    "p10": 4487.4,
+    "n": 9,
+    "min": 4500,
+    "p10": 4500,
     "p25": 4500,
-    "mediana": 4694.5,
-    "p75": 4699.75,
+    "mediana": 4699,
+    "p75": 4700,
     "p90": 4800,
     "max": 4800,
-    "media": 4626.2,
-    "desvio": 138.5328841827817,
-    "nBruto": 12,
-    "outliersRemovidos": 2,
+    "media": 4654.222222222223,
+    "desvio": 116.06586040096926,
+    "nBruto": 10,
+    "outliersRemovidos": 1,
     "limites": {
-      "inferior": 4122.375,
-      "superior": 5045.375,
-      "q1": 4468.5,
-      "q3": 4699.25,
-      "iqr": 230.75
+      "inferior": 4200.375,
+      "superior": 4999.375,
+      "q1": 4500,
+      "q3": 4699.75,
+      "iqr": 199.75
     },
-    "amplitudeRelativa": 0.04254979231015017,
+    "amplitudeRelativa": 0.04256224728665674,
     "confianca": {
       "nivel": "baixa",
       "rotulo": "Baixa"
@@ -66,38 +66,30 @@
     "suficiente": true,
     "porFonte": {
       "olx": {
-        "n": 11,
+        "n": 10,
         "mediana": 4699
-      },
-      "enjoei": {
-        "n": 1,
-        "mediana": 4374
       }
     },
     "porArmazenamento": {
       "1TB": {
-        "n": 7,
-        "mediana": 4694.5
+        "n": 6,
+        "mediana": 4699
       }
     },
     "porCondicao": {
       "usado": {
-        "n": 10,
+        "n": 9,
         "mediana": 4694.5
       },
       "seminovo": {
         "n": 1,
         "mediana": 4800
-      },
-      "novo": {
-        "n": 1,
-        "mediana": 4374
       }
     }
   },
   "arbitragem": null,
-  "tetoDeCompra": 3826.1964285714284,
-  "precoVendaRapida": 4318.9400000000005,
+  "tetoDeCompra": 3829.892857142857,
+  "precoVendaRapida": 4323.08,
   "oportunidades": [
     {
       "fonte": "olx",
@@ -114,23 +106,23 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": "Console Xbox Series X 1 TB Branco c/ Controle (LEIA!) Frete grátis Até 10x sem juros R$ 3.000 em até 10x de R$ 300,00 sem juros São Paulo, Centro Hoje, 16:48",
-      "desconto": 0.36095430823303865,
-      "abaixoDaMediana": 1694.5,
+      "desconto": 0.36156629070014895,
+      "abaixoDaMediana": 1699,
       "risco": "medio",
       "aviso": "Preco fora da faixa normal - confirme estado e procedencia antes de fechar",
       "proximidade": 0.2,
       "perto": false,
       "precoCompra": 3000,
-      "precoVendaRapida": 4318.9400000000005,
-      "receitaLiquida": 4318.9400000000005,
+      "precoVendaRapida": 4323.08,
+      "receitaLiquida": 4323.08,
       "custoFixo": 30,
       "taxaPlataforma": 0,
       "investimento": 3030,
-      "lucro": 1288.9400000000005,
-      "roi": 0.42539273927392757,
-      "margem": 0.2984389688210534,
-      "tetoDeCompra": 3826.1964285714284,
-      "score": 52
+      "lucro": 1293.08,
+      "roi": 0.4267590759075907,
+      "margem": 0.29911081913820703,
+      "tetoDeCompra": 3829.892857142857,
+      "score": 51
     }
   ],
   "anuncios": [
@@ -149,39 +141,6 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": "Console Xbox Series X 1 TB Branco c/ Controle (LEIA!) Frete grátis Até 10x sem juros R$ 3.000 em até 10x de R$ 300,00 sem juros São Paulo, Centro Hoje, 16:48"
-    },
-    {
-      "fonte": "olx",
-      "idExterno": "1533621499",
-      "titulo": "Xbox series X",
-      "preco": 3900,
-      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-series-x-1533621499",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": null,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "Xbox series X Entrega Fácil Parcele sem juros R$ 3.900 em até 3x de R$ 1.300,00 sem juros Online São Bernardo do Campo, Cooperativa Hoje, 17:11"
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "146900608",
-      "titulo": "xbox series x 1tb digital lacrado",
-      "preco": 4374,
-      "url": "https://www.enjoei.com.br/p/xbox-series-x-1tb-digital-lacrado-146900608?ssqi=33d5f3b75ca2a329cf0c4a28dd90f12d&rsid=b9c4894a-150b-4fca-b788-c0e7c3de1c37-1788899432799&rsp=1&rspix=2",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 1024,
-      "condicao": "novo",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "6 3 6% R$ 4.374 R$ 4.650 xbox series x 1tb digital lacrado xbox one eric",
-      "nacional": true
     },
     {
       "fonte": "olx",
@@ -245,7 +204,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "Xbox séries X 1Tb SSD BRANCO - BOTGAMES Entrega Fácil Parcele sem juros Botgames 4.8 R$ 4.690 em até 3x de R$ 1.563,33 sem juros Taboão da Serra, Jardim Saint Moritz Hoje, 11:58"
+      "textoCartao": "Xbox séries X 1Tb SSD BRANCO - BOTGAMES Entrega Fácil Parcele sem juros Botgames 4.8 R$ 4.690 em até 3x de R$ 1.563,33 sem juros Online Taboão da Serra, Jardim Saint Moritz Hoje, 11:58"
     },
     {
       "fonte": "olx",
@@ -261,7 +220,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "XBOX SERIES X 1TB COM CAIXA Entrega Fácil Parcele sem juros Victor Diniz 5.0 R$ 4.699 em até 3x de R$ 1.566,33 sem juros São Paulo, Parque Fernanda Hoje, 12:20"
+      "textoCartao": "XBOX SERIES X 1TB COM CAIXA Entrega Fácil Parcele sem juros Victor Diniz 5.0 R$ 4.699 em até 3x de R$ 1.566,33 sem juros Online São Paulo, Parque Fernanda Hoje, 12:20"
     },
     {
       "fonte": "olx",
@@ -277,7 +236,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": ""
+      "textoCartao": "Xbox séries x R$ 4.699 Online São Bernardo do Campo, Demarchi Hoje, 04:09"
     },
     {
       "fonte": "olx",

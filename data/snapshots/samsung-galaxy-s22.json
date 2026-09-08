@@ -4,14 +4,14 @@
   "categoria": "Celulares",
   "marca": "Samsung",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T20:40:26.912Z",
-  "duracaoMs": 37190,
+  "atualizadoEm": "2026-09-08T21:39:39.781Z",
+  "duracaoMs": 36184,
   "fontes": [
     {
       "id": "olx",
       "nome": "OLX",
       "ok": true,
-      "encontrados": 52,
+      "encontrados": 53,
       "via": "dom",
       "metodo": "navegador",
       "estrategia": "categoria"
@@ -26,41 +26,41 @@
       "estrategia": null
     }
   ],
-  "coletados": 112,
-  "analisados": 41,
+  "coletados": 113,
+  "analisados": 43,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 55,
+  "descartados": 53,
   "motivosDescarte": {
     "preco abaixo da faixa (< R$ 900)": 21,
     "outra variante": 13,
     "acessorio/peca": 10,
-    "outro modelo": 5,
     "modelo nao identificado no titulo": 3,
+    "outro modelo": 3,
     "desqualificado": 2,
     "preco acima da faixa (> R$ 3000)": 1
   },
   "estatisticas": {
-    "n": 38,
+    "n": 39,
     "min": 900,
-    "p10": 997,
-    "p25": 1092.25,
+    "p10": 998,
+    "p25": 1058,
     "mediana": 1199,
-    "p75": 1293.5,
-    "p90": 1311.4,
+    "p75": 1288,
+    "p90": 1310.6,
     "max": 1590,
-    "media": 1183.9736842105262,
-    "desvio": 157.20427321801893,
-    "nBruto": 41,
-    "outliersRemovidos": 3,
+    "media": 1177.7948717948718,
+    "desvio": 158.72653139463893,
+    "nBruto": 43,
+    "outliersRemovidos": 4,
     "limites": {
-      "inferior": 797.5,
-      "superior": 1601.5,
-      "q1": 1099,
+      "inferior": 735,
+      "superior": 1639,
+      "q1": 1074,
       "q3": 1300,
-      "iqr": 201
+      "iqr": 226
     },
-    "amplitudeRelativa": 0.16784820683903254,
+    "amplitudeRelativa": 0.19182652210175147,
     "confianca": {
       "nivel": "alta",
       "rotulo": "Alta"
@@ -68,17 +68,17 @@
     "suficiente": true,
     "porFonte": {
       "olx": {
-        "n": 26,
+        "n": 27,
         "mediana": 1200
       },
       "enjoei": {
-        "n": 15,
+        "n": 16,
         "mediana": 1181
       }
     },
     "porArmazenamento": {
       "256GB": {
-        "n": 7,
+        "n": 9,
         "mediana": 1300
       },
       "128GB": {
@@ -88,7 +88,7 @@
     },
     "porCondicao": {
       "usado": {
-        "n": 39,
+        "n": 41,
         "mediana": 1199
       },
       "seminovo": {
@@ -146,7 +146,7 @@
       "idExterno": "147299223",
       "titulo": "celular samsung galaxy s22 128gb branco",
       "preco": 900,
-      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s22-128gb-branco-147299223?ssqi=fa87951145b36b2f0825e218056e133f&rsid=fa234fca-2af9-44b6-b3d0-e38f04dd7caf-1788899991039&rsp=1&rspix=27",
+      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s22-128gb-branco-147299223?ssqi=f424559cf4ef1df55296f68eeeb08c6f&rsid=7710f7bf-fb4a-4c42-88d4-e43f26e8647a-1788903544076&rsp=1&rspix=25",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -198,7 +198,7 @@
       "idExterno": "147299223",
       "titulo": "celular samsung galaxy s22 128gb branco",
       "preco": 900,
-      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s22-128gb-branco-147299223?ssqi=fa87951145b36b2f0825e218056e133f&rsid=fa234fca-2af9-44b6-b3d0-e38f04dd7caf-1788899991039&rsp=1&rspix=27",
+      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s22-128gb-branco-147299223?ssqi=f424559cf4ef1df55296f68eeeb08c6f&rsid=7710f7bf-fb4a-4c42-88d4-e43f26e8647a-1788903544076&rsp=1&rspix=25",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -215,7 +215,7 @@
       "idExterno": "147176582",
       "titulo": "samsung galaxy s22 256gb rosa",
       "preco": 987,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s22-256gb-rosa-147176582?ssqi=fa87951145b36b2f0825e218056e133f&rsid=fa234fca-2af9-44b6-b3d0-e38f04dd7caf-1788899991039&rsp=1&rspix=19",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s22-256gb-rosa-147176582?ssqi=f424559cf4ef1df55296f68eeeb08c6f&rsid=7710f7bf-fb4a-4c42-88d4-e43f26e8647a-1788903544076&rsp=1&rspix=12",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -242,6 +242,22 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1533479008",
+      "titulo": "Samsung Galaxy S22 256GB - Rosa (Com Caixa Original)",
+      "preco": 1000,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/samsung-galaxy-s22-256gb-rosa-com-caixa-original-1533479008",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 256,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "Samsung Galaxy S22 256GB - Rosa (Com Caixa Original) Parcele sem juros Alan Durães 5.0 R$ 1.000 R$ 999 em até 3x de R$ 333,00 sem juros Mauá, Vila Lisboa Hoje, 17:36"
     },
     {
       "fonte": "olx",
@@ -280,7 +296,7 @@
       "idExterno": "150434945",
       "titulo": "samsung galaxy s22 128gb branco ( aceito propostas!)",
       "preco": 1000,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s22-128gb-branco-aceito-propostas-150434945?ssqi=fa87951145b36b2f0825e218056e133f&rsid=fa234fca-2af9-44b6-b3d0-e38f04dd7caf-1788899991039&rsp=1&rspix=5",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s22-128gb-branco-aceito-propostas-150434945?ssqi=f424559cf4ef1df55296f68eeeb08c6f&rsid=7710f7bf-fb4a-4c42-88d4-e43f26e8647a-1788903544076&rsp=1&rspix=15",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -310,10 +326,27 @@
     },
     {
       "fonte": "enjoei",
+      "idExterno": "149507366",
+      "titulo": "samsung galaxy s22 5g 128gb preto",
+      "preco": 1058,
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s22-5g-128gb-preto-149507366?ssqi=f424559cf4ef1df55296f68eeeb08c6f&rsid=7710f7bf-fb4a-4c42-88d4-e43f26e8647a-1788903544076&rsp=1&rspix=5",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 128,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "6 R$ 1.058 samsung galaxy s22 5g 128gb preto samsung luiz",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
       "idExterno": "149375089",
       "titulo": "samsung galaxy s22 5g 128gb violeta",
       "preco": 1058,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s22-5g-128gb-violeta-149375089?ssqi=fa87951145b36b2f0825e218056e133f&rsid=fa234fca-2af9-44b6-b3d0-e38f04dd7caf-1788899991039&rsp=1&rspix=7",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s22-5g-128gb-violeta-149375089?ssqi=f424559cf4ef1df55296f68eeeb08c6f&rsid=7710f7bf-fb4a-4c42-88d4-e43f26e8647a-1788903544076&rsp=1&rspix=17",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -394,7 +427,7 @@
       "idExterno": "148947156",
       "titulo": "samsung galaxy s22 preto",
       "preco": 1100,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s22-preto-148947156?ssqi=fa87951145b36b2f0825e218056e133f&rsid=fa234fca-2af9-44b6-b3d0-e38f04dd7caf-1788899991039&rsp=1&rspix=4",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s22-preto-148947156?ssqi=f424559cf4ef1df55296f68eeeb08c6f&rsid=7710f7bf-fb4a-4c42-88d4-e43f26e8647a-1788903544076&rsp=1&rspix=14",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -404,23 +437,6 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": "2 R$ 1.100 samsung galaxy s22 preto samsung madson",
-      "nacional": true
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "147186437",
-      "titulo": "samsung galaxy s22 5g 128gb",
-      "preco": 1115,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s22-5g-128gb-147186437?ssqi=fa87951145b36b2f0825e218056e133f&rsid=fa234fca-2af9-44b6-b3d0-e38f04dd7caf-1788899991039&rsp=1&rspix=9",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "6 14% R$ 1.115 R$ 1.300 samsung galaxy s22 5g 128gb samsung",
       "nacional": true
     },
     {
@@ -444,7 +460,7 @@
       "idExterno": "146474839",
       "titulo": "celular samsung galaxy s22 roxo",
       "preco": 1164,
-      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s22-roxo-146474839?ssqi=fa87951145b36b2f0825e218056e133f&rsid=fa234fca-2af9-44b6-b3d0-e38f04dd7caf-1788899991039&rsp=1&rspix=13",
+      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s22-roxo-146474839?ssqi=f424559cf4ef1df55296f68eeeb08c6f&rsid=7710f7bf-fb4a-4c42-88d4-e43f26e8647a-1788903544076&rsp=1&rspix=3",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -461,7 +477,7 @@
       "idExterno": "144920627",
       "titulo": "samsung galaxy s22 preto",
       "preco": 1198,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s22-preto-144920627?ssqi=fa87951145b36b2f0825e218056e133f&rsid=fa234fca-2af9-44b6-b3d0-e38f04dd7caf-1788899991039&rsp=1&rspix=12",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s22-preto-144920627?ssqi=f424559cf4ef1df55296f68eeeb08c6f&rsid=7710f7bf-fb4a-4c42-88d4-e43f26e8647a-1788903544076&rsp=1&rspix=4",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -494,7 +510,7 @@
       "idExterno": "147605649",
       "titulo": "samsung galaxy s22 preto",
       "preco": 1199,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s22-preto-147605649?ssqi=fa87951145b36b2f0825e218056e133f&rsid=fa234fca-2af9-44b6-b3d0-e38f04dd7caf-1788899991039&rsp=1&rspix=23",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s22-preto-147605649?ssqi=f424559cf4ef1df55296f68eeeb08c6f&rsid=7710f7bf-fb4a-4c42-88d4-e43f26e8647a-1788903544076&rsp=1&rspix=24",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -552,7 +568,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": ""
+      "textoCartao": "Celular Samsung s22 preto 128g Entrega Fácil Parcele sem juros R$ 1.200 R$ 1.000 em até 3x de R$ 333,33 sem juros São Paulo, Jardim Santo Antônio 15 de ago, 10:05"
     },
     {
       "fonte": "olx",
@@ -584,7 +600,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "Galaxy S22 5G 8/128gb Black zeradinho no Itaim Paulista ou Ferraz de Vasconcelos em SP R$ 1.250 Ferraz de Vasconcelos, Parque Imperial Hoje, 07:46"
+      "textoCartao": "Galaxy S22 5G 8/128gb Black zeradinho no Itaim Paulista ou Ferraz de Vasconcelos em SP R$ 1.250 Online Ferraz de Vasconcelos, Parque Imperial Hoje, 07:46"
     },
     {
       "fonte": "olx",
@@ -623,7 +639,7 @@
       "idExterno": "147268751",
       "titulo": "celular samsung galaxy s22 lilás 128gb",
       "preco": 1277,
-      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s22-lilas-128gb-147268751?ssqi=fa87951145b36b2f0825e218056e133f&rsid=fa234fca-2af9-44b6-b3d0-e38f04dd7caf-1788899991039&rsp=1&rspix=3",
+      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s22-lilas-128gb-147268751?ssqi=f424559cf4ef1df55296f68eeeb08c6f&rsid=7710f7bf-fb4a-4c42-88d4-e43f26e8647a-1788903544076&rsp=1&rspix=13",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -665,7 +681,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "Samsung S22 5g 8/128gb zeradinho no Itaim Paulista ou Ferraz de Vasconcelos em SP R$ 1.300 Ferraz de Vasconcelos, Parque Imperial Ontem, 18:58"
+      "textoCartao": ""
     },
     {
       "fonte": "olx",
@@ -704,7 +720,7 @@
       "idExterno": "150211654",
       "titulo": "samsung galaxy s22 128gb branco",
       "preco": 1300,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s22-128gb-branco-150211654?ssqi=fa87951145b36b2f0825e218056e133f&rsid=fa234fca-2af9-44b6-b3d0-e38f04dd7caf-1788899991039&rsp=1&rspix=21",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s22-128gb-branco-150211654?ssqi=f424559cf4ef1df55296f68eeeb08c6f&rsid=7710f7bf-fb4a-4c42-88d4-e43f26e8647a-1788903544076&rsp=1&rspix=22",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -721,7 +737,7 @@
       "idExterno": "149430164",
       "titulo": "celular samsung galaxy s22 256gb",
       "preco": 1309,
-      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s22-256gb-149430164?ssqi=fa87951145b36b2f0825e218056e133f&rsid=fa234fca-2af9-44b6-b3d0-e38f04dd7caf-1788899991039&rsp=1&rspix=14",
+      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s22-256gb-149430164?ssqi=f424559cf4ef1df55296f68eeeb08c6f&rsid=7710f7bf-fb4a-4c42-88d4-e43f26e8647a-1788903544076&rsp=1&rspix=19",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -738,7 +754,7 @@
       "idExterno": "146378670",
       "titulo": "celular samsung galaxy s22 256gb",
       "preco": 1317,
-      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s22-256gb-146378670?ssqi=fa87951145b36b2f0825e218056e133f&rsid=fa234fca-2af9-44b6-b3d0-e38f04dd7caf-1788899991039&rsp=1&rspix=15",
+      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s22-256gb-146378670?ssqi=f424559cf4ef1df55296f68eeeb08c6f&rsid=7710f7bf-fb4a-4c42-88d4-e43f26e8647a-1788903544076&rsp=1&rspix=6",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -771,7 +787,7 @@
       "idExterno": "146609145",
       "titulo": "samsung galaxy s22 5g 128gb",
       "preco": 1550,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s22-5g-128gb-146609145?ssqi=fa87951145b36b2f0825e218056e133f&rsid=fa234fca-2af9-44b6-b3d0-e38f04dd7caf-1788899991039&rsp=1&rspix=17",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s22-5g-128gb-146609145?ssqi=f424559cf4ef1df55296f68eeeb08c6f&rsid=7710f7bf-fb4a-4c42-88d4-e43f26e8647a-1788903544076&rsp=1&rspix=9",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -800,6 +816,23 @@
       "textoCartao": ""
     },
     {
+      "fonte": "enjoei",
+      "idExterno": "149901960",
+      "titulo": "celular samsung galaxy s22 256gb",
+      "preco": 1700,
+      "url": "https://www.enjoei.com.br/p/celular-samsung-galaxy-s22-256gb-149901960?ssqi=f424559cf4ef1df55296f68eeeb08c6f&rsid=7710f7bf-fb4a-4c42-88d4-e43f26e8647a-1788903544076&rsp=1&rspix=11",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 256,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "R$ 1.700 celular samsung galaxy s22 256gb samsung amanda",
+      "nacional": true
+    },
+    {
       "fonte": "olx",
       "idExterno": "1533204363",
       "titulo": "Samsung s22 256 rose",
@@ -820,7 +853,7 @@
       "idExterno": "149650103",
       "titulo": "samsung galaxy s22 5g 256gb preto",
       "preco": 1780,
-      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s22-5g-256gb-preto-149650103?ssqi=fa87951145b36b2f0825e218056e133f&rsid=fa234fca-2af9-44b6-b3d0-e38f04dd7caf-1788899991039&rsp=1&rspix=10",
+      "url": "https://www.enjoei.com.br/p/samsung-galaxy-s22-5g-256gb-preto-149650103?ssqi=f424559cf4ef1df55296f68eeeb08c6f&rsid=7710f7bf-fb4a-4c42-88d4-e43f26e8647a-1788903544076&rsp=1&rspix=7",
       "imagem": null,
       "cidade": null,
       "uf": null,

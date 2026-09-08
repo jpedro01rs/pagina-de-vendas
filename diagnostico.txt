@@ -24,19 +24,19 @@ Fontes configuradas
   TESTE AO VIVO - termo: "iphone 13"
 ------------------------------------------------------------------
 
-  OLX... OK - 50 anuncios em 13.3s
+  OLX... OK - 50 anuncios em 13.8s
      via=dom  metodo=navegador  estrategia=categoria
      faixa bruta: R$ 600 .. R$ 3.249
-       -    R$ 2.200  iPhone 13 Rosa 256GB
-       -    R$ 1.800  IPhone 13 256GB
-       -    R$ 1.900  IPHONE 13 128GB
+       -    R$ 2.000  iPhone 13
+       -    R$ 2.300  Celular
+       -    R$ 2.000  iPhone 13 128 GB
 
-  Enjoei... OK - 35 anuncios em 19.0s
+  Enjoei... OK - 35 anuncios em 18.6s
      via=dom  metodo=http
-     faixa bruta: R$ 13 .. R$ 3.500
-       -    R$ 1.878  iphone 13 128gb preto
-       -    R$ 2.500  iphone 13 128gb branco
-       -    R$ 2.200  iphone 13 256gb - 80% saúde bateria
+     faixa bruta: R$ 14 .. R$ 2.800
+       -    R$ 2.450  iphone 13 pro max 256gb dourado
+       -    R$ 2.600  iphone 13 pro max 128gb gold
+       -       R$ 69  kit 3 capinhas silicone aveludada iphone 13
 
   Facebook Marketplace: desligada no .env (FONTE_FACEBOOK=false)
 
@@ -45,15 +45,16 @@ Fontes configuradas
 ------------------------------------------------------------------
 
   Coletados ....... 85
-  Passaram ........ 52
-  Descartados ..... 29
-       10x  acessorio/peca
-        9x  preco abaixo da faixa (< R$ 1600)
-        9x  outra variante
-        1x  desqualificado
+  Passaram ........ 51
+  Descartados ..... 31
+       14x  outra variante
+        8x  preco abaixo da faixa (< R$ 1600)
+        5x  acessorio/peca
+        2x  modelo nao identificado no titulo
+        2x  desqualificado
 
-  Preco de mercado (mediana): R$ 1.935
-  P25 R$ 1.800  |  P75 R$ 2.100  |  confianca: Alta
+  Preco de mercado (mediana): R$ 1.920
+  P25 R$ 1.775  |  P75 R$ 2.100  |  confianca: Alta
 
   Se os titulos acima nao sao do produto certo, ajuste o catalogo em
   src/catalog/index.js (campos exigir / proibir / faixa).

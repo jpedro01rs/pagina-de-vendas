@@ -4,8 +4,8 @@
   "categoria": "Celulares",
   "marca": "Apple",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T20:10:17.784Z",
-  "duracaoMs": 36662,
+  "atualizadoEm": "2026-09-08T21:09:50.220Z",
+  "duracaoMs": 36355,
   "fontes": [
     {
       "id": "olx",
@@ -27,39 +27,39 @@
     }
   ],
   "coletados": 170,
-  "analisados": 43,
+  "analisados": 46,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 111,
+  "descartados": 113,
   "motivosDescarte": {
-    "preco abaixo da faixa (< R$ 3400)": 79,
+    "preco abaixo da faixa (< R$ 3400)": 81,
+    "acessorio/peca": 12,
     "modelo nao identificado no titulo": 11,
-    "acessorio/peca": 10,
-    "desqualificado": 6,
+    "desqualificado": 4,
     "falta variante": 3,
     "anuncio de loja": 2
   },
   "estatisticas": {
-    "n": 39,
+    "n": 43,
     "min": 3400,
-    "p10": 3482,
+    "p10": 3500,
     "p25": 3500,
-    "mediana": 3558,
-    "p75": 3899.5,
-    "p90": 4048.6000000000004,
-    "max": 4650,
-    "media": 3713.641025641026,
-    "desvio": 292.66735183432627,
-    "nBruto": 43,
-    "outliersRemovidos": 4,
+    "mediana": 3750,
+    "p75": 4005.5,
+    "p90": 4417.6,
+    "max": 5200,
+    "media": 3867.5813953488373,
+    "desvio": 428.48501276648506,
+    "nBruto": 46,
+    "outliersRemovidos": 3,
     "limites": {
-      "inferior": 2788.25,
-      "superior": 4686.25,
+      "inferior": 2450.375,
+      "superior": 5249.375,
       "q1": 3500,
-      "q3": 3974.5,
-      "iqr": 474.5
+      "q3": 4199.75,
+      "iqr": 699.75
     },
-    "amplitudeRelativa": 0.11228218100056211,
+    "amplitudeRelativa": 0.1348,
     "confianca": {
       "nivel": "alta",
       "rotulo": "Alta"
@@ -71,32 +71,32 @@
         "mediana": 3600
       },
       "enjoei": {
-        "n": 16,
-        "mediana": 3628.5
+        "n": 19,
+        "mediana": 4000.5
       }
     },
     "porArmazenamento": {
       "128GB": {
-        "n": 10,
-        "mediana": 3558
+        "n": 9,
+        "mediana": 3695
       },
       "256GB": {
         "n": 10,
-        "mediana": 3500
+        "mediana": 3575
       },
       "512GB": {
         "n": 1,
         "mediana": 3500
       },
       "1TB": {
-        "n": 2,
-        "mediana": 3849.5
+        "n": 3,
+        "mediana": 4199
       }
     },
     "porCondicao": {
       "usado": {
-        "n": 42,
-        "mediana": 3554
+        "n": 45,
+        "mediana": 3775
       },
       "seminovo": {
         "n": 1,
@@ -108,12 +108,12 @@
     "comprarEm": "olx",
     "medianaCompra": 3600,
     "venderEm": "enjoei",
-    "medianaVenda": 3628.5,
-    "diferenca": 28.5,
-    "percentual": 0.007916666666666667
+    "medianaVenda": 4000.5,
+    "diferenca": 400.5,
+    "percentual": 0.11125
   },
-  "tetoDeCompra": 2892.642857142857,
-  "precoVendaRapida": 3273.36,
+  "tetoDeCompra": 3050.3571428571427,
+  "precoVendaRapida": 3450,
   "oportunidades": [],
   "anuncios": [
     {
@@ -137,7 +137,7 @@
       "idExterno": "131946829",
       "titulo": "iphone 14 pro max 128gb com caixa e nota fiscal novíssimo !!!",
       "preco": 3400,
-      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-128gb-com-caixa-e-nota-fiscal-novissimo-131946829?ssqi=7c8c0cf3819b53765389989002aa2a36&rsid=fcd95960-03cb-409c-9903-5dbdde5fa06d-1788898181835&rsp=1&rspix=12",
+      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-128gb-com-caixa-e-nota-fiscal-novissimo-131946829?ssqi=0e3dab96baa4f19d490e97f6aaf4dbc7&rsid=9520287b-25f4-485b-bcb6-fe6c091bf301-1788901772696&rsp=1&rspix=14",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -147,23 +147,6 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": "2 0 32% R$ 3.400 R$ 4.999 iphone 14 pro max 128gb com caixa e nota fiscal novíssimo !!! iphone",
-      "nacional": true
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "150198886",
-      "titulo": "iphone 14 pro max 256gb preto",
-      "preco": 3400,
-      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-256gb-preto-150198886?ssqi=7c8c0cf3819b53765389989002aa2a36&rsid=fcd95960-03cb-409c-9903-5dbdde5fa06d-1788898181835&rsp=1&rspix=19",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 256,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "1 0 R$ 3.400 iphone 14 pro max 256gb preto apple matheus",
       "nacional": true
     },
     {
@@ -197,23 +180,6 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "149911996",
-      "titulo": "iphone 14 pro max 256gb preto",
-      "preco": 3492,
-      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-256gb-preto-149911996?ssqi=2d7eac4649aa8f6bcc3e76838fd1462a&rsid=a754b3e2-ebae-44bc-90bb-88fd1e7d899c-1788898200344&rsp=1&rspix=30",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 256,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "8 3% R$ 3.492 R$ 3.600 iphone 14 pro max 256gb preto apple thais",
-      "nacional": true
     },
     {
       "fonte": "olx",
@@ -361,10 +327,27 @@
     },
     {
       "fonte": "enjoei",
+      "idExterno": "150334457",
+      "titulo": "iphone 14 pro max 128gb roxo",
+      "preco": 3500,
+      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-128gb-roxo-150334457?ssqi=e575096a5afaafefb563f03e44f8af11&rsid=6d3b2d1c-e8ff-4b59-8d83-38a3753b45cf-1788901754485&rsp=1&rspix=14",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 128,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "R$ 3.500 iphone 14 pro max 128gb roxo apple enzo",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
       "idExterno": "149275616",
       "titulo": "iphone 14 pro max pra venda",
       "preco": 3500,
-      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-pra-venda-149275616?ssqi=7c8c0cf3819b53765389989002aa2a36&rsid=fcd95960-03cb-409c-9903-5dbdde5fa06d-1788898181835&rsp=1&rspix=9",
+      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-pra-venda-149275616?ssqi=0e3dab96baa4f19d490e97f6aaf4dbc7&rsid=9520287b-25f4-485b-bcb6-fe6c091bf301-1788901772696&rsp=1&rspix=11",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -374,40 +357,6 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": "R$ 3.500 iphone 14 pro max pra venda iphone 14 pro max clovis",
-      "nacional": true
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "150431872",
-      "titulo": "iphone 14 pro max 128gb roxo",
-      "preco": 3500,
-      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-128gb-roxo-150431872?ssqi=7c8c0cf3819b53765389989002aa2a36&rsid=fcd95960-03cb-409c-9903-5dbdde5fa06d-1788898181835&rsp=1&rspix=15",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "barateou R$ 3.500 R$ 3.800 iphone 14 pro max 128gb roxo apple giovanna",
-      "nacional": true
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "150303709",
-      "titulo": "iphone 14 pro max 128gb preto",
-      "preco": 3500,
-      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-128gb-preto-150303709?ssqi=7c8c0cf3819b53765389989002aa2a36&rsid=fcd95960-03cb-409c-9903-5dbdde5fa06d-1788898181835&rsp=1&rspix=22",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "R$ 3.500 iphone 14 pro max 128gb preto apple jussa",
       "nacional": true
     },
     {
@@ -428,19 +377,19 @@
     },
     {
       "fonte": "enjoei",
-      "idExterno": "147992071",
-      "titulo": "iphone 14 pro max 128gb preto",
-      "preco": 3558,
-      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-128gb-preto-147992071?ssqi=7c8c0cf3819b53765389989002aa2a36&rsid=fcd95960-03cb-409c-9903-5dbdde5fa06d-1788898181835&rsp=1&rspix=14",
+      "idExterno": "148473089",
+      "titulo": "iphone 14 pro max 256gb preto",
+      "preco": 3575,
+      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-256gb-preto-148473089?ssqi=e575096a5afaafefb563f03e44f8af11&rsid=6d3b2d1c-e8ff-4b59-8d83-38a3753b45cf-1788901754485&rsp=1&rspix=12",
       "imagem": null,
       "cidade": null,
       "uf": null,
       "publicadoEm": null,
-      "armazenamento": 128,
+      "armazenamento": 256,
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "1 2 9% R$ 3.558 R$ 3.900 iphone 14 pro max 128gb preto apple vinicius",
+      "textoCartao": "2 3 6% R$ 3.575 R$ 3.800 iphone 14 pro max 256gb preto apple",
       "nacional": true
     },
     {
@@ -460,6 +409,23 @@
       "textoCartao": ""
     },
     {
+      "fonte": "enjoei",
+      "idExterno": "148508604",
+      "titulo": "iphone 14 pro max 128gb cinza espacial",
+      "preco": 3690,
+      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-128gb-cinza-espacial-148508604?ssqi=e575096a5afaafefb563f03e44f8af11&rsid=6d3b2d1c-e8ff-4b59-8d83-38a3753b45cf-1788901754485&rsp=1&rspix=15",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 128,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "1 6 R$ 3.690 iphone 14 pro max 128gb cinza espacial apple caio",
+      "nacional": true
+    },
+    {
       "fonte": "olx",
       "idExterno": "1533258130",
       "titulo": "iPhone 14 Pro Max impecável (único dono + brindes)",
@@ -474,23 +440,6 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "150337225",
-      "titulo": "iphone 14 pro max 256gb roxo",
-      "preco": 3699,
-      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-256gb-roxo-150337225?ssqi=2d7eac4649aa8f6bcc3e76838fd1462a&rsid=a754b3e2-ebae-44bc-90bb-88fd1e7d899c-1788898200344&rsp=1&rspix=10",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 256,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "R$ 3.699 iphone 14 pro max 256gb roxo apple murilo",
-      "nacional": true
     },
     {
       "fonte": "olx",
@@ -545,7 +494,7 @@
       "idExterno": "134448797",
       "titulo": "iphone 14 pro max",
       "preco": 3800,
-      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-134448797?ssqi=7c8c0cf3819b53765389989002aa2a36&rsid=fcd95960-03cb-409c-9903-5dbdde5fa06d-1788898181835&rsp=1&rspix=11",
+      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-134448797?ssqi=0e3dab96baa4f19d490e97f6aaf4dbc7&rsid=9520287b-25f4-485b-bcb6-fe6c091bf301-1788901772696&rsp=1&rspix=13",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -559,10 +508,10 @@
     },
     {
       "fonte": "enjoei",
-      "idExterno": "149000254",
-      "titulo": "iphone 14 pro max",
+      "idExterno": "148533150",
+      "titulo": "iphone 14 pro max roxo",
       "preco": 3890,
-      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-149000254?ssqi=7c8c0cf3819b53765389989002aa2a36&rsid=fcd95960-03cb-409c-9903-5dbdde5fa06d-1788898181835&rsp=1&rspix=30",
+      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-roxo-148533150?ssqi=e575096a5afaafefb563f03e44f8af11&rsid=6d3b2d1c-e8ff-4b59-8d83-38a3753b45cf-1788901754485&rsp=1&rspix=22",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -571,7 +520,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "12% R$ 3.890 R$ 4.396 iphone 14 pro max apple anderson",
+      "textoCartao": "12% R$ 3.890 R$ 4.396 iphone 14 pro max roxo apple",
       "nacional": true
     },
     {
@@ -639,6 +588,23 @@
       "textoCartao": ""
     },
     {
+      "fonte": "enjoei",
+      "idExterno": "147513919",
+      "titulo": "iphone 14 pro max 256gb cinza espacial",
+      "preco": 3990,
+      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-256gb-cinza-espacial-147513919?ssqi=e575096a5afaafefb563f03e44f8af11&rsid=6d3b2d1c-e8ff-4b59-8d83-38a3753b45cf-1788901754485&rsp=1&rspix=27",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 256,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "1 2 R$ 3.990 iphone 14 pro max 256gb cinza espacial apple danielle",
+      "nacional": true
+    },
+    {
       "fonte": "olx",
       "idExterno": "1532937459",
       "titulo": "iPhone 14 Pro Max zero todo original",
@@ -668,14 +634,14 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "iPhone 14 Pro Max 128 GB Usado em otimas condicoes Frete grátis Até 10x sem juros R$ 4.000 em até 10x de R$ 400,00 sem juros Barueri, Jardim Regina Alice Hoje, 16:54"
+      "textoCartao": "iPhone 14 Pro Max 128 GB Usado em otimas condicoes Frete grátis Até 10x sem juros R$ 4.000 em até 10x de R$ 400,00 sem juros Online Barueri, Jardim Regina Alice Hoje, 16:54"
     },
     {
       "fonte": "enjoei",
       "idExterno": "146508298",
       "titulo": "iphone 14 pro max roxo",
       "preco": 4011,
-      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-roxo-146508298?ssqi=7c8c0cf3819b53765389989002aa2a36&rsid=fcd95960-03cb-409c-9903-5dbdde5fa06d-1788898181835&rsp=1&rspix=2",
+      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-roxo-146508298?ssqi=e575096a5afaafefb563f03e44f8af11&rsid=6d3b2d1c-e8ff-4b59-8d83-38a3753b45cf-1788901754485&rsp=1&rspix=2",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -724,7 +690,7 @@
       "idExterno": "149905715",
       "titulo": "vende se iphone 14 pro max",
       "preco": 4396,
-      "url": "https://www.enjoei.com.br/p/vende-se-iphone-14-pro-max-149905715?ssqi=7c8c0cf3819b53765389989002aa2a36&rsid=fcd95960-03cb-409c-9903-5dbdde5fa06d-1788898181835&rsp=1&rspix=1",
+      "url": "https://www.enjoei.com.br/p/vende-se-iphone-14-pro-max-149905715?ssqi=e575096a5afaafefb563f03e44f8af11&rsid=6d3b2d1c-e8ff-4b59-8d83-38a3753b45cf-1788901754485&rsp=1&rspix=1",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -738,10 +704,61 @@
     },
     {
       "fonte": "enjoei",
+      "idExterno": "150360311",
+      "titulo": "iphone 14 pro max cinza espacial",
+      "preco": 4396,
+      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-cinza-espacial-150360311?ssqi=e575096a5afaafefb563f03e44f8af11&rsid=6d3b2d1c-e8ff-4b59-8d83-38a3753b45cf-1788901754485&rsp=1&rspix=26",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "R$ 4.396 iphone 14 pro max cinza espacial apple juliana",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "149702690",
+      "titulo": "iphone 14 pro max",
+      "preco": 4400,
+      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-149702690?ssqi=0e3dab96baa4f19d490e97f6aaf4dbc7&rsid=9520287b-25f4-485b-bcb6-fe6c091bf301-1788901772696&rsp=1&rspix=10",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "R$ 4.400 iphone 14 pro max iphone ana",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "147840512",
+      "titulo": "iphone 14 pro max 1tb",
+      "preco": 4422,
+      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-1tb-147840512?ssqi=e575096a5afaafefb563f03e44f8af11&rsid=6d3b2d1c-e8ff-4b59-8d83-38a3753b45cf-1788901754485&rsp=1&rspix=23",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 1024,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "7 6% R$ 4.422 R$ 4.700 iphone 14 pro max 1tb apple rafaela",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
       "idExterno": "134548708",
       "titulo": "iphone 14 pro max 128gb",
       "preco": 4650,
-      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-128gb-134548708?ssqi=7c8c0cf3819b53765389989002aa2a36&rsid=fcd95960-03cb-409c-9903-5dbdde5fa06d-1788898181835&rsp=1&rspix=5",
+      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-128gb-134548708?ssqi=e575096a5afaafefb563f03e44f8af11&rsid=6d3b2d1c-e8ff-4b59-8d83-38a3753b45cf-1788901754485&rsp=1&rspix=5",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -751,6 +768,23 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": "2 7 3% R$ 4.650 R$ 4.800 iphone 14 pro max 128gb iphone",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "148500777",
+      "titulo": "iphone 14 pro max 256gb roxo",
+      "preco": 4700,
+      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-256gb-roxo-148500777?ssqi=e575096a5afaafefb563f03e44f8af11&rsid=6d3b2d1c-e8ff-4b59-8d83-38a3753b45cf-1788901754485&rsp=1&rspix=19",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 256,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "1 4% R$ 4.700 R$ 4.900 iphone 14 pro max 256gb roxo apple guilherme",
       "nacional": true
     },
     {
@@ -774,7 +808,7 @@
       "idExterno": "137621306",
       "titulo": "iphone 14 pro max",
       "preco": 5200,
-      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-137621306?ssqi=7c8c0cf3819b53765389989002aa2a36&rsid=fcd95960-03cb-409c-9903-5dbdde5fa06d-1788898181835&rsp=1&rspix=6",
+      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-137621306?ssqi=e575096a5afaafefb563f03e44f8af11&rsid=6d3b2d1c-e8ff-4b59-8d83-38a3753b45cf-1788901754485&rsp=1&rspix=6",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -788,10 +822,27 @@
     },
     {
       "fonte": "enjoei",
+      "idExterno": "97083760",
+      "titulo": "iphone 14 pro max 256g",
+      "preco": 6500,
+      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-256g-97083760?ssqi=0e3dab96baa4f19d490e97f6aaf4dbc7&rsid=9520287b-25f4-485b-bcb6-fe6c091bf301-1788901772696&rsp=1&rspix=9",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "1 3 R$ 6.500 iphone 14 pro max 256g iphone 256 gb michele",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
       "idExterno": "88797322",
       "titulo": "iphone 14 pro max 128",
       "preco": 8300,
-      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-128-88797322?ssqi=7c8c0cf3819b53765389989002aa2a36&rsid=fcd95960-03cb-409c-9903-5dbdde5fa06d-1788898181835&rsp=1&rspix=7",
+      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-128-88797322?ssqi=0e3dab96baa4f19d490e97f6aaf4dbc7&rsid=9520287b-25f4-485b-bcb6-fe6c091bf301-1788901772696&rsp=1&rspix=7",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -808,7 +859,7 @@
       "idExterno": "88797285",
       "titulo": "iphone 14 pro max 128 gb",
       "preco": 8300,
-      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-128-gb-88797285?ssqi=7c8c0cf3819b53765389989002aa2a36&rsid=fcd95960-03cb-409c-9903-5dbdde5fa06d-1788898181835&rsp=1&rspix=8",
+      "url": "https://www.enjoei.com.br/p/iphone-14-pro-max-128-gb-88797285?ssqi=0e3dab96baa4f19d490e97f6aaf4dbc7&rsid=9520287b-25f4-485b-bcb6-fe6c091bf301-1788901772696&rsp=1&rspix=8",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -821,5 +872,10 @@
       "nacional": true
     }
   ],
-  "tendencia": null
+  "tendencia": {
+    "de": 3500,
+    "para": 3558,
+    "variacao": 0.01657142857142857,
+    "dias": 14
+  }
 }

@@ -4,8 +4,8 @@
   "categoria": "Celulares",
   "marca": "Apple",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T20:04:46.427Z",
-  "duracaoMs": 36790,
+  "atualizadoEm": "2026-09-08T21:04:21.960Z",
+  "duracaoMs": 36932,
   "fontes": [
     {
       "id": "olx",
@@ -32,9 +32,9 @@
   "estrategiaOlx": "categoria",
   "descartados": 98,
   "motivosDescarte": {
-    "acessorio/peca": 39,
-    "preco abaixo da faixa (< R$ 1680)": 38,
-    "outra variante": 14,
+    "preco abaixo da faixa (< R$ 1680)": 41,
+    "acessorio/peca": 38,
+    "outra variante": 12,
     "modelo nao identificado no titulo": 7
   },
   "estatisticas": {
@@ -419,7 +419,7 @@
       "idExterno": "149948961",
       "titulo": "iphone 12 pro azul 128gb",
       "preco": 2000,
-      "url": "https://www.enjoei.com.br/p/iphone-12-pro-azul-128gb-149948961?ssqi=77c0deb5fa21e6083dccd0632e0e698a&rsid=bfba68e8-5d3e-478d-bd3c-81385354d9c9-1788897850364&rsp=1&rspix=11",
+      "url": "https://www.enjoei.com.br/p/iphone-12-pro-azul-128gb-149948961?ssqi=af5df13d8f18c0ddb6f3222962bde9f1&rsid=bd0234b2-d96e-4ae3-be44-896b570d5ccb-1788901425693&rsp=1&rspix=11",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -452,7 +452,7 @@
       "idExterno": "140577994",
       "titulo": "iphone 12 pro 256 gb - branco",
       "preco": 2116,
-      "url": "https://www.enjoei.com.br/p/iphone-12-pro-256-gb-branco-140577994?ssqi=77c0deb5fa21e6083dccd0632e0e698a&rsid=bfba68e8-5d3e-478d-bd3c-81385354d9c9-1788897850364&rsp=1&rspix=14",
+      "url": "https://www.enjoei.com.br/p/iphone-12-pro-256-gb-branco-140577994?ssqi=af5df13d8f18c0ddb6f3222962bde9f1&rsid=bd0234b2-d96e-4ae3-be44-896b570d5ccb-1788901425693&rsp=1&rspix=14",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -533,7 +533,7 @@
       "idExterno": "141289080",
       "titulo": "iphone 12 pro na cor branca 128 gb",
       "preco": 2450,
-      "url": "https://www.enjoei.com.br/p/iphone-12-pro-na-cor-branca-128-gb-141289080?ssqi=77c0deb5fa21e6083dccd0632e0e698a&rsid=bfba68e8-5d3e-478d-bd3c-81385354d9c9-1788897850364&rsp=1&rspix=23",
+      "url": "https://www.enjoei.com.br/p/iphone-12-pro-na-cor-branca-128-gb-141289080?ssqi=af5df13d8f18c0ddb6f3222962bde9f1&rsid=bd0234b2-d96e-4ae3-be44-896b570d5ccb-1788901425693&rsp=1&rspix=23",
       "imagem": null,
       "cidade": null,
       "uf": null,

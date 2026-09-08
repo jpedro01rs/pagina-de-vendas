@@ -4,8 +4,8 @@
   "categoria": "Celulares",
   "marca": "Apple",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T20:07:13.566Z",
-  "duracaoMs": 36668,
+  "atualizadoEm": "2026-09-08T21:06:47.493Z",
+  "duracaoMs": 36410,
   "fontes": [
     {
       "id": "olx",
@@ -27,39 +27,39 @@
     }
   ],
   "coletados": 170,
-  "analisados": 66,
+  "analisados": 68,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 88,
+  "descartados": 87,
   "motivosDescarte": {
-    "outra variante": 33,
-    "preco abaixo da faixa (< R$ 2240)": 30,
-    "acessorio/peca": 10,
+    "outra variante": 36,
+    "preco abaixo da faixa (< R$ 2240)": 28,
     "modelo nao identificado no titulo": 9,
+    "acessorio/peca": 7,
     "falta variante": 5,
-    "preco acima da faixa (> R$ 7000)": 1
+    "preco acima da faixa (> R$ 7000)": 2
   },
   "estatisticas": {
-    "n": 62,
+    "n": 64,
     "min": 2250,
     "p10": 2300,
-    "p25": 2399.25,
+    "p25": 2399.75,
     "mediana": 2500,
     "p75": 2800,
-    "p90": 2984.5,
+    "p90": 2997,
     "max": 3280,
-    "media": 2599.8870967741937,
-    "desvio": 261.7773681559735,
-    "nBruto": 66,
+    "media": 2603.015625,
+    "desvio": 264.8064441830285,
+    "nBruto": 68,
     "outliersRemovidos": 4,
     "limites": {
-      "inferior": 1671,
-      "superior": 3615,
+      "inferior": 1661.25,
+      "superior": 3631.25,
       "q1": 2400,
-      "q3": 2886,
-      "iqr": 486
+      "q3": 2892.5,
+      "iqr": 492.5
     },
-    "amplitudeRelativa": 0.1603,
+    "amplitudeRelativa": 0.1601,
     "confianca": {
       "nivel": "alta",
       "rotulo": "Alta"
@@ -71,14 +71,14 @@
         "mediana": 2500
       },
       "enjoei": {
-        "n": 10,
-        "mediana": 2874
+        "n": 12,
+        "mediana": 2782
       }
     },
     "porArmazenamento": {
       "128GB": {
-        "n": 23,
-        "mediana": 2499.5
+        "n": 24,
+        "mediana": 2500
       },
       "256GB": {
         "n": 15,
@@ -91,7 +91,7 @@
     },
     "porCondicao": {
       "usado": {
-        "n": 65,
+        "n": 67,
         "mediana": 2500
       },
       "seminovo": {
@@ -104,9 +104,9 @@
     "comprarEm": "olx",
     "medianaCompra": 2500,
     "venderEm": "enjoei",
-    "medianaVenda": 2874,
-    "diferenca": 374,
-    "percentual": 0.1496
+    "medianaVenda": 2782,
+    "diferenca": 282,
+    "percentual": 0.1128
   },
   "tetoDeCompra": 2023.5714285714284,
   "precoVendaRapida": 2300,
@@ -133,7 +133,7 @@
       "idExterno": "147109351",
       "titulo": "iphone 13 pro 256gb",
       "preco": 2250,
-      "url": "https://www.enjoei.com.br/p/iphone-13-pro-256gb-147109351?ssqi=6f1744ba62312c3a06a78fb8c0ddf602&rsid=ab339fb8-766f-4a9e-94ba-f4232a3be53c-1788897997626&rsp=1&rspix=19",
+      "url": "https://www.enjoei.com.br/p/iphone-13-pro-256gb-147109351?ssqi=e66acd12f4b2ebd8a6cea74660b1ebc0&rsid=37cbc109-6ce1-4616-8421-ebf8fcfc4f6f-1788901589906&rsp=1&rspix=28",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -454,7 +454,7 @@
       "idExterno": "147650951",
       "titulo": "iphone 13 pro 128gb grafite",
       "preco": 2400,
-      "url": "https://www.enjoei.com.br/p/iphone-13-pro-128gb-grafite-147650951?ssqi=6f1744ba62312c3a06a78fb8c0ddf602&rsid=ab339fb8-766f-4a9e-94ba-f4232a3be53c-1788897997626&rsp=1&rspix=21",
+      "url": "https://www.enjoei.com.br/p/iphone-13-pro-128gb-grafite-147650951?ssqi=9b0c4a702c210e40fa9395a84a4be786&rsid=02d9852b-c87c-4766-8e22-174274e3eb49-1788901571754&rsp=1&rspix=22",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -464,6 +464,23 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": "2 9 14% R$ 2.400 R$ 2.800 iphone 13 pro 128gb grafite apple rafael",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "146177239",
+      "titulo": "iphone 13 pro 128gb verde alpine green",
+      "preco": 2400,
+      "url": "https://www.enjoei.com.br/p/iphone-13-pro-128gb-verde-alpine-green-146177239?ssqi=e66acd12f4b2ebd8a6cea74660b1ebc0&rsid=37cbc109-6ce1-4616-8421-ebf8fcfc4f6f-1788901589906&rsp=1&rspix=25",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 128,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "6 8 17% R$ 2.400 R$ 2.884 iphone 13 pro 128gb verde alpine green apple nicole",
       "nacional": true
     },
     {
@@ -497,23 +514,6 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "150213198",
-      "titulo": "iphone 13 pro 128gb grafite",
-      "preco": 2490,
-      "url": "https://www.enjoei.com.br/p/iphone-13-pro-128gb-grafite-150213198?ssqi=6f1744ba62312c3a06a78fb8c0ddf602&rsid=ab339fb8-766f-4a9e-94ba-f4232a3be53c-1788897997626&rsp=1&rspix=23",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "14% R$ 2.490 R$ 2.884 iphone 13 pro 128gb grafite apple jaime",
-      "nacional": true
     },
     {
       "fonte": "olx",
@@ -642,6 +642,23 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "150000225",
+      "titulo": "iphone 13 pro 128gb",
+      "preco": 2500,
+      "url": "https://www.enjoei.com.br/p/iphone-13-pro-128gb-150000225?ssqi=9b0c4a702c210e40fa9395a84a4be786&rsid=02d9852b-c87c-4766-8e22-174274e3eb49-1788901571754&rsp=1&rspix=23",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 128,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "9% R$ 2.500 R$ 2.750 iphone 13 pro 128gb apple caio",
+      "nacional": true
     },
     {
       "fonte": "olx",
@@ -804,6 +821,23 @@
       "textoCartao": ""
     },
     {
+      "fonte": "enjoei",
+      "idExterno": "149126610",
+      "titulo": "iphone 13 pro 256gb dourado",
+      "preco": 2764,
+      "url": "https://www.enjoei.com.br/p/iphone-13-pro-256gb-dourado-149126610?ssqi=9b0c4a702c210e40fa9395a84a4be786&rsid=02d9852b-c87c-4766-8e22-174274e3eb49-1788901571754&rsp=1&rspix=27",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 256,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "3 3% R$ 2.764 R$ 2.850 iphone 13 pro 256gb dourado apple lais",
+      "nacional": true
+    },
+    {
       "fonte": "olx",
       "idExterno": "1531383523",
       "titulo": "iPhone 13 Pro 256GB",
@@ -856,7 +890,7 @@
       "idExterno": "147738745",
       "titulo": "iphone 13 pro 128gb azul sierra",
       "preco": 2800,
-      "url": "https://www.enjoei.com.br/p/iphone-13-pro-128gb-azul-sierra-147738745?ssqi=6f1744ba62312c3a06a78fb8c0ddf602&rsid=ab339fb8-766f-4a9e-94ba-f4232a3be53c-1788897997626&rsp=1&rspix=26",
+      "url": "https://www.enjoei.com.br/p/iphone-13-pro-128gb-azul-sierra-147738745?ssqi=e66acd12f4b2ebd8a6cea74660b1ebc0&rsid=37cbc109-6ce1-4616-8421-ebf8fcfc4f6f-1788901589906&rsp=1&rspix=26",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -883,23 +917,6 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": ""
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "148905938",
-      "titulo": "iphone 13 pro 256gb",
-      "preco": 2874,
-      "url": "https://www.enjoei.com.br/p/iphone-13-pro-256gb-148905938?ssqi=6f1744ba62312c3a06a78fb8c0ddf602&rsid=ab339fb8-766f-4a9e-94ba-f4232a3be53c-1788897997626&rsp=1&rspix=16",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 256,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "4 9% R$ 2.874 R$ 3.150 iphone 13 pro 256gb apple maria",
-      "nacional": true
     },
     {
       "fonte": "olx",
@@ -963,14 +980,14 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": ""
+      "textoCartao": "IPHONE 13 PRO ÚNICO DONO EM PERFEITO ESTADO R$ 2.900 Campo Limpo Paulista, Conjunto Habitacional Vila da Conquista 26 de ago, 17:27"
     },
     {
       "fonte": "enjoei",
       "idExterno": "150125963",
       "titulo": "iphone 13 pro 256gb",
       "preco": 2910,
-      "url": "https://www.enjoei.com.br/p/iphone-13-pro-256gb-150125963?ssqi=6f1744ba62312c3a06a78fb8c0ddf602&rsid=ab339fb8-766f-4a9e-94ba-f4232a3be53c-1788897997626&rsp=1&rspix=2",
+      "url": "https://www.enjoei.com.br/p/iphone-13-pro-256gb-150125963?ssqi=9b0c4a702c210e40fa9395a84a4be786&rsid=02d9852b-c87c-4766-8e22-174274e3eb49-1788901571754&rsp=1&rspix=2",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -1067,7 +1084,7 @@
       "idExterno": "150152225",
       "titulo": "iphone 13 pro com 256g",
       "preco": 3100,
-      "url": "https://www.enjoei.com.br/p/iphone-13-pro-com-256g-150152225?ssqi=6f1744ba62312c3a06a78fb8c0ddf602&rsid=ab339fb8-766f-4a9e-94ba-f4232a3be53c-1788897997626&rsp=1&rspix=3",
+      "url": "https://www.enjoei.com.br/p/iphone-13-pro-com-256g-150152225?ssqi=9b0c4a702c210e40fa9395a84a4be786&rsid=02d9852b-c87c-4766-8e22-174274e3eb49-1788901571754&rsp=1&rspix=3",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -1077,6 +1094,23 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": "R$ 3.100 iphone 13 pro com 256g iphone thalles",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "149170246",
+      "titulo": "iphone 13 pro verde",
+      "preco": 3100,
+      "url": "https://www.enjoei.com.br/p/iphone-13-pro-verde-149170246?ssqi=9b0c4a702c210e40fa9395a84a4be786&rsid=02d9852b-c87c-4766-8e22-174274e3eb49-1788901571754&rsp=1&rspix=24",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "2 R$ 3.100 iphone 13 pro verde apple isadora",
       "nacional": true
     },
     {
@@ -1093,7 +1127,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "iPhone 13 Pro 1 TB Branco - Bateria 93% Entrega Fácil Parcele sem juros R$ 3.200 em até 3x de R$ 1.066,67 sem juros São Paulo, Brás 28 de ago, 10:29"
+      "textoCartao": ""
     },
     {
       "fonte": "olx",
@@ -1132,7 +1166,7 @@
       "idExterno": "132082013",
       "titulo": "iphone 13 pro 1tb",
       "preco": 4150,
-      "url": "https://www.enjoei.com.br/p/iphone-13-pro-1tb-132082013?ssqi=6f1744ba62312c3a06a78fb8c0ddf602&rsid=ab339fb8-766f-4a9e-94ba-f4232a3be53c-1788897997626&rsp=1&rspix=11",
+      "url": "https://www.enjoei.com.br/p/iphone-13-pro-1tb-132082013?ssqi=9b0c4a702c210e40fa9395a84a4be786&rsid=02d9852b-c87c-4766-8e22-174274e3eb49-1788901571754&rsp=1&rspix=11",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -1149,7 +1183,7 @@
       "idExterno": "92994646",
       "titulo": "iphone 13 pro",
       "preco": 4700,
-      "url": "https://www.enjoei.com.br/p/iphone-13-pro-92994646?ssqi=dd7ce50052cde926df33cc2c09942a25&rsid=b1209210-8893-4dad-a8ed-2f96de07bca3-1788898016071&rsp=1&rspix=15",
+      "url": "https://www.enjoei.com.br/p/iphone-13-pro-92994646?ssqi=9b0c4a702c210e40fa9395a84a4be786&rsid=02d9852b-c87c-4766-8e22-174274e3eb49-1788901571754&rsp=1&rspix=15",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -1166,7 +1200,7 @@
       "idExterno": "77697194",
       "titulo": "iphone 13 pro 128 gb",
       "preco": 6500,
-      "url": "https://www.enjoei.com.br/p/iphone-13-pro-128-gb-77697194?ssqi=dd7ce50052cde926df33cc2c09942a25&rsid=b1209210-8893-4dad-a8ed-2f96de07bca3-1788898016071&rsp=1&rspix=13",
+      "url": "https://www.enjoei.com.br/p/iphone-13-pro-128-gb-77697194?ssqi=9b0c4a702c210e40fa9395a84a4be786&rsid=02d9852b-c87c-4766-8e22-174274e3eb49-1788901571754&rsp=1&rspix=13",
       "imagem": null,
       "cidade": null,
       "uf": null,

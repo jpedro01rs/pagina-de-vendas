@@ -4,14 +4,14 @@
   "categoria": "Celulares",
   "marca": "Apple",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T20:04:09.636Z",
-  "duracaoMs": 37116,
+  "atualizadoEm": "2026-09-08T21:03:45.027Z",
+  "duracaoMs": 36309,
   "fontes": [
     {
       "id": "olx",
       "nome": "OLX",
       "ok": true,
-      "encontrados": 60,
+      "encontrados": 61,
       "via": "dom",
       "metodo": "navegador",
       "estrategia": "categoria"
@@ -26,38 +26,39 @@
       "estrategia": null
     }
   ],
-  "coletados": 120,
-  "analisados": 59,
+  "coletados": 121,
+  "analisados": 57,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 35,
+  "descartados": 38,
   "motivosDescarte": {
-    "preco abaixo da faixa (< R$ 1020)": 23,
+    "preco abaixo da faixa (< R$ 1020)": 25,
     "modelo nao identificado no titulo": 8,
     "falta variante": 2,
-    "acessorio/peca": 2
+    "acessorio/peca": 2,
+    "desqualificado": 1
   },
   "estatisticas": {
-    "n": 57,
+    "n": 55,
     "min": 1034,
     "p10": 1100,
-    "p25": 1174,
-    "mediana": 1299.9,
+    "p25": 1169,
+    "mediana": 1288,
     "p75": 1500,
     "p90": 1600,
     "max": 1700,
-    "media": 1332.4017543859648,
-    "desvio": 190.08087889958296,
-    "nBruto": 59,
+    "media": 1327.7981818181818,
+    "desvio": 191.15297870925656,
+    "nBruto": 57,
     "outliersRemovidos": 2,
     "limites": {
-      "inferior": 716.25,
-      "superior": 1970.25,
-      "q1": 1186.5,
+      "inferior": 685,
+      "superior": 1989,
+      "q1": 1174,
       "q3": 1500,
-      "iqr": 313.5
+      "iqr": 326
     },
-    "amplitudeRelativa": 0.25078852219401493,
+    "amplitudeRelativa": 0.25698757763975155,
     "confianca": {
       "nivel": "alta",
       "rotulo": "Alta"
@@ -69,18 +70,18 @@
         "mediana": 1300
       },
       "enjoei": {
-        "n": 21,
-        "mediana": 1281
+        "n": 19,
+        "mediana": 1261
       }
     },
     "porArmazenamento": {
       "128GB": {
         "n": 24,
-        "mediana": 1380
+        "mediana": 1350
       },
       "64GB": {
-        "n": 15,
-        "mediana": 1225
+        "n": 14,
+        "mediana": 1212
       },
       "256GB": {
         "n": 1,
@@ -89,68 +90,33 @@
     },
     "porCondicao": {
       "usado": {
-        "n": 55,
-        "mediana": 1299.9
+        "n": 54,
+        "mediana": 1293.95
       },
       "seminovo": {
-        "n": 4,
-        "mediana": 1287.5
+        "n": 3,
+        "mediana": 1225
       }
     }
   },
   "arbitragem": {
     "comprarEm": "enjoei",
-    "medianaCompra": 1281,
+    "medianaCompra": 1261,
     "venderEm": "olx",
     "medianaVenda": 1300,
-    "diferenca": 19,
-    "percentual": 0.01483216237314598
+    "diferenca": 39,
+    "percentual": 0.030927835051546393
   },
-  "tetoDeCompra": 1037.775,
-  "precoVendaRapida": 1195.9080000000001,
-  "oportunidades": [
-    {
-      "fonte": "enjoei",
-      "idExterno": "149270769",
-      "titulo": "iphone 12 mini 64gb azul",
-      "preco": 1034,
-      "url": "https://www.enjoei.com.br/p/iphone-12-mini-64gb-azul-149270769?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=26",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 64,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "6% R$ 1.034 R$ 1.099 iphone 12 mini 64gb azul apple",
-      "nacional": true,
-      "desconto": 0.2045541964766521,
-      "abaixoDaMediana": 265.9000000000001,
-      "risco": "baixo",
-      "aviso": null,
-      "proximidade": 0.2,
-      "perto": false,
-      "precoCompra": 1034,
-      "precoVendaRapida": 1195.9080000000001,
-      "receitaLiquida": 1195.9080000000001,
-      "custoFixo": 30,
-      "taxaPlataforma": 0,
-      "investimento": 1064,
-      "lucro": 131.90800000000013,
-      "roi": 0.12397368421052643,
-      "margem": 0.11029945447308666,
-      "tetoDeCompra": 1037.775,
-      "score": 67
-    }
-  ],
+  "tetoDeCompra": 1028,
+  "precoVendaRapida": 1184.96,
+  "oportunidades": [],
   "anuncios": [
     {
       "fonte": "enjoei",
       "idExterno": "149270769",
       "titulo": "iphone 12 mini 64gb azul",
       "preco": 1034,
-      "url": "https://www.enjoei.com.br/p/iphone-12-mini-64gb-azul-149270769?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=26",
+      "url": "https://www.enjoei.com.br/p/iphone-12-mini-64gb-azul-149270769?ssqi=6c1c28e75910c99b2bc9f30a219d8058&rsid=61cf8916-0b1c-4178-ae6f-5d902d02d497-1788901389275&rsp=1&rspix=30",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -260,19 +226,19 @@
     },
     {
       "fonte": "enjoei",
-      "idExterno": "150260226",
-      "titulo": "iphone 12 mini branco",
+      "idExterno": "150433412",
+      "titulo": "iphone 12 mini 128gb preto",
       "preco": 1100,
-      "url": "https://www.enjoei.com.br/p/iphone-12-mini-branco-150260226?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=28",
+      "url": "https://www.enjoei.com.br/p/iphone-12-mini-128gb-preto-150433412?ssqi=6c1c28e75910c99b2bc9f30a219d8058&rsid=61cf8916-0b1c-4178-ae6f-5d902d02d497-1788901389275&rsp=1&rspix=14",
       "imagem": null,
       "cidade": null,
       "uf": null,
       "publicadoEm": null,
-      "armazenamento": null,
+      "armazenamento": 128,
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "1 R$ 1.100 iphone 12 mini branco apple ana",
+      "textoCartao": "barateou R$ 1.100 R$ 1.150 iphone 12 mini 128gb preto apple angelica",
       "nacional": true
     },
     {
@@ -296,7 +262,7 @@
       "idExterno": "146607445",
       "titulo": "iphone 12 mini 64gb branco",
       "preco": 1117,
-      "url": "https://www.enjoei.com.br/p/iphone-12-mini-64gb-branco-146607445?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=25",
+      "url": "https://www.enjoei.com.br/p/iphone-12-mini-64gb-branco-146607445?ssqi=6c1c28e75910c99b2bc9f30a219d8058&rsid=61cf8916-0b1c-4178-ae6f-5d902d02d497-1788901389275&rsp=1&rspix=29",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -347,21 +313,21 @@
       "preco": 1150,
       "url": "https://sp.olx.com.br/grande-campinas/celulares/iphone-12-mini-64gb-1516875884",
       "imagem": null,
-      "cidade": "COH",
-      "uf": "AB",
+      "cidade": null,
+      "uf": null,
       "publicadoEm": null,
       "armazenamento": 64,
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "iphone 12 mini 64gb Frete grátis Até 10x sem juros R$ 1.150 R$ 980 em até 10x de R$ 98,00 sem juros Rio Claro, Jardim Bandeirante (COHAB) 30 de ago, 08:50"
+      "textoCartao": ""
     },
     {
       "fonte": "enjoei",
       "idExterno": "146631668",
       "titulo": "iphone 12 mini preto",
       "preco": 1164,
-      "url": "https://www.enjoei.com.br/p/iphone-12-mini-preto-146631668?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=20",
+      "url": "https://www.enjoei.com.br/p/iphone-12-mini-preto-146631668?ssqi=6c1c28e75910c99b2bc9f30a219d8058&rsid=61cf8916-0b1c-4178-ae6f-5d902d02d497-1788901389275&rsp=1&rspix=11",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -378,7 +344,7 @@
       "idExterno": "148634428",
       "titulo": "iphone 12 mini 128gb preto",
       "preco": 1174,
-      "url": "https://www.enjoei.com.br/p/iphone-12-mini-128gb-preto-148634428?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=12",
+      "url": "https://www.enjoei.com.br/p/iphone-12-mini-128gb-preto-148634428?ssqi=6c1c28e75910c99b2bc9f30a219d8058&rsid=61cf8916-0b1c-4178-ae6f-5d902d02d497-1788901389275&rsp=1&rspix=21",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -411,7 +377,7 @@
       "idExterno": "147467679",
       "titulo": "iphone 12 mini 64 gb azul",
       "preco": 1199,
-      "url": "https://www.enjoei.com.br/p/iphone-12-mini-64-gb-azul-147467679?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=8",
+      "url": "https://www.enjoei.com.br/p/iphone-12-mini-64-gb-azul-147467679?ssqi=6c1c28e75910c99b2bc9f30a219d8058&rsid=61cf8916-0b1c-4178-ae6f-5d902d02d497-1788901389275&rsp=1&rspix=6",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -420,7 +386,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "1 7 20% R$ 1.199 R$ 1.499 iphone 12 mini 64 gb azul apple angela",
+      "textoCartao": "1 8 20% R$ 1.199 R$ 1.499 iphone 12 mini 64 gb azul apple angela",
       "nacional": true
     },
     {
@@ -476,7 +442,7 @@
       "idExterno": "148742925",
       "titulo": "iphone 12 mini 64g em bom estado, não acompanha cabo, saude da bateria 67%",
       "preco": 1200,
-      "url": "https://www.enjoei.com.br/p/iphone-12-mini-64g-em-bom-estado-nao-acompanha-cabo-saude-da-bateria-67-148742925?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=10",
+      "url": "https://www.enjoei.com.br/p/iphone-12-mini-64g-em-bom-estado-nao-acompanha-cabo-saude-da-bateria-67-148742925?ssqi=6c1c28e75910c99b2bc9f30a219d8058&rsid=61cf8916-0b1c-4178-ae6f-5d902d02d497-1788901389275&rsp=1&rspix=19",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -509,7 +475,7 @@
       "idExterno": "149569550",
       "titulo": "iphone 12 mini 64gb verde - semi novo",
       "preco": 1225,
-      "url": "https://www.enjoei.com.br/p/iphone-12-mini-64gb-verde-semi-novo-149569550?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=17",
+      "url": "https://www.enjoei.com.br/p/iphone-12-mini-64gb-verde-semi-novo-149569550?ssqi=6c1c28e75910c99b2bc9f30a219d8058&rsid=61cf8916-0b1c-4178-ae6f-5d902d02d497-1788901389275&rsp=1&rspix=7",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -542,7 +508,7 @@
       "idExterno": "144614298",
       "titulo": "iphone 12 mini 128gb azul, sim está disponível",
       "preco": 1250,
-      "url": "https://www.enjoei.com.br/p/iphone-12-mini-128gb-azul-sim-esta-disponivel-144614298?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=13",
+      "url": "https://www.enjoei.com.br/p/iphone-12-mini-128gb-azul-sim-esta-disponivel-144614298?ssqi=6c1c28e75910c99b2bc9f30a219d8058&rsid=61cf8916-0b1c-4178-ae6f-5d902d02d497-1788901389275&rsp=1&rspix=22",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -559,7 +525,7 @@
       "idExterno": "148663401",
       "titulo": "celular iphone 12 mini",
       "preco": 1261,
-      "url": "https://www.enjoei.com.br/p/celular-iphone-12-mini-148663401?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=1",
+      "url": "https://www.enjoei.com.br/p/celular-iphone-12-mini-148663401?ssqi=6c1c28e75910c99b2bc9f30a219d8058&rsid=61cf8916-0b1c-4178-ae6f-5d902d02d497-1788901389275&rsp=1&rspix=1",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -576,7 +542,7 @@
       "idExterno": "147026289",
       "titulo": "iphone 12 mini 128gb vermelho",
       "preco": 1281,
-      "url": "https://www.enjoei.com.br/p/iphone-12-mini-128gb-vermelho-147026289?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=11",
+      "url": "https://www.enjoei.com.br/p/iphone-12-mini-128gb-vermelho-147026289?ssqi=6c1c28e75910c99b2bc9f30a219d8058&rsid=61cf8916-0b1c-4178-ae6f-5d902d02d497-1788901389275&rsp=1&rspix=20",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -593,7 +559,7 @@
       "idExterno": "147619886",
       "titulo": "iphone 12 mini 64gb roxo",
       "preco": 1288,
-      "url": "https://www.enjoei.com.br/p/iphone-12-mini-64gb-roxo-147619886?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=19",
+      "url": "https://www.enjoei.com.br/p/iphone-12-mini-64gb-roxo-147619886?ssqi=6c1c28e75910c99b2bc9f30a219d8058&rsid=61cf8916-0b1c-4178-ae6f-5d902d02d497-1788901389275&rsp=1&rspix=10",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -690,7 +656,7 @@
       "idExterno": "149138675",
       "titulo": "iphone 12 mini 128gb branco",
       "preco": 1350,
-      "url": "https://www.enjoei.com.br/p/iphone-12-mini-128gb-branco-149138675?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=21",
+      "url": "https://www.enjoei.com.br/p/iphone-12-mini-128gb-branco-149138675?ssqi=6c1c28e75910c99b2bc9f30a219d8058&rsid=61cf8916-0b1c-4178-ae6f-5d902d02d497-1788901389275&rsp=1&rspix=13",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -699,24 +665,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "7 4% R$ 1.350 R$ 1.400 iphone 12 mini 128gb branco apple nicole",
-      "nacional": true
-    },
-    {
-      "fonte": "enjoei",
-      "idExterno": "148879040",
-      "titulo": "iphone 12 mini - 64gb",
-      "preco": 1368,
-      "url": "https://www.enjoei.com.br/p/iphone-12-mini-64gb-148879040?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=29",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 64,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "2 15% R$ 1.368 R$ 1.600 iphone 12 mini - 64gb apple israel",
+      "textoCartao": "8 4% R$ 1.350 R$ 1.400 iphone 12 mini 128gb branco apple nicole",
       "nacional": true
     },
     {
@@ -788,7 +737,7 @@
       "idExterno": "147776919",
       "titulo": "iphone 12 mini 128gb branco",
       "preco": 1457,
-      "url": "https://www.enjoei.com.br/p/iphone-12-mini-128gb-branco-147776919?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=24",
+      "url": "https://www.enjoei.com.br/p/iphone-12-mini-128gb-branco-147776919?ssqi=6c1c28e75910c99b2bc9f30a219d8058&rsid=61cf8916-0b1c-4178-ae6f-5d902d02d497-1788901389275&rsp=1&rspix=28",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -814,7 +763,7 @@
       "condicao": "usado",
       "profissional": null,
       "vendedor": null,
-      "textoCartao": "IPHONE 12 mini 128GB R$ 1.500 Mauá, Parque São Vicente Ontem, 12:50"
+      "textoCartao": "IPHONE 12 mini 128GB R$ 1.500 Online Mauá, Parque São Vicente Ontem, 12:50"
     },
     {
       "fonte": "olx",
@@ -885,7 +834,7 @@
       "idExterno": "150310648",
       "titulo": "iphone 12 mini 64gb azul",
       "preco": 1540,
-      "url": "https://www.enjoei.com.br/p/iphone-12-mini-64gb-azul-150310648?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=22",
+      "url": "https://www.enjoei.com.br/p/iphone-12-mini-64gb-azul-150310648?ssqi=6c1c28e75910c99b2bc9f30a219d8058&rsid=61cf8916-0b1c-4178-ae6f-5d902d02d497-1788901389275&rsp=1&rspix=26",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -914,23 +863,6 @@
       "textoCartao": ""
     },
     {
-      "fonte": "enjoei",
-      "idExterno": "145938642",
-      "titulo": "iphone 12 mini 128gb verde + nf - impecável!",
-      "preco": 1550,
-      "url": "https://www.enjoei.com.br/p/iphone-12-mini-128gb-verde-nf-impecavel-145938642?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=30",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "seminovo",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "2 4 16% R$ 1.550 R$ 1.850 iphone 12 mini 128gb verde + nf - impecável! apple tomaz",
-      "nacional": true
-    },
-    {
       "fonte": "olx",
       "idExterno": "1513583308",
       "titulo": "Iphone 12 mini 128 gb?",
@@ -951,7 +883,7 @@
       "idExterno": "149486903",
       "titulo": "vendo iphone 12 mini na cor preta, com 128gb",
       "preco": 1600,
-      "url": "https://www.enjoei.com.br/p/vendo-iphone-12-mini-na-cor-preta-com-128gb-149486903?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=4",
+      "url": "https://www.enjoei.com.br/p/vendo-iphone-12-mini-na-cor-preta-com-128gb-149486903?ssqi=6c1c28e75910c99b2bc9f30a219d8058&rsid=61cf8916-0b1c-4178-ae6f-5d902d02d497-1788901389275&rsp=1&rspix=4",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -965,27 +897,10 @@
     },
     {
       "fonte": "enjoei",
-      "idExterno": "149493549",
-      "titulo": "iphone 12 mini - 128 gb",
-      "preco": 1600,
-      "url": "https://www.enjoei.com.br/p/iphone-12-mini-128-gb-149493549?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=16",
-      "imagem": null,
-      "cidade": null,
-      "uf": null,
-      "publicadoEm": null,
-      "armazenamento": 128,
-      "condicao": "usado",
-      "profissional": null,
-      "vendedor": null,
-      "textoCartao": "1 R$ 1.600 iphone 12 mini - 128 gb apple regina",
-      "nacional": true
-    },
-    {
-      "fonte": "enjoei",
       "idExterno": "149468689",
       "titulo": "iphone 12 mini 128gb branco",
       "preco": 1600,
-      "url": "https://www.enjoei.com.br/p/iphone-12-mini-128gb-branco-149468689?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=18",
+      "url": "https://www.enjoei.com.br/p/iphone-12-mini-128gb-branco-149468689?ssqi=6c1c28e75910c99b2bc9f30a219d8058&rsid=61cf8916-0b1c-4178-ae6f-5d902d02d497-1788901389275&rsp=1&rspix=8",
       "imagem": null,
       "cidade": null,
       "uf": null,
@@ -995,6 +910,23 @@
       "profissional": null,
       "vendedor": null,
       "textoCartao": "2 R$ 1.600 iphone 12 mini 128gb branco apple mary",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "149493549",
+      "titulo": "iphone 12 mini - 128 gb",
+      "preco": 1600,
+      "url": "https://www.enjoei.com.br/p/iphone-12-mini-128-gb-149493549?ssqi=6c1c28e75910c99b2bc9f30a219d8058&rsid=61cf8916-0b1c-4178-ae6f-5d902d02d497-1788901389275&rsp=1&rspix=25",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 128,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "1 R$ 1.600 iphone 12 mini - 128 gb apple regina",
       "nacional": true
     },
     {
@@ -1066,7 +998,7 @@
       "idExterno": "147872322",
       "titulo": "iphone 12 mini 128gb azul",
       "preco": 1700,
-      "url": "https://www.enjoei.com.br/p/iphone-12-mini-128gb-azul-147872322?ssqi=78f29f996f02a3479b9628f4fd88c019&rsid=43ec9fe7-ede1-450e-a93a-abc122f70b22-1788897813736&rsp=1&rspix=9",
+      "url": "https://www.enjoei.com.br/p/iphone-12-mini-128gb-azul-147872322?ssqi=6c1c28e75910c99b2bc9f30a219d8058&rsid=61cf8916-0b1c-4178-ae6f-5d902d02d497-1788901389275&rsp=1&rspix=18",
       "imagem": null,
       "cidade": null,
       "uf": null,
