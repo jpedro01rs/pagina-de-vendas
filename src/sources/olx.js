@@ -4,6 +4,7 @@ import { renderizar, playwrightDisponivel } from '../lib/navegador.js';
 import { extrairJsonEmbutido, garimparAnuncios } from '../lib/extrator.js';
 import { precoParaNumero, extrairArmazenamento, extrairCondicao } from '../lib/texto.js';
 import { caminhoDeCategoria, caminhoDaCategoriaPai, sufixoDeRegiao } from './olx-taxonomia.js';
+import { extrairCartoesDaPagina, PADRAO_ID } from '../lib/extrator-dom.js';
 
 export const ID = 'olx';
 export const NOME = 'OLX';
@@ -86,55 +87,6 @@ export function extrairDoHtml(html) {
   return anuncios;
 }
 
-/**
- * Extrator que roda DENTRO da pagina, no navegador.
- *
- * A OLX abandonou o __NEXT_DATA__ e usa classes com hash
- * ("SearchExpansion-module-scss-module__Fl45fa__link"), que mudam a cada
- * build. Entao nao dependemos de classe nem de estrutura: procuramos links
- * que tenham id de anuncio na URL e um preco no texto. Isso sobrevive a
- * redesenho de layout.
- */
-export function extratorNoNavegador() {
-  const vistos = new Set();
-  const saida = [];
-
-  for (const ancora of document.querySelectorAll('a[href]')) {
-    const href = ancora.href;
-    if (!href.includes('olx.com.br')) continue;
-
-    // Anuncio da OLX termina com id numerico longo: ...-1379250178
-    const id = href.match(/-(\d{6,})(?:[?#/]|$)/);
-    if (!id || vistos.has(id[1])) continue;
-
-    const texto = (ancora.innerText || '').replace(/\s+/g, ' ').trim();
-    if (!texto) continue;
-
-    const preco = texto.match(/R\$\s*([\d.]+(?:,\d{2})?)/);
-    if (!preco) continue;
-
-    const cabecalho = ancora.querySelector('h1, h2, h3, [data-testid*="title"], [class*="title"]');
-    let titulo = cabecalho ? cabecalho.innerText.trim() : '';
-    if (!titulo) {
-      const antesDoPreco = texto.slice(0, texto.indexOf(preco[0])).trim();
-      titulo = antesDoPreco || texto.replace(preco[0], '').trim();
-    }
-    titulo = titulo.replace(/\s+/g, ' ').slice(0, 140).trim();
-    if (titulo.length < 4) continue;
-
-    vistos.add(id[1]);
-    saida.push({
-      idExterno: id[1],
-      url: href,
-      titulo,
-      precoTexto: preco[1],
-      // O texto inteiro do cartao carrega cidade e selo de loja, quando existem.
-      textoCartao: texto.slice(0, 400),
-    });
-  }
-  return saida;
-}
-
 /** Converte o que veio do DOM no formato padrao do sistema. */
 function converterDoNavegador(itens) {
   const anuncios = [];
@@ -200,7 +152,8 @@ async function carregarPagina(url) {
       esperarSeletor: 'a[href*="olx.com.br"]',
       esperaExtraMs: 2500,
       rolar: true,
-      extrair: extratorNoNavegador,
+      extrair: extrairCartoesDaPagina,
+      extrairArg: { padraoId: PADRAO_ID.olx },
     });
 
     const doDom = converterDoNavegador(dados);

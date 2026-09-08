@@ -14,6 +14,7 @@ import { caminhoDeCategoria } from '../src/sources/olx-taxonomia.js';
 import { buscarProduto } from '../src/catalog/index.js';
 import { estadoDoNavegador, encerrarNavegador } from '../src/lib/navegador.js';
 import { extrairJsonEmbutido, garimparAnuncios } from '../src/lib/extrator.js';
+import { extrairCartoesDaPagina, PADRAO_ID } from '../src/lib/extrator-dom.js';
 import { buscar, pareceDesafio } from '../src/lib/http.js';
 import config from '../src/config.js';
 
@@ -109,12 +110,50 @@ try {
     linha('veredito', 'inconclusivo');
   }
 
-  // Amostra do HTML para eu ver a estrutura real dos cartoes.
-  const amostra = await pagina.evaluate(() => {
-    const a = document.querySelector('a[href*="/vi/"], a[href*="olx.com.br"][href*="-1"]');
-    return a ? a.outerHTML.slice(0, 700) : '(nenhum link de anuncio encontrado)';
+  // O que o extrator de verdade consegue tirar desta pagina.
+  const cartoes = await pagina.evaluate(extrairCartoesDaPagina, { padraoId: PADRAO_ID.olx });
+  console.log('\n-- O extrator do coletor --');
+  linha('anuncios extraidos', cartoes.length);
+  for (const c of cartoes.slice(0, 6)) {
+    console.log(`     R$ ${String(c.precoTexto).padStart(8)}  ${c.titulo.slice(0, 52)}`);
+  }
+
+  // Fatos sobre a estrutura, para consertar o extrator se ainda falhar.
+  const estrutura = await pagina.evaluate(() => {
+    const ID = /-(\d{6,})(?:[?#/]|$)/;
+    const ancoras = [...document.querySelectorAll('a[href]')];
+    const deAnuncio = ancoras.filter((a) => ID.test(a.getAttribute('href') || '') || ID.test(a.href || ''));
+    const comPrecoDentro = deAnuncio.filter((a) => /R\$/.test(a.innerText || ''));
+    const exemplo = deAnuncio[0];
+    return {
+      ancoras: ancoras.length,
+      deAnuncio: deAnuncio.length,
+      comPrecoDentro: comPrecoDentro.length,
+      exemploHref: exemplo ? exemplo.href : '(nenhuma)',
+      exemploHtml: exemplo ? exemplo.outerHTML.slice(0, 400) : '',
+      // Como e o ancestral de um preco: mostra onde o cartao comeca.
+      voltaDoPreco: (() => {
+        const alvo = [...document.querySelectorAll('*')]
+          .find((el) => el.children.length === 0 && /R\$\s*[\d.]{3,}/.test(el.textContent || ''));
+        if (!alvo) return '(nenhum preco isolado)';
+        const caminho = [];
+        let no = alvo;
+        for (let i = 0; i < 5 && no; i++) {
+          caminho.push(`${no.tagName.toLowerCase()}${no.className ? '.' + String(no.className).split(' ')[0] : ''}`);
+          no = no.parentElement;
+        }
+        return caminho.join(' < ');
+      })(),
+    };
   });
-  console.log('\n-- Estrutura de um cartao --\n' + amostra + '\n');
+
+  console.log('\n-- Estrutura da pagina --');
+  linha('ancoras no total', estrutura.ancoras);
+  linha('ancoras de anuncio', estrutura.deAnuncio);
+  linha('com preco dentro da ancora', estrutura.comPrecoDentro);
+  linha('caminho a partir do preco', estrutura.voltaDoPreco);
+  console.log(`\n  exemplo de href: ${estrutura.exemploHref}`);
+  console.log(`  html: ${estrutura.exemploHtml}\n`);
 } catch (erro) {
   console.log(`  FALHOU: ${erro.message}`);
 } finally {

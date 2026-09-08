@@ -92,7 +92,7 @@ export async function obterContextoPersistente() {
  * pagina: sem rolar, so os primeiros anuncios entram no HTML - foi o que
  * fez a coleta trazer 1 a 3 itens em vez de dezenas.
  */
-export async function renderizar(url, { esperarSeletor = null, persistente = false, esperaExtraMs = 1200, rolar = false, extrair = null } = {}) {
+export async function renderizar(url, { esperarSeletor = null, persistente = false, esperaExtraMs = 1200, rolar = false, extrair = null, extrairArg = undefined } = {}) {
   const contexto = persistente
     ? await obterContextoPersistente()
     : await (await obterNavegador()).newContext(OPCOES_CONTEXTO);
@@ -130,7 +130,7 @@ export async function renderizar(url, { esperarSeletor = null, persistente = fal
 
     // Quando o chamador sabe ler a pagina melhor que um regex, deixamos ele
     // rodar no proprio DOM: e mais robusto que casar HTML com expressao.
-    const dados = extrair ? await pagina.evaluate(extrair) : null;
+    const dados = extrair ? await pagina.evaluate(extrair, extrairArg) : null;
     return { html: await pagina.content(), dados };
   } finally {
     await pagina.close().catch(() => {});

@@ -2,6 +2,8 @@ import config from '../config.js';
 import { buscar, ErroDeColeta } from '../lib/http.js';
 import { renderizar, playwrightDisponivel } from '../lib/navegador.js';
 import { extrairJsonEmbutido, garimparAnuncios } from '../lib/extrator.js';
+import { extrairCartoesDaPagina, PADRAO_ID } from '../lib/extrator-dom.js';
+import { precoParaNumero, extrairArmazenamento, extrairCondicao } from '../lib/texto.js';
 
 export const ID = 'enjoei';
 export const NOME = 'Enjoei';
@@ -33,6 +35,32 @@ const ENDPOINTS = [
   (termo, pagina) => `https://api.enjoei.com.br/v6/search/products?query=${encodeURIComponent(termo)}&page=${pagina}`,
 ];
 
+/** Converte cartoes lidos do DOM no formato padrao. */
+function converterCartoes(itens) {
+  const anuncios = [];
+  for (const item of itens || []) {
+    const preco = precoParaNumero(item.precoTexto);
+    if (!preco) continue;
+    anuncios.push({
+      fonte: ID,
+      idExterno: item.idExterno,
+      titulo: item.titulo,
+      preco,
+      url: item.url,
+      imagem: null,
+      cidade: null,
+      uf: null,
+      publicadoEm: null,
+      armazenamento: extrairArmazenamento(item.titulo),
+      condicao: extrairCondicao(item.titulo),
+      profissional: null,
+      vendedor: null,
+      textoCartao: item.textoCartao,
+    });
+  }
+  return anuncios;
+}
+
 function garimparEm(html) {
   for (const objeto of extrairJsonEmbutido(html)) {
     const anuncios = garimparAnuncios(objeto, { fonte: ID, baseUrl: BASE });
@@ -58,7 +86,17 @@ async function tentarSite(termo, pagina) {
   } catch { /* segue para o navegador */ }
 
   if (config.coleta.usarNavegador && await playwrightDisponivel()) {
-    const { html: renderizado } = await renderizar(url, { esperarSeletor: 'a[href*="/p/"]', esperaExtraMs: 2500, rolar: true });
+    const { html: renderizado, dados } = await renderizar(url, {
+      esperarSeletor: 'a[href*="/p/"]',
+      esperaExtraMs: 2500,
+      rolar: true,
+      extrair: extrairCartoesDaPagina,
+      extrairArg: { padraoId: PADRAO_ID.enjoei },
+    });
+
+    const doDom = converterCartoes(dados);
+    if (doDom.length) return { anuncios: doDom, via: 'dom' };
+
     const anuncios = garimparEm(renderizado);
     if (anuncios.length) return { anuncios, via: 'site-navegador' };
   }
