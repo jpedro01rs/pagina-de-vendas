@@ -4,14 +4,14 @@
   "categoria": "Celulares",
   "marca": "Apple",
   "avulso": false,
-  "atualizadoEm": "2026-09-07T09:41:31.554Z",
-  "duracaoMs": 35383,
+  "atualizadoEm": "2026-09-08T03:28:21.576Z",
+  "duracaoMs": 29876,
   "fontes": [
     {
       "id": "olx",
       "nome": "OLX",
       "ok": true,
-      "encontrados": 1,
+      "encontrados": 2,
       "via": "html",
       "metodo": "navegador",
       "estrategia": "categoria"
@@ -21,25 +21,27 @@
       "nome": "Enjoei",
       "ok": false,
       "encontrados": 0,
-      "erro": "Enjoei nao respondeu: enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | api.enjoei.com.br: HTTP 501 em api.enjoei.com.br"
+      "erro": "Enjoei nao devolveu anuncios: enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | api.enjoei.com.br: HTTP 501 em api.enjoei.com.br"
     }
   ],
-  "coletados": 1,
+  "coletados": 2,
   "analisados": 1,
   "somentePessoaFisica": true,
   "estrategiaOlx": "categoria",
-  "descartados": 0,
-  "motivosDescarte": {},
+  "descartados": 1,
+  "motivosDescarte": {
+    "preco abaixo da faixa (< R$ 900)": 1
+  },
   "estatisticas": {
     "n": 1,
-    "min": 1100,
-    "p10": 1100,
-    "p25": 1100,
-    "mediana": 1100,
-    "p75": 1100,
-    "p90": 1100,
-    "max": 1100,
-    "media": 1100,
+    "min": 950,
+    "p10": 950,
+    "p25": 950,
+    "mediana": 950,
+    "p75": 950,
+    "p90": 950,
+    "max": 950,
+    "media": 950,
     "desvio": 0,
     "nBruto": 1,
     "outliersRemovidos": 0,
@@ -53,38 +55,38 @@
     "porFonte": {
       "olx": {
         "n": 1,
-        "mediana": 1100
+        "mediana": 950
       }
     },
     "porArmazenamento": {
-      "128GB": {
+      "64GB": {
         "n": 1,
-        "mediana": 1100
+        "mediana": 950
       }
     },
     "porCondicao": {
       "usado": {
         "n": 1,
-        "mediana": 1100
+        "mediana": 950
       }
     }
   },
   "arbitragem": null,
-  "tetoDeCompra": 873.5714285714284,
-  "precoVendaRapida": 1012,
+  "tetoDeCompra": 750.3571428571428,
+  "precoVendaRapida": 874,
   "oportunidades": [],
   "anuncios": [
     {
       "fonte": "olx",
-      "idExterno": "1531326202",
-      "titulo": "iPhone 11 128GB Preto ?",
-      "preco": 1100,
-      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/iphone-11-128gb-preto-r-1-100-a-vista-desbloqueado-1531326202",
+      "idExterno": "1533284350",
+      "titulo": "iPhone 11 64GB -",
+      "preco": 950,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/iphone-11-64gb-r-950-1533284350",
       "imagem": null,
       "cidade": null,
       "uf": null,
       "publicadoEm": null,
-      "armazenamento": 128,
+      "armazenamento": 64,
       "condicao": "usado"
     }
   ],

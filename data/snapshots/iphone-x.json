@@ -4,32 +4,34 @@
   "categoria": "Celulares",
   "marca": "Apple",
   "avulso": false,
-  "atualizadoEm": "2026-09-07T09:39:12.034Z",
-  "duracaoMs": 35866,
+  "atualizadoEm": "2026-09-08T03:26:15.305Z",
+  "duracaoMs": 28979,
   "fontes": [
     {
       "id": "olx",
       "nome": "OLX",
       "ok": true,
-      "encontrados": 0,
-      "via": "nenhum",
+      "encontrados": 1,
+      "via": "html",
       "metodo": "navegador",
-      "estrategia": null
+      "estrategia": "categoria"
     },
     {
       "id": "enjoei",
       "nome": "Enjoei",
       "ok": false,
       "encontrados": 0,
-      "erro": "Enjoei nao respondeu: enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | api.enjoei.com.br: HTTP 501 em api.enjoei.com.br"
+      "erro": "Enjoei nao devolveu anuncios: enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | api.enjoei.com.br: HTTP 501 em api.enjoei.com.br"
     }
   ],
-  "coletados": 0,
+  "coletados": 1,
   "analisados": 0,
   "somentePessoaFisica": true,
-  "estrategiaOlx": null,
-  "descartados": 0,
-  "motivosDescarte": {},
+  "estrategiaOlx": "categoria",
+  "descartados": 1,
+  "motivosDescarte": {
+    "preco abaixo da faixa (< R$ 600)": 1
+  },
   "estatisticas": {
     "n": 0,
     "nBruto": 0,

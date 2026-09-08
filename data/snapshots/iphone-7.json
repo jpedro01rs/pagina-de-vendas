@@ -4,45 +4,84 @@
   "categoria": "Celulares",
   "marca": "Apple",
   "avulso": false,
-  "atualizadoEm": "2026-09-07T09:36:51.847Z",
-  "duracaoMs": 35194,
+  "atualizadoEm": "2026-09-08T03:23:53.579Z",
+  "duracaoMs": 29832,
   "fontes": [
     {
       "id": "olx",
       "nome": "OLX",
       "ok": true,
-      "encontrados": 0,
-      "via": "nenhum",
+      "encontrados": 1,
+      "via": "html",
       "metodo": "navegador",
-      "estrategia": null
+      "estrategia": "categoria"
     },
     {
       "id": "enjoei",
       "nome": "Enjoei",
       "ok": false,
       "encontrados": 0,
-      "erro": "Enjoei nao respondeu: enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | api.enjoei.com.br: HTTP 501 em api.enjoei.com.br"
+      "erro": "Enjoei nao devolveu anuncios: enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | api.enjoei.com.br: HTTP 501 em api.enjoei.com.br"
     }
   ],
-  "coletados": 0,
-  "analisados": 0,
+  "coletados": 1,
+  "analisados": 1,
   "somentePessoaFisica": true,
-  "estrategiaOlx": null,
+  "estrategiaOlx": "categoria",
   "descartados": 0,
   "motivosDescarte": {},
   "estatisticas": {
-    "n": 0,
-    "nBruto": 0,
+    "n": 1,
+    "min": 250,
+    "p10": 250,
+    "p25": 250,
+    "mediana": 250,
+    "p75": 250,
+    "p90": 250,
+    "max": 250,
+    "media": 250,
+    "desvio": 0,
+    "nBruto": 1,
+    "outliersRemovidos": 0,
+    "limites": null,
+    "amplitudeRelativa": 0,
     "confianca": {
       "nivel": "insuficiente",
       "rotulo": "Amostra insuficiente"
     },
-    "suficiente": false
+    "suficiente": false,
+    "porFonte": {
+      "olx": {
+        "n": 1,
+        "mediana": 250
+      }
+    },
+    "porArmazenamento": {},
+    "porCondicao": {
+      "usado": {
+        "n": 1,
+        "mediana": 250
+      }
+    }
   },
   "arbitragem": null,
-  "tetoDeCompra": null,
-  "precoVendaRapida": null,
+  "tetoDeCompra": 175.35714285714283,
+  "precoVendaRapida": 230,
   "oportunidades": [],
-  "anuncios": [],
+  "anuncios": [
+    {
+      "fonte": "olx",
+      "idExterno": "1533198479",
+      "titulo": "Vendo iPhone 7 só hoje",
+      "preco": 250,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/celulares/vendo-iphone-7-so-hoje-r-250-1533198479",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado"
+    }
+  ],
   "tendencia": null
 }

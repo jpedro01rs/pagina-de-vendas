@@ -4,8 +4,8 @@
   "categoria": "Celulares",
   "marca": "Apple",
   "avulso": false,
-  "atualizadoEm": "2026-09-07T09:40:56.170Z",
-  "duracaoMs": 35005,
+  "atualizadoEm": "2026-09-08T03:27:51.700Z",
+  "duracaoMs": 29213,
   "fontes": [
     {
       "id": "olx",
@@ -21,7 +21,7 @@
       "nome": "Enjoei",
       "ok": false,
       "encontrados": 0,
-      "erro": "Enjoei nao respondeu: enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | api.enjoei.com.br: HTTP 501 em api.enjoei.com.br"
+      "erro": "Enjoei nao devolveu anuncios: enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | api.enjoei.com.br: HTTP 501 em api.enjoei.com.br"
     }
   ],
   "coletados": 1,
