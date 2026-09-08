@@ -1,0 +1,51 @@
+
+================================================================
+  O QUE A OLX DEVOLVE PARA ESTA MAQUINA
+================================================================
+
+URL: https://www.olx.com.br/celulares/apple/iphone-13/estado-sp/sao-paulo-e-regiao
+
+-- HTTP direto --
+  FALHOU............................ HTTP 403 em www.olx.com.br
+
+-- Navegador real (com rolagem) --
+
+  [logo apos carregar]
+  bytes............................. 900261
+  titulo............................ Celulares APPLE IPHONE 13 Usados, seminovos e Novos em São Paulo e reg
+  tem __NEXT_DATA__................. false
+  links da olx...................... 91
+  cartoes de anuncio................ 6
+  precos "R$" no texto.............. 13
+  inicio do texto................... Ir para o menu principal Ir para o conteúdo da página Ir para o rodapé Página inicial Busc
+
+  [apos rolar a pagina]
+  bytes............................. 1311851
+  titulo............................ Celulares APPLE IPHONE 13 Usados, seminovos e Novos em São Paulo e reg
+  tem __NEXT_DATA__................. false
+  links da olx...................... 94
+  cartoes de anuncio................ 6
+  precos "R$" no texto.............. 29
+  inicio do texto................... Ir para o menu principal Ir para o conteúdo da página Ir para o rodapé Página inicial Busc
+
+-- Conclusao --
+  veredito.......................... a pagina carrega por rolagem: precisa rolar
+
+-- O extrator do coletor --
+  anuncios extraidos................ 50
+     R$    2.000  iPhone 13
+     R$    2.300  Celular
+     R$    2.000  iPhone 13 128 GB
+     R$    2.200  iPhone 13 Rosa 256GB
+     R$    1.800  IPhone 13 256GB
+     R$    1.900  IPHONE 13 128GB
+
+-- Estrutura da pagina --
+  ancoras no total.................. 138
+  ancoras de anuncio................ 50
+  com preco dentro da ancora........ 0
+  caminho a partir do preco......... h3.typo-body-large < div.olx-adcard__mediumbody < div.olx-adcard__content < section.olx-adcard < div.AdListing-module-scss-module__r0kIAG__adListContainer
+
+  exemplo de href: https://sp.olx.com.br/sao-paulo-e-regiao/celulares/iphone-13-1533628595
+  html: <a data-testid="adcard-link" class="olx-adcard__link" title="iPhone 13" href="https://sp.olx.com.br/sao-paulo-e-regiao/celulares/iphone-13-1533628595"><h2 class="typo-body-large olx-adcard__title font-semibold">iPhone 13</h2></a>
+

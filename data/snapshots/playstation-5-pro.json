@@ -1,0 +1,142 @@
+{
+  "produtoId": "playstation-5-pro",
+  "nome": "PlayStation 5 Pro",
+  "categoria": "Videogames",
+  "marca": "Diversos",
+  "avulso": false,
+  "atualizadoEm": "2026-09-08T21:26:50.150Z",
+  "duracaoMs": 72749,
+  "fontes": [
+    {
+      "id": "olx",
+      "nome": "OLX",
+      "ok": true,
+      "encontrados": 190,
+      "via": "dom",
+      "metodo": "navegador",
+      "estrategia": "categoria"
+    },
+    {
+      "id": "enjoei",
+      "nome": "Enjoei",
+      "ok": true,
+      "encontrados": 140,
+      "via": "dom",
+      "metodo": null,
+      "estrategia": null
+    }
+  ],
+  "coletados": 330,
+  "analisados": 3,
+  "somentePessoaFisica": true,
+  "estrategiaOlx": "categoria",
+  "descartados": 324,
+  "motivosDescarte": {
+    "falta variante": 170,
+    "acessorio/peca": 88,
+    "modelo nao identificado no titulo": 38,
+    "anuncio de loja": 20,
+    "preco abaixo da faixa (< R$ 3000)": 6,
+    "lote/atacado": 2
+  },
+  "estatisticas": {
+    "n": 3,
+    "min": 4935,
+    "p10": 5148,
+    "p25": 5467.5,
+    "mediana": 6000,
+    "p75": 6750,
+    "p90": 7200,
+    "max": 7500,
+    "media": 6145,
+    "desvio": 1052.1644358179,
+    "nBruto": 3,
+    "outliersRemovidos": 0,
+    "limites": null,
+    "amplitudeRelativa": 0.21375,
+    "confianca": {
+      "nivel": "insuficiente",
+      "rotulo": "Amostra insuficiente"
+    },
+    "suficiente": false,
+    "porFonte": {
+      "olx": {
+        "n": 1,
+        "mediana": 7500
+      },
+      "enjoei": {
+        "n": 2,
+        "mediana": 5467.5
+      }
+    },
+    "porArmazenamento": {
+      "2TB": {
+        "n": 2,
+        "mediana": 6217.5
+      }
+    },
+    "porCondicao": {
+      "usado": {
+        "n": 3,
+        "mediana": 6000
+      }
+    }
+  },
+  "arbitragem": null,
+  "tetoDeCompra": 4898.571428571428,
+  "precoVendaRapida": 5520,
+  "oportunidades": [],
+  "anuncios": [
+    {
+      "fonte": "enjoei",
+      "idExterno": "148063489",
+      "titulo": "ps5 pro 2tb completo",
+      "preco": 4935,
+      "url": "https://www.enjoei.com.br/p/ps5-pro-2tb-completo-148063489?ssqi=a636072906db8e0bdfa822f9b8382b50&rsid=2e3b7f12-5c71-4dc2-baee-ad6957dbbbf1-1788902774567&rsp=1&rspix=3",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 2048,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "7 1 R$ 4.935 ps5 pro 2tb completo sony william",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "148626516",
+      "titulo": "console playstation 5 pro",
+      "preco": 6000,
+      "url": "https://www.enjoei.com.br/p/console-playstation-5-pro-148626516?ssqi=58b702f1f982a5f4677fef3105900bd3&rsid=88d19e8a-ce53-4df2-aa8d-7d544927e8ae-1788902737915&rsp=1&rspix=1",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "4 0 R$ 6.000 console playstation 5 pro sony john",
+      "nacional": true
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1523558649",
+      "titulo": "Vendo Playstation 5 Pro Sony 2Tb Firmware 10.20",
+      "preco": 7500,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/vendo-playstation-5-pro-sony-2tb-firmware-10-20-1523558649",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 2048,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": ""
+    }
+  ],
+  "tendencia": null
+}

@@ -1,0 +1,63 @@
+
+> revenda-radar@1.0.0 doctor
+> node bin/doctor.js iphone 13
+
+
+------------------------------------------------------------------
+  DIAGNOSTICO DO REVENDA RADAR
+------------------------------------------------------------------
+
+Ambiente
+  Node ................ v22.23.2
+  Navegador ........... pronto
+  Regiao .............. Sao Paulo / SP [sao-paulo-e-regiao]
+  Paginas por busca ... 2
+  Anuncios ............ so pessoa fisica (lojas fora)
+  Intervalo entre reqs. 2500ms
+
+Fontes configuradas
+  [ligada]   OLX
+  [ligada]   Enjoei
+  [desligada] Facebook Marketplace
+
+------------------------------------------------------------------
+  TESTE AO VIVO - termo: "iphone 13"
+------------------------------------------------------------------
+
+  OLX... OK - 50 anuncios em 13.8s
+     via=dom  metodo=navegador  estrategia=categoria
+     faixa bruta: R$ 600 .. R$ 3.249
+       -    R$ 2.000  iPhone 13
+       -    R$ 2.300  Celular
+       -    R$ 2.000  iPhone 13 128 GB
+
+  Enjoei... OK - 35 anuncios em 18.6s
+     via=dom  metodo=http
+     faixa bruta: R$ 14 .. R$ 2.800
+       -    R$ 2.450  iphone 13 pro max 256gb dourado
+       -    R$ 2.600  iphone 13 pro max 128gb gold
+       -       R$ 69  kit 3 capinhas silicone aveludada iphone 13
+
+  Facebook Marketplace: desligada no .env (FONTE_FACEBOOK=false)
+
+------------------------------------------------------------------
+  QUALIDADE DO FILTRO
+------------------------------------------------------------------
+
+  Coletados ....... 85
+  Passaram ........ 51
+  Descartados ..... 31
+       14x  outra variante
+        8x  preco abaixo da faixa (< R$ 1600)
+        5x  acessorio/peca
+        2x  modelo nao identificado no titulo
+        2x  desqualificado
+
+  Preco de mercado (mediana): R$ 1.920
+  P25 R$ 1.775  |  P75 R$ 2.100  |  confianca: Alta
+
+  Se os titulos acima nao sao do produto certo, ajuste o catalogo em
+  src/catalog/index.js (campos exigir / proibir / faixa).
+
+------------------------------------------------------------------
+

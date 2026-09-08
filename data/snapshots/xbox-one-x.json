@@ -1,0 +1,268 @@
+{
+  "produtoId": "xbox-one-x",
+  "nome": "Xbox One X",
+  "categoria": "Videogames",
+  "marca": "Diversos",
+  "avulso": false,
+  "atualizadoEm": "2026-09-08T21:29:15.958Z",
+  "duracaoMs": 36739,
+  "fontes": [
+    {
+      "id": "olx",
+      "nome": "OLX",
+      "ok": true,
+      "encontrados": 100,
+      "via": "dom",
+      "metodo": "navegador",
+      "estrategia": "categoria"
+    },
+    {
+      "id": "enjoei",
+      "nome": "Enjoei",
+      "ok": true,
+      "encontrados": 70,
+      "via": "dom",
+      "metodo": null,
+      "estrategia": null
+    }
+  ],
+  "coletados": 170,
+  "analisados": 8,
+  "somentePessoaFisica": true,
+  "estrategiaOlx": "categoria",
+  "descartados": 155,
+  "motivosDescarte": {
+    "falta variante (padrao)": 86,
+    "acessorio/peca": 47,
+    "modelo nao identificado no titulo": 18,
+    "anuncio de loja": 2,
+    "desqualificado": 1,
+    "preco abaixo da faixa (< R$ 800)": 1
+  },
+  "estatisticas": {
+    "n": 8,
+    "min": 1200,
+    "p10": 1310.6,
+    "p25": 1464.5,
+    "mediana": 1671,
+    "p75": 1849.75,
+    "p90": 2104.9,
+    "max": 2352,
+    "media": 1693.875,
+    "desvio": 341.7844487026875,
+    "nBruto": 8,
+    "outliersRemovidos": 0,
+    "limites": {
+      "inferior": 886.625,
+      "superior": 2427.625,
+      "q1": 1464.5,
+      "q3": 1849.75,
+      "iqr": 385.25
+    },
+    "amplitudeRelativa": 0.23055056852184322,
+    "confianca": {
+      "nivel": "baixa",
+      "rotulo": "Baixa"
+    },
+    "suficiente": true,
+    "porFonte": {
+      "olx": {
+        "n": 1,
+        "mediana": 1700
+      },
+      "enjoei": {
+        "n": 7,
+        "mediana": 1642
+      }
+    },
+    "porArmazenamento": {
+      "1TB": {
+        "n": 4,
+        "mediana": 1700
+      }
+    },
+    "porCondicao": {
+      "usado": {
+        "n": 8,
+        "mediana": 1671
+      }
+    }
+  },
+  "arbitragem": null,
+  "tetoDeCompra": 1342.607142857143,
+  "precoVendaRapida": 1537.3200000000002,
+  "oportunidades": [
+    {
+      "fonte": "enjoei",
+      "idExterno": "150435746",
+      "titulo": "xbox one x 4k 800gb",
+      "preco": 1200,
+      "url": "https://www.enjoei.com.br/p/xbox-one-x-4k-800gb-150435746?ssqi=d0079ca3f399dfd1893631101544a416&rsid=ba420153-9b86-45cf-82c7-924828ebc7d5-1788902919991&rsp=1&rspix=7",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "barateou R$ 1.200 R$ 1.250 xbox one x 4k 800gb xbox one thiago",
+      "nacional": true,
+      "desconto": 0.28186714542190305,
+      "abaixoDaMediana": 471,
+      "risco": "baixo",
+      "aviso": null,
+      "proximidade": 0.2,
+      "perto": false,
+      "precoCompra": 1200,
+      "precoVendaRapida": 1537.3200000000002,
+      "receitaLiquida": 1537.3200000000002,
+      "custoFixo": 30,
+      "taxaPlataforma": 0,
+      "investimento": 1230,
+      "lucro": 307.32000000000016,
+      "roi": 0.2498536585365855,
+      "margem": 0.19990633049722903,
+      "tetoDeCompra": 1342.607142857143,
+      "score": 53
+    }
+  ],
+  "anuncios": [
+    {
+      "fonte": "enjoei",
+      "idExterno": "150435746",
+      "titulo": "xbox one x 4k 800gb",
+      "preco": 1200,
+      "url": "https://www.enjoei.com.br/p/xbox-one-x-4k-800gb-150435746?ssqi=d0079ca3f399dfd1893631101544a416&rsid=ba420153-9b86-45cf-82c7-924828ebc7d5-1788902919991&rsp=1&rspix=7",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "barateou R$ 1.200 R$ 1.250 xbox one x 4k 800gb xbox one thiago",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "149728014",
+      "titulo": "xbox one x 4k com 2 controles e 2 jogos",
+      "preco": 1358,
+      "url": "https://www.enjoei.com.br/p/xbox-one-x-4k-com-2-controles-e-2-jogos-149728014?ssqi=d0079ca3f399dfd1893631101544a416&rsid=ba420153-9b86-45cf-82c7-924828ebc7d5-1788902919991&rsp=1&rspix=15",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "4 17% R$ 1.358 R$ 1.630 xbox one x 4k com 2 controles e 2 jogos xbox one wellington",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "149870663",
+      "titulo": "xbox one x 4k 1 tera",
+      "preco": 1500,
+      "url": "https://www.enjoei.com.br/p/xbox-one-x-4k-1-tera-149870663?ssqi=d0079ca3f399dfd1893631101544a416&rsid=ba420153-9b86-45cf-82c7-924828ebc7d5-1788902919991&rsp=1&rspix=13",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "1 8 R$ 1.500 xbox one x 4k 1 tera xbox one fabiano",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "147536502",
+      "titulo": "xbox one x 1tb preto",
+      "preco": 1642,
+      "url": "https://www.enjoei.com.br/p/xbox-one-x-1tb-preto-147536502?ssqi=d0079ca3f399dfd1893631101544a416&rsid=ba420153-9b86-45cf-82c7-924828ebc7d5-1788902919991&rsp=1&rspix=22",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 1024,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "8 9% R$ 1.642 R$ 1.800 xbox one x 1tb preto xbox one th",
+      "nacional": true
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1533409322",
+      "titulo": "Xbox one x 1tb",
+      "preco": 1700,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-one-x-1tb-1533409322",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 1024,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": ""
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "149042837",
+      "titulo": "xbox one x 1tb project scorpio edition",
+      "preco": 1800,
+      "url": "https://www.enjoei.com.br/p/xbox-one-x-1tb-project-scorpio-edition-149042837?ssqi=d0079ca3f399dfd1893631101544a416&rsid=ba420153-9b86-45cf-82c7-924828ebc7d5-1788902919991&rsp=1&rspix=30",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 1024,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "2 2 23% R$ 1.800 R$ 2.345 xbox one x 1tb project scorpio edition xbox one rogerio",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "149591432",
+      "titulo": "xbox one x gold rush edition completo na caixa com berços, manuais,proteções e caixas de acessórios",
+      "preco": 1999,
+      "url": "https://www.enjoei.com.br/p/xbox-one-x-gold-rush-edition-completo-na-caixa-com-bercos-manuais-protecoes-e-caixas-de-acessorios-149591432?action_source=seller_highlighted&ssqi=d0079ca3f399dfd1893631101544a416&rsid=ba420153-9b86-45cf-82c7-924828ebc7d5-1788902919991&rsp=1&rspix=2",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "2 0 barateou R$ 1.999 R$ 2.500 xbox one x gold rush edition completo na caixa com berços, manuais,proteções e caixas de acessórios xbox one julio",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "148962643",
+      "titulo": "xbox one x 1tb + 2 controles + 9 jogos",
+      "preco": 2352,
+      "url": "https://www.enjoei.com.br/p/xbox-one-x-1tb-2-controles-9-jogos-148962643?ssqi=d0079ca3f399dfd1893631101544a416&rsid=ba420153-9b86-45cf-82c7-924828ebc7d5-1788902919991&rsp=1&rspix=14",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 1024,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "6 14% R$ 2.352 R$ 2.750 xbox one x 1tb + 2 controles + 9 jogos xbox one gabriel",
+      "nacional": true
+    }
+  ],
+  "tendencia": null
+}
