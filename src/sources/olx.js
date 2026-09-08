@@ -86,6 +86,88 @@ export function extrairDoHtml(html) {
   return anuncios;
 }
 
+/**
+ * Extrator que roda DENTRO da pagina, no navegador.
+ *
+ * A OLX abandonou o __NEXT_DATA__ e usa classes com hash
+ * ("SearchExpansion-module-scss-module__Fl45fa__link"), que mudam a cada
+ * build. Entao nao dependemos de classe nem de estrutura: procuramos links
+ * que tenham id de anuncio na URL e um preco no texto. Isso sobrevive a
+ * redesenho de layout.
+ */
+export function extratorNoNavegador() {
+  const vistos = new Set();
+  const saida = [];
+
+  for (const ancora of document.querySelectorAll('a[href]')) {
+    const href = ancora.href;
+    if (!href.includes('olx.com.br')) continue;
+
+    // Anuncio da OLX termina com id numerico longo: ...-1379250178
+    const id = href.match(/-(\d{6,})(?:[?#/]|$)/);
+    if (!id || vistos.has(id[1])) continue;
+
+    const texto = (ancora.innerText || '').replace(/\s+/g, ' ').trim();
+    if (!texto) continue;
+
+    const preco = texto.match(/R\$\s*([\d.]+(?:,\d{2})?)/);
+    if (!preco) continue;
+
+    const cabecalho = ancora.querySelector('h1, h2, h3, [data-testid*="title"], [class*="title"]');
+    let titulo = cabecalho ? cabecalho.innerText.trim() : '';
+    if (!titulo) {
+      const antesDoPreco = texto.slice(0, texto.indexOf(preco[0])).trim();
+      titulo = antesDoPreco || texto.replace(preco[0], '').trim();
+    }
+    titulo = titulo.replace(/\s+/g, ' ').slice(0, 140).trim();
+    if (titulo.length < 4) continue;
+
+    vistos.add(id[1]);
+    saida.push({
+      idExterno: id[1],
+      url: href,
+      titulo,
+      precoTexto: preco[1],
+      // O texto inteiro do cartao carrega cidade e selo de loja, quando existem.
+      textoCartao: texto.slice(0, 400),
+    });
+  }
+  return saida;
+}
+
+/** Converte o que veio do DOM no formato padrao do sistema. */
+function converterDoNavegador(itens) {
+  const anuncios = [];
+  for (const item of itens || []) {
+    const preco = precoParaNumero(item.precoTexto);
+    if (!preco) continue;
+
+    // A cidade costuma vir no fim do texto do cartao, apos o preco.
+    const depois = item.textoCartao.slice(item.textoCartao.indexOf(item.precoTexto) + item.precoTexto.length);
+    const local = depois.match(/([A-ZÀ-Ú][\wÀ-ú'.\- ]{2,40}),?\s*-?\s*([A-Z]{2})\b/);
+
+    anuncios.push({
+      fonte: ID,
+      idExterno: item.idExterno,
+      titulo: item.titulo,
+      preco,
+      url: item.url,
+      imagem: null,
+      cidade: local ? local[1].trim() : null,
+      uf: local ? local[2] : null,
+      publicadoEm: null,
+      armazenamento: extrairArmazenamento(item.titulo),
+      condicao: extrairCondicao(item.titulo),
+      // Sem o JSON da pagina nao ha marcador oficial de loja: fica para o
+      // filtro decidir pelo texto do anuncio.
+      profissional: null,
+      vendedor: null,
+      textoCartao: item.textoCartao,
+    });
+  }
+  return anuncios;
+}
+
 function extrairDaPagina(html) {
   for (const objeto of extrairJsonEmbutido(html)) {
     const achados = garimparAnuncios(objeto, { fonte: ID, baseUrl: BASE });
@@ -111,13 +193,20 @@ async function carregarPagina(url) {
     erroHttp = erro;
   }
 
-  // HTTP barrado ou sem dados: tenta navegador real.
+  // HTTP barrado (a OLX responde 403 a requisicao simples) ou sem dados:
+  // abre a pagina num navegador real e le o DOM ja montado.
   if (config.coleta.usarNavegador && await playwrightDisponivel()) {
-    const htmlRenderizado = await renderizar(url, {
-      esperarSeletor: '[data-ds-component], a[href*="olx.com.br"]',
+    const { html: htmlRenderizado, dados } = await renderizar(url, {
+      esperarSeletor: 'a[href*="olx.com.br"]',
       esperaExtraMs: 2500,
       rolar: true,
+      extrair: extratorNoNavegador,
     });
+
+    const doDom = converterDoNavegador(dados);
+    if (doDom.length) return { anuncios: doDom, via: 'dom', metodo: 'navegador' };
+
+    // Ultimo recurso: os extratores antigos, sobre o HTML renderizado.
     const resultado = extrairDaPagina(htmlRenderizado);
     return { ...resultado, metodo: 'navegador' };
   }

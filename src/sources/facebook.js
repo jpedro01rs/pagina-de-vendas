@@ -89,10 +89,11 @@ export async function coletar(termo, opcoes = {}) {
     precoMax: opcoes.precoMax,
   });
 
-  const html = await renderizar(url, {
+  const { html } = await renderizar(url, {
     persistente: true,
     esperarSeletor: 'a[href*="/marketplace/item/"]',
     esperaExtraMs: 2500,
+    rolar: true,
   });
 
   if (pareceTelaDeLogin(html)) throw new PrecisaLogin();
