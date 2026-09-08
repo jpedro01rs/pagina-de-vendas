@@ -118,13 +118,15 @@ const CONSOLES = [
 ];
 
 const OUTROS = [
-  { nome: 'iPad 9a Geracao', categoria: 'Tablets', marca: 'Apple', consultas: ['ipad 9 geracao'], padrao: '\\bipad\\b', exigirPadrao: ['\\b9\\s*a?\\b'], proibirPadrao: ['\\b10\\s*a?\\b', '\\bair\\b', '\\bpro\\b'], faixa: [900, 2800] },
-  { nome: 'iPad 10a Geracao', categoria: 'Tablets', marca: 'Apple', consultas: ['ipad 10 geracao'], padrao: '\\bipad\\b', exigirPadrao: ['\\b10\\s*a?\\b'], proibirPadrao: ['\\bair\\b', '\\bpro\\b'], faixa: [1200, 3500] },
+  { nome: 'iPad 9a Geracao', categoria: 'Tablets', marca: 'Apple', consultas: ['ipad 9 geracao'], padrao: '\\bipad\\b', exigirPadrao: ['\\b(?:ipad\\s*9|9\\s*[a\u00aa]?\\s*ger)'], proibirPadrao: ['\\b(?:ipad\\s*10|10\\s*[a\u00aa]?\\s*ger)', '\\bair\\b', '\\bpro\\b', '\\bmini\\b'], faixa: [900, 2800] },
+  { nome: 'iPad 10a Geracao', categoria: 'Tablets', marca: 'Apple', consultas: ['ipad 10 geracao'], padrao: '\\bipad\\b', exigirPadrao: ['\\b(?:ipad\\s*10|10\\s*[a\u00aa]?\\s*ger)'], proibirPadrao: ['\\b(?:ipad\\s*9|9\\s*[a\u00aa]?\\s*ger)', '\\bair\\b', '\\bpro\\b', '\\bmini\\b'], faixa: [1200, 3500] },
   { nome: 'iPad Air', categoria: 'Tablets', marca: 'Apple', consultas: ['ipad air'], padrao: '\\bipad\\s*air\\b', faixa: [1500, 6000] },
   { nome: 'MacBook Air M1', categoria: 'Notebooks', marca: 'Apple', consultas: ['macbook air m1'], padrao: '\\bmacbook\\s*air\\b', exigir: ['m1'], faixa: [2500, 6500] },
   { nome: 'MacBook Air M2', categoria: 'Notebooks', marca: 'Apple', consultas: ['macbook air m2'], padrao: '\\bmacbook\\s*air\\b', exigir: ['m2'], faixa: [3500, 9000] },
-  { nome: 'AirPods Pro 2', categoria: 'Audio', marca: 'Apple', consultas: ['airpods pro 2'], padrao: '\\bairpods\\b', exigir: ['pro'], faixa: [500, 2200] },
-  { nome: 'Apple Watch SE', categoria: 'Wearables', marca: 'Apple', consultas: ['apple watch se'], padrao: '\\bapple\\s*watch\\b', exigir: ['se'], faixa: [600, 2500] },
+  { nome: 'AirPods Pro 2', categoria: 'Audio', marca: 'Apple', consultas: ['airpods pro 2'], padrao: '\\bairpods\\b', exigir: ['pro'],
+    exigirPadrao: ['\\b(?:pro\\s*2|2\\s*[a\u00aa]?\\s*ger)'], proibirPadrao: ['\\b(?:pro\\s*1|1\\s*[a\u00aa]?\\s*ger|a2084)'], faixa: [500, 2200] },
+  { nome: 'Apple Watch SE 2', categoria: 'Wearables', marca: 'Apple', consultas: ['apple watch se 2'], padrao: '\\bapple\\s*watch\\b', exigir: ['se'],
+    exigirPadrao: ['\\b(?:se\\s*2|2\\s*[a\u00aa]?\\s*ger)'], proibirPadrao: ['\\b(?:se\\s*1|1\\s*[a\u00aa]?\\s*ger)'], faixa: [600, 2500] },
   { nome: 'Samsung Galaxy S22', categoria: 'Celulares', marca: 'Samsung', consultas: ['galaxy s22'], padrao: '\\bs22\\b', proibir: ['ultra', 'plus'], proibirPadrao: ['\\bs22\\s*\\+'], faixa: [900, 3000] },
   { nome: 'Samsung Galaxy S23', categoria: 'Celulares', marca: 'Samsung', consultas: ['galaxy s23'], padrao: '\\bs23\\b', proibir: ['ultra', 'plus'], proibirPadrao: ['\\bs23\\s*\\+'], faixa: [1300, 4200] },
   { nome: 'Samsung Galaxy S24', categoria: 'Celulares', marca: 'Samsung', consultas: ['galaxy s24'], padrao: '\\bs24\\b', proibir: ['ultra', 'plus'], proibirPadrao: ['\\bs24\\s*\\+'], faixa: [1800, 5500] },
