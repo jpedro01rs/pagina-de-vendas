@@ -4,45 +4,329 @@
   "categoria": "Videogames",
   "marca": "Diversos",
   "avulso": false,
-  "atualizadoEm": "2026-09-08T05:46:26.907Z",
-  "duracaoMs": 37559,
+  "atualizadoEm": "2026-09-08T20:31:08.657Z",
+  "duracaoMs": 36599,
   "fontes": [
     {
       "id": "olx",
       "nome": "OLX",
       "ok": true,
-      "encontrados": 0,
-      "via": "nenhum",
+      "encontrados": 54,
+      "via": "dom",
       "metodo": "navegador",
-      "estrategia": null
+      "estrategia": "categoria"
     },
     {
       "id": "enjoei",
       "nome": "Enjoei",
-      "ok": false,
-      "encontrados": 0,
-      "erro": "Enjoei nao devolveu anuncios: enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | api.enjoei.com.br: HTTP 501 em api.enjoei.com.br"
+      "ok": true,
+      "encontrados": 70,
+      "via": "dom",
+      "metodo": null,
+      "estrategia": null
     }
   ],
-  "coletados": 0,
-  "analisados": 0,
+  "coletados": 124,
+  "analisados": 12,
   "somentePessoaFisica": true,
-  "estrategiaOlx": null,
-  "descartados": 0,
-  "motivosDescarte": {},
+  "estrategiaOlx": "categoria",
+  "descartados": 111,
+  "motivosDescarte": {
+    "acessorio/peca": 65,
+    "preco acima da faixa (> R$ 4800)": 21,
+    "modelo nao identificado no titulo": 19,
+    "preco abaixo da faixa (< R$ 1800)": 5,
+    "anuncio de loja": 1
+  },
   "estatisticas": {
-    "n": 0,
-    "nBruto": 0,
-    "confianca": {
-      "nivel": "insuficiente",
-      "rotulo": "Amostra insuficiente"
+    "n": 10,
+    "min": 4374,
+    "p10": 4487.4,
+    "p25": 4500,
+    "mediana": 4694.5,
+    "p75": 4699.75,
+    "p90": 4800,
+    "max": 4800,
+    "media": 4626.2,
+    "desvio": 138.5328841827817,
+    "nBruto": 12,
+    "outliersRemovidos": 2,
+    "limites": {
+      "inferior": 4122.375,
+      "superior": 5045.375,
+      "q1": 4468.5,
+      "q3": 4699.25,
+      "iqr": 230.75
     },
-    "suficiente": false
+    "amplitudeRelativa": 0.04254979231015017,
+    "confianca": {
+      "nivel": "baixa",
+      "rotulo": "Baixa"
+    },
+    "suficiente": true,
+    "porFonte": {
+      "olx": {
+        "n": 11,
+        "mediana": 4699
+      },
+      "enjoei": {
+        "n": 1,
+        "mediana": 4374
+      }
+    },
+    "porArmazenamento": {
+      "1TB": {
+        "n": 7,
+        "mediana": 4694.5
+      }
+    },
+    "porCondicao": {
+      "usado": {
+        "n": 10,
+        "mediana": 4694.5
+      },
+      "seminovo": {
+        "n": 1,
+        "mediana": 4800
+      },
+      "novo": {
+        "n": 1,
+        "mediana": 4374
+      }
+    }
   },
   "arbitragem": null,
-  "tetoDeCompra": null,
-  "precoVendaRapida": null,
-  "oportunidades": [],
-  "anuncios": [],
+  "tetoDeCompra": 3826.1964285714284,
+  "precoVendaRapida": 4318.9400000000005,
+  "oportunidades": [
+    {
+      "fonte": "olx",
+      "idExterno": "1533589299",
+      "titulo": "Console Xbox Series X 1 TB Branco c/ Controle (LEIA!)",
+      "preco": 3000,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/console-xbox-series-x-1-tb-branco-c-controle-leia-1533589299",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 1024,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "Console Xbox Series X 1 TB Branco c/ Controle (LEIA!) Frete grátis Até 10x sem juros R$ 3.000 em até 10x de R$ 300,00 sem juros São Paulo, Centro Hoje, 16:48",
+      "desconto": 0.36095430823303865,
+      "abaixoDaMediana": 1694.5,
+      "risco": "medio",
+      "aviso": "Preco fora da faixa normal - confirme estado e procedencia antes de fechar",
+      "proximidade": 0.2,
+      "perto": false,
+      "precoCompra": 3000,
+      "precoVendaRapida": 4318.9400000000005,
+      "receitaLiquida": 4318.9400000000005,
+      "custoFixo": 30,
+      "taxaPlataforma": 0,
+      "investimento": 3030,
+      "lucro": 1288.9400000000005,
+      "roi": 0.42539273927392757,
+      "margem": 0.2984389688210534,
+      "tetoDeCompra": 3826.1964285714284,
+      "score": 52
+    }
+  ],
+  "anuncios": [
+    {
+      "fonte": "olx",
+      "idExterno": "1533589299",
+      "titulo": "Console Xbox Series X 1 TB Branco c/ Controle (LEIA!)",
+      "preco": 3000,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/console-xbox-series-x-1-tb-branco-c-controle-leia-1533589299",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 1024,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "Console Xbox Series X 1 TB Branco c/ Controle (LEIA!) Frete grátis Até 10x sem juros R$ 3.000 em até 10x de R$ 300,00 sem juros São Paulo, Centro Hoje, 16:48"
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1533621499",
+      "titulo": "Xbox series X",
+      "preco": 3900,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-series-x-1533621499",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "Xbox series X Entrega Fácil Parcele sem juros R$ 3.900 em até 3x de R$ 1.300,00 sem juros Online São Bernardo do Campo, Cooperativa Hoje, 17:11"
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "146900608",
+      "titulo": "xbox series x 1tb digital lacrado",
+      "preco": 4374,
+      "url": "https://www.enjoei.com.br/p/xbox-series-x-1tb-digital-lacrado-146900608?ssqi=33d5f3b75ca2a329cf0c4a28dd90f12d&rsid=b9c4894a-150b-4fca-b788-c0e7c3de1c37-1788899432799&rsp=1&rspix=2",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 1024,
+      "condicao": "novo",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "6 3 6% R$ 4.374 R$ 4.650 xbox series x 1tb digital lacrado xbox one eric",
+      "nacional": true
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1523620697",
+      "titulo": "Xbox Series X com controle. Pouco usado",
+      "preco": 4500,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-series-x-com-controle-pouco-usado-1523620697",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": ""
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1531272359",
+      "titulo": "Xbox series x",
+      "preco": 4500,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-series-x-1531272359",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": ""
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1528650234",
+      "titulo": "VENDO OU TROCO XBOX SÉRIES X 1 TB DE MEMÓRIA EM ÓTIMO ESTADO DE USO GARANTIA GAMES CREED",
+      "preco": 4500,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/vendo-ou-troco-xbox-series-x-1-tb-de-memoria-em-otimo-estado-de-uso-garantia-games-creed-1528650234",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 1024,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": ""
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1533487734",
+      "titulo": "Xbox séries X 1Tb SSD BRANCO - BOTGAMES",
+      "preco": 4690,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-series-x-1tb-ssd-branco-botgames-1533487734",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 1024,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "Xbox séries X 1Tb SSD BRANCO - BOTGAMES Entrega Fácil Parcele sem juros Botgames 4.8 R$ 4.690 em até 3x de R$ 1.563,33 sem juros Taboão da Serra, Jardim Saint Moritz Hoje, 11:58"
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1533493201",
+      "titulo": "XBOX SERIES X 1TB COM CAIXA",
+      "preco": 4699,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-series-x-1tb-com-caixa-1533493201",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 1024,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "XBOX SERIES X 1TB COM CAIXA Entrega Fácil Parcele sem juros Victor Diniz 5.0 R$ 4.699 em até 3x de R$ 1.566,33 sem juros São Paulo, Parque Fernanda Hoje, 12:20"
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1533422113",
+      "titulo": "Xbox séries x",
+      "preco": 4699,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-series-x-1533422113",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": ""
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1532761825",
+      "titulo": "Xbox Series X",
+      "preco": 4700,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-series-x-1532761825",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": ""
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1532877231",
+      "titulo": "Xbox Series X 1TB + 3 Controles + Caixa + Cabos",
+      "preco": 4800,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-series-x-1tb-3-controles-caixa-cabos-1532877231",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 1024,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": ""
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1532606548",
+      "titulo": "Vendo Xbox Series X 1tb Semi novo",
+      "preco": 4800,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/vendo-xbox-series-x-1tb-semi-novo-1532606548",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 1024,
+      "condicao": "seminovo",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": ""
+    }
+  ],
   "tendencia": null
 }

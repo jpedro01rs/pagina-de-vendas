@@ -24,20 +24,39 @@ Fontes configuradas
   TESTE AO VIVO - termo: "iphone 13"
 ------------------------------------------------------------------
 
-  OLX... respondeu, mas NAO trouxe anuncios (38.0s)
-     via=nenhum metodo=navegador
-     Provavel mudanca de layout, bloqueio silencioso ou termo sem resultado.
+  OLX... OK - 50 anuncios em 13.3s
+     via=dom  metodo=navegador  estrategia=categoria
+     faixa bruta: R$ 600 .. R$ 3.249
+       -    R$ 2.200  iPhone 13 Rosa 256GB
+       -    R$ 1.800  IPhone 13 256GB
+       -    R$ 1.900  IPHONE 13 128GB
 
-  Enjoei... FALHOU
-     Enjoei nao devolveu anuncios: enjusearch.enjoei.com.br: HTTP 404 em enjusearch.enjoei.com.br | api.enjoei.com.br: HTTP 501 em api.enjoei.com.br
+  Enjoei... OK - 35 anuncios em 19.0s
+     via=dom  metodo=http
+     faixa bruta: R$ 13 .. R$ 3.500
+       -    R$ 1.878  iphone 13 128gb preto
+       -    R$ 2.500  iphone 13 128gb branco
+       -    R$ 2.200  iphone 13 256gb - 80% saúde bateria
 
   Facebook Marketplace: desligada no .env (FONTE_FACEBOOK=false)
 
 ------------------------------------------------------------------
-  NENHUMA FONTE RESPONDEU.
-  1) Confira sua internet.
-  2) Instale o navegador: npm run navegador
-  3) Rode de novo: npm run doctor
+  QUALIDADE DO FILTRO
+------------------------------------------------------------------
+
+  Coletados ....... 85
+  Passaram ........ 52
+  Descartados ..... 29
+       10x  acessorio/peca
+        9x  preco abaixo da faixa (< R$ 1600)
+        9x  outra variante
+        1x  desqualificado
+
+  Preco de mercado (mediana): R$ 1.935
+  P25 R$ 1.800  |  P75 R$ 2.100  |  confianca: Alta
+
+  Se os titulos acima nao sao do produto certo, ajuste o catalogo em
+  src/catalog/index.js (campos exigir / proibir / faixa).
 
 ------------------------------------------------------------------
 
