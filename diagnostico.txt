@@ -8,7 +8,7 @@
 ------------------------------------------------------------------
 
 Ambiente
-  Node ................ v22.23.2
+  Node ................ v22.23.3
   Navegador ........... pronto
   Regiao .............. Sao Paulo / SP [sao-paulo-e-regiao]
   Paginas por busca ... 2
@@ -24,19 +24,19 @@ Fontes configuradas
   TESTE AO VIVO - termo: "iphone 13"
 ------------------------------------------------------------------
 
-  OLX... OK - 50 anuncios em 13.8s
+  OLX... OK - 50 anuncios em 13.0s
      via=dom  metodo=navegador  estrategia=categoria
-     faixa bruta: R$ 600 .. R$ 3.249
-       -    R$ 2.000  iPhone 13
-       -    R$ 2.300  Celular
-       -    R$ 2.000  iPhone 13 128 GB
+     faixa bruta: R$ 699 .. R$ 3.000
+       -    R$ 1.600  iPhone 13 Branco - 128 GB
+       -    R$ 1.890  iPhone 13 seminovo
+       -    R$ 1.450  iPhone 13 128GB impecável
 
   Enjoei... OK - 35 anuncios em 18.6s
      via=dom  metodo=http
-     faixa bruta: R$ 14 .. R$ 2.800
-       -    R$ 2.450  iphone 13 pro max 256gb dourado
-       -    R$ 2.600  iphone 13 pro max 128gb gold
-       -       R$ 69  kit 3 capinhas silicone aveludada iphone 13
+     faixa bruta: R$ 18 .. R$ 3.200
+       -      R$ 900  iphone 13 branco
+       -       R$ 20  kit 3 capas para iphone 13 transparente anti-impacto
+       -    R$ 3.200  iphone 13 pro 1tb grafite
 
   Facebook Marketplace: desligada no .env (FONTE_FACEBOOK=false)
 
@@ -45,16 +45,16 @@ Fontes configuradas
 ------------------------------------------------------------------
 
   Coletados ....... 85
-  Passaram ........ 51
-  Descartados ..... 31
-       14x  outra variante
-        8x  preco abaixo da faixa (< R$ 1600)
+  Passaram ........ 48
+  Descartados ..... 32
+       17x  preco abaixo da faixa (< R$ 1600)
+        7x  outra variante
         5x  acessorio/peca
         2x  modelo nao identificado no titulo
-        2x  desqualificado
+        1x  desqualificado
 
-  Preco de mercado (mediana): R$ 1.920
-  P25 R$ 1.775  |  P75 R$ 2.100  |  confianca: Alta
+  Preco de mercado (mediana): R$ 1.854
+  P25 R$ 1.750  |  P75 R$ 2.000  |  confianca: Alta
 
   Se os titulos acima nao sao do produto certo, ajuste o catalogo em
   src/catalog/index.js (campos exigir / proibir / faixa).
