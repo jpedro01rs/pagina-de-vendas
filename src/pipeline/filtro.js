@@ -22,6 +22,8 @@ const ACESSORIO = [
 const DESQUALIFICA = [
   'defeito', 'quebrado', 'quebrada', 'trincado', 'trincada', 'rachado',
   'sucata', 'peca', 'pecas', 'retirada', 'retirar', 'nao liga', 'nao funciona',
+  // "no estado" e "leia a descricao" sao como se anuncia defeito sem dizer a palavra
+  'no estado', 'leia a descricao', 'leia o anuncio', 'com problema', 'apresenta defeito',
   'bloqueado', 'bloqueada', 'icloud', 'conta bloqueada', 'chip bloqueado',
   'conserto', 'consertos', 'manutencao', 'assistencia', 'reparo',
   'aluguel', 'alugo', 'aluga', 'locacao',
