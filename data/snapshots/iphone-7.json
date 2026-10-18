@@ -1,0 +1,138 @@
+{
+  "produtoId": "iphone-7",
+  "nome": "iPhone 7",
+  "categoria": "Celulares",
+  "marca": "Apple",
+  "avulso": false,
+  "atualizadoEm": "2026-10-18T13:37:59.528Z",
+  "duracaoMs": 70240,
+  "fontes": [
+    {
+      "id": "olx",
+      "nome": "OLX",
+      "ok": true,
+      "encontrados": 0,
+      "via": "nenhum",
+      "metodo": "navegador",
+      "estrategia": null
+    },
+    {
+      "id": "enjoei",
+      "nome": "Enjoei",
+      "ok": true,
+      "encontrados": 70,
+      "via": "dom",
+      "metodo": null,
+      "estrategia": null
+    }
+  ],
+  "coletados": 70,
+  "analisados": 3,
+  "somentePessoaFisica": true,
+  "estrategiaOlx": null,
+  "descartados": 64,
+  "motivosDescarte": {
+    "acessorio/peca": 32,
+    "modelo nao identificado no titulo": 16,
+    "preco abaixo da faixa (< R$ 250)": 10,
+    "lote/atacado": 4,
+    "desqualificado": 2
+  },
+  "estatisticas": {
+    "n": 3,
+    "min": 375,
+    "p10": 425.8,
+    "p25": 502,
+    "mediana": 629,
+    "p75": 689.5,
+    "p90": 725.8,
+    "max": 750,
+    "media": 584.6666666666666,
+    "desvio": 156.26970986797863,
+    "nBruto": 3,
+    "outliersRemovidos": 0,
+    "limites": null,
+    "amplitudeRelativa": 0.29809220985691576,
+    "confianca": {
+      "nivel": "insuficiente",
+      "rotulo": "Amostra insuficiente"
+    },
+    "suficiente": false,
+    "porFonte": {
+      "enjoei": {
+        "n": 3,
+        "mediana": 629
+      }
+    },
+    "porArmazenamento": {
+      "32GB": {
+        "n": 1,
+        "mediana": 629
+      }
+    },
+    "porCondicao": {
+      "usado": {
+        "n": 3,
+        "mediana": 629
+      }
+    }
+  },
+  "arbitragem": null,
+  "tetoDeCompra": 486.67857142857144,
+  "precoVendaRapida": 578.6800000000001,
+  "oportunidades": [],
+  "anuncios": [
+    {
+      "fonte": "enjoei",
+      "idExterno": "145203473",
+      "titulo": "iphone 7 para venda",
+      "preco": 375,
+      "url": "https://www.enjoei.com.br/p/iphone-7-para-venda-145203473?ssqi=262ba4e0ce1bce6967a90da19d9cfa9e&rsid=28ffc41f-671f-4041-b652-baf2bb587f9e-1792330610460&rsp=1&rspix=10",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "2 2 R$ 375 iphone 7 para venda iphone julia",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "94830892",
+      "titulo": "iphone 7 32 gb",
+      "preco": 629,
+      "url": "https://www.enjoei.com.br/p/iphone-7-32-gb-94830892?ssqi=262ba4e0ce1bce6967a90da19d9cfa9e&rsid=28ffc41f-671f-4041-b652-baf2bb587f9e-1792330610460&rsp=1&rspix=4",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 32,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "5 6 45% R$ 629 R$ 1.150 iphone 7 32 gb iphone",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "79244697",
+      "titulo": "iphone 7 original | rose gold | ouro rosa | com nf",
+      "preco": 750,
+      "url": "https://www.enjoei.com.br/p/iphone-7-original-rose-gold-ouro-rosa-com-nf-79244697?ssqi=262ba4e0ce1bce6967a90da19d9cfa9e&rsid=28ffc41f-671f-4041-b652-baf2bb587f9e-1792330610460&rsp=1&rspix=11",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "7 12% R$ 750 R$ 850 iphone 7 original | rose gold | ouro rosa | com nf iphone 32 gb isabela",
+      "nacional": true
+    }
+  ],
+  "tendencia": null
+}

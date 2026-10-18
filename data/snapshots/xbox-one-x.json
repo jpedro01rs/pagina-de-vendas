@@ -1,0 +1,140 @@
+{
+  "produtoId": "xbox-one-x",
+  "nome": "Xbox One X",
+  "categoria": "Videogames",
+  "marca": "Diversos",
+  "avulso": false,
+  "atualizadoEm": "2026-10-18T14:11:38.692Z",
+  "duracaoMs": 36828,
+  "fontes": [
+    {
+      "id": "olx",
+      "nome": "OLX",
+      "ok": true,
+      "encontrados": 100,
+      "via": "dom",
+      "metodo": "navegador",
+      "estrategia": "categoria"
+    },
+    {
+      "id": "enjoei",
+      "nome": "Enjoei",
+      "ok": true,
+      "encontrados": 70,
+      "via": "dom",
+      "metodo": null,
+      "estrategia": null
+    }
+  ],
+  "coletados": 170,
+  "analisados": 3,
+  "somentePessoaFisica": true,
+  "estrategiaOlx": "categoria",
+  "descartados": 164,
+  "motivosDescarte": {
+    "falta variante (padrao)": 99,
+    "acessorio/peca": 38,
+    "modelo nao identificado no titulo": 18,
+    "desqualificado": 3,
+    "anuncio de loja": 2,
+    "preco abaixo da faixa (< R$ 800)": 2,
+    "preco acima da faixa (> R$ 2600)": 2
+  },
+  "estatisticas": {
+    "n": 3,
+    "min": 1358,
+    "p10": 1466.2,
+    "p25": 1628.5,
+    "mediana": 1899,
+    "p75": 1994.5,
+    "p90": 2051.8,
+    "max": 2090,
+    "media": 1782.3333333333333,
+    "desvio": 310.01541180327723,
+    "nBruto": 3,
+    "outliersRemovidos": 0,
+    "limites": null,
+    "amplitudeRelativa": 0.19273301737756715,
+    "confianca": {
+      "nivel": "insuficiente",
+      "rotulo": "Amostra insuficiente"
+    },
+    "suficiente": false,
+    "porFonte": {
+      "enjoei": {
+        "n": 3,
+        "mediana": 1899
+      }
+    },
+    "porArmazenamento": {
+      "1TB": {
+        "n": 2,
+        "mediana": 1994.5
+      }
+    },
+    "porCondicao": {
+      "usado": {
+        "n": 3,
+        "mediana": 1899
+      }
+    }
+  },
+  "arbitragem": null,
+  "tetoDeCompra": 1529.892857142857,
+  "precoVendaRapida": 1747.0800000000002,
+  "oportunidades": [],
+  "anuncios": [
+    {
+      "fonte": "enjoei",
+      "idExterno": "149728014",
+      "titulo": "xbox one x 4k com 2 controles e 2 jogos",
+      "preco": 1358,
+      "url": "https://www.enjoei.com.br/p/xbox-one-x-4k-com-2-controles-e-2-jogos-149728014?ssqi=a4eee34a589e178031ea2885bd8ac637&rsid=75ae2fd5-345a-42f5-9a34-500f89d77c9f-1792332662682&rsp=1&rspix=29",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "1 1 17% R$ 1.358 R$ 1.630 xbox one x 4k com 2 controles e 2 jogos xbox one wellington",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "145704694",
+      "titulo": "console xbox one x 1tb original com 03 jogos a escolher.",
+      "preco": 1899,
+      "url": "https://www.enjoei.com.br/p/console-xbox-one-x-1tb-original-com-03-jogos-a-escolher-145704694?ssqi=a4eee34a589e178031ea2885bd8ac637&rsid=75ae2fd5-345a-42f5-9a34-500f89d77c9f-1792332662682&rsp=1&rspix=24",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 1024,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "5 3 R$ 1.899 console xbox one x 1tb original com 03 jogos a escolher. xbox one fabio",
+      "nacional": true
+    },
+    {
+      "fonte": "enjoei",
+      "idExterno": "150880881",
+      "titulo": "xbox one x 1tb com 2 controles e 6 jogos",
+      "preco": 2090,
+      "url": "https://www.enjoei.com.br/p/xbox-one-x-1tb-com-2-controles-e-6-jogos-150880881?ssqi=a4eee34a589e178031ea2885bd8ac637&rsid=75ae2fd5-345a-42f5-9a34-500f89d77c9f-1792332662682&rsp=1&rspix=27",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 1024,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "1 0 R$ 2.090 xbox one x 1tb com 2 controles e 6 jogos xbox one omar",
+      "nacional": true
+    }
+  ],
+  "tendencia": null
+}

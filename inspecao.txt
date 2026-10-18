@@ -1,0 +1,45 @@
+
+================================================================
+  O QUE A OLX DEVOLVE PARA ESTA MAQUINA
+================================================================
+
+URL: https://www.olx.com.br/celulares/apple/iphone-13/estado-sp/sao-paulo-e-regiao
+
+-- HTTP direto --
+  FALHOU............................ HTTP 403 em www.olx.com.br
+
+-- Navegador real (com rolagem) --
+
+  [logo apos carregar]
+  bytes............................. 5798
+  titulo............................ Attention Required! | Cloudflare
+  tem __NEXT_DATA__................. false
+  links da olx...................... 0
+  cartoes de anuncio................ 0
+  precos "R$" no texto.............. 0
+  inicio do texto................... Sorry, you have been blocked You are unable to access olx.com.br Why have I been blocked? 
+
+  [apos rolar a pagina]
+  bytes............................. 5798
+  titulo............................ Attention Required! | Cloudflare
+  tem __NEXT_DATA__................. false
+  links da olx...................... 0
+  cartoes de anuncio................ 0
+  precos "R$" no texto.............. 0
+  inicio do texto................... Sorry, you have been blocked You are unable to access olx.com.br Why have I been blocked? 
+
+-- Conclusao --
+  veredito.......................... pagina praticamente vazia: bloqueio provavel
+
+-- O extrator do coletor --
+  anuncios extraidos................ 0
+
+-- Estrutura da pagina --
+  ancoras no total.................. 1
+  ancoras de anuncio................ 0
+  com preco dentro da ancora........ 0
+  caminho a partir do preco......... (nenhum preco isolado)
+
+  exemplo de href: (nenhuma)
+  html: 
+

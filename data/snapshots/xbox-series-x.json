@@ -1,0 +1,269 @@
+{
+  "produtoId": "xbox-series-x",
+  "nome": "Xbox Series X",
+  "categoria": "Videogames",
+  "marca": "Diversos",
+  "avulso": false,
+  "atualizadoEm": "2026-10-18T14:12:52.201Z",
+  "duracaoMs": 36824,
+  "fontes": [
+    {
+      "id": "olx",
+      "nome": "OLX",
+      "ok": true,
+      "encontrados": 56,
+      "via": "dom",
+      "metodo": "navegador",
+      "estrategia": "categoria"
+    },
+    {
+      "id": "enjoei",
+      "nome": "Enjoei",
+      "ok": true,
+      "encontrados": 70,
+      "via": "dom",
+      "metodo": null,
+      "estrategia": null
+    }
+  ],
+  "coletados": 126,
+  "analisados": 11,
+  "somentePessoaFisica": true,
+  "estrategiaOlx": "categoria",
+  "descartados": 115,
+  "motivosDescarte": {
+    "acessorio/peca": 49,
+    "modelo nao identificado no titulo": 33,
+    "preco acima da faixa (> R$ 4800)": 27,
+    "preco abaixo da faixa (< R$ 1800)": 4,
+    "anuncio de loja": 2
+  },
+  "estatisticas": {
+    "n": 11,
+    "min": 3800,
+    "p10": 3800,
+    "p25": 4150,
+    "mediana": 4300,
+    "p75": 4600,
+    "p90": 4799,
+    "max": 4800,
+    "media": 4345.363636363636,
+    "desvio": 339.2993509966927,
+    "nBruto": 11,
+    "outliersRemovidos": 0,
+    "limites": {
+      "inferior": 3475,
+      "superior": 5275,
+      "q1": 4150,
+      "q3": 4600,
+      "iqr": 450
+    },
+    "amplitudeRelativa": 0.10465116279069768,
+    "confianca": {
+      "nivel": "baixa",
+      "rotulo": "Baixa"
+    },
+    "suficiente": true,
+    "porFonte": {
+      "olx": {
+        "n": 11,
+        "mediana": 4300
+      }
+    },
+    "porArmazenamento": {
+      "1TB": {
+        "n": 1,
+        "mediana": 4500
+      }
+    },
+    "porCondicao": {
+      "usado": {
+        "n": 11,
+        "mediana": 4300
+      }
+    }
+  },
+  "arbitragem": null,
+  "tetoDeCompra": 3502.142857142857,
+  "precoVendaRapida": 3956,
+  "oportunidades": [],
+  "anuncios": [
+    {
+      "fonte": "olx",
+      "idExterno": "1545068357",
+      "titulo": "xbox series x",
+      "preco": 3800,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-series-x-1545068357",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "xbox series x Entrega Fácil Parcele sem juros R$ 3.800 em até 3x de R$ 1.266,67 sem juros São Paulo, Casa Verde Alta Ontem, 17:43"
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1544015253",
+      "titulo": "Xbox series x all digital",
+      "preco": 3800,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-series-x-all-digital-1544015253",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": ""
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1541390641",
+      "titulo": "Xbox series x 1tr",
+      "preco": 4100,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-series-x-1tr-1541390641",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": ""
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1544586687",
+      "titulo": "Xbox séries x",
+      "preco": 4200,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-series-x-1544586687",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": ""
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1544475932",
+      "titulo": "Xbox series X",
+      "preco": 4300,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-series-x-1544475932",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": ""
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1518547712",
+      "titulo": "Xbox Séries X pouco usado com 1 controle e caixa original",
+      "preco": 4300,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-series-x-pouco-usado-com-1-controle-e-caixa-original-1518547712",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": ""
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1543684842",
+      "titulo": "Xbox series X....1T TOP Game ?",
+      "preco": 4500,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-series-x-1t-top-game-1543684842",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": ""
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1542300191",
+      "titulo": "Xbox Series X 1TB com caixa + 2 controles + kit pilha recarregavel duracell r",
+      "preco": 4500,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-series-x-1tb-com-caixa-2-controles-kit-pilha-recarregavel-duracell-r-1542300191",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": 1024,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": ""
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1544815437",
+      "titulo": "Xbox Series X",
+      "preco": 4700,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-series-x-1544815437",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": ""
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1537540892",
+      "titulo": "Xbox séries X 1 terá com leitor de disco",
+      "preco": 4799,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-series-x-1-tera-com-leitor-de-disco-1537540892",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": "Xbox séries X 1 terá com leitor de disco Entrega Fácil Parcele sem juros patrickrochasouza 4.0 R$ 4.799 em até 3x de R$ 1.599,67 sem juros São Paulo, Bela Vista 21 de set, 14:10"
+    },
+    {
+      "fonte": "olx",
+      "idExterno": "1544762530",
+      "titulo": "Xbox Séries X com 2 Controles",
+      "preco": 4800,
+      "url": "https://sp.olx.com.br/sao-paulo-e-regiao/games/consoles-de-video-game/xbox-series-x-com-2-controles-1544762530",
+      "imagem": null,
+      "cidade": null,
+      "uf": null,
+      "publicadoEm": null,
+      "armazenamento": null,
+      "condicao": "usado",
+      "profissional": null,
+      "vendedor": null,
+      "textoCartao": ""
+    }
+  ],
+  "tendencia": null
+}

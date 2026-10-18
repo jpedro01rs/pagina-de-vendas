@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Revenda Radar</title>
+<meta name="description" content="Precos de mercado e oportunidades de revenda">
+<link rel="stylesheet" href="styles.css">
+
+<!-- instalavel na tela inicial do celular -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0b0f14">
+<link rel="icon" href="icones/icone-192.png">
+<link rel="apple-touch-icon" href="icones/icone-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Revenda">
+<meta name="mobile-web-app-capable" content="yes">
+</head>
+<body>
+
+<header>
+  <div class="topo">
+    <div class="marca"><span class="ponto"></span> Revenda Radar <small id="rotuloRegiao"></small></div>
+    <nav>
+      <button data-aba="tabela" class="ativo"><span class="longo">Tabela de preços</span><span class="curto">Preços</span></button>
+      <button data-aba="buscar"><span class="longo">Buscar item</span><span class="curto">Buscar</span></button>
+      <button data-aba="oportunidades"><span class="longo">Oportunidades</span><span class="curto">Achados</span></button>
+      <button data-aba="config"><span class="longo">Configuração</span><span class="curto">Ajustes</span></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= TABELA ================= -->
+  <section class="aba ativa" id="aba-tabela">
+    <div class="painel" id="resumoTabela"></div>
+
+    <div class="ferramentas">
+      <input type="text" id="filtroTabela" placeholder="Filtrar produto..." style="min-width:220px">
+      <select id="filtroCategoria"><option value="">Todas as categorias</option></select>
+      <select id="filtroDados">
+        <option value="todos">Todos os produtos</option>
+        <option value="comDados" selected>Só com preço coletado</option>
+      </select>
+      <button class="botao" id="btnAtualizar">Atualizar tabela</button>
+      <button class="botao secundario" id="btnAtualizarCategoria">Atualizar só esta categoria</button>
+      <span id="statusAtualizacao" style="color:var(--texto-2);font-size:13px"></span>
+    </div>
+    <div id="barraProgresso"></div>
+
+    <div id="cartoesPrecos" class="lista-precos"></div>
+
+    <div class="moldura-tabela" id="molduraTabela">
+      <table id="tabelaPrecos">
+        <thead><tr>
+          <th data-ordenar="nome">Produto <span class="seta"></span></th>
+          <th data-ordenar="n">Anúncios <span class="seta"></span></th>
+          <th data-ordenar="min">Mínimo <span class="seta"></span></th>
+          <th data-ordenar="p25">P25 <span class="seta"></span></th>
+          <th data-ordenar="mediana">Preço de mercado <span class="seta"></span></th>
+          <th data-ordenar="p75">P75 <span class="seta"></span></th>
+          <th data-ordenar="tetoDeCompra">Pague até <span class="seta"></span></th>
+          <th data-ordenar="precoVendaRapida">Venda por <span class="seta"></span></th>
+          <th data-ordenar="oportunidades">Oport. <span class="seta"></span></th>
+          <th data-ordenar="confianca">Confiança <span class="seta"></span></th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p style="color:var(--texto-3);font-size:12.5px;margin-top:12px">
+      <b>Preço de mercado</b> é a mediana dos anúncios (resistente a preço absurdo), não a média simples.
+      <b>Pague até</b> é o teto de compra para ainda bater seu ROI mínimo. Clique numa linha para ver o detalhe.
+    </p>
+  </section>
+
+  <!-- ================= BUSCAR ================= -->
+  <section class="aba" id="aba-buscar">
+    <div class="ferramentas">
+      <input type="text" id="campoBusca" placeholder="Ex.: iPhone 14 Pro, bicicleta aro 29, Air Fryer..." style="flex:1;min-width:260px">
+      <input type="text" id="campoUf" placeholder="UF" maxlength="2" style="width:80px">
+      <input type="text" id="campoCidade" placeholder="Cidade" style="width:170px">
+      <button class="botao" id="btnBuscar">Buscar agora</button>
+    </div>
+    <div class="aviso-caixa" style="margin-bottom:18px">
+      A busca vai <b>ao vivo</b> nos marketplaces ligados. Leva de 10 a 60 segundos, porque a coleta é
+      feita devagar de propósito para não ser bloqueada.
+    </div>
+    <div id="resultadoBusca"></div>
+  </section>
+
+  <!-- ================= OPORTUNIDADES ================= -->
+  <section class="aba" id="aba-oportunidades">
+    <div class="ferramentas">
+      <select id="filtroRisco">
+        <option value="baixo">Só risco baixo</option>
+        <option value="medio" selected>Risco baixo e médio</option>
+        <option value="alto">Todos, inclusive suspeitos</option>
+      </select>
+      <select id="filtroCategoriaOp"><option value="">Todas as categorias</option></select>
+      <input type="number" id="filtroLucro" placeholder="Lucro mínimo R$" style="width:170px">
+      <button class="botao secundario" id="btnRecarregarOp">Recarregar</button>
+    </div>
+    <div id="listaOportunidades"></div>
+  </section>
+
+  <!-- ================= CONFIG ================= -->
+  <section class="aba" id="aba-config">
+    <div class="painel" id="painelConfig"></div>
+    <h2>Sua região</h2>
+    <div class="aviso-caixa" style="margin-bottom:14px">
+      É isso que faz o app achar oportunidades <b>perto de você</b>. Preencha e clique em salvar —
+      vale na hora, sem reiniciar nada.
+    </div>
+    <div class="formulario">
+      <label>Estado (UF)<input type="text" id="cfgUf" maxlength="2" placeholder="SP"></label>
+      <label>Cidade<input type="text" id="cfgCidade" placeholder="São Paulo"></label>
+      <label><span>Região na OLX <small>(opcional)</small></span><input type="text" id="cfgRegiao" placeholder="sao-paulo-e-regiao"></label>
+    </div>
+    <p style="color:var(--texto-3);font-size:12.5px;margin:10px 0 0">
+      Para descobrir a região: entre na OLX, filtre pela sua área e olhe a URL. Em
+      <code>olx.com.br/estado-sp/<b>sao-paulo-e-regiao</b></code>, é a parte em negrito.
+      Deixe vazio para buscar no estado inteiro.
+    </p>
+
+    <h2>Suas regras de lucro</h2>
+    <div class="formulario">
+      <label>Vender quantos % abaixo do mercado<input type="number" id="cfgDesconto" step="1" min="0" max="50"></label>
+      <label>Custo fixo por operação (R$)<input type="number" id="cfgCusto" step="5" min="0"></label>
+      <label>Taxa da plataforma (%)<input type="number" id="cfgTaxa" step="1" min="0" max="50"></label>
+      <label>Lucro mínimo (R$)<input type="number" id="cfgLucro" step="10" min="0"></label>
+      <label>ROI mínimo (%)<input type="number" id="cfgRoi" step="1" min="0" max="200"></label>
+      <label>Páginas por busca<input type="number" id="cfgPaginas" step="1" min="1" max="10"></label>
+    </div>
+
+    <h2>Fontes de dados</h2>
+    <div class="formulario">
+      <label class="caixa"><input type="checkbox" id="cfgOlx"> OLX</label>
+      <label class="caixa"><input type="checkbox" id="cfgEnjoei"> Enjoei</label>
+      <label class="caixa"><input type="checkbox" id="cfgFacebook"> Facebook Marketplace</label>
+    </div>
+
+    <h2>Quem você quer comparar</h2>
+    <div class="formulario">
+      <label class="caixa"><input type="checkbox" id="cfgPessoaFisica"> Só pessoas físicas (esconder lojas)</label>
+    </div>
+    <div class="aviso-caixa" style="margin-top:12px">
+      Loja embute garantia, nota fiscal e parcelamento no preço — isso puxa a média para cima e
+      faz parecer que existe margem onde não existe. Quem revende usado concorre com
+      <b>pessoa física</b>, então esse é o mercado que interessa. O app usa a marcação da própria
+      plataforma e, quando ela falta, o texto do anúncio.
+    </div>
+    <div class="aviso-caixa alerta" style="margin-top:12px">
+      <b>Facebook Marketplace:</b> exige login e o Facebook proíbe automação nos termos de uso —
+      há risco de restrição da sua conta. Antes de ligar, rode no terminal
+      <code>npm run doctor -- --login-facebook</code> e faça login uma vez.
+    </div>
+
+    <div class="ferramentas" style="margin-top:18px">
+      <button class="botao" id="btnSalvarConfig">Salvar configuração</button>
+      <span id="statusConfig" style="color:var(--verde);font-size:13px"></span>
+    </div>
+
+    <h2>Situação atual</h2>
+    <div class="moldura-tabela" style="padding:6px 18px"><div id="detalheConfig"></div></div>
+    <div class="lista-fontes" id="listaFontes" style="margin-top:14px"></div>
+    <div class="aviso-caixa" style="margin-top:18px">
+      Rode <code>npm run doctor</code> no terminal para testar se cada fonte está respondendo.
+    </div>
+  </section>
+
+</main>
+
+<div class="cortina" id="cortina"></div>
+<aside class="gaveta" id="gaveta">
+  <div class="gaveta-topo">
+    <div><div id="gavetaTitulo" style="font-size:17px;font-weight:700"></div><div id="gavetaSub" style="font-size:12.5px;color:var(--texto-3)"></div></div>
+    <button class="fechar" id="btnFechar">&times;</button>
+  </div>
+  <div class="gaveta-corpo" id="gavetaCorpo"></div>
+</aside>
+
+<script src="app.js"></script>
+</body>
+</html>

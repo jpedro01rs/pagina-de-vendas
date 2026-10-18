@@ -1,0 +1,10 @@
+
+Gerando site estatico...
+  produtos com dados .. 67/70
+  paginas de detalhe .. 70
+  oportunidades ....... 196
+  OLX                    67 ok / 0 falhas
+  Enjoei                 67 ok / 0 falhas
+
+  Site em: site
+
